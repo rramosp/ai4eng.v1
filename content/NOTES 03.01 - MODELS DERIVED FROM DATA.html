@@ -1,0 +1,1157 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03.01 - MODELS FROM DATA &#8212; Inteligencia Artificial para las Ciencias e Ingenierías</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="03.02 - SUPERVISED ALGORITHMS" href="NOTES%2003.02%20-%20SUPERVISED%20ALGORITHMS.html" />
+    <link rel="prev" title="MODULO 3: Generación de modelos" href="M03_videos.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/fudea.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Inteligencia Artificial para las Ciencias e Ingenierías</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Bienvenida
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="M00_20201udea.html">
+   Información 2020.1 - UdeA
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M01_videos.html">
+   MODULO 1: Introducción
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2001.01%20-%20PRACTICE%20SUBMISSION.html">
+     LAB 01.01 - Practice submission
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2001.02%20-%20METRICS.html">
+     LAB 01.02 - Metrics
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M02_videos.html">
+   MODULO 2: Python
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.01%20-%20PYTHON%20BASIC%20STRUCTURES.html">
+     02.01 - BASIC STRUCTURES
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.02%20-%20MORE%20PYTHON.html">
+     02.02 - MORE PYTHON
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.03%20-%20PYTHON%20NUMPY.html">
+     02.03 - NUMPY
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.04%20-%20PANDAS.html">
+     02.04 - PANDAS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.01%20-%20PYTHON.html">
+     LAB 02.01 - Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.02%20-%20NUMPY.html">
+     LAB 02.02 - Numpy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.03%20-%20PANDAS.html">
+     LAB 02.03 - Pandas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.04%20-%20CARD%20TRICK.html">
+     LAB 02.04 - Card trick
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="M03_videos.html">
+   MODULO 3: Generación de modelos
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     03.01 - MODELS FROM DATA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.02%20-%20SUPERVISED%20ALGORITHMS.html">
+     03.02 - SUPERVISED ALGORITHMS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.03%20-%20SVM%20AND%20FEATURE%20TRANSFORMATION.html">
+     03.03 - SVMs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2003.01%20-%20MODEL%20GENERATION.html">
+     LAB 03.01 - Model Generation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2003.02%20-%20TIMESERIES%20MODEL.html">
+     LAB 03.02 - Timeseries model
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M04_videos.html">
+   MODULO 4: Gestión de datos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.01%20-%20DATA%20EXPLORATION.html">
+     04.01 - DATA EXPLORATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.02%20-%20DATA%20CLEANING.html">
+     04.02 - DATA CLEANING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.03%20-%20SIMPLE%20HYPOTHESIS%20TESTING.html">
+     04.03 - HYPOTHESIS TESTING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.04%20-%20HYPOTHESIS%20TESTING%20-%20COMPARING%20SAMPLE%20MEANS.html">
+     04.04 - COMPARING SAMPLES
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2004.01%20-%20CLEANING%20DATA.html">
+     LAB 04.01 - Cleaning Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2004.02%20-%20BUILDING%20DATASETS.html">
+     LAB 04.02 - Buiding Datasets
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M05_videos.html">
+   MODULO 5: Gestión de modelos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.01%20-%20A%20TIME%20SERIES%20PREDICTIVE%20STRATEGY.html">
+     05.01 - TIME SERIES PREDICTIONS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.02%20-%20MODEL%20EVALUATION.html">
+     05.02 - MODEL EVALUATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.03%20-%20MODEL%20SELECTION.html">
+     05.03 - MODEL SELECTION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.04%20-%20EXAMPLE%20SUBMISSION%20TO%20KAGGLE.html">
+     05.04 - PARTICIPATE IN KAGGLE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2005.01%20-%20MEASURING%20PREDICTIVITY%20IMPACT.html">
+     LAB 05.01 - Predictions impact
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2005.02%20-%20MODEL%20EVALUATION.html">
+     LAB 05.02 - Model evaluation
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M06_videos.html">
+   MODULO 6: Métodos no supervisados
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.01%20-%20UNSUPERVISED%20LEARNING%20-%20CLUSTERING.html">
+     06.01 - CLUSTERING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.02%20-%20PCA.html">
+     06.02 - PCA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.03%20-%20DIMENSIONALITY%20REDUCTION.html">
+     06.03 - PCA, NMF IN PRACTICE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2006.01%20-%20CLUSTERING.html">
+     LAB 06.01 - Clustering companies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2006.02%20-%20NMF%20face%20search.html">
+     LAB 06.02 - NMF face search
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M07_videos.html">
+   MODULO 7: Diseño de algoritmos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.01%20-%20OPTIMIZATION.html">
+     07.01 - OPTIMIZATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.02%20-%20DESIGNING%20ML%20ALGORITHMS.html">
+     07.02 - DESIGN ML ALGORITHMS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.03%20-%20NEURAL%20NETWORKS.html">
+     07.03 - NEURAL NETWORKS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.04%20-%20NEURAL%20NETWORKS%20WITH%20TENSORFLOW.html">
+     07.04 - TENSORFLOW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2007.01%20-%20OPTIMIZATION%20FOR%20ML.html">
+     LAB 07.01 - Optimization for ML
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2007.02%20-%20NEURAL%20NETWORKS.html">
+     LAB 07.02 - Neural networks
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/NOTES 03.01 - MODELS DERIVED FROM DATA.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/rramosp/20201.xai4eng/blob/master/content/NOTES 03.01 - MODELS DERIVED FROM DATA.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#un-modelo-para-datos-distribuciones-1d">
+   1. Un modelo para datos (distribuciones) 1D
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calculo-analitico-de-los-errores-de-clasificacion">
+     cálculo analítico de los errores de clasificación
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#un-modelo-para-datos-distribuciones-2d">
+   2. Un modelo para datos (distribuciones) 2D
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#los-algoritmos-de-machine-learning">
+     Los algoritmos de machine learning:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#observa-como-un-clasificador-lineal-aproxima-la-frontera-con-diferentes-tamanos-de-muestras">
+     observa cómo un clasificador lineal aproxima la frontera con diferentes tamaños de muestras
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solo-tenemos-un-dataset">
+   3. Solo tenemos un dataset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-curves">
+   4. Learning curves
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#taxonomia-de-problemas-de-machine-learning">
+   Taxonomía de problemas de machine learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#complejidad-de-los-modelos-vs-complejidad-de-los-datos">
+   Complejidad de los modelos vs. complejidad de los datos
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="models-from-data">
+<h1>03.01 - MODELS FROM DATA<a class="headerlink" href="#models-from-data" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>wget --no-cache -O init.py -q https://raw.githubusercontent.com/rramosp/20201.xai4eng/master/content/init.py
+<span class="kn">import</span> <span class="nn">init</span><span class="p">;</span> <span class="n">init</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">force_download</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span> <span class="n">init</span><span class="o">.</span><span class="n">get_weblink</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;20201.ai4eng&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="un-modelo-para-datos-distribuciones-1d">
+<h2>1. Un modelo para datos (distribuciones) 1D<a class="headerlink" href="#un-modelo-para-datos-distribuciones-1d" title="Permalink to this headline">¶</a></h2>
+<p><strong>Caso ideal</strong>: Sabemos las distribuciones de las que vienen los datos. <span class="math notranslate nohighlight">\(\Rightarrow\)</span> podemos calcular analíticamente nuestro modelo.</p>
+<ul class="simple">
+<li><p>¿Podemos encontrar un modelo con 100% de acierto? ¿Por qué sí, o por qué no?</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">local.lib</span> <span class="kn">import</span> <span class="n">mlutils</span>
+
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">optimize</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">d1</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">d2</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">17</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">d1</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;pop 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">d2</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;pop 2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_4_0.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_4_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">25</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">minx</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">d1</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="n">d2</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">)))]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;frontera óptima en </span><span class="si">%.2f</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">minx</span>)
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">d1</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;pop 1&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">d2</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;pop 2&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">minx</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;óptimo = </span><span class="si">%.2f</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">minx</span>)
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>frontera óptima en 13.15
+</pre></div>
+</div>
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_5_1.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_5_1.png" />
+</div>
+</div>
+<div class="section" id="calculo-analitico-de-los-errores-de-clasificacion">
+<h3>cálculo analítico de los errores de clasificación<a class="headerlink" href="#calculo-analitico-de-los-errores-de-clasificacion" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pop 1 error&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="n">d1</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">minx</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;pop 2 error&quot;</span><span class="p">,</span> <span class="n">d2</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">minx</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>pop 1 error 0.05773516274534907
+pop 2 error 0.09957961739117976
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Caso real</strong>: Tenemos una muestra de los datos</p>
+<p><span class="math notranslate nohighlight">\(\rightarrow\)</span> ¿Cómo determinamos donde poner la frontera?</p>
+<p><span class="math notranslate nohighlight">\(\rightarrow\)</span> ¿Qué frontera qusiéramos obtener?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="kn">from</span> <span class="nn">local.lib</span> <span class="kn">import</span> <span class="n">mlutils</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">show_1D_dataset_samples</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">n_datasets</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">dot_alpha</span><span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">line_alpha</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;on&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">.</span><span class="mi">095</span><span class="p">,</span> <span class="o">.</span><span class="mi">105</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">([]);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.lines.Line2D at 0x7f91456ee690&gt;
+</pre></div>
+</div>
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_9_1.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_9_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">show_1D_dataset_samples</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">dot_alpha</span><span class="o">=.</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_17_0.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_17_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">show_1D_dataset_samples</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">dot_alpha</span><span class="o">=.</span><span class="mi">05</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_18_0.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_18_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">show_1D_dataset_samples</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">dot_alpha</span><span class="o">=.</span><span class="mi">001</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_19_0.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_19_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="un-modelo-para-datos-distribuciones-2d">
+<h2>2. Un modelo para datos (distribuciones) 2D<a class="headerlink" href="#un-modelo-para-datos-distribuciones-2d" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>en 2D, un modelo de clasificación <strong>es una frontera</strong> en el plano</p></li>
+<li><p><strong>supongamos</strong> que tenemos acceso a las distribuciones de las que surgen los datos <span class="math notranslate nohighlight">\(\rightarrow\)</span> podemos muestrear tantas veces como queramos</p></li>
+<li><p>¿cuál es la frontera que produce menos error de clasificación?</p></li>
+<li><p><span class="math notranslate nohighlight">\(\epsilon\)</span> es el error de clasificación calculado analíticamente <strong>con la frontera óptima</strong> porque conocemos las distribuciones que generan los datos.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{\epsilon}\)</span> es el error de clasificacón calculado con la muestra de datos y <strong>con la frontera óptima</strong> (conocida también como <em>frontera bayesiana</em>).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">mc</span> <span class="o">=</span> <span class="n">mlutils</span><span class="o">.</span><span class="n">Example_Bayes2DClassifier</span><span class="p">(</span><span class="n">mean0</span><span class="o">=</span><span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">],</span> <span class="n">cov0</span><span class="o">=</span><span class="p">[[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]],</span>
+                                        <span class="n">mean1</span><span class="o">=</span><span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.</span><span class="p">],</span> <span class="n">cov1</span><span class="o">=</span><span class="p">[[</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">.</span><span class="mi">2</span><span class="p">]])</span>
+<span class="n">X</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_2Ddata_with_boundary</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">predict</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">line_width</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="n">dots_alpha</span><span class="o">=.</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot; $\hat{\epsilon}=</span><span class="si">%.3f</span><span class="s2">$&quot;</span><span class="o">%</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">mc</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">))</span><span class="o">+</span><span class="s2">&quot;  $\epsilon=</span><span class="si">%.3f</span><span class="s2">$&quot;</span><span class="o">%</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">mc</span><span class="o">.</span><span class="n">analytic_score</span><span class="p">()));</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_21_0.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_21_0.png" />
+</div>
+</div>
+<p>haz los siguientes experimentos:</p>
+<ul class="simple">
+<li><p>separa los centros de las distribuciones de cada clase (<code class="docutils literal notranslate"><span class="pre">mean0</span></code>, <code class="docutils literal notranslate"><span class="pre">mean1</span></code>).</p></li>
+<li><p>aumenta y disminuye las matrices de covarianza.</p></li>
+<li><p>aumenta y disminuye el número de muestras.</p></li>
+<li><p>observa la estabilidad de <span class="math notranslate nohighlight">\(\hat{\epsilon}\)</span> respecto a <span class="math notranslate nohighlight">\(\epsilon\)</span> según ambas clases están más mezcladas o hay más o menos datos.</p></li>
+</ul>
+<p>en general <strong>SOLO TENEMOS UNA MUESTRA</strong> de los datos, porque no tenemos conocimiento de las distribuciones que los generan. Los métodos de <strong>estadística</strong> y de <strong>machine learning</strong> están diseñados para esta situación.</p>
+<p>Ejecuta la siguiente celda y pregúntate cada vez, <strong>¿qué frontera establecerías con los datos que ves?</strong>.</p>
+<p>Fíjate que tenemos distintas muestras de una misma disitribución de base. Es decir, <strong>la realidad detrás de estos datos siempre es la misma</strong>.</p>
+<p><strong>Aumenta</strong> el número de muestras y hazte cada vez la misma pregunta.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">X</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_2Ddata</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">dots_alpha</span><span class="o">=.</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_24_0.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_24_0.png" />
+</div>
+</div>
+<div class="section" id="los-algoritmos-de-machine-learning">
+<h3>Los algoritmos de machine learning:<a class="headerlink" href="#los-algoritmos-de-machine-learning" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Los algoritmos de clasificación <strong>calculan fronteras</strong> entre los datos.</p></li>
+<li><p>Parten de una muestra de los datos, <strong>no de las distribuciones</strong>.</p></li>
+<li><p>Por tanto, <strong>no conocemos</strong> la forma de la frontera bayesiana.</p></li>
+</ul>
+<p>O sea, <strong>partimos ciegos</strong>!!!!!!!</p>
+<p>Para abordar esta situación, <strong>cualquier algoritmo</strong> tiene necesariamente que plantear una alguna suposición de base:</p>
+<ul class="simple">
+<li><p>los datos vienen de distribuciones normales.</p></li>
+<li><p>las columnas son estadísticamente independientes.</p></li>
+<li><p>la frontera es lineal, o cuadrática.</p></li>
+<li><p>la frontera se representa con una red neuronal.</p></li>
+</ul>
+<p>Teniendo esto en cuenta, y <strong>partiendo de una muestra de los datos</strong>:</p>
+<ul class="simple">
+<li><p>el objetivo de un usuario de ML es acercarse lo más posible a la <strong>frontera bayesiana</strong> (que no sabemos cómo es).</p></li>
+<li><p>distintos algoritmos ML tienen <strong>distintas capacidades</strong> para modelar fronteras (un clasificador lineal no puede captuarar una frontera cuadrática).</p></li>
+<li><p>necesitamos dos tipos de herramientas:</p>
+<ul>
+<li><p>una buena colección de algoritmos ML.</p></li>
+<li><p>métodos para saber qué tan cerca estamos de la frontera bayesiana.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="observa-como-un-clasificador-lineal-aproxima-la-frontera-con-diferentes-tamanos-de-muestras">
+<h3>observa cómo un clasificador lineal aproxima la frontera con diferentes tamaños de muestras<a class="headerlink" href="#observa-como-un-clasificador-lineal-aproxima-la-frontera-con-diferentes-tamanos-de-muestras" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>cambia el parámetro <code class="docutils literal notranslate"><span class="pre">n_samples</span></code> y experimenta con el siguiente código.</p></li>
+<li><p>usa luego estimadores distintos. P.ej.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  estimator = SVC(gamma=1)
+  estimator = RandomForestClassifier()
+  estimator = SVC(gamma=100)
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Hazte las siguientes preguntas:</p>
+<ul class="simple">
+<li><p>¿qué complejidad es capaz de capturar un estimador?</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">n_samples</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">estimator</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
+<span class="n">estimator</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">gamma</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">mlutils</span><span class="o">.</span><span class="n">plot_estimator_border</span><span class="p">(</span><span class="n">mc</span><span class="p">,</span> <span class="n">estimator</span><span class="p">,</span> <span class="n">mins</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">maxs</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="n">n_samples</span><span class="o">=</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_27_0.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_27_0.png" />
+</div>
+</div>
+<p>hacemos ahora el experimento más exhaustivo repitiendo 20 veces el siguiente proceso:</p>
+<ul class="simple">
+<li><p>se muestrea el dataset (recuerda que <strong>excepcionalmente</strong> tenemos acceso a las distribuciones que generan los datos y por tanto podemos hacer esto).</p></li>
+<li><p>se calcula la fronter de clasificación obtenida por el estimador usando el dataset muestreado.</p></li>
+<li><p>se pinta esta frontera (en negro).</p></li>
+<li><p>en verde se muestra la <strong>frontera bayesiana</strong>.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">sample_borders</span><span class="p">(</span><span class="n">mc</span><span class="p">,</span> <span class="n">estimator</span><span class="p">,</span> <span class="n">samples</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">500</span><span class="p">],</span> <span class="n">n_reps</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">mins</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">maxs</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% (4 of 4) |##########################| Elapsed Time: 0:00:09 Time:  0:00:09
+</pre></div>
+</div>
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_29_1.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_29_1.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="solo-tenemos-un-dataset">
+<h2>3. Solo tenemos un dataset<a class="headerlink" href="#solo-tenemos-un-dataset" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>remuestrea, reentrena para medir el desempeño y entender la estabilidad</p></li>
+<li><p>prueba con <code class="docutils literal notranslate"><span class="pre">test_pct</span></code> entre 0.1 y 0.9. observa la divergencia entre train y test cuando <code class="docutils literal notranslate"><span class="pre">test_pct</span></code> es más cercano a 0.9. ¿por qué?</p></li>
+<li><p>prueba con <code class="docutils literal notranslate"><span class="pre">SVC(gamma=100)</span></code>. En este caso observa la divergencia entre train y test incluso cuando <code class="docutils literal notranslate"><span class="pre">test_pct</span></code> es pequeño. ¿por qué?</p></li>
+<li><p>prubea además con <code class="docutils literal notranslate"><span class="pre">dataset_size</span></code> entre 20 y 500</p></li>
+</ul>
+<p>Entiende la diferencia entre <strong>tener pocos datos</strong> y <strong>overfitting</strong></p>
+<p>Configuraciones interesantes sobre</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>mc = mlutils.Example_Bayes2DClassifier(mean0=[1.5, 1.5], cov0=[[0.5, 0.1], [0.3, 0.5]],
+                                        mean1=[1.2, 2.], cov1=[[0.2,0.1],[0,.5]])
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>SVC <span class="math notranslate nohighlight">\(\gamma=100\)</span>, <code class="docutils literal notranslate"><span class="pre">dataset_size=500</span></code> (overfitting con pocos datos, convergencia con muchos)</p></li>
+<li><p>SVC <span class="math notranslate nohighlight">\(\gamma=100\)</span>, <code class="docutils literal notranslate"><span class="pre">dataset_size=2000</span></code> (overfitting con pocos datos, convergencia con muchos)</p></li>
+<li><p>SVC <span class="math notranslate nohighlight">\(\gamma=.01\)</span>, <code class="docutils literal notranslate"><span class="pre">dataset_size=100</span></code> (variabilidad siempre, convergencia promedio con pocos datos)</p></li>
+<li><p>SVC <span class="math notranslate nohighlight">\(\gamma=1\)</span>, <code class="docutils literal notranslate"><span class="pre">dataset_size=100</span></code> (variabilidad siempre, convergencia promedio con pocos datos)</p></li>
+<li><p>LinearRegression, <code class="docutils literal notranslate"><span class="pre">dataset_size=100</span></code> (nunca converge a la frontera bayesiana)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">dataset_size</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">mc</span> <span class="o">=</span> <span class="n">mlutils</span><span class="o">.</span><span class="n">Example_Bayes2DClassifier</span><span class="p">(</span><span class="n">mean0</span><span class="o">=</span><span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">],</span> <span class="n">cov0</span><span class="o">=</span><span class="p">[[</span><span class="mf">4.</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">4.</span><span class="p">]],</span>
+                                        <span class="n">mean1</span><span class="o">=</span><span class="p">[</span><span class="mf">1.5</span><span class="p">,</span><span class="mf">4.</span><span class="p">],</span> <span class="n">cov1</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.5</span><span class="p">],[</span><span class="mf">0.1</span><span class="p">,</span><span class="mf">1.</span><span class="p">]])</span>
+<span class="n">X</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">dataset_size</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_estimator_border</span><span class="p">(</span><span class="n">mc</span><span class="p">,</span> <span class="n">n_samples</span><span class="o">=</span><span class="n">dataset_size</span><span class="p">,</span> <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">analitic_score</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">analytic_score</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_31_0.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_31_0.png" />
+</div>
+</div>
+<p>realizamos un muestreo para dividir entre train y test</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">test_pct</span> <span class="o">=</span> <span class="o">.</span><span class="mi">3</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">test_size</span><span class="o">=</span><span class="n">test_pct</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X_test</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(140, 2) (140,)
+(60, 2) (60,)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_2Ddata</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">dots_alpha</span><span class="o">=.</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;train data&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_2Ddata</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">dots_alpha</span><span class="o">=.</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;test data&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;test data&#39;)
+</pre></div>
+</div>
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_34_1.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_34_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#estimator = SVC(gamma=1)</span>
+<span class="n">estimator</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">gamma</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="c1">#estimator = LogisticRegression()</span>
+<span class="c1">#estimator = RandomForestClassifier()</span>
+<span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=&#39;ovr&#39;, degree=3, gamma=100, kernel=&#39;rbf&#39;,
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;accuracy train </span><span class="si">%.2f</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">estimator</span>.score(X_train,y_train))
+<span class="n">tr_preds</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;predicciones para train&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tr_preds</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ground truth para train&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>accuracy train 1.00
+predicciones para train
+[1. 0. 0. 1. 0. 1. 1. 0. 0. 0. 0. 1. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1.
+ 0. 1. 1. 0. 0. 0. 1. 0. 1. 0. 1. 0. 0. 1. 1. 1. 0. 0. 0. 0. 0. 1. 1. 1.
+ 1. 1. 0. 0. 0. 1. 1. 1. 1. 0. 1. 0. 1. 0. 1. 0. 1. 0. 0. 0. 1. 0. 0. 1.
+ 1. 1. 1. 0. 1. 1. 1. 0. 0. 0. 0. 1. 1. 0. 0. 0. 1. 0. 0. 1. 1. 1. 0. 0.
+ 1. 1. 0. 0. 1. 1. 1. 0. 0. 1. 0. 0. 0. 1. 1. 0. 1. 1. 1. 0. 1. 1. 0. 1.
+ 0. 0. 1. 0. 1. 1. 0. 1. 1. 1. 0. 0. 0. 1. 1. 1. 1. 1. 0. 0.]
+ground truth para train
+[1. 0. 0. 1. 0. 1. 1. 0. 0. 0. 0. 1. 1. 0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 1.
+ 0. 1. 1. 0. 0. 0. 1. 0. 1. 0. 1. 0. 0. 1. 1. 1. 0. 0. 0. 0. 0. 1. 1. 1.
+ 1. 1. 0. 0. 0. 1. 1. 1. 1. 0. 1. 0. 1. 0. 1. 0. 1. 0. 0. 0. 1. 0. 0. 1.
+ 1. 1. 1. 0. 1. 1. 1. 0. 0. 0. 0. 1. 1. 0. 0. 0. 1. 0. 0. 1. 1. 1. 0. 0.
+ 1. 1. 0. 0. 1. 1. 1. 0. 0. 1. 0. 0. 0. 1. 1. 0. 1. 1. 1. 0. 1. 1. 0. 1.
+ 0. 0. 1. 0. 1. 1. 0. 1. 1. 1. 0. 0. 0. 1. 1. 1. 1. 1. 0. 0.]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">accuracy test </span><span class="si">%.2f</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">estimator</span>.score(X_test,y_test))
+<span class="n">ts_preds</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;predicciones para test&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ts_preds</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ground truth para test&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>accuracy test 0.65
+predicciones para test
+[1. 0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1.
+ 1. 0. 0. 0. 1. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0.
+ 1. 0. 0. 0. 1. 0. 0. 1. 0. 0. 0. 1.]
+ground truth para test
+[1. 0. 1. 1. 1. 1. 0. 0. 0. 0. 0. 1. 1. 0. 0. 0. 1. 0. 0. 1. 1. 1. 1. 1.
+ 1. 0. 0. 0. 1. 1. 0. 0. 1. 0. 1. 0. 0. 1. 1. 1. 0. 0. 0. 1. 1. 1. 0. 1.
+ 1. 0. 1. 0. 0. 0. 1. 1. 1. 1. 0. 1.]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">estimator</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">gamma</span><span class="o">=.</span><span class="mi">001</span><span class="p">)</span>
+
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">test_size</span><span class="o">=.</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">trsc</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">tssc</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;train_score </span><span class="si">%5.2f</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">estimator</span>.score(X_train, y_train))
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test_score  </span><span class="si">%5.2f</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">estimator</span>.score(X_test, y_test))
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">121</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_2Ddata</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">dots_alpha</span><span class="o">=.</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_2D_boundary</span><span class="p">(</span><span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+                 <span class="n">line_width</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">line_alpha</span><span class="o">=.</span><span class="mi">7</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;train accuracy </span><span class="si">%.5f</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">estimator</span>.score(X_train, y_train))
+
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_2D_boundary</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">predict</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+                 <span class="n">line_width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">line_alpha</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;bayes boundary&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">122</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_2Ddata</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">dots_alpha</span><span class="o">=.</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_2D_boundary</span><span class="p">(</span><span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+                 <span class="n">line_width</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">line_alpha</span><span class="o">=.</span><span class="mi">7</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;test accuracy  </span><span class="si">%.5f</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">estimator</span>.score(X_test, y_test))
+<span class="n">mlutils</span><span class="o">.</span><span class="n">plot_2D_boundary</span><span class="p">(</span><span class="n">mc</span><span class="o">.</span><span class="n">predict</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+                 <span class="n">line_width</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">line_alpha</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;bayes boundary&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>train_score  0.73
+test_score   0.70
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(0.85395, 0.14605)
+</pre></div>
+</div>
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_38_2.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_38_2.png" />
+</div>
+</div>
+</div>
+<div class="section" id="learning-curves">
+<h2>4. Learning curves<a class="headerlink" href="#learning-curves" title="Permalink to this headline">¶</a></h2>
+<p>normalmente tenemos datasets de muchas dimensiones (columnas) y no podemos visualizar los datos como en 2D <span class="math notranslate nohighlight">\(\rightarrow\)</span> necesitamos métodos para recabar evidencia sobre si tenemos pocos datos, estamos haciendo overfitting, etc.</p>
+<p>Las <strong>curvas de aprendizaje</strong> nos ayudan a esto.</p>
+<p>Realiza el experimento desde la sección anterior, con distintos tamaños del dataset inicial y con distintos algoritmos.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">mc</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">estimator</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">lcurve</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n_reps</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">score_func</span><span class="o">=</span><span class="n">accuracy_score</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">analitic_score</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;bayes score&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% (9 of 9) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+</pre></div>
+</div>
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_41_1.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_41_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">estimator</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">gamma</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">lcurve</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n_reps</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">score_func</span><span class="o">=</span><span class="n">accuracy_score</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">analitic_score</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;bayes score&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">0.7</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% (9 of 9) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+</pre></div>
+</div>
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_42_1.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_42_1.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">estimator</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">gamma</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">mlutils</span><span class="o">.</span><span class="n">lcurve</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n_reps</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">score_func</span><span class="o">=</span><span class="n">accuracy_score</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">analitic_score</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;bayes score&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">0.4</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>100% (9 of 9) |##########################| Elapsed Time: 0:00:00 Time:  0:00:00
+</pre></div>
+</div>
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_43_1.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_43_1.png" />
+</div>
+</div>
+<p>no olvides que normalmente <strong>no conocemos la <em>frontera bayesiana</em></strong>, y por tanto no tenemos el <em>bayes score</em></p>
+</div>
+<div class="section" id="taxonomia-de-problemas-de-machine-learning">
+<h2>Taxonomía de problemas de machine learning<a class="headerlink" href="#taxonomia-de-problemas-de-machine-learning" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Supervisados</p>
+<ul>
+<li><p>Clasificación</p></li>
+<li><p>Regresión</p></li>
+</ul>
+</li>
+<li><p>No supervisados</p>
+<ul>
+<li><p>Agrupamiento</p></li>
+<li><p>Estimación de densidad</p></li>
+<li><p>etc.</p></li>
+</ul>
+</li>
+<li><p>Reinforcement learning</p></li>
+</ul>
+</div>
+<div class="section" id="complejidad-de-los-modelos-vs-complejidad-de-los-datos">
+<h2>Complejidad de los modelos vs. complejidad de los datos<a class="headerlink" href="#complejidad-de-los-modelos-vs-complejidad-de-los-datos" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="n">Image</span><span class="p">(</span><span class="n">filename</span><span class="o">=</span><span class="s1">&#39;local/imgs/bvc.png&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_47_0.png" src="../_images/NOTES 03.01 - MODELS DERIVED FROM DATA_47_0.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="M03_videos.html" title="previous page">MODULO 3: Generación de modelos</a>
+    <a class='right-next' id="next-link" href="NOTES%2003.02%20-%20SUPERVISED%20ALGORITHMS.html" title="next page">03.02 - SUPERVISED ALGORITHMS</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Raúl Ramos / Universidad de Antioquia<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43235448-2', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>

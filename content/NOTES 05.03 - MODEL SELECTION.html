@@ -1,0 +1,1003 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05.03 - MODEL SELECTION &#8212; Inteligencia Artificial para las Ciencias e Ingenierías</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="05.04 - PARTICIPATE IN KAGGLE" href="NOTES%2005.04%20-%20EXAMPLE%20SUBMISSION%20TO%20KAGGLE.html" />
+    <link rel="prev" title="05.02 - MODEL EVALUATION" href="NOTES%2005.02%20-%20MODEL%20EVALUATION.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/fudea.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Inteligencia Artificial para las Ciencias e Ingenierías</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Bienvenida
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="M00_20201udea.html">
+   Información 2020.1 - UdeA
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M01_videos.html">
+   MODULO 1: Introducción
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2001.01%20-%20PRACTICE%20SUBMISSION.html">
+     LAB 01.01 - Practice submission
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2001.02%20-%20METRICS.html">
+     LAB 01.02 - Metrics
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M02_videos.html">
+   MODULO 2: Python
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.01%20-%20PYTHON%20BASIC%20STRUCTURES.html">
+     02.01 - BASIC STRUCTURES
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.02%20-%20MORE%20PYTHON.html">
+     02.02 - MORE PYTHON
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.03%20-%20PYTHON%20NUMPY.html">
+     02.03 - NUMPY
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.04%20-%20PANDAS.html">
+     02.04 - PANDAS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.01%20-%20PYTHON.html">
+     LAB 02.01 - Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.02%20-%20NUMPY.html">
+     LAB 02.02 - Numpy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.03%20-%20PANDAS.html">
+     LAB 02.03 - Pandas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.04%20-%20CARD%20TRICK.html">
+     LAB 02.04 - Card trick
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M03_videos.html">
+   MODULO 3: Generación de modelos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.01%20-%20MODELS%20DERIVED%20FROM%20DATA.html">
+     03.01 - MODELS FROM DATA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.02%20-%20SUPERVISED%20ALGORITHMS.html">
+     03.02 - SUPERVISED ALGORITHMS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.03%20-%20SVM%20AND%20FEATURE%20TRANSFORMATION.html">
+     03.03 - SVMs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2003.01%20-%20MODEL%20GENERATION.html">
+     LAB 03.01 - Model Generation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2003.02%20-%20TIMESERIES%20MODEL.html">
+     LAB 03.02 - Timeseries model
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M04_videos.html">
+   MODULO 4: Gestión de datos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.01%20-%20DATA%20EXPLORATION.html">
+     04.01 - DATA EXPLORATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.02%20-%20DATA%20CLEANING.html">
+     04.02 - DATA CLEANING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.03%20-%20SIMPLE%20HYPOTHESIS%20TESTING.html">
+     04.03 - HYPOTHESIS TESTING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.04%20-%20HYPOTHESIS%20TESTING%20-%20COMPARING%20SAMPLE%20MEANS.html">
+     04.04 - COMPARING SAMPLES
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2004.01%20-%20CLEANING%20DATA.html">
+     LAB 04.01 - Cleaning Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2004.02%20-%20BUILDING%20DATASETS.html">
+     LAB 04.02 - Buiding Datasets
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="M05_videos.html">
+   MODULO 5: Gestión de modelos
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.01%20-%20A%20TIME%20SERIES%20PREDICTIVE%20STRATEGY.html">
+     05.01 - TIME SERIES PREDICTIONS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.02%20-%20MODEL%20EVALUATION.html">
+     05.02 - MODEL EVALUATION
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     05.03 - MODEL SELECTION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.04%20-%20EXAMPLE%20SUBMISSION%20TO%20KAGGLE.html">
+     05.04 - PARTICIPATE IN KAGGLE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2005.01%20-%20MEASURING%20PREDICTIVITY%20IMPACT.html">
+     LAB 05.01 - Predictions impact
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2005.02%20-%20MODEL%20EVALUATION.html">
+     LAB 05.02 - Model evaluation
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M06_videos.html">
+   MODULO 6: Métodos no supervisados
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.01%20-%20UNSUPERVISED%20LEARNING%20-%20CLUSTERING.html">
+     06.01 - CLUSTERING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.02%20-%20PCA.html">
+     06.02 - PCA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.03%20-%20DIMENSIONALITY%20REDUCTION.html">
+     06.03 - PCA, NMF IN PRACTICE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2006.01%20-%20CLUSTERING.html">
+     LAB 06.01 - Clustering companies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2006.02%20-%20NMF%20face%20search.html">
+     LAB 06.02 - NMF face search
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M07_videos.html">
+   MODULO 7: Diseño de algoritmos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.01%20-%20OPTIMIZATION.html">
+     07.01 - OPTIMIZATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.02%20-%20DESIGNING%20ML%20ALGORITHMS.html">
+     07.02 - DESIGN ML ALGORITHMS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.03%20-%20NEURAL%20NETWORKS.html">
+     07.03 - NEURAL NETWORKS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.04%20-%20NEURAL%20NETWORKS%20WITH%20TENSORFLOW.html">
+     07.04 - TENSORFLOW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2007.01%20-%20OPTIMIZATION%20FOR%20ML.html">
+     LAB 07.01 - Optimization for ML
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2007.02%20-%20NEURAL%20NETWORKS.html">
+     LAB 07.02 - Neural networks
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/NOTES 05.03 - MODEL SELECTION.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/rramosp/20201.xai4eng/blob/master/content/NOTES 05.03 - MODEL SELECTION.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#font-color-red-rule-we-cannot-use-the-same-data-to-both-make-choices-on-our-precessing-pipeline-and-report-performance-font">
+   <font color="red">
+    RULE: we cannot use the same data to BOTH make choices on our precessing pipeline AND report performance
+   </font>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#let-s-consider-we-are-choosing-between-different-models-with-any-crossval-technique">
+   Let’s consider we are choosing between different models with any crossval technique
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-1">
+     MODEL 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-2">
+     MODEL 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#model-3">
+     MODEL 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#some-questions">
+   Some questions:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-train-val-test-splits">
+     use train/val/test splits
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#monitor-production">
+   monitor production
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#suggested-experiment">
+   suggested experiment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#change-test-size-and-number-of-houses-for-trainval-when-using-train-val-test-splits-above">
+     change
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       test_size
+      </span>
+     </code>
+     and
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       number_of_houses_for_trainval
+      </span>
+     </code>
+     when using train/val/test splits above
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="model-selection">
+<h1>05.03 - MODEL SELECTION<a class="headerlink" href="#model-selection" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>wget --no-cache -O init.py -q https://raw.githubusercontent.com/rramosp/20201.xai4eng/master/content/init.py
+<span class="kn">import</span> <span class="nn">init</span><span class="p">;</span> <span class="n">init</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">force_download</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span> <span class="n">init</span><span class="o">.</span><span class="n">get_weblink</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">local.lib.timeseries</span> <span class="k">as</span> <span class="nn">ts</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="font-color-red-rule-we-cannot-use-the-same-data-to-both-make-choices-on-our-precessing-pipeline-and-report-performance-font">
+<h2><font color="red"> RULE: we cannot use the same data to BOTH make choices on our precessing pipeline AND report performance</font><a class="headerlink" href="#font-color-red-rule-we-cannot-use-the-same-data-to-both-make-choices-on-our-precessing-pipeline-and-report-performance-font" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;local/data/cal_housing.data&quot;</span><span class="p">)</span>
+<span class="n">dataset</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dataset</span><span class="p">))</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10000</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">values</span><span class="p">[:,:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="s2">&quot;medianHouseValue&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1000, 5) (1000,)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVR</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeRegressor</span>
+<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">median_absolute_error</span><span class="p">,</span> <span class="n">r2_score</span><span class="p">,</span> <span class="n">mean_squared_error</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">rel_mrae</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">preds</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">preds</span><span class="o">-</span><span class="n">y</span><span class="p">)</span><span class="o">/</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="let-s-consider-we-are-choosing-between-different-models-with-any-crossval-technique">
+<h2>Let’s consider we are choosing between different models with any crossval technique<a class="headerlink" href="#let-s-consider-we-are-choosing-between-different-models-with-any-crossval-technique" title="Permalink to this headline">¶</a></h2>
+<p>We start by using a regular train/test split with resampling</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_validate</span><span class="p">,</span> <span class="n">ShuffleSplit</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="model-1">
+<h3>MODEL 1<a class="headerlink" href="#model-1" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">estimator1</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">z1</span> <span class="o">=</span> <span class="n">cross_validate</span><span class="p">(</span><span class="n">estimator1</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">return_train_score</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">return_estimator</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                    <span class="n">scoring</span><span class="o">=</span><span class="n">rel_mrae</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">ShuffleSplit</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">z1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;fit_time&#39;: array([0.0026865 , 0.00383544, 0.0037663 , 0.00304556, 0.00305915,
+        0.00277185, 0.00263572, 0.00275302, 0.00315762, 0.00289965]),
+ &#39;score_time&#39;: array([0.00101566, 0.00098491, 0.00112557, 0.00090575, 0.00094485,
+        0.00083876, 0.00069666, 0.00081682, 0.00074935, 0.00079894]),
+ &#39;estimator&#39;: (DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=5,
+                        max_features=None, max_leaf_nodes=None,
+                        min_impurity_decrease=0.0, min_impurity_split=None,
+                        min_samples_leaf=1, min_samples_split=2,
+                        min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                        random_state=None, splitter=&#39;best&#39;),
+  DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=5,
+                        max_features=None, max_leaf_nodes=None,
+                        min_impurity_decrease=0.0, min_impurity_split=None,
+                        min_samples_leaf=1, min_samples_split=2,
+                        min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                        random_state=None, splitter=&#39;best&#39;),
+  DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=5,
+                        max_features=None, max_leaf_nodes=None,
+                        min_impurity_decrease=0.0, min_impurity_split=None,
+                        min_samples_leaf=1, min_samples_split=2,
+                        min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                        random_state=None, splitter=&#39;best&#39;),
+  DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=5,
+                        max_features=None, max_leaf_nodes=None,
+                        min_impurity_decrease=0.0, min_impurity_split=None,
+                        min_samples_leaf=1, min_samples_split=2,
+                        min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                        random_state=None, splitter=&#39;best&#39;),
+  DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=5,
+                        max_features=None, max_leaf_nodes=None,
+                        min_impurity_decrease=0.0, min_impurity_split=None,
+                        min_samples_leaf=1, min_samples_split=2,
+                        min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                        random_state=None, splitter=&#39;best&#39;),
+  DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=5,
+                        max_features=None, max_leaf_nodes=None,
+                        min_impurity_decrease=0.0, min_impurity_split=None,
+                        min_samples_leaf=1, min_samples_split=2,
+                        min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                        random_state=None, splitter=&#39;best&#39;),
+  DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=5,
+                        max_features=None, max_leaf_nodes=None,
+                        min_impurity_decrease=0.0, min_impurity_split=None,
+                        min_samples_leaf=1, min_samples_split=2,
+                        min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                        random_state=None, splitter=&#39;best&#39;),
+  DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=5,
+                        max_features=None, max_leaf_nodes=None,
+                        min_impurity_decrease=0.0, min_impurity_split=None,
+                        min_samples_leaf=1, min_samples_split=2,
+                        min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                        random_state=None, splitter=&#39;best&#39;),
+  DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=5,
+                        max_features=None, max_leaf_nodes=None,
+                        min_impurity_decrease=0.0, min_impurity_split=None,
+                        min_samples_leaf=1, min_samples_split=2,
+                        min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                        random_state=None, splitter=&#39;best&#39;),
+  DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=5,
+                        max_features=None, max_leaf_nodes=None,
+                        min_impurity_decrease=0.0, min_impurity_split=None,
+                        min_samples_leaf=1, min_samples_split=2,
+                        min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                        random_state=None, splitter=&#39;best&#39;)),
+ &#39;test_score&#39;: array([0.37247763, 0.40161065, 0.42150456, 0.47736097, 0.42858179,
+        0.36527219, 0.38721038, 0.34214222, 0.31086012, 0.33274428]),
+ &#39;train_score&#39;: array([0.34318495, 0.32977355, 0.32523023, 0.33635713, 0.32606125,
+        0.32962278, 0.34875038, 0.34060793, 0.3374607 , 0.34459654])}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">report_cv_score</span><span class="p">(</span><span class="n">z</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;test score   </span><span class="si">%.3f</span><span class="s2"> (±</span><span class="si">%.4f</span><span class="s2">) with </span><span class="si">%d</span><span class="s2"> splits&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]),</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">])))</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;train score  </span><span class="si">%.3f</span><span class="s2"> (±</span><span class="si">%.4f</span><span class="s2">) with </span><span class="si">%d</span><span class="s2"> splits&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s2">&quot;train_score&quot;</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s2">&quot;train_score&quot;</span><span class="p">]),</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s2">&quot;train_score&quot;</span><span class="p">])))</span>
+    
+<span class="n">report_cv_score</span><span class="p">(</span><span class="n">z1</span><span class="p">)</span>    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test score   0.384 (±0.0476) with 10 splits
+train score  0.336 (±0.0078) with 10 splits
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="model-2">
+<h3>MODEL 2<a class="headerlink" href="#model-2" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestRegressor</span>
+<span class="n">estimator2</span> <span class="o">=</span> <span class="n">DecisionTreeRegressor</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">z2</span> <span class="o">=</span> <span class="n">cross_validate</span><span class="p">(</span><span class="n">estimator2</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">return_train_score</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">return_estimator</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                    <span class="n">scoring</span><span class="o">=</span><span class="n">rel_mrae</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">ShuffleSplit</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>  
+<span class="n">report_cv_score</span><span class="p">(</span><span class="n">z2</span><span class="p">)</span>    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test score   0.367 (±0.0383) with 10 splits
+train score  0.111 (±0.0113) with 10 splits
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="model-3">
+<h3>MODEL 3<a class="headerlink" href="#model-3" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
+<span class="n">estimator3</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span>
+<span class="n">z3</span> <span class="o">=</span> <span class="n">cross_validate</span><span class="p">(</span><span class="n">estimator3</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">return_train_score</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">return_estimator</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                    <span class="n">scoring</span><span class="o">=</span><span class="n">rel_mrae</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">ShuffleSplit</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
+<span class="n">report_cv_score</span><span class="p">(</span><span class="n">z3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>test score   0.455 (±0.0233) with 10 splits
+train score  0.431 (±0.0060) with 10 splits
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="some-questions">
+<h2>Some questions:<a class="headerlink" href="#some-questions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>what would be our model of choice</strong>: probably estimator2. <strong>CORRECT</strong></p></li>
+<li><p><strong>what is the performance associated with our choice</strong>: the test score reported by estimator2. <strong>INCORRECT</strong></p></li>
+<li><p>we need to <strong>physically</strong> deliver our trained model to the appropriate business area, but we trained several models for statistical stability. <strong>Which model shall we hand over?</strong></p></li>
+</ul>
+<p>we <strong>cannot</strong> use the same data to make a choice AND report a result.</p>
+<p>observe the performance measured with the models we trained before on <strong>new production</strong> data</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ed</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="mi">10000</span><span class="p">:]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">eX</span> <span class="o">=</span> <span class="n">ed</span><span class="o">.</span><span class="n">values</span><span class="p">[:,:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">ey</span> <span class="o">=</span> <span class="n">ed</span><span class="p">[</span><span class="s2">&quot;medianHouseValue&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">eX</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">ey</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1000, 5) (1000,)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="n">rel_mrae</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">eX</span><span class="p">,</span> <span class="n">ey</span><span class="p">)</span> <span class="k">for</span> <span class="n">estimator</span> <span class="ow">in</span> <span class="n">z2</span><span class="p">[</span><span class="s2">&quot;estimator&quot;</span><span class="p">]]</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;scores&quot;</span><span class="p">,</span> <span class="n">scores</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;mean score </span><span class="si">%.3f</span><span class="s2"> (±</span><span class="si">%.4f</span><span class="s2">) with </span><span class="si">%d</span><span class="s2"> splits&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">scores</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">scores</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>scores [0.34704496772017795, 0.35181627445650004, 0.3780380631512966, 0.3473043719704006, 0.3303955214044563, 0.4078152917670846, 0.3454037329742688, 0.34298337274978824, 0.3505249600341739, 0.3482397402889321]
+mean score 0.355 (±0.0209) with 10 splits
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="use-train-val-test-splits">
+<h3>use train/val/test splits<a class="headerlink" href="#use-train-val-test-splits" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>use train/val to train and select model</p></li>
+<li><p>use test split ONLY to measure performance of the selected model</p></li>
+</ul>
+<p>literature and resources use <code class="docutils literal notranslate"><span class="pre">test</span></code>/<code class="docutils literal notranslate"><span class="pre">val</span></code> interchangeably, or sometimes <code class="docutils literal notranslate"><span class="pre">dev</span></code> instead of <code class="docutils literal notranslate"><span class="pre">val</span></code></p>
+<p>observe how we:</p>
+<ul class="simple">
+<li><p>do a first split with 10% for test and 90% for train/val</p></li>
+<li><p>adjust val size so that when selecting x% of 90% train/val, ends up having the same number of elements as in test</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.3</span>
+<span class="n">number_of_houses_for_trainval</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="n">val_size</span>  <span class="o">=</span> <span class="n">test_size</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">test_size</span><span class="p">)</span> <span class="c1"># so that the have the same number of elements</span>
+
+<span class="k">assert</span> <span class="n">number_of_houses_for_trainval</span><span class="o">&lt;</span><span class="mi">10000</span><span class="p">,</span> <span class="s2">&quot;too many houses for trainval&quot;</span>
+
+
+<span class="n">d</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10000</span><span class="p">]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">number_of_houses_for_trainval</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">values</span><span class="p">[:,:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">d</span><span class="p">[</span><span class="s2">&quot;medianHouseValue&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;test size </span><span class="si">%.2f</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">test_size</span>)
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;val size is </span><span class="si">%.2f</span><span class="s2"> (relative to </span><span class="si">%.2f</span><span class="s2">) &quot;</span><span class="o">%</span><span class="p">(</span><span class="n">val_size</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="n">test_size</span><span class="p">))</span>
+
+<span class="n">Xtv</span><span class="p">,</span> <span class="n">Xts</span><span class="p">,</span> <span class="n">ytv</span><span class="p">,</span> <span class="n">yts</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="n">test_size</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">Xtv</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">Xts</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1000, 5) (1000,)
+test size 0.30
+val size is 0.43 (relative to 0.70) 
+(700, 5) (300, 5)
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>PART 1</strong>: we <strong>AUTOMATE</strong> the model selection process</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">zscores</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">estimators</span> <span class="o">=</span> <span class="p">[</span><span class="n">estimator1</span><span class="p">,</span> <span class="n">estimator2</span><span class="p">,</span> <span class="n">estimator3</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">estimator</span> <span class="ow">in</span> <span class="n">estimators</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">cross_validate</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="n">Xtv</span><span class="p">,</span> <span class="n">ytv</span><span class="p">,</span> <span class="n">return_train_score</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">return_estimator</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                       <span class="n">scoring</span><span class="o">=</span><span class="n">rel_mrae</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">ShuffleSplit</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="n">val_size</span><span class="p">))</span>
+    <span class="n">report_cv_score</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+    <span class="n">zscores</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s2">&quot;test_score&quot;</span><span class="p">]))</span>
+<span class="n">best</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">zscores</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;selecting &quot;</span><span class="p">,</span> <span class="n">best</span><span class="p">)</span>
+<span class="n">best_estimator</span> <span class="o">=</span> <span class="n">estimators</span><span class="p">[</span><span class="n">best</span><span class="p">]</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">selected model&quot;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">best_estimator</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--
+test score   0.473 (±0.0475) with 10 splits
+train score  0.347 (±0.0423) with 10 splits
+--
+test score   0.416 (±0.0335) with 10 splits
+train score  0.092 (±0.0213) with 10 splits
+--
+test score   0.486 (±0.0305) with 10 splits
+train score  0.483 (±0.0167) with 10 splits
+selecting  1
+
+selected model
+DecisionTreeRegressor(ccp_alpha=0.0, criterion=&#39;mse&#39;, max_depth=10,
+                      max_features=None, max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, presort=&#39;deprecated&#39;,
+                      random_state=None, splitter=&#39;best&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>PART 2</strong>: train selected estimator on train/val, report performance on est</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">best_estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">Xtv</span><span class="p">,</span><span class="n">ytv</span><span class="p">)</span>
+<span class="n">reported_performance</span> <span class="o">=</span> <span class="n">rel_mrae</span><span class="p">(</span><span class="n">best_estimator</span><span class="p">,</span> <span class="n">Xts</span><span class="p">,</span> <span class="n">yts</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;reported performance of selectd model </span><span class="si">%.3f</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">reported_performance</span>)
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>reported performance of selectd model 0.395
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="monitor-production">
+<h2>monitor production<a class="headerlink" href="#monitor-production" title="Permalink to this headline">¶</a></h2>
+<p>observe that even when showing <strong>NEW</strong> data to our selected model, performance still varies.</p>
+<p>as we have more data kept in this dataset we <strong>SIMULATE</strong> we get new data batches from production.</p>
+<p>in <strong>SMALL DATA</strong> performance biases are <strong>DIFFICULT</strong> to overcome in practice and must be monitored!!!</p>
+<p>how much data is <strong>small data</strong> depends on your problem.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">er</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">sizes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+    <span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">Xts</span><span class="p">)</span><span class="o">+</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Xts</span><span class="p">))</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">Xts</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
+    <span class="n">ed</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">10000</span><span class="p">:]</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">eX</span> <span class="o">=</span> <span class="n">ed</span><span class="o">.</span><span class="n">values</span><span class="p">[:,:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">ey</span> <span class="o">=</span> <span class="n">ed</span><span class="p">[</span><span class="s2">&quot;medianHouseValue&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+    <span class="n">er</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">rel_mrae</span><span class="p">(</span><span class="n">best_estimator</span><span class="p">,</span> <span class="n">eX</span><span class="p">,</span> <span class="n">ey</span><span class="p">))</span>
+    <span class="n">sizes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">sizes</span><span class="p">,</span> <span class="n">er</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;production dataset size&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;rel mrae&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;performance of observed data batches in production&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">reported_performance</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;reported performance&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">zscores</span><span class="p">[</span><span class="n">best</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;val performance of selected model&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">er</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;mean performance of production data batches&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">Xts</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;test size when reporting performance&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;center left&#39;</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">));</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 05.03 - MODEL SELECTION_30_0.png" src="../_images/NOTES 05.03 - MODEL SELECTION_30_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="suggested-experiment">
+<h2>suggested experiment<a class="headerlink" href="#suggested-experiment" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="change-test-size-and-number-of-houses-for-trainval-when-using-train-val-test-splits-above">
+<h3>change <code class="docutils literal notranslate"><span class="pre">test_size</span></code>  and <code class="docutils literal notranslate"><span class="pre">number_of_houses_for_trainval</span></code> when using train/val/test splits above<a class="headerlink" href="#change-test-size-and-number-of-houses-for-trainval-when-using-train-val-test-splits-above" title="Permalink to this headline">¶</a></h3>
+<p>larger values might yield better stability of results</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "p38"
+        },
+        kernelOptions: {
+            kernelName: "p38",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'p38'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="NOTES%2005.02%20-%20MODEL%20EVALUATION.html" title="previous page">05.02 - MODEL EVALUATION</a>
+    <a class='right-next' id="next-link" href="NOTES%2005.04%20-%20EXAMPLE%20SUBMISSION%20TO%20KAGGLE.html" title="next page">05.04 - PARTICIPATE IN KAGGLE</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Raúl Ramos / Universidad de Antioquia<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43235448-2', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>

@@ -1,0 +1,860 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAB 03.02 - Timeseries model &#8212; Inteligencia Artificial para las Ciencias e Ingenierías</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MODULO 4: Gestión de datos" href="M04_videos.html" />
+    <link rel="prev" title="LAB 03.01 - Model Generation" href="LAB%2003.01%20-%20MODEL%20GENERATION.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/fudea.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Inteligencia Artificial para las Ciencias e Ingenierías</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Bienvenida
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="M00_20201udea.html">
+   Información 2020.1 - UdeA
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M01_videos.html">
+   MODULO 1: Introducción
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2001.01%20-%20PRACTICE%20SUBMISSION.html">
+     LAB 01.01 - Practice submission
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2001.02%20-%20METRICS.html">
+     LAB 01.02 - Metrics
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M02_videos.html">
+   MODULO 2: Python
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.01%20-%20PYTHON%20BASIC%20STRUCTURES.html">
+     02.01 - BASIC STRUCTURES
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.02%20-%20MORE%20PYTHON.html">
+     02.02 - MORE PYTHON
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.03%20-%20PYTHON%20NUMPY.html">
+     02.03 - NUMPY
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.04%20-%20PANDAS.html">
+     02.04 - PANDAS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.01%20-%20PYTHON.html">
+     LAB 02.01 - Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.02%20-%20NUMPY.html">
+     LAB 02.02 - Numpy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.03%20-%20PANDAS.html">
+     LAB 02.03 - Pandas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.04%20-%20CARD%20TRICK.html">
+     LAB 02.04 - Card trick
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="M03_videos.html">
+   MODULO 3: Generación de modelos
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.01%20-%20MODELS%20DERIVED%20FROM%20DATA.html">
+     03.01 - MODELS FROM DATA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.02%20-%20SUPERVISED%20ALGORITHMS.html">
+     03.02 - SUPERVISED ALGORITHMS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.03%20-%20SVM%20AND%20FEATURE%20TRANSFORMATION.html">
+     03.03 - SVMs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2003.01%20-%20MODEL%20GENERATION.html">
+     LAB 03.01 - Model Generation
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     LAB 03.02 - Timeseries model
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M04_videos.html">
+   MODULO 4: Gestión de datos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.01%20-%20DATA%20EXPLORATION.html">
+     04.01 - DATA EXPLORATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.02%20-%20DATA%20CLEANING.html">
+     04.02 - DATA CLEANING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.03%20-%20SIMPLE%20HYPOTHESIS%20TESTING.html">
+     04.03 - HYPOTHESIS TESTING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.04%20-%20HYPOTHESIS%20TESTING%20-%20COMPARING%20SAMPLE%20MEANS.html">
+     04.04 - COMPARING SAMPLES
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2004.01%20-%20CLEANING%20DATA.html">
+     LAB 04.01 - Cleaning Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2004.02%20-%20BUILDING%20DATASETS.html">
+     LAB 04.02 - Buiding Datasets
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M05_videos.html">
+   MODULO 5: Gestión de modelos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.01%20-%20A%20TIME%20SERIES%20PREDICTIVE%20STRATEGY.html">
+     05.01 - TIME SERIES PREDICTIONS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.02%20-%20MODEL%20EVALUATION.html">
+     05.02 - MODEL EVALUATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.03%20-%20MODEL%20SELECTION.html">
+     05.03 - MODEL SELECTION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.04%20-%20EXAMPLE%20SUBMISSION%20TO%20KAGGLE.html">
+     05.04 - PARTICIPATE IN KAGGLE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2005.01%20-%20MEASURING%20PREDICTIVITY%20IMPACT.html">
+     LAB 05.01 - Predictions impact
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2005.02%20-%20MODEL%20EVALUATION.html">
+     LAB 05.02 - Model evaluation
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M06_videos.html">
+   MODULO 6: Métodos no supervisados
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.01%20-%20UNSUPERVISED%20LEARNING%20-%20CLUSTERING.html">
+     06.01 - CLUSTERING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.02%20-%20PCA.html">
+     06.02 - PCA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.03%20-%20DIMENSIONALITY%20REDUCTION.html">
+     06.03 - PCA, NMF IN PRACTICE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2006.01%20-%20CLUSTERING.html">
+     LAB 06.01 - Clustering companies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2006.02%20-%20NMF%20face%20search.html">
+     LAB 06.02 - NMF face search
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M07_videos.html">
+   MODULO 7: Diseño de algoritmos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.01%20-%20OPTIMIZATION.html">
+     07.01 - OPTIMIZATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.02%20-%20DESIGNING%20ML%20ALGORITHMS.html">
+     07.02 - DESIGN ML ALGORITHMS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.03%20-%20NEURAL%20NETWORKS.html">
+     07.03 - NEURAL NETWORKS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.04%20-%20NEURAL%20NETWORKS%20WITH%20TENSORFLOW.html">
+     07.04 - TENSORFLOW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2007.01%20-%20OPTIMIZATION%20FOR%20ML.html">
+     LAB 07.01 - Optimization for ML
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2007.02%20-%20NEURAL%20NETWORKS.html">
+     LAB 07.02 - Neural networks
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/LAB 03.02 - TIMESERIES MODEL.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/rramosp/20201.xai4eng/blob/master/content/LAB 03.02 - TIMESERIES MODEL.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a-synthetic-timeseries">
+   A synthetic timeseries
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#task-1-build-a-time-series-training-dataset">
+   Task 1. Build a time series training dataset
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#task-2-manually-apply-a-regression-model-to-create-predictions">
+   Task 2. Manually apply a regression model to create predictions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#test-your-code-manually">
+     test your code manually
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#task-3-measure-trend-prediction">
+   Task 3: Measure trend prediction
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     test your code manually
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="lab-03-02-timeseries-model">
+<h1>LAB 03.02 - Timeseries model<a class="headerlink" href="#lab-03-02-timeseries-model" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>wget --no-cache -O init.py -q https://raw.githubusercontent.com/rramosp/20201.xai4eng/master/content/init.py
+<span class="kn">import</span> <span class="nn">init</span><span class="p">;</span> <span class="n">init</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">force_download</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span> <span class="n">init</span><span class="o">.</span><span class="n">get_weblink</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">local.lib.rlxmoocapi</span> <span class="kn">import</span> <span class="n">submit</span><span class="p">,</span> <span class="n">session</span>
+<span class="n">student</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Session</span><span class="p">(</span><span class="n">init</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span><span class="o">.</span><span class="n">login</span><span class="p">(</span> <span class="n">course_id</span><span class="o">=</span><span class="n">init</span><span class="o">.</span><span class="n">course_id</span><span class="p">,</span> 
+                                                <span class="n">session_id</span><span class="o">=</span><span class="s2">&quot;UDEA&quot;</span><span class="p">,</span> 
+                                                <span class="n">lab_id</span><span class="o">=</span><span class="s2">&quot;L03.02&quot;</span> <span class="p">)</span>
+<span class="n">init</span><span class="o">.</span><span class="n">get_weblink</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">local.lib</span> <span class="kn">import</span> <span class="n">timeseries</span> <span class="k">as</span> <span class="n">ts</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">pandas.plotting</span> <span class="kn">import</span> <span class="n">register_matplotlib_converters</span>
+<span class="n">register_matplotlib_converters</span><span class="p">()</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="a-synthetic-timeseries">
+<h2>A synthetic timeseries<a class="headerlink" href="#a-synthetic-timeseries" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">date_split</span> <span class="o">=</span> <span class="s2">&quot;2018-03-01&quot;</span>
+
+<span class="n">idx</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s2">&quot;2018-01-01&quot;</span><span class="p">,</span> <span class="s2">&quot;2018-03-31&quot;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s2">&quot;6h&quot;</span><span class="p">)</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">idx</span><span class="p">))</span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="mi">5</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="mi">5</span><span class="o">+</span><span class="mi">2</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">idx</span><span class="p">))</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span><span class="o">+.</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">+=</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">idx</span><span class="p">))</span><span class="o">*.</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">t</span><span class="o">*</span><span class="mi">3</span><span class="o">+</span><span class="mi">30</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[[</span><span class="n">t</span><span class="p">]]</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;signal&quot;</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="n">idx</span><span class="p">)</span> 
+<span class="n">d</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;date&quot;</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">d</span><span class="p">[:</span><span class="n">date_split</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">d</span><span class="p">[:</span><span class="n">date_split</span><span class="p">]</span><span class="o">.</span><span class="n">signal</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;train&quot;</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">date_split</span><span class="p">:]</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">d</span><span class="p">[</span><span class="n">date_split</span><span class="p">:]</span><span class="o">.</span><span class="n">signal</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="s2">&quot;2&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;test&quot;</span><span class="p">);</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">date_split</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span><span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">();</span>
+<span class="n">signal</span> <span class="o">=</span> <span class="n">d</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/LAB 03.02 - TIMESERIES MODEL_6_0.png" src="../_images/LAB 03.02 - TIMESERIES MODEL_6_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="task-1-build-a-time-series-training-dataset">
+<h2>Task 1. Build a time series training dataset<a class="headerlink" href="#task-1-build-a-time-series-training-dataset" title="Permalink to this headline">¶</a></h2>
+<p>In this task, starting off from the time signal above, you must build an <strong>annotated dataset</strong> so that at any time instant <strong>given the three last <code class="docutils literal notranslate"><span class="pre">n_timesteps_lookback</span></code> signal values and the current one</strong> we want to <strong>predict the next one</strong>.</p>
+<p>Complete the following function so that when receiving a time indexed dataframe such as the one above, the resulting dataframe is such that:</p>
+<ul class="simple">
+<li><p>the column <strong>signal</strong> is left untouched</p></li>
+<li><p>there are <code class="docutils literal notranslate"><span class="pre">n_timesteps_lookback</span></code>+1 new columns:</p>
+<ul>
+<li><p>the column <strong>signal+1</strong> contains the signal one time step into the future</p></li>
+<li><p>the columns <strong>signal-1</strong>, <strong>signal-2</strong>, etc. contain the signal one, two, etc. time steps into the past.</p></li>
+</ul>
+</li>
+<li><p>the resulting dataset contains (<code class="docutils literal notranslate"><span class="pre">n_timesteps_lookback</span></code>+1) rows less than the original dataset, one due to the <strong>signal+1</strong> column and the rest for the <strong>signal-x</strong> columns. For instance, if the original dataset contained 357 rows, with <code class="docutils literal notranslate"><span class="pre">n_timesteps_lookback=3</span></code> the resulting dataframe will contain 353 rows.</p></li>
+</ul>
+<p><strong>Hint</strong>: use <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.join.html"><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.join</span></code></a>, <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shift.html"><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.shift</span></code></a> and <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dropna.html"><code class="docutils literal notranslate"><span class="pre">pandas.DataFrame.dropna</span></code></a></p>
+<p>For instance, with this input</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;local/imgs/df_tseries1.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/LAB 03.02 - TIMESERIES MODEL_10_0.png" src="../_images/LAB 03.02 - TIMESERIES MODEL_10_0.png" />
+</div>
+</div>
+<p>you should produce the following output</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;local/imgs/df_tseries2.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/LAB 03.02 - TIMESERIES MODEL_12_0.png" src="../_images/LAB 03.02 - TIMESERIES MODEL_12_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">make_timeseries_dataset</span><span class="p">(</span><span class="n">signal</span><span class="p">,</span> <span class="n">n_timesteps_lookback</span><span class="p">):</span>
+    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="o">...</span>
+    <span class="k">return</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>test your code</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">make_timeseries_dataset</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">n_timesteps_lookback</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>submit your answer</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">student</span><span class="o">.</span><span class="n">submit_task</span><span class="p">(</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">task_id</span><span class="o">=</span><span class="s2">&quot;task_01&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="task-2-manually-apply-a-regression-model-to-create-predictions">
+<h2>Task 2. Manually apply a regression model to create predictions<a class="headerlink" href="#task-2-manually-apply-a-regression-model-to-create-predictions" title="Permalink to this headline">¶</a></h2>
+<p>Complete the following function to apply the a linear regression model to a dataframe such as the resulting one from the previous task:</p>
+<div class="math notranslate nohighlight">
+\[\hat{y} = w_0 + w_1s + w_2s_{-1} + w_3s_{-2} + w_4s_{-3} ... \]</div>
+<p>where <span class="math notranslate nohighlight">\(s\)</span> corresponds to the column named <code class="docutils literal notranslate"><span class="pre">signal</span></code>, <span class="math notranslate nohighlight">\(s_{-1}\)</span> to the column named <code class="docutils literal notranslate"><span class="pre">signal-1</span></code>, etc.</p>
+<p>Observe that:</p>
+<ul class="simple">
+<li><p>column <code class="docutils literal notranslate"><span class="pre">signal+1</span></code> is not used, as it is the expected prediction. You will use it in the next task.</p></li>
+<li><p>you will have <code class="docutils literal notranslate"><span class="pre">n_timesteps_lookback</span></code>+2 <span class="math notranslate nohighlight">\(w\)</span> parameters, since you will have one per each <code class="docutils literal notranslate"><span class="pre">n_timesteps_lookback</span></code>, plus <span class="math notranslate nohighlight">\(w_0\)</span>, plus <span class="math notranslate nohighlight">\(w_1\)</span></p></li>
+</ul>
+<p>Expect the function arguments as follow:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">td</span></code>: a Pandas dataframe such as the output of the function <code class="docutils literal notranslate"><span class="pre">make_timeseries_dataset</span></code> of the previous task, with exactly the same column names</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">w</span></code>: a Numpy array with <code class="docutils literal notranslate"><span class="pre">n_timesteps_lookback</span></code>+2 elements in the order <span class="math notranslate nohighlight">\([w_0, w_1, ...]\)</span></p></li>
+</ul>
+<p><strong>Warn</strong>:  the DataFrame <code class="docutils literal notranslate"><span class="pre">td</span></code> may contain any number of lookback columns and might be in <strong>any order</strong></p>
+<p><strong>Challenge</strong>: solve it with one single line of Python code</p>
+<p><strong>EXAMPLE</strong>: For the following dataframe and <span class="math notranslate nohighlight">\(w\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;local/imgs/ts_reg_1.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/LAB 03.02 - TIMESERIES MODEL_19_0.png" src="../_images/LAB 03.02 - TIMESERIES MODEL_19_0.png" />
+</div>
+</div>
+<p>you should get the following results</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;local/imgs/ts_reg_2.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/LAB 03.02 - TIMESERIES MODEL_21_0.png" src="../_images/LAB 03.02 - TIMESERIES MODEL_21_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">apply_linear_regression_model</span><span class="p">(</span><span class="n">td</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># YOUR SOLUTION HERE</span>
+    <span class="k">return</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="test-your-code-manually">
+<h3>test your code manually<a class="headerlink" href="#test-your-code-manually" title="Permalink to this headline">¶</a></h3>
+<p>observe how we permute the columns order</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">td</span> <span class="o">=</span> <span class="n">make_timeseries_dataset</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">n_timesteps_lookback</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">td</span> <span class="o">=</span> <span class="n">td</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">td</span><span class="o">.</span><span class="n">columns</span><span class="p">)]</span>
+<span class="n">td</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">w</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">td</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
+<span class="n">w</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">apply_linear_regression_model</span><span class="p">(</span><span class="n">td</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">td</span><span class="o">.</span><span class="n">columns</span><span class="p">)],</span> <span class="n">w</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>submit your answer</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">student</span><span class="o">.</span><span class="n">submit_task</span><span class="p">(</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">task_id</span><span class="o">=</span><span class="s2">&quot;task_02&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="task-3-measure-trend-prediction">
+<h2>Task 3: Measure trend prediction<a class="headerlink" href="#task-3-measure-trend-prediction" title="Permalink to this headline">¶</a></h2>
+<p>You will now use the predictions to measure <strong>trend accuracy</strong>. We will compare any predictions which are given to us with the actual next value in column <strong>signal+1</strong> in the following way</p>
+<ul class="simple">
+<li><p>if <strong>signal+1&gt;signal</strong> and ALSO your <strong>prediction&gt;signal</strong>, then your model has a <strong>correct trend prediction</strong> regardless how different are <strong>signal+1</strong> and <strong>prediction</strong></p></li>
+<li><p>if <strong>signal+1&lt;=signal</strong> and ALSO your <strong>prediction&lt;=signal</strong>, then your model has a <strong>correct trend prediction</strong> regardless how different are <strong>signal+1</strong> and <strong>prediction</strong></p></li>
+<li><p>otherwise, your model has an <strong>incorrect prediction</strong></p></li>
+</ul>
+<p>Complete the following function such that when receiving a dataframe such as the resulting one from task 1 above, and a <code class="docutils literal notranslate"><span class="pre">pd.Series</span></code> with the same index and price predictions, computes the accuracy of the predictions (the percentage of correct predictions).</p>
+<p>The accuracy must be a <code class="docutils literal notranslate"><span class="pre">float</span></code> and its correctness will be checked up to 2 decimal places.</p>
+<p><strong>Challenge</strong>: solve it with one single line of Python code.</p>
+<p><strong>EXAMPLE</strong>: for the following time series dataset</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;local/imgs/ts_reg_3.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/LAB 03.02 - TIMESERIES MODEL_30_0.png" src="../_images/LAB 03.02 - TIMESERIES MODEL_30_0.png" />
+</div>
+</div>
+<p>And the following predictions</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;local/imgs/ts_reg_4.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/LAB 03.02 - TIMESERIES MODEL_32_0.png" src="../_images/LAB 03.02 - TIMESERIES MODEL_32_0.png" />
+</div>
+</div>
+<p>The trend accuracy is <code class="docutils literal notranslate"><span class="pre">0.4</span></code> since the trend is correctly hit by the predictions on rows 1, 4, 7 and 8 (assuming the first row is numbered as 0)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">measure_trend_accuracy</span><span class="p">(</span><span class="n">td</span><span class="p">,</span> <span class="n">preds</span><span class="p">):</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># YOUR CODE HERE</span>
+    <span class="k">return</span> <span class="n">r</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id1">
+<h3>test your code manually<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">td</span> <span class="o">=</span> <span class="n">make_timeseries_dataset</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">n_timesteps_lookback</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+<span class="n">td</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">preds</span> <span class="o">=</span> <span class="n">td</span><span class="p">[</span><span class="s1">&#39;signal&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="mi">4</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">preds</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">measure_trend_accuracy</span><span class="p">(</span><span class="n">td</span><span class="p">,</span> <span class="n">preds</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>submit your answer</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">student</span><span class="o">.</span><span class="n">submit_task</span><span class="p">(</span><span class="nb">globals</span><span class="p">(),</span> <span class="n">task_id</span><span class="o">=</span><span class="s2">&quot;task_03&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="LAB%2003.01%20-%20MODEL%20GENERATION.html" title="previous page">LAB 03.01 - Model Generation</a>
+    <a class='right-next' id="next-link" href="M04_videos.html" title="next page">MODULO 4: Gestión de datos</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Raúl Ramos / Universidad de Antioquia<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43235448-2', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>

@@ -1,0 +1,1615 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04.01 - DATA EXPLORATION &#8212; Inteligencia Artificial para las Ciencias e Ingenierías</title>
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="04.02 - DATA CLEANING" href="NOTES%2004.02%20-%20DATA%20CLEANING.html" />
+    <link rel="prev" title="MODULO 4: Gestión de datos" href="M04_videos.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/fudea.jpg" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Inteligencia Artificial para las Ciencias e Ingenierías</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Bienvenida
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="M00_20201udea.html">
+   Información 2020.1 - UdeA
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M01_videos.html">
+   MODULO 1: Introducción
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2001.01%20-%20PRACTICE%20SUBMISSION.html">
+     LAB 01.01 - Practice submission
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2001.02%20-%20METRICS.html">
+     LAB 01.02 - Metrics
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M02_videos.html">
+   MODULO 2: Python
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.01%20-%20PYTHON%20BASIC%20STRUCTURES.html">
+     02.01 - BASIC STRUCTURES
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.02%20-%20MORE%20PYTHON.html">
+     02.02 - MORE PYTHON
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.03%20-%20PYTHON%20NUMPY.html">
+     02.03 - NUMPY
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2002.04%20-%20PANDAS.html">
+     02.04 - PANDAS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.01%20-%20PYTHON.html">
+     LAB 02.01 - Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.02%20-%20NUMPY.html">
+     LAB 02.02 - Numpy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.03%20-%20PANDAS.html">
+     LAB 02.03 - Pandas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2002.04%20-%20CARD%20TRICK.html">
+     LAB 02.04 - Card trick
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M03_videos.html">
+   MODULO 3: Generación de modelos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.01%20-%20MODELS%20DERIVED%20FROM%20DATA.html">
+     03.01 - MODELS FROM DATA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.02%20-%20SUPERVISED%20ALGORITHMS.html">
+     03.02 - SUPERVISED ALGORITHMS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2003.03%20-%20SVM%20AND%20FEATURE%20TRANSFORMATION.html">
+     03.03 - SVMs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2003.01%20-%20MODEL%20GENERATION.html">
+     LAB 03.01 - Model Generation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2003.02%20-%20TIMESERIES%20MODEL.html">
+     LAB 03.02 - Timeseries model
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="reference internal" href="M04_videos.html">
+   MODULO 4: Gestión de datos
+  </a>
+  <ul class="current collapse-ul">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     04.01 - DATA EXPLORATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.02%20-%20DATA%20CLEANING.html">
+     04.02 - DATA CLEANING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.03%20-%20SIMPLE%20HYPOTHESIS%20TESTING.html">
+     04.03 - HYPOTHESIS TESTING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2004.04%20-%20HYPOTHESIS%20TESTING%20-%20COMPARING%20SAMPLE%20MEANS.html">
+     04.04 - COMPARING SAMPLES
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2004.01%20-%20CLEANING%20DATA.html">
+     LAB 04.01 - Cleaning Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2004.02%20-%20BUILDING%20DATASETS.html">
+     LAB 04.02 - Buiding Datasets
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M05_videos.html">
+   MODULO 5: Gestión de modelos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.01%20-%20A%20TIME%20SERIES%20PREDICTIVE%20STRATEGY.html">
+     05.01 - TIME SERIES PREDICTIONS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.02%20-%20MODEL%20EVALUATION.html">
+     05.02 - MODEL EVALUATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.03%20-%20MODEL%20SELECTION.html">
+     05.03 - MODEL SELECTION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2005.04%20-%20EXAMPLE%20SUBMISSION%20TO%20KAGGLE.html">
+     05.04 - PARTICIPATE IN KAGGLE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2005.01%20-%20MEASURING%20PREDICTIVITY%20IMPACT.html">
+     LAB 05.01 - Predictions impact
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2005.02%20-%20MODEL%20EVALUATION.html">
+     LAB 05.02 - Model evaluation
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M06_videos.html">
+   MODULO 6: Métodos no supervisados
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.01%20-%20UNSUPERVISED%20LEARNING%20-%20CLUSTERING.html">
+     06.01 - CLUSTERING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.02%20-%20PCA.html">
+     06.02 - PCA
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2006.03%20-%20DIMENSIONALITY%20REDUCTION.html">
+     06.03 - PCA, NMF IN PRACTICE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2006.01%20-%20CLUSTERING.html">
+     LAB 06.01 - Clustering companies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2006.02%20-%20NMF%20face%20search.html">
+     LAB 06.02 - NMF face search
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="M07_videos.html">
+   MODULO 7: Diseño de algoritmos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.01%20-%20OPTIMIZATION.html">
+     07.01 - OPTIMIZATION
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.02%20-%20DESIGNING%20ML%20ALGORITHMS.html">
+     07.02 - DESIGN ML ALGORITHMS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.03%20-%20NEURAL%20NETWORKS.html">
+     07.03 - NEURAL NETWORKS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="NOTES%2007.04%20-%20NEURAL%20NETWORKS%20WITH%20TENSORFLOW.html">
+     07.04 - TENSORFLOW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2007.01%20-%20OPTIMIZATION%20FOR%20ML.html">
+     LAB 07.01 - Optimization for ML
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="LAB%2007.02%20-%20NEURAL%20NETWORKS.html">
+     LAB 07.02 - Neural networks
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/content/NOTES 04.01 - DATA EXPLORATION.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/rramosp/20201.xai4eng/blob/master/content/NOTES 04.01 - DATA EXPLORATION.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#based-on-kaggle-house-pricing-prediction-competition">
+   Based on Kaggle House Pricing Prediction Competition
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inspect-the-target-variable">
+   Inspect the target variable
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#discover-data-types">
+   Discover data types
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inspect-numeric-columns">
+   Inspect numeric columns
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#correlations">
+     correlations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#inspect-categorical-variables">
+   Inspect categorical variables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vision-on-mission-values">
+   Vision on mission values
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="data-exploration">
+<h1>04.01 - DATA EXPLORATION<a class="headerlink" href="#data-exploration" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>wget --no-cache -O init.py -q https://raw.githubusercontent.com/rramosp/20201.xai4eng/master/content/init.py
+<span class="kn">import</span> <span class="nn">init</span><span class="p">;</span> <span class="n">init</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">force_download</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span> <span class="n">init</span><span class="o">.</span><span class="n">get_weblink</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="based-on-kaggle-house-pricing-prediction-competition">
+<h2>Based on <a class="reference external" href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/">Kaggle House Pricing Prediction Competition</a><a class="headerlink" href="#based-on-kaggle-house-pricing-prediction-competition" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Inspect and learn from the competition <a class="reference external" href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/notebooks">Notebooks</a></p></li>
+<li><p>You must make available to this notebook the <code class="docutils literal notranslate"><span class="pre">train.csv</span></code> file from the competition <a class="reference external" href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data">data</a> section. If running this notebook in Google Colab you must upload it in the notebook files section in Colab.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">d</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;train.csv&quot;</span><span class="p">)</span>
+<span class="n">d</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Id</th>
+      <th>MSSubClass</th>
+      <th>MSZoning</th>
+      <th>LotFrontage</th>
+      <th>LotArea</th>
+      <th>Street</th>
+      <th>Alley</th>
+      <th>LotShape</th>
+      <th>LandContour</th>
+      <th>Utilities</th>
+      <th>...</th>
+      <th>PoolArea</th>
+      <th>PoolQC</th>
+      <th>Fence</th>
+      <th>MiscFeature</th>
+      <th>MiscVal</th>
+      <th>MoSold</th>
+      <th>YrSold</th>
+      <th>SaleType</th>
+      <th>SaleCondition</th>
+      <th>SalePrice</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>60</td>
+      <td>RL</td>
+      <td>65.0</td>
+      <td>8450</td>
+      <td>Pave</td>
+      <td>NaN</td>
+      <td>Reg</td>
+      <td>Lvl</td>
+      <td>AllPub</td>
+      <td>...</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2008</td>
+      <td>WD</td>
+      <td>Normal</td>
+      <td>208500</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>20</td>
+      <td>RL</td>
+      <td>80.0</td>
+      <td>9600</td>
+      <td>Pave</td>
+      <td>NaN</td>
+      <td>Reg</td>
+      <td>Lvl</td>
+      <td>AllPub</td>
+      <td>...</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>5</td>
+      <td>2007</td>
+      <td>WD</td>
+      <td>Normal</td>
+      <td>181500</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>60</td>
+      <td>RL</td>
+      <td>68.0</td>
+      <td>11250</td>
+      <td>Pave</td>
+      <td>NaN</td>
+      <td>IR1</td>
+      <td>Lvl</td>
+      <td>AllPub</td>
+      <td>...</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>9</td>
+      <td>2008</td>
+      <td>WD</td>
+      <td>Normal</td>
+      <td>223500</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>70</td>
+      <td>RL</td>
+      <td>60.0</td>
+      <td>9550</td>
+      <td>Pave</td>
+      <td>NaN</td>
+      <td>IR1</td>
+      <td>Lvl</td>
+      <td>AllPub</td>
+      <td>...</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2006</td>
+      <td>WD</td>
+      <td>Abnorml</td>
+      <td>140000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>60</td>
+      <td>RL</td>
+      <td>84.0</td>
+      <td>14260</td>
+      <td>Pave</td>
+      <td>NaN</td>
+      <td>IR1</td>
+      <td>Lvl</td>
+      <td>AllPub</td>
+      <td>...</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>12</td>
+      <td>2008</td>
+      <td>WD</td>
+      <td>Normal</td>
+      <td>250000</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 81 columns</p>
+</div></div></div>
+</div>
+<p>data size</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(1460, 81)
+</pre></div>
+</div>
+</div>
+</div>
+<p>Missing values in columns</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">k</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">k</span><span class="p">[</span><span class="n">k</span><span class="o">!=</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="inspect-the-target-variable">
+<h2>Inspect the target variable<a class="headerlink" href="#inspect-the-target-variable" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;SalePrice&#39;</span><span class="p">]);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 04.01 - DATA EXPLORATION_9_0.png" src="../_images/NOTES 04.01 - DATA EXPLORATION_9_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="discover-data-types">
+<h2>Discover data types<a class="headerlink" href="#discover-data-types" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">d</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;Id&#39;, &#39;MSSubClass&#39;, &#39;MSZoning&#39;, &#39;LotFrontage&#39;, &#39;LotArea&#39;, &#39;Street&#39;,
+       &#39;Alley&#39;, &#39;LotShape&#39;, &#39;LandContour&#39;, &#39;Utilities&#39;, &#39;LotConfig&#39;,
+       &#39;LandSlope&#39;, &#39;Neighborhood&#39;, &#39;Condition1&#39;, &#39;Condition2&#39;, &#39;BldgType&#39;,
+       &#39;HouseStyle&#39;, &#39;OverallQual&#39;, &#39;OverallCond&#39;, &#39;YearBuilt&#39;, &#39;YearRemodAdd&#39;,
+       &#39;RoofStyle&#39;, &#39;RoofMatl&#39;, &#39;Exterior1st&#39;, &#39;Exterior2nd&#39;, &#39;MasVnrType&#39;,
+       &#39;MasVnrArea&#39;, &#39;ExterQual&#39;, &#39;ExterCond&#39;, &#39;Foundation&#39;, &#39;BsmtQual&#39;,
+       &#39;BsmtCond&#39;, &#39;BsmtExposure&#39;, &#39;BsmtFinType1&#39;, &#39;BsmtFinSF1&#39;,
+       &#39;BsmtFinType2&#39;, &#39;BsmtFinSF2&#39;, &#39;BsmtUnfSF&#39;, &#39;TotalBsmtSF&#39;, &#39;Heating&#39;,
+       &#39;HeatingQC&#39;, &#39;CentralAir&#39;, &#39;Electrical&#39;, &#39;1stFlrSF&#39;, &#39;2ndFlrSF&#39;,
+       &#39;LowQualFinSF&#39;, &#39;GrLivArea&#39;, &#39;BsmtFullBath&#39;, &#39;BsmtHalfBath&#39;, &#39;FullBath&#39;,
+       &#39;HalfBath&#39;, &#39;BedroomAbvGr&#39;, &#39;KitchenAbvGr&#39;, &#39;KitchenQual&#39;,
+       &#39;TotRmsAbvGrd&#39;, &#39;Functional&#39;, &#39;Fireplaces&#39;, &#39;FireplaceQu&#39;, &#39;GarageType&#39;,
+       &#39;GarageYrBlt&#39;, &#39;GarageFinish&#39;, &#39;GarageCars&#39;, &#39;GarageArea&#39;, &#39;GarageQual&#39;,
+       &#39;GarageCond&#39;, &#39;PavedDrive&#39;, &#39;WoodDeckSF&#39;, &#39;OpenPorchSF&#39;,
+       &#39;EnclosedPorch&#39;, &#39;3SsnPorch&#39;, &#39;ScreenPorch&#39;, &#39;PoolArea&#39;, &#39;PoolQC&#39;,
+       &#39;Fence&#39;, &#39;MiscFeature&#39;, &#39;MiscVal&#39;, &#39;MoSold&#39;, &#39;YrSold&#39;, &#39;SaleType&#39;,
+       &#39;SaleCondition&#39;, &#39;SalePrice&#39;],
+      dtype=&#39;object&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="si">%20s</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">c</span>, d[c].dtype)
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                  Id int64
+          MSSubClass int64
+            MSZoning object
+         LotFrontage float64
+             LotArea int64
+              Street object
+               Alley object
+            LotShape object
+         LandContour object
+           Utilities object
+           LotConfig object
+           LandSlope object
+        Neighborhood object
+          Condition1 object
+          Condition2 object
+            BldgType object
+          HouseStyle object
+         OverallQual int64
+         OverallCond int64
+           YearBuilt int64
+        YearRemodAdd int64
+           RoofStyle object
+            RoofMatl object
+         Exterior1st object
+         Exterior2nd object
+          MasVnrType object
+          MasVnrArea float64
+           ExterQual object
+           ExterCond object
+          Foundation object
+            BsmtQual object
+            BsmtCond object
+        BsmtExposure object
+        BsmtFinType1 object
+          BsmtFinSF1 int64
+        BsmtFinType2 object
+          BsmtFinSF2 int64
+           BsmtUnfSF int64
+         TotalBsmtSF int64
+             Heating object
+           HeatingQC object
+          CentralAir object
+          Electrical object
+            1stFlrSF int64
+            2ndFlrSF int64
+        LowQualFinSF int64
+           GrLivArea int64
+        BsmtFullBath int64
+        BsmtHalfBath int64
+            FullBath int64
+            HalfBath int64
+        BedroomAbvGr int64
+        KitchenAbvGr int64
+         KitchenQual object
+        TotRmsAbvGrd int64
+          Functional object
+          Fireplaces int64
+         FireplaceQu object
+          GarageType object
+         GarageYrBlt float64
+        GarageFinish object
+          GarageCars int64
+          GarageArea int64
+          GarageQual object
+          GarageCond object
+          PavedDrive object
+          WoodDeckSF int64
+         OpenPorchSF int64
+       EnclosedPorch int64
+           3SsnPorch int64
+         ScreenPorch int64
+            PoolArea int64
+              PoolQC object
+               Fence object
+         MiscFeature object
+             MiscVal int64
+              MoSold int64
+              YrSold int64
+            SaleType object
+       SaleCondition object
+           SalePrice int64
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="inspect-numeric-columns">
+<h2>Inspect numeric columns<a class="headerlink" href="#inspect-numeric-columns" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">d</span><span class="o">.</span><span class="n">_get_numeric_data</span><span class="p">()</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Id</th>
+      <td>1460.0</td>
+      <td>730.500000</td>
+      <td>421.610009</td>
+      <td>1.0</td>
+      <td>365.75</td>
+      <td>730.5</td>
+      <td>1095.25</td>
+      <td>1460.0</td>
+    </tr>
+    <tr>
+      <th>MSSubClass</th>
+      <td>1460.0</td>
+      <td>56.897260</td>
+      <td>42.300571</td>
+      <td>20.0</td>
+      <td>20.00</td>
+      <td>50.0</td>
+      <td>70.00</td>
+      <td>190.0</td>
+    </tr>
+    <tr>
+      <th>LotFrontage</th>
+      <td>1201.0</td>
+      <td>70.049958</td>
+      <td>24.284752</td>
+      <td>21.0</td>
+      <td>59.00</td>
+      <td>69.0</td>
+      <td>80.00</td>
+      <td>313.0</td>
+    </tr>
+    <tr>
+      <th>LotArea</th>
+      <td>1460.0</td>
+      <td>10516.828082</td>
+      <td>9981.264932</td>
+      <td>1300.0</td>
+      <td>7553.50</td>
+      <td>9478.5</td>
+      <td>11601.50</td>
+      <td>215245.0</td>
+    </tr>
+    <tr>
+      <th>OverallQual</th>
+      <td>1460.0</td>
+      <td>6.099315</td>
+      <td>1.382997</td>
+      <td>1.0</td>
+      <td>5.00</td>
+      <td>6.0</td>
+      <td>7.00</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>OverallCond</th>
+      <td>1460.0</td>
+      <td>5.575342</td>
+      <td>1.112799</td>
+      <td>1.0</td>
+      <td>5.00</td>
+      <td>5.0</td>
+      <td>6.00</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <th>YearBuilt</th>
+      <td>1460.0</td>
+      <td>1971.267808</td>
+      <td>30.202904</td>
+      <td>1872.0</td>
+      <td>1954.00</td>
+      <td>1973.0</td>
+      <td>2000.00</td>
+      <td>2010.0</td>
+    </tr>
+    <tr>
+      <th>YearRemodAdd</th>
+      <td>1460.0</td>
+      <td>1984.865753</td>
+      <td>20.645407</td>
+      <td>1950.0</td>
+      <td>1967.00</td>
+      <td>1994.0</td>
+      <td>2004.00</td>
+      <td>2010.0</td>
+    </tr>
+    <tr>
+      <th>MasVnrArea</th>
+      <td>1452.0</td>
+      <td>103.685262</td>
+      <td>181.066207</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>166.00</td>
+      <td>1600.0</td>
+    </tr>
+    <tr>
+      <th>BsmtFinSF1</th>
+      <td>1460.0</td>
+      <td>443.639726</td>
+      <td>456.098091</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>383.5</td>
+      <td>712.25</td>
+      <td>5644.0</td>
+    </tr>
+    <tr>
+      <th>BsmtFinSF2</th>
+      <td>1460.0</td>
+      <td>46.549315</td>
+      <td>161.319273</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>1474.0</td>
+    </tr>
+    <tr>
+      <th>BsmtUnfSF</th>
+      <td>1460.0</td>
+      <td>567.240411</td>
+      <td>441.866955</td>
+      <td>0.0</td>
+      <td>223.00</td>
+      <td>477.5</td>
+      <td>808.00</td>
+      <td>2336.0</td>
+    </tr>
+    <tr>
+      <th>TotalBsmtSF</th>
+      <td>1460.0</td>
+      <td>1057.429452</td>
+      <td>438.705324</td>
+      <td>0.0</td>
+      <td>795.75</td>
+      <td>991.5</td>
+      <td>1298.25</td>
+      <td>6110.0</td>
+    </tr>
+    <tr>
+      <th>1stFlrSF</th>
+      <td>1460.0</td>
+      <td>1162.626712</td>
+      <td>386.587738</td>
+      <td>334.0</td>
+      <td>882.00</td>
+      <td>1087.0</td>
+      <td>1391.25</td>
+      <td>4692.0</td>
+    </tr>
+    <tr>
+      <th>2ndFlrSF</th>
+      <td>1460.0</td>
+      <td>346.992466</td>
+      <td>436.528436</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>728.00</td>
+      <td>2065.0</td>
+    </tr>
+    <tr>
+      <th>LowQualFinSF</th>
+      <td>1460.0</td>
+      <td>5.844521</td>
+      <td>48.623081</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>572.0</td>
+    </tr>
+    <tr>
+      <th>GrLivArea</th>
+      <td>1460.0</td>
+      <td>1515.463699</td>
+      <td>525.480383</td>
+      <td>334.0</td>
+      <td>1129.50</td>
+      <td>1464.0</td>
+      <td>1776.75</td>
+      <td>5642.0</td>
+    </tr>
+    <tr>
+      <th>BsmtFullBath</th>
+      <td>1460.0</td>
+      <td>0.425342</td>
+      <td>0.518911</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>1.00</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>BsmtHalfBath</th>
+      <td>1460.0</td>
+      <td>0.057534</td>
+      <td>0.238753</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>FullBath</th>
+      <td>1460.0</td>
+      <td>1.565068</td>
+      <td>0.550916</td>
+      <td>0.0</td>
+      <td>1.00</td>
+      <td>2.0</td>
+      <td>2.00</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>HalfBath</th>
+      <td>1460.0</td>
+      <td>0.382877</td>
+      <td>0.502885</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>1.00</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <th>BedroomAbvGr</th>
+      <td>1460.0</td>
+      <td>2.866438</td>
+      <td>0.815778</td>
+      <td>0.0</td>
+      <td>2.00</td>
+      <td>3.0</td>
+      <td>3.00</td>
+      <td>8.0</td>
+    </tr>
+    <tr>
+      <th>KitchenAbvGr</th>
+      <td>1460.0</td>
+      <td>1.046575</td>
+      <td>0.220338</td>
+      <td>0.0</td>
+      <td>1.00</td>
+      <td>1.0</td>
+      <td>1.00</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>TotRmsAbvGrd</th>
+      <td>1460.0</td>
+      <td>6.517808</td>
+      <td>1.625393</td>
+      <td>2.0</td>
+      <td>5.00</td>
+      <td>6.0</td>
+      <td>7.00</td>
+      <td>14.0</td>
+    </tr>
+    <tr>
+      <th>Fireplaces</th>
+      <td>1460.0</td>
+      <td>0.613014</td>
+      <td>0.644666</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>1.0</td>
+      <td>1.00</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>GarageYrBlt</th>
+      <td>1379.0</td>
+      <td>1978.506164</td>
+      <td>24.689725</td>
+      <td>1900.0</td>
+      <td>1961.00</td>
+      <td>1980.0</td>
+      <td>2002.00</td>
+      <td>2010.0</td>
+    </tr>
+    <tr>
+      <th>GarageCars</th>
+      <td>1460.0</td>
+      <td>1.767123</td>
+      <td>0.747315</td>
+      <td>0.0</td>
+      <td>1.00</td>
+      <td>2.0</td>
+      <td>2.00</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>GarageArea</th>
+      <td>1460.0</td>
+      <td>472.980137</td>
+      <td>213.804841</td>
+      <td>0.0</td>
+      <td>334.50</td>
+      <td>480.0</td>
+      <td>576.00</td>
+      <td>1418.0</td>
+    </tr>
+    <tr>
+      <th>WoodDeckSF</th>
+      <td>1460.0</td>
+      <td>94.244521</td>
+      <td>125.338794</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>168.00</td>
+      <td>857.0</td>
+    </tr>
+    <tr>
+      <th>OpenPorchSF</th>
+      <td>1460.0</td>
+      <td>46.660274</td>
+      <td>66.256028</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>25.0</td>
+      <td>68.00</td>
+      <td>547.0</td>
+    </tr>
+    <tr>
+      <th>EnclosedPorch</th>
+      <td>1460.0</td>
+      <td>21.954110</td>
+      <td>61.119149</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>552.0</td>
+    </tr>
+    <tr>
+      <th>3SsnPorch</th>
+      <td>1460.0</td>
+      <td>3.409589</td>
+      <td>29.317331</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>508.0</td>
+    </tr>
+    <tr>
+      <th>ScreenPorch</th>
+      <td>1460.0</td>
+      <td>15.060959</td>
+      <td>55.757415</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>480.0</td>
+    </tr>
+    <tr>
+      <th>PoolArea</th>
+      <td>1460.0</td>
+      <td>2.758904</td>
+      <td>40.177307</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>738.0</td>
+    </tr>
+    <tr>
+      <th>MiscVal</th>
+      <td>1460.0</td>
+      <td>43.489041</td>
+      <td>496.123024</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.00</td>
+      <td>15500.0</td>
+    </tr>
+    <tr>
+      <th>MoSold</th>
+      <td>1460.0</td>
+      <td>6.321918</td>
+      <td>2.703626</td>
+      <td>1.0</td>
+      <td>5.00</td>
+      <td>6.0</td>
+      <td>8.00</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>YrSold</th>
+      <td>1460.0</td>
+      <td>2007.815753</td>
+      <td>1.328095</td>
+      <td>2006.0</td>
+      <td>2007.00</td>
+      <td>2008.0</td>
+      <td>2009.00</td>
+      <td>2010.0</td>
+    </tr>
+    <tr>
+      <th>SalePrice</th>
+      <td>1460.0</td>
+      <td>180921.195890</td>
+      <td>79442.502883</td>
+      <td>34900.0</td>
+      <td>129975.00</td>
+      <td>163000.0</td>
+      <td>214000.00</td>
+      <td>755000.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;OverallQual&#39;</span><span class="p">,</span> <span class="s1">&#39;GrLivArea&#39;</span><span class="p">,</span> <span class="s1">&#39;GarageCars&#39;</span><span class="p">,</span> <span class="s1">&#39;TotalBsmtSF&#39;</span><span class="p">,</span> <span class="s1">&#39;FullBath&#39;</span><span class="p">,</span> <span class="s1">&#39;YearBuilt&#39;</span><span class="p">,</span> <span class="s1">&#39;SalePrice&#39;</span><span class="p">]</span>
+<span class="c1">#cols = np.unique(list(np.random.permutation(d._get_numeric_data().columns)[:5])+[&#39;SalePrice&#39;])</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">()</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">cols</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;seaborn.axisgrid.PairGrid at 0x7f9ef2534e10&gt;
+</pre></div>
+</div>
+<img alt="../_images/NOTES 04.01 - DATA EXPLORATION_15_1.png" src="../_images/NOTES 04.01 - DATA EXPLORATION_15_1.png" />
+</div>
+</div>
+<div class="section" id="correlations">
+<h3>correlations<a class="headerlink" href="#correlations" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="c1">#correlation matrix</span>
+<span class="n">corrmat</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
+<span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">corrmat</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=.</span><span class="mi">8</span><span class="p">,</span> <span class="n">square</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 04.01 - DATA EXPLORATION_17_0.png" src="../_images/NOTES 04.01 - DATA EXPLORATION_17_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="inspect-categorical-variables">
+<h2>Inspect categorical variables<a class="headerlink" href="#inspect-categorical-variables" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">ccols</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">_get_numeric_data</span><span class="p">()]</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">ccols</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;MSZoning&#39;, &#39;Street&#39;, &#39;Alley&#39;, &#39;LotShape&#39;, &#39;LandContour&#39;, &#39;Utilities&#39;, &#39;LotConfig&#39;, &#39;LandSlope&#39;, &#39;Neighborhood&#39;, &#39;Condition1&#39;, &#39;Condition2&#39;, &#39;BldgType&#39;, &#39;HouseStyle&#39;, &#39;RoofStyle&#39;, &#39;RoofMatl&#39;, &#39;Exterior1st&#39;, &#39;Exterior2nd&#39;, &#39;MasVnrType&#39;, &#39;ExterQual&#39;, &#39;ExterCond&#39;, &#39;Foundation&#39;, &#39;BsmtQual&#39;, &#39;BsmtCond&#39;, &#39;BsmtExposure&#39;, &#39;BsmtFinType1&#39;, &#39;BsmtFinType2&#39;, &#39;Heating&#39;, &#39;HeatingQC&#39;, &#39;CentralAir&#39;, &#39;Electrical&#39;, &#39;KitchenQual&#39;, &#39;Functional&#39;, &#39;FireplaceQu&#39;, &#39;GarageType&#39;, &#39;GarageFinish&#39;, &#39;GarageQual&#39;, &#39;GarageCond&#39;, &#39;PavedDrive&#39;, &#39;PoolQC&#39;, &#39;Fence&#39;, &#39;MiscFeature&#39;, &#39;SaleType&#39;, &#39;SaleCondition&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">ccols</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;</span><span class="si">%10s</span><span class="s2">&quot;</span><span class="o">%</span><span class="k">c</span>, np.unique(d[c].dropna()))
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  MSZoning [&#39;C (all)&#39; &#39;FV&#39; &#39;RH&#39; &#39;RL&#39; &#39;RM&#39;]
+    Street [&#39;Grvl&#39; &#39;Pave&#39;]
+     Alley [&#39;Grvl&#39; &#39;Pave&#39;]
+  LotShape [&#39;IR1&#39; &#39;IR2&#39; &#39;IR3&#39; &#39;Reg&#39;]
+LandContour [&#39;Bnk&#39; &#39;HLS&#39; &#39;Low&#39; &#39;Lvl&#39;]
+ Utilities [&#39;AllPub&#39; &#39;NoSeWa&#39;]
+ LotConfig [&#39;Corner&#39; &#39;CulDSac&#39; &#39;FR2&#39; &#39;FR3&#39; &#39;Inside&#39;]
+ LandSlope [&#39;Gtl&#39; &#39;Mod&#39; &#39;Sev&#39;]
+Neighborhood [&#39;Blmngtn&#39; &#39;Blueste&#39; &#39;BrDale&#39; &#39;BrkSide&#39; &#39;ClearCr&#39; &#39;CollgCr&#39; &#39;Crawfor&#39;
+ &#39;Edwards&#39; &#39;Gilbert&#39; &#39;IDOTRR&#39; &#39;MeadowV&#39; &#39;Mitchel&#39; &#39;NAmes&#39; &#39;NPkVill&#39;
+ &#39;NWAmes&#39; &#39;NoRidge&#39; &#39;NridgHt&#39; &#39;OldTown&#39; &#39;SWISU&#39; &#39;Sawyer&#39; &#39;SawyerW&#39;
+ &#39;Somerst&#39; &#39;StoneBr&#39; &#39;Timber&#39; &#39;Veenker&#39;]
+Condition1 [&#39;Artery&#39; &#39;Feedr&#39; &#39;Norm&#39; &#39;PosA&#39; &#39;PosN&#39; &#39;RRAe&#39; &#39;RRAn&#39; &#39;RRNe&#39; &#39;RRNn&#39;]
+Condition2 [&#39;Artery&#39; &#39;Feedr&#39; &#39;Norm&#39; &#39;PosA&#39; &#39;PosN&#39; &#39;RRAe&#39; &#39;RRAn&#39; &#39;RRNn&#39;]
+  BldgType [&#39;1Fam&#39; &#39;2fmCon&#39; &#39;Duplex&#39; &#39;Twnhs&#39; &#39;TwnhsE&#39;]
+HouseStyle [&#39;1.5Fin&#39; &#39;1.5Unf&#39; &#39;1Story&#39; &#39;2.5Fin&#39; &#39;2.5Unf&#39; &#39;2Story&#39; &#39;SFoyer&#39; &#39;SLvl&#39;]
+ RoofStyle [&#39;Flat&#39; &#39;Gable&#39; &#39;Gambrel&#39; &#39;Hip&#39; &#39;Mansard&#39; &#39;Shed&#39;]
+  RoofMatl [&#39;ClyTile&#39; &#39;CompShg&#39; &#39;Membran&#39; &#39;Metal&#39; &#39;Roll&#39; &#39;Tar&amp;Grv&#39; &#39;WdShake&#39;
+ &#39;WdShngl&#39;]
+Exterior1st [&#39;AsbShng&#39; &#39;AsphShn&#39; &#39;BrkComm&#39; &#39;BrkFace&#39; &#39;CBlock&#39; &#39;CemntBd&#39; &#39;HdBoard&#39;
+ &#39;ImStucc&#39; &#39;MetalSd&#39; &#39;Plywood&#39; &#39;Stone&#39; &#39;Stucco&#39; &#39;VinylSd&#39; &#39;Wd Sdng&#39;
+ &#39;WdShing&#39;]
+Exterior2nd [&#39;AsbShng&#39; &#39;AsphShn&#39; &#39;Brk Cmn&#39; &#39;BrkFace&#39; &#39;CBlock&#39; &#39;CmentBd&#39; &#39;HdBoard&#39;
+ &#39;ImStucc&#39; &#39;MetalSd&#39; &#39;Other&#39; &#39;Plywood&#39; &#39;Stone&#39; &#39;Stucco&#39; &#39;VinylSd&#39;
+ &#39;Wd Sdng&#39; &#39;Wd Shng&#39;]
+MasVnrType [&#39;BrkCmn&#39; &#39;BrkFace&#39; &#39;None&#39; &#39;Stone&#39;]
+ ExterQual [&#39;Ex&#39; &#39;Fa&#39; &#39;Gd&#39; &#39;TA&#39;]
+ ExterCond [&#39;Ex&#39; &#39;Fa&#39; &#39;Gd&#39; &#39;Po&#39; &#39;TA&#39;]
+Foundation [&#39;BrkTil&#39; &#39;CBlock&#39; &#39;PConc&#39; &#39;Slab&#39; &#39;Stone&#39; &#39;Wood&#39;]
+  BsmtQual [&#39;Ex&#39; &#39;Fa&#39; &#39;Gd&#39; &#39;TA&#39;]
+  BsmtCond [&#39;Fa&#39; &#39;Gd&#39; &#39;Po&#39; &#39;TA&#39;]
+BsmtExposure [&#39;Av&#39; &#39;Gd&#39; &#39;Mn&#39; &#39;No&#39;]
+BsmtFinType1 [&#39;ALQ&#39; &#39;BLQ&#39; &#39;GLQ&#39; &#39;LwQ&#39; &#39;Rec&#39; &#39;Unf&#39;]
+BsmtFinType2 [&#39;ALQ&#39; &#39;BLQ&#39; &#39;GLQ&#39; &#39;LwQ&#39; &#39;Rec&#39; &#39;Unf&#39;]
+   Heating [&#39;Floor&#39; &#39;GasA&#39; &#39;GasW&#39; &#39;Grav&#39; &#39;OthW&#39; &#39;Wall&#39;]
+ HeatingQC [&#39;Ex&#39; &#39;Fa&#39; &#39;Gd&#39; &#39;Po&#39; &#39;TA&#39;]
+CentralAir [&#39;N&#39; &#39;Y&#39;]
+Electrical [&#39;FuseA&#39; &#39;FuseF&#39; &#39;FuseP&#39; &#39;Mix&#39; &#39;SBrkr&#39;]
+KitchenQual [&#39;Ex&#39; &#39;Fa&#39; &#39;Gd&#39; &#39;TA&#39;]
+Functional [&#39;Maj1&#39; &#39;Maj2&#39; &#39;Min1&#39; &#39;Min2&#39; &#39;Mod&#39; &#39;Sev&#39; &#39;Typ&#39;]
+FireplaceQu [&#39;Ex&#39; &#39;Fa&#39; &#39;Gd&#39; &#39;Po&#39; &#39;TA&#39;]
+GarageType [&#39;2Types&#39; &#39;Attchd&#39; &#39;Basment&#39; &#39;BuiltIn&#39; &#39;CarPort&#39; &#39;Detchd&#39;]
+GarageFinish [&#39;Fin&#39; &#39;RFn&#39; &#39;Unf&#39;]
+GarageQual [&#39;Ex&#39; &#39;Fa&#39; &#39;Gd&#39; &#39;Po&#39; &#39;TA&#39;]
+GarageCond [&#39;Ex&#39; &#39;Fa&#39; &#39;Gd&#39; &#39;Po&#39; &#39;TA&#39;]
+PavedDrive [&#39;N&#39; &#39;P&#39; &#39;Y&#39;]
+    PoolQC [&#39;Ex&#39; &#39;Fa&#39; &#39;Gd&#39;]
+     Fence [&#39;GdPrv&#39; &#39;GdWo&#39; &#39;MnPrv&#39; &#39;MnWw&#39;]
+MiscFeature [&#39;Gar2&#39; &#39;Othr&#39; &#39;Shed&#39; &#39;TenC&#39;]
+  SaleType [&#39;COD&#39; &#39;CWD&#39; &#39;Con&#39; &#39;ConLD&#39; &#39;ConLI&#39; &#39;ConLw&#39; &#39;New&#39; &#39;Oth&#39; &#39;WD&#39;]
+SaleCondition [&#39;Abnorml&#39; &#39;AdjLand&#39; &#39;Alloca&#39; &#39;Family&#39; &#39;Normal&#39; &#39;Partial&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">c</span><span class="o">=</span><span class="s2">&quot;GarageType&quot;</span>
+<span class="n">d</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Attchd     870
+Detchd     387
+BuiltIn     88
+Basment     19
+CarPort      9
+2Types       6
+Name: GarageType, dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s2">&quot;ExterQual&quot;</span><span class="p">,</span> <span class="s2">&quot;HouseStyle&quot;</span><span class="p">,</span> <span class="s2">&quot;LandSlope&quot;</span><span class="p">,</span> <span class="s2">&quot;Alley&quot;</span><span class="p">]):</span>    
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">k</span><span class="o">=</span><span class="n">d</span><span class="p">[[</span><span class="n">c</span><span class="p">,</span><span class="s2">&quot;SalePrice&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">():</span>
+        <span class="n">sns</span><span class="o">.</span><span class="n">distplot</span><span class="p">(</span><span class="n">k</span><span class="o">.</span><span class="n">SalePrice</span><span class="p">[</span><span class="n">k</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">==</span><span class="n">v</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">v</span><span class="p">);</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">([])</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">vc</span> <span class="o">=</span> <span class="n">k</span><span class="p">[</span><span class="n">c</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+    <span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">vc</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">vc</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>    
+    <span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">vc</span><span class="p">)),</span> <span class="n">vc</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="s2">&quot;vertical&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 04.01 - DATA EXPLORATION_22_0.png" src="../_images/NOTES 04.01 - DATA EXPLORATION_22_0.png" />
+</div>
+</div>
+</div>
+<div class="section" id="vision-on-mission-values">
+<h2>Vision on mission values<a class="headerlink" href="#vision-on-mission-values" title="Permalink to this headline">¶</a></h2>
+<p>Missing values in columns</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">k</span> <span class="o">=</span> <span class="n">d</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<span class="n">k</span><span class="p">[</span><span class="n">k</span><span class="o">!=</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>LotFrontage      259
+Alley           1369
+MasVnrType         8
+MasVnrArea         8
+BsmtQual          37
+BsmtCond          37
+BsmtExposure      38
+BsmtFinType1      37
+BsmtFinType2      38
+Electrical         1
+FireplaceQu      690
+GarageType        81
+GarageYrBlt       81
+GarageFinish      81
+GarageQual        81
+GarageCond        81
+PoolQC          1453
+Fence           1179
+MiscFeature     1406
+dtype: int64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## KEEPOUTPUT</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span><span class="mi">15</span><span class="p">))</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">d</span><span class="o">.</span><span class="n">columns</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/NOTES 04.01 - DATA EXPLORATION_26_0.png" src="../_images/NOTES 04.01 - DATA EXPLORATION_26_0.png" />
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "p37"
+        },
+        kernelOptions: {
+            kernelName: "p37",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'p37'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="M04_videos.html" title="previous page">MODULO 4: Gestión de datos</a>
+    <a class='right-next' id="next-link" href="NOTES%2004.02%20-%20DATA%20CLEANING.html" title="next page">04.02 - DATA CLEANING</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Raúl Ramos / Universidad de Antioquia<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-43235448-2', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
