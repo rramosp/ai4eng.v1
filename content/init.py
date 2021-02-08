@@ -20,7 +20,7 @@ def init(force_download=False):
 
     if force_download or not os.path.exists("local"):
         print("replicating local resources")
-        dirname = github_id+"-master/"
+        dirname = github_id+"-main/"
         if os.path.exists(dirname):
             shutil.rmtree(dirname)
         r = requests.get(zip_file_url)
