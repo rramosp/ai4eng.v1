@@ -13,7 +13,7 @@ launch_buttons:
   colab_url: https://colab.research.google.com
 
 html:
-  google_analytics_id: "UA-43235448-2"
+  google_analytics_id: "UA-43235448-4"
 
 execute:
   execute_notebooks         : off
