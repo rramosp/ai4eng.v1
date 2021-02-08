@@ -6,7 +6,7 @@ logo: content/local/imgs/fudea.jpg
 
 repository:
    url: https://github.com/rramosp/ai4eng.v1
-   branch: master
+   branch: main
 
 launch_buttons:
   binderhub_url: ""
