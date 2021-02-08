@@ -63,7 +63,7 @@ Diseñar y aplicar soluciones basadas en IA pasa por adquirir <font color="red">
 
 ----
 
-[Descarga un ZIP con los notebooks del curso](https://github.com/rramosp/ai4eng.v1/archive/master.zip)
+[Descarga un ZIP con los notebooks del curso](https://github.com/rramosp/ai4eng.v1/archive/main.zip)
 
 ----
 
