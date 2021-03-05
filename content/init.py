@@ -50,9 +50,9 @@ def install_sourcedefender():
 
 
 import requests, zipfile, io, os, shutil, subprocess
-try:
-    import sourcedefender
-except ModuleNotFoundError:
-    install_sourcedefender()
-    import sourcedefender
+#try:
+#    import sourcedefender
+#except ModuleNotFoundError:
+#    install_sourcedefender()
+#    import sourcedefender
 
