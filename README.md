@@ -4,4 +4,4 @@ This repo contains the course's technical material. It is to be used only by the
 
 For full interactive content access
 
-## [https://rramosp.github.io/ai4eng.v1.20211.udea/](https://rramosp.github.io/ai4eng.v1.20211.udea/) 
+## [https://rramosp.github.io/ai4eng.v1](https://rramosp.github.io/ai4eng.v1) 
