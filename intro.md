@@ -61,7 +61,7 @@ Diseñar y aplicar soluciones basadas en IA pasa por adquirir <font color="red">
 
     - **Julián David Arias Londoño**, Machine Learning, Deep Learning. [google scholar](https://scholar.google.com/citations?hl=en&user=ZTdSU3wAAAAJ)
 
-    - **John Freddy Duitama Muñoz**, Big Data, Procesamiento de grandes volúmenes de datos.
+    - **John Freddy Duitama Muñoz**, Big Data, Procesamiento de grandes volúmenes de datos. [google scholar](https://scholar.google.com/citations?user=fDtlxaYAAAAJ&hl=en&oi=ao)
 
     - **Danny Múnera**, IoT, Procesamiento de Señal. [google scholar](https://scholar.google.com/citations?hl=en&user=lD1OxT0AAAAJ)
 
