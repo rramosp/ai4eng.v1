@@ -12,7 +12,14 @@ allowfullscreen></iframe>
 
 ## Registro
 
-Rellena <big>[ESTE FORMULARIO](https://forms.gle/ZbQBr2chpoEV2KD2A)</big> para acceder a las evaluaciones automáticas y en línea del curso y al certificado final del mismo.
+Rellena <big>[ESTE FORMULARIO](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1/open)</big> para recibir una invitación para unirte formalmente al curso. Con esto podrás acceder a las evaluaciones automáticas y en línea del curso y al certificado final del mismo.
+
+## Discusiones, Q&A, incidencias
+
+Indícanos cualquier duda, sugerencia o incidencia, o inicia una discusión con la comunidad del curso en el siguiente foro. Las discusiones son en abierto. Si quieres participar tendrás que utilizar tu usuario Github.
+
+<center><big><a href="https://github.com/rramosp/ai4eng.v1/discussions">FORO DE DISCUSIONES DEL CURSO</a></big></center>
+
 
 ## Dirigido a
 - quien tenga interés en <font color="red">**aplicar IA**</font> basada en Machine Learning en la práctica.
