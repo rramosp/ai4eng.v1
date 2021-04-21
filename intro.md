@@ -26,6 +26,15 @@ Indícanos cualquier duda, sugerencia o incidencia, o inicia una discusión con 
 
 
 Diseñar y aplicar soluciones basadas en IA pasa por adquirir <font color="red">**un conocimiento técnico concreto**</font>, tengas un perfil técnico, ingeniero o de gestión. Creemos firmemente que esta base técnica es **INDISPENSABLE** para poder <font color="red">**diseñar, construir, evaluar, subcontratar, coordinar, ...**</font> cualquier sistema que pretenda usar técnicas de IA.
+
+## Dedicación
+
+Si ya conoces Python y tienes bases de algorítmica, el curso te llevará aproximadamente <font color="red">**40 horas**</font> de dedicación. Si vas a aprender
+Python con el curso necesitarás aprox <font color="red">**60 horas**</font>, dependiendo de tus conocimientos previos.
+
+El curso lo puedes hacer a tu propio ritmo, usando los videos, talleres autocorregibles y foros del curso. Te recomendamos que **organices tu tiempo** para seguirlo de manera pausada pero constante.
+
+Por nuestra experiencia, una dedicación de entre **5 horas a la semana** repartidas en **dos o tres sesiones** semanales es lo ideal.
  
 
 ## Con los siguientes principios
