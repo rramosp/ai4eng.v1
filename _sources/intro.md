@@ -10,9 +10,19 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </center>
 
-## Registro
+## Registro y plataforma
 
-Rellena <big>[ESTE FORMULARIO](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1/open)</big> para recibir una invitación para unirte formalmente al curso. Con esto podrás acceder a las evaluaciones automáticas y en línea del curso y al certificado final del mismo.
+En el menú de la izquierda podrás **navegar por los materiales del curso**, acceder a los videos notebooks y talleres.
+
+Rellena <big>[ESTE FORMULARIO](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1/open)</big> para recibir una invitación para unirte formalmente al curso y a la **plataforma de seguimiento**.
+
+Una vez registrado podrás entrar a la [**PLATAFORMA DE SEGUIMIENTO**](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) y acceder a las evaluaciones automáticas y en línea del curso y al certificado final del mismo.
+
+Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
+
+- **Trabajando con los materiales del curso** [Video 13mins](https://youtu.be/Rg0_9EBtUIc)
+- **Talleres y plataforma de autocorrección** [Video 13mins](https://youtu.be/eISlF6k0y58)
+
 
 ## Discusiones, Q&A, incidencias
 
@@ -53,13 +63,7 @@ Por nuestra experiencia, una dedicación de entre **5 horas a la semana** repart
 
 - <font color="red">**Podrás acceder**</font> a videos y notebooks de contenido y de talleres.
 
-- Si, además, te 
-[registras en el curso](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1/open)
-podrás tener una <font color='red'>**evaluación en línea**</font> de las soluciones que desarrolles para los laboratorios y un <font color='red'>**certificado del curso**</font> si lo pasas.
-
-- Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
-    - **Trabajando con los materiales del curso** [Video 13mins](https://youtu.be/Rg0_9EBtUIc) 
-    - **Talleres y plataforma de autocorrección** [Video 13mins](https://youtu.be/eISlF6k0y58)
+- Si, además, te registraste en nuestra **plataforma de seguimiento** podrás tener una <font color='red'>**evaluación en línea**</font> de las soluciones que desarrolles para los laboratorios y un <font color='red'>**certificado del curso**</font> si lo pasas.
 
 ## Evaluación y certificado
 
