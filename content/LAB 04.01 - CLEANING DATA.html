@@ -801,7 +801,11 @@
 <img alt="../_images/LAB 04.01 - CLEANING DATA_8_1.png" src="../_images/LAB 04.01 - CLEANING DATA_8_1.png" />
 </div>
 </div>
-<p><font color="red"><strong>NOTE</strong></font>: If you solve this lab using Python, make sure to <strong>NOT MODIFY</strong> dataframe <code class="docutils literal notranslate"><span class="pre">d01</span></code>. You can make</p>
+<p><font color="red"><strong>NOTE</strong></font>: If you solve this lab using Python, make sure to <strong>NOT MODIFY</strong> dataframe <code class="docutils literal notranslate"><span class="pre">d01</span></code>. You can make make a copy and work on that copy:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>   my_d01 = d01.copy()
+   my_d01[&#39;risk&#39;] = ... 
+</pre></div>
+</div>
 <div class="section" id="task-1-fillna-in-risk-with-corresponding-city-average">
 <h2>Task 1. FillNA in <code class="docutils literal notranslate"><span class="pre">risk</span></code> with corresponding city average<a class="headerlink" href="#task-1-fillna-in-risk-with-corresponding-city-average" title="Permalink to this headline">¶</a></h2>
 <p>Observe that the above dataframe has been stored in the file <code class="docutils literal notranslate"><span class="pre">risk.csv</span></code>. You will have to fill in the missing values in the <strong>risk</strong> column with the related city mean in the following way:</p>
