@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LAB 04.01 - Cleaning Data &#8212; Inteligencia Artificial para las Ciencias e Ingenierías</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -44,7 +41,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -58,14 +55,14 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="LAB 04.02 - Buiding Datasets" href="LAB%2004.02%20-%20BUILDING%20DATASETS.html" />
     <link rel="prev" title="04.04 - COMPARING SAMPLES" href="NOTES%2004.04%20-%20HYPOTHESIS%20TESTING%20-%20COMPARING%20SAMPLE%20MEANS.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -74,32 +71,37 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/fudea.jpg" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Inteligencia Artificial para las Ciencias e Ingenierías</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/fudea.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Inteligencia Artificial para las Ciencias e Ingenierías</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <ul class="nav sidenav_l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
    Información del curso
   </a>
  </li>
 </ul>
-<ul class="current nav sidenav_l1">
- <li class="toctree-l1 collapsible-parent">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="M01_videos.html">
    MODULO 1: Introducción
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="LAB%2001.01%20-%20PRACTICE%20SUBMISSION.html">
      LAB 01.01 - Practice submission
@@ -111,14 +113,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="M02_videos.html">
    MODULO 2: Python
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="NOTES%2002.01%20-%20PYTHON%20BASIC%20STRUCTURES.html">
      02.01 - BASIC STRUCTURES
@@ -160,14 +165,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="M03_videos.html">
    MODULO 3: Generación de modelos
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="NOTES%2003.01%20-%20MODELS%20DERIVED%20FROM%20DATA.html">
      03.01 - MODELS FROM DATA
@@ -194,14 +202,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="M04_videos.html">
    MODULO 4: Gestión de datos
   </a>
-  <ul class="current collapse-ul">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="NOTES%2004.01%20-%20DATA%20EXPLORATION.html">
      04.01 - DATA EXPLORATION
@@ -233,14 +244,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="M05_videos.html">
    MODULO 5: Gestión de modelos
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="NOTES%2005.01%20-%20A%20TIME%20SERIES%20PREDICTIVE%20STRATEGY.html">
      05.01 - TIME SERIES PREDICTIONS
@@ -272,14 +286,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="M06_videos.html">
    MODULO 6: Métodos no supervisados
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="NOTES%2006.01%20-%20UNSUPERVISED%20LEARNING%20-%20CLUSTERING.html">
      06.01 - CLUSTERING
@@ -306,14 +323,17 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
- <li class="toctree-l1 collapsible-parent">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="M07_videos.html">
    MODULO 7: Diseño de algoritmos
   </a>
-  <ul class="collapse-ul">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="NOTES%2007.01%20-%20OPTIMIZATION.html">
      07.01 - OPTIMIZATION
@@ -345,11 +365,10 @@
     </a>
    </li>
   </ul>
-  <i class="fas fa-chevron-down">
-  </i>
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -399,12 +418,12 @@
 
             <!-- Source interaction buttons -->
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -429,12 +448,11 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#task-1-fillna-in-risk-with-corresponding-city-average">
    Task 1. FillNA in
@@ -527,8 +545,7 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
         </div>
     </div>
 </div>
@@ -577,7 +594,7 @@
 <span class="n">place</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[[</span><span class="s2">&quot;Medellin&quot;</span><span class="p">,</span> <span class="s2">&quot;Bogota&quot;</span><span class="p">,</span> <span class="s2">&quot;Madrid&quot;</span><span class="p">]][(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n</span><span class="p">))]</span>
 <span class="n">age</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n</span><span class="p">)</span><span class="o">+</span><span class="mi">10</span>
 <span class="n">children</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[[(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">30</span> <span class="k">else</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">4</span><span class="p">)))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">age</span><span class="p">]]</span>
-<span class="n">risk</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="p">(</span><span class="o">.</span><span class="mi">2</span> <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="s2">&quot;Medellin&quot;</span> <span class="k">else</span> <span class="o">.</span><span class="mi">8</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">place</span><span class="p">]]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">risk</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span><span class="o">*</span><span class="p">(</span><span class="mf">.2</span> <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="s2">&quot;Medellin&quot;</span> <span class="k">else</span> <span class="mf">.8</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">place</span><span class="p">]]</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">risk</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">risk</span><span class="p">))[:</span><span class="mi">5</span><span class="p">]]</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span>
 </pre></div>
 </div>
@@ -784,6 +801,7 @@
 <img alt="../_images/LAB 04.01 - CLEANING DATA_8_1.png" src="../_images/LAB 04.01 - CLEANING DATA_8_1.png" />
 </div>
 </div>
+<p><font color="red"><strong>NOTE</strong></font>: If you solve this lab using Python, make sure to <strong>NOT MODIFY</strong> dataframe <code class="docutils literal notranslate"><span class="pre">d01</span></code>. You can make</p>
 <div class="section" id="task-1-fillna-in-risk-with-corresponding-city-average">
 <h2>Task 1. FillNA in <code class="docutils literal notranslate"><span class="pre">risk</span></code> with corresponding city average<a class="headerlink" href="#task-1-fillna-in-risk-with-corresponding-city-average" title="Permalink to this headline">¶</a></h2>
 <p>Observe that the above dataframe has been stored in the file <code class="docutils literal notranslate"><span class="pre">risk.csv</span></code>. You will have to fill in the missing values in the <strong>risk</strong> column with the related city mean in the following way:</p>
@@ -811,7 +829,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/LAB 04.01 - CLEANING DATA_10_0.png" src="../_images/LAB 04.01 - CLEANING DATA_10_0.png" />
+<img alt="../_images/LAB 04.01 - CLEANING DATA_11_0.png" src="../_images/LAB 04.01 - CLEANING DATA_11_0.png" />
 </div>
 </div>
 <p>you must create a file with the following content</p>
@@ -822,7 +840,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/LAB 04.01 - CLEANING DATA_12_0.png" src="../_images/LAB 04.01 - CLEANING DATA_12_0.png" />
+<img alt="../_images/LAB 04.01 - CLEANING DATA_13_0.png" src="../_images/LAB 04.01 - CLEANING DATA_13_0.png" />
 </div>
 </div>
 <p><strong>your solution</strong></p>
@@ -851,7 +869,7 @@
 <p>Standardizing values is, in certain cases, a necesity for ML models, providing stability and increased performance.</p>
 <p>In this task you will have to standardize the column <code class="docutils literal notranslate"><span class="pre">age</span></code> so that all values stay in the [0,1] interval. Given any value <span class="math notranslate nohighlight">\(x_i\)</span>, its corresponsing stardardized value <span class="math notranslate nohighlight">\(s_i\)</span> will be:</p>
 <div class="math notranslate nohighlight">
-\[s_i = \frac{s_i-min}{max-min}\]</div>
+\[s_i = \frac{x_i-min}{max-min}\]</div>
 <p>where <span class="math notranslate nohighlight">\(min\)</span>, <span class="math notranslate nohighlight">\(max\)</span> is the minimum and maximum ages respectively</p>
 <p>You must use again the file <code class="docutils literal notranslate"><span class="pre">risk.csv</span></code> and create and upload a file named <code class="docutils literal notranslate"><span class="pre">age_minmax.csv</span></code> with your answer. You should <strong>only modify</strong> the <code class="docutils literal notranslate"><span class="pre">age</span></code> column, leaving the rest as you find them in the csv file.</p>
 <p><strong>For Python</strong>, you do not have to download and upload anything, just use Pandas and store the resulting dataset in the variable <code class="docutils literal notranslate"><span class="pre">r02</span></code></p>
@@ -863,7 +881,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/LAB 04.01 - CLEANING DATA_22_0.png" src="../_images/LAB 04.01 - CLEANING DATA_22_0.png" />
+<img alt="../_images/LAB 04.01 - CLEANING DATA_23_0.png" src="../_images/LAB 04.01 - CLEANING DATA_23_0.png" />
 </div>
 </div>
 <p><strong>load your file</strong></p>
@@ -902,7 +920,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/LAB 04.01 - CLEANING DATA_31_0.png" src="../_images/LAB 04.01 - CLEANING DATA_31_0.png" />
+<img alt="../_images/LAB 04.01 - CLEANING DATA_32_0.png" src="../_images/LAB 04.01 - CLEANING DATA_32_0.png" />
 </div>
 </div>
 <p><strong>load your file</strong></p>
@@ -937,7 +955,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/LAB 04.01 - CLEANING DATA_41_0.png" src="../_images/LAB 04.01 - CLEANING DATA_41_0.png" />
+<img alt="../_images/LAB 04.01 - CLEANING DATA_42_0.png" src="../_images/LAB 04.01 - CLEANING DATA_42_0.png" />
 </div>
 </div>
 <p><strong>load your file</strong></p>
@@ -1009,21 +1027,19 @@
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-43235448-4', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
 
-
-    
-    <!-- Google Analytics -->
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-43235448-4', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
-    
   </body>
 </html>
