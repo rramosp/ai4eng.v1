@@ -6,6 +6,8 @@
 }
 </style>
 
+## Carga y manipulación de datos
+
 ```{dropdown} **4.01 - Carga de datos y exploración inicial**  <span class="right"><font color="red">Video 12mins</font></span> <br/>Nos enfrentamos por primera vez a un dataset de un problema real, basado en una competición de Kaggle.
 <center>
 <iframe width="560" height="315"
@@ -60,6 +62,7 @@ allowfullscreen></iframe>
 </center>
 ```      
         
+## Tests de hipótesis
 
 ```{dropdown} **4.06 - Tests de hipótesis - Intuición**  <span class="right"><font color="red">Video 18mins</font></span> <br/>Recordamos la intuición y mecanismo de los test de hipótesis para evaluar estadísticamente distintas alternativas
 <center>

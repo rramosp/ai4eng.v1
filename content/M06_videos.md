@@ -6,6 +6,8 @@
 }
 </style>
 
+## Aprendizaje no supervisado
+
 ```{dropdown} **6.01 - Aprendizaje no supervisado**  <span class="right"><font color="red">Video 11mins</font></span> <br/>Planteamos el esquema general de algoritmos de aprendizaje no supervisado.
 <center>
 <iframe width="560" height="315"
@@ -15,7 +17,8 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </center>
 ```      
-        
+
+## Clustering        
 
 ```{dropdown} **6.02 - Clustering**  <span class="right"><font color="red">Video 17mins</font></span> <br/>Explicamos el algoritmo de clustering KMeans.
 <center>
@@ -49,6 +52,7 @@ allowfullscreen></iframe>
 </center>
 ```      
         
+## Principal component analysis        
 
 ```{dropdown} **6.05 - Principal Component Analysis**  <span class="right"><font color="red">Video 15mins</font></span> <br/>Detallamos la intuición detrás de uno de los algoritmos más sencillos y más usados para la reducción de dimensionalidad.
 <center>
@@ -93,6 +97,7 @@ allowfullscreen></iframe>
 </center>
 ```      
         
+## Non negative matrix factorization        
 
 ```{dropdown} **6.09 - Non Negative Matrix Factorization**  <span class="right"><font color="red">Video 11mins</font></span> <br/>Describimos un algoritmo nuevo de reducción de la dimensionalidad (descomposición en componentes) y la motivación de su existencia.
 <center>
@@ -115,6 +120,7 @@ allowfullscreen></iframe>
 </center>
 ```      
         
+## Talleres        
 
 ```{dropdown} **LAB 06.01 - Clustering en instrumentos financieros**  <span class="right"><font color="red">Video 13mins</font></span> <br/>Taller con el objetivo de agrupar empresas con comportamientos similares en bolsa.
 <center>
