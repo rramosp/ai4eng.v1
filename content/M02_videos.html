@@ -436,8 +436,23 @@
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#referencias">
-   Referencias
+  <a class="reference internal nav-link" href="#python">
+   Python
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#numpy">
+   Numpy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pandas">
+   Pandas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#talleres">
+   Talleres
   </a>
  </li>
 </ul>
@@ -453,8 +468,11 @@
                 
   <div class="section" id="modulo-2-python">
 <h1>MODULO 2: Python<a class="headerlink" href="#modulo-2-python" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="referencias">
-<h2>Referencias<a class="headerlink" href="#referencias" title="Permalink to this headline">¶</a></h2>
+<style>
+.right{
+    float:right;
+}
+</style>
 <p><strong>Cursos complementarios de Python</strong></p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://realpython.com">https://realpython.com</a></p></li>
@@ -462,27 +480,318 @@
 <li><p><a class="reference external" href="https://www.edx.org/xseries/mitx-computational-thinking-using-python">https://www.edx.org/xseries/mitx-computational-thinking-using-python</a></p></li>
 <li><p><a class="reference external" href="https://www.youtube.com/watch?v=_uQrJ0TkZlc">Python for beginners (Full Course)</a></p></li>
 </ul>
-<p><strong>2.01 - Introducción a los Notebooks de Jupyter</strong> <a class="reference external" href="https://youtu.be/AKvAD1aE-30">Video 13mins</a> <br/> Describimos una de las herramientas que más se usa en ciencia de datos y sobre la que se basa este curso.</p>
-<p><strong>2.02 - Variables y tipos</strong> <a class="reference external" href="https://youtu.be/UtULxGfN-zw">Video 12mins</a> <br/> Python es un lenguaje interpretado y con asignación dinámica de tipos de datos</p>
-<p><strong>2.03 - Listas</strong> <a class="reference external" href="https://youtu.be/4P7URoRwNXU">Video 16mins</a> <br/> Creación y manipulación de listas, sintaxis de indexado.</p>
-<p><strong>2.04 - Bucles y estructuras de control</strong> <a class="reference external" href="https://youtu.be/L6oPhFIsvww">Video 17mins</a> <br/> Python es un lenguage <em>indentado</em>, los bucles son muy versátiles y se realizan sobre <em>iterables</em></p>
-<p><strong>2.05 - Diccionarios y tuplas</strong> <a class="reference external" href="https://youtu.be/xWCbhdMi37Q">Video 9mins</a> <br/> Los diccionarios son una estructura de datos muy utilizada en Python.</p>
-<p><strong>2.06 - Funciones, excepciones y comprehensions</strong> <a class="reference external" href="https://youtu.be/ej298936kv8">Video 19mins</a> <br/> Definición y uso generalizado de funciones, excepcciones y las <em>comprehensions</em> de listas, diccionarios y condicionales</p>
-<p><strong>2.07 - Introducción a Numpy</strong> <a class="reference external" href="https://youtu.be/4VsmjHZLQhM">Video 15mins</a> <br/> Numpy es la librería de algebra linea y cómputo numérico de Python</p>
-<p><strong>2.08 - Numpy - Indexado de matrices</strong> <a class="reference external" href="https://youtu.be/FsQB4hYRv2c">Video 10mins</a> <br/> La sintaxis de indexado de estructuras de Numpy es muy potente y flexible.</p>
-<p><strong>2.09 - Numpy - Imágenes como matrices</strong> <a class="reference external" href="https://youtu.be/wodxeRXxiGM">Video 17mins</a> <br/> Mostramos cómo a través de la manipulación de matrices estándar de Numpy se pueden realizar muchas operaciones con un significado concreto en cada dominio de aplicaicón, en este caso, con imágenes.</p>
-<p><strong>2.10 - Numpy - Vectorización y broadcasting</strong> <a class="reference external" href="https://youtu.be/olP4ofwUfsc">Video 17mins</a> <br/> Las operaciones vectorizadas son clave para un uso eficiente de Numpy. Además, el mecanismo de <em>broadcasting</em> nos permite extender las operaciones sobre matrices a un gran número de casos.</p>
-<p><strong>2.11 - Numpy - Argumentos por referncia</strong> <a class="reference external" href="https://youtu.be/azeWjbaiCOM">Video 6mins</a> <br/> La matrices de Numpy y la mayoría de los objetos en Python se pasan por <em>referencia</em> cuando los usamos en funciones. Entender este mecanismo es clave para evitar errores o efectos indeseados</p>
-<p><strong>2.12 - Matplotlib</strong> <a class="reference external" href="https://youtu.be/BOp87WqKuHY">Video 3mins</a> <br/> Hacemos una breve introducción a Matplotlib, la librería para hacer gráficos, para que a partir de aquí puedas seguir buscando y aprendiendo como usarla.</p>
-<p><strong>2.13 - Introducción a Pandas</strong> <a class="reference external" href="https://youtu.be/tqwZed4385U">Video 14mins</a> <br/> Pandas es la librería de manejo de datasets en memoria para Python.</p>
-<p><strong>2.14 - Pandas - Carga e inspección</strong> <a class="reference external" href="https://youtu.be/SYOBN-WAXWM">Video 9mins</a> <br/> Mostramos cómo es la carga e inspección inicial de un dataset</p>
-<p><strong>2.15 - Pandas - Reparación de datasets</strong> <a class="reference external" href="https://youtu.be/MceJd7-czHM">Video 10mins</a> <br/> Describimos las operaciones básicas para tener un dataset en disposición de ser trabajado.</p>
-<p><strong>2.16 - Pandas - Reparación de datos faltantes</strong> <a class="reference external" href="https://youtu.be/4WAy4La4OUs">Video 7mins</a> <br/> Funcionalidades de base de Pandas para la imputación de datos faltantes.</p>
-<p><strong>2.17 - Pandas - Series temporales</strong> <a class="reference external" href="https://youtu.be/idatxyBHwII">Video 14mins</a> <br/> Explicamos las opciones de manejo de datasets indexados por marcas de tiempo en Pandas.</p>
-<p><strong>2.18 - Pandas - Miscelánea</strong> <a class="reference external" href="https://youtu.be/y8AJG18lClo">Video 8mins</a> <br/> Mencionamos algunas funcionalidades adicionales como agrupamiento, generación de dataframes y plotting.</p>
-<p><strong>LAB 02.01 - 02.03</strong> <a class="reference external" href="https://youtu.be/56b32uOWIWA">Video 5mins</a> <br/> Descripción general de los laboratorios del módulo.</p>
-<p><strong>LAB 02.04 - Card trick</strong> <a class="reference external" href="https://www.youtube.com/watch?v=GUx94AdHxHw">Video 7mins</a> <br/> Laboratorio basado en un truco de cartas.</p>
-<div class="toctree-wrapper compound">
+<p/>
+<div class="section" id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.01 - Introducción a los Notebooks de Jupyter</strong> <span class="right"><font color="red">Video 13mins</font></span> <br/>Describimos una de las herramientas que más se usa en ciencia de datos y sobre la que se basa este curso.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/AKvAD1aE-30" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.02 - Variables y tipos</strong><span class="right"><font color="red">Video 12mins</font></span> <br/>Python es un lenguaje interpretado y con asignación dinámica de tipos de datos<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/UtULxGfN-zw" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.03 - Listas</strong><span class="right"><font color="red">Video 16mins</font></span> <br/>Creación y manipulación de listas, sintaxis de indexado.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/4P7URoRwNXU" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.04 - Bucles y estructuras de control</strong> <span class="right"><font color="red">Video 17mins</font></span> <br/>Python es un lenguage <em>indentado</em>, los bucles son muy versátiles y se realizan sobre <em>iterables</em><div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/L6oPhFIsvww" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.05 - Diccionarios y tuplas</strong>  <span class="right"><font color="red">Video 9mins</font></span> <br/>Los diccionarios son una estructura de datos muy utilizada en Python.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/xWCbhdMi37Q" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.06 - Funciones, excepciones y comprehensions</strong> <span class="right"><font color="red">Video 19mins</font></span> <br/>Definición y uso generalizado de funciones, excepcciones y las <em>comprehensions</em> de listas, diccionarios y condicionales<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/ej298936kv8" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details></div>
+<div class="section" id="numpy">
+<h2>Numpy<a class="headerlink" href="#numpy" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.07 - Introducción a Numpy</strong>  <span class="right"><font color="red">Video 15mins</font></span> <br/>Numpy es la librería de algebra linea y cómputo numérico de Python<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/4VsmjHZLQhM" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.08 - Numpy - Indexado de matrices</strong>  <span class="right"><font color="red">Video 10mins</font></span> <br/>P La sintaxis de indexado de estructuras de Numpy es muy potente y flexible.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/FsQB4hYRv2c" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.09 - Numpy - Imágenes como matrices</strong>  <span class="right"><font color="red">Video 17mins</font></span> <br/>Mostramos cómo a través de la manipulación de matrices estándar de Numpy se pueden realizar muchas operaciones con un significado concreto en cada dominio de aplicaicón, en este caso, con imágenes.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/wodxeRXxiGM" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.10 - Numpy - Vectorización y broadcasting</strong> <span class="right"><font color="red">Video 17mins</font></span> <br/>Las operaciones vectorizadas son clave para un uso eficiente de Numpy. Además, el mecanismo de <em>broadcasting</em> nos permite extender las operaciones sobre matrices a un gran número de casos.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/olP4ofwUfsc" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.11 - Numpy - Argumentos por referencia</strong>  <span class="right"><font color="red">Video 6mins</font></span> <br/>La matrices de Numpy y la mayoría de los objetos en Python se pasan por <em>referencia</em> cuando los usamos en funciones. Entender este mecanismo es clave para evitar errores o efectos indeseados<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/azeWjbaiCOM" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.12 - Matplotlib</strong> <span class="right"><font color="red">Video 3mins</font></span> <br/> Hacemos una breve introducción a Matplotlib, la librería para hacer gráficos, para que a partir de aquí puedas seguir buscando y aprendiendo como usarla.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/BOp87WqKuHY" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details></div>
+<div class="section" id="pandas">
+<h2>Pandas<a class="headerlink" href="#pandas" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.13 - Introducción a Pandas</strong> <span class="right"><font color="red">Video 14mins</font></span> <br/>Pandas es la librería de manejo de datasets en memoria para Python.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/tqwZed4385U" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.14 - Pandas - Carga e inspección</strong> <span class="right"><font color="red">Video 9mins</font></span> <br/>Mostramos cómo es la carga e inspección inicial de un dataset<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/SYOBN-WAXWM" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.15 - Pandas - Reparación de datasets</strong>  <span class="right"><font color="red">Video 10mins</font></span> <br/>Describimos las operaciones básicas para tener un dataset en disposición de ser trabajado.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/MceJd7-czHM" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.16 - Pandas - Reparación de datos faltantes</strong>  <span class="right"><font color="red">Video 7mins</font></span> <br/>Funcionalidades de base de Pandas para la imputación de datos faltantes.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/4WAy4La4OUs" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.17 - Pandas - Series temporales</strong> <span class="right"><font color="red">Video 14mins</font></span> <br/> Explicamos las opciones de manejo de datasets indexados por marcas de tiempo en Pandas.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/idatxyBHwII" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>2.18 - Pandas - Miscelánea</strong> <span class="right"><font color="red">Video 8mins</font></span> <br/>Mencionamos algunas funcionalidades adicionales como agrupamiento, generación de dataframes y plotting.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/y8AJG18lClo" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details></div>
+<div class="section" id="talleres">
+<h2>Talleres<a class="headerlink" href="#talleres" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>LAB 02.01 - 02.03</strong> <span class="right"><font color="red">Video 5mins</font></span> <br/>Descripción general de los laboratorios del módulo.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/56b32uOWIWA" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>LAB 02.04 - Card trick</strong><span class="right"><font color="red">Video 7mins</font></span> <br/>Laboratorio basado en un truco de cartas.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/GUx94AdHxHw" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><div class="toctree-wrapper compound">
 </div>
 </div>
 </div>
