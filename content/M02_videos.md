@@ -17,7 +17,7 @@
 
 <p/>
 
-## Python
+## Fundamentos de Python
 
 ```{dropdown} **2.01 - Introducción a los Notebooks de Jupyter** <span class="right"><font color="red">Video 13mins</font></span> <br/>Describimos una de las herramientas que más se usa en ciencia de datos y sobre la que se basa este curso.
 <center>
