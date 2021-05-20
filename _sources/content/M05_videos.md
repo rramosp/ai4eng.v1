@@ -6,6 +6,8 @@
 }
 </style>
 
+## Gestión y utilización de modelos
+
 ```{dropdown} **5.01 - ¿Qué es gestión de modelos?**  <span class="right"><font color="red">Video 9mins</font></span> <br/>Presentación y objetivos de este módulo.
 <center>
 <iframe width="560" height="315"
@@ -27,6 +29,7 @@ allowfullscreen></iframe>
 </center>
 ```      
         
+## Evaluación de modelos        
 
 ```{dropdown} **5.03 - Evaluación de modelos**  <span class="right"><font color="red">Video 10mins</font></span> <br/>Iniciamos el tema de evaluación de modelos y presentamos el dataset de ejemplo con el que vamos a trabajar
 <center>
@@ -36,8 +39,7 @@ frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 </center>
-```      
-        
+```              
 
 ```{dropdown} **5.04 - Definición de métricas**  <span class="right"><font color="red">Video 17mins</font></span> <br/>Generamos un primer modelo para nuestro dataset y definimos qué métrica de desempeño vamos a usar.
 <center>
@@ -70,7 +72,8 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </center>
 ```      
-        
+
+## Diagnóstico de modelos        
 
 ```{dropdown} **5.07 - Curvas de aprendizaje**  <span class="right"><font color="red">Video 11mins</font></span> <br/>Describimos las curvas de aprendizaje como herramiénta para el diagnóstico de modelos.
 <center>
@@ -104,6 +107,7 @@ allowfullscreen></iframe>
 </center>
 ```      
         
+## Selección de modelos        
 
 ```{dropdown} **5.10 - Selección de modelos**  <span class="right"><font color="red">Video 16mins</font></span> <br/>Explicamos el proceso de selección de modelos, sus retos y necesidades.
 <center>
@@ -158,7 +162,8 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </center>
 ```      
-        
+
+## Talleres        
 
 ```{dropdown} **LAB 05.01 - Métricas de ML vs métricas de negocio**  <span class="right"><font color="red">Video 13mins</font></span> <br/>En este laboratorio descubrimos la relación entre porcentaje de acierto y ganancia o pérdida simulando modelos predictivos de tendencias de precios de un cierto instrumento financiero.
 <center>

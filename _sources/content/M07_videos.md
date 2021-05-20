@@ -6,6 +6,8 @@
 }
 </style>
 
+## Esquema de diseño de algorimos
+
 ```{dropdown} **7.01 - Optimización**  <span class="right"><font color="red">Video 16mins</font></span> <br/>Mostramos un par de ejemplos de utilización de las librerías de optimización de Python
 <center>
 <iframe width="560" height="315"
@@ -37,7 +39,8 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen></iframe>
 </center>
 ```      
-        
+
+## Redes neuronales        
 
 ```{dropdown} **7.04 - Redes neuronales**  <span class="right"><font color="red">Video 15mins</font></span> <br/>Describimos las bases de las redes neuronales.
 <center>
@@ -82,6 +85,7 @@ allowfullscreen></iframe>
 </center>
 ```      
         
+## Talleres        
 
 ```{dropdown} **LABS 07.01 y 07.02**  <span class="right"><font color="red">Video 7mins</font></span> <br/>Explicamos los laboratorios del módulo, en los que implementarás la regresión logística y las funciones de softmax y cross entropy.
 <center>

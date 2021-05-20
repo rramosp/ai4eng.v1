@@ -6,6 +6,8 @@
 }
 </style>
 
+## Machine learning
+
 ```{dropdown} **3.01 - Flujo de trabajo de Machine Learning**  <span class="right"><font color="red">Video 10mins</font></span> <br/>Explicamos el flujo de trabajo general que se realiza al desarrollar modelos de Machine Learning.
 <center>
 <iframe width="560" height="315"
@@ -58,6 +60,7 @@ allowfullscreen></iframe>
 </center>
 ```
 
+## Algoritmos supervisados
 
 ```{dropdown} **3.06 - Algoritmos supervisados. Clasificación lineal** <span class="right"><font color="red">Video 22mins</font></span> <br/>Explicamos cómo usar la regresión logística en Python.
 <center>
