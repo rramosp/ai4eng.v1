@@ -440,23 +440,252 @@
                 
   <div class="section" id="modulo-5-gestion-de-modelos">
 <h1>MODULO 5: Gestión de modelos<a class="headerlink" href="#modulo-5-gestion-de-modelos" title="Permalink to this headline">¶</a></h1>
-<p><strong>5.01 - ¿Qué es gestión de modelos?</strong> <a class="reference external" href="https://youtu.be/5AgNRVUHsvc">Video 9mins</a> <br/> Presentación y objetivos de este módulo.</p>
-<p><strong>5.02 - Objetivos de negocio</strong> <a class="reference external" href="https://youtu.be/e6-6vsnewak">Video 20mins</a> <br/> Mostramos cómo un modelo predictivo se integra con un objetivo de negocio para el cual es instrumental.</p>
-<p><strong>5.03 - Evaluación de modelos</strong> <a class="reference external" href="https://youtu.be/tawWpn1_EWo">Video 10mins</a><br/>Iniciamos el tema de evaluación de modelos y presentamos el dataset de ejemplo con el que vamos a trabajar</p>
-<p><strong>5.04 - Definición de métricas</strong> <a class="reference external" href="https://youtu.be/_S96hztsXZM">Video 17mins</a><br/>Generamos un primer modelo para nuestro dataset y definimos qué métrica de desempeño vamos a usar.</p>
-<p><strong>5.05 - Análisis de error</strong> <a class="reference external" href="https://youtu.be/nXjaZjETghE">Video 5mins</a><br/>Ilustramos cómo es un procedimiento sencillo de análisis de error de las predicciones de un modelo.</p>
-<p><strong>5.06 - Validación</strong> <a class="reference external" href="https://youtu.be/8If28g7sZOw">Video 15mins</a><br/>Mostramos los dos métodos más usados para obtener medidas mínimante robustas del desempeño de un modelo.</p>
-<p><strong>5.07 - Curvas de aprendizaje</strong> <a class="reference external" href="https://youtu.be/MqUAOlt5ofk">Video 11mins</a><br/>Describimos las curvas de aprendizaje como herramiénta para el diagnóstico de modelos.</p>
-<p><strong>5.08 - Diagnóstico de modelos</strong> <a class="reference external" href="https://youtu.be/lxIb98qQa6o">Video 15mins</a><br/>Explicamos cómo realizar un primer diagnóstico del desempeño de un modelo y las posibles acciones que pueden ayudar a mejorarlo.</p>
-<p><strong>5.09 - Ejemplo de diagnóstico</strong> <a class="reference external" href="https://youtu.be/F5vsqys2MV4">Video 12mins</a><br/>Desarrollamos el diagnóstico de modelos con curvas de aprendizaje a través de un ejemplo práctico.</p>
-<p><strong>5.10 - Selección de modelos</strong> <a class="reference external" href="https://youtu.be/7AHu5s6zs0Q">Video 16mins</a><br/>Explicamos el proceso de selección de modelos, sus retos y necesidades.</p>
-<p><strong>5.11 - Ejemplo de selección de modelos</strong> <a class="reference external" href="https://youtu.be/iPJxk8emRno">Video 16mins</a><br/>Planteamos un ejemplo con varios modelos sobre los que hacer el proceso de selección.</p>
-<p><strong>5.12 - Automatización de selección de modelos</strong> <a class="reference external" href="https://youtu.be/sd0fTBoxE_4">Video 12 mins</a><br/>Completamos el ejemplo y automatizamos el proceso de selección.</p>
-<p><strong>5.13 - Monitoreo y producción</strong> <a class="reference external" href="https://youtu.be/1T7sQ1645vw">Video 13mins</a><br/>Simulamos el proceso de monitoreo de modelos en un entorno hipotético de producción y compartimos varias consideraciones al respecto.</p>
-<p><strong>5.14 - Participación en Kaggle</strong> <a class="reference external" href="https://youtu.be/0eoUJTl1dRs">Video 21mins</a> <br/>Mostramos el proceso completo de participación en una competencia de Kaggle, desde la obtención de los datos hasta el envío de predicciones a la plataforma.</p>
-<p><strong>LAB 05.01 - Métricas de ML vs métricas de negocio</strong> <a class="reference external" href="https://youtu.be/UvoAvi-c6w4">Video 13mins</a><br/>En este laboratorio descubrimos la relación entre porcentaje de acierto y ganancia o pérdida simulando modelos predictivos de tendencias de precios de un cierto instrumento financiero.</p>
-<p><strong>LAB 05.02 - Data splits</strong> <a class="reference external" href="https://youtu.be/NTS1KsF7ldg">Video 4mins</a><br/>El objetivo de este laboratorio es adquirir agilidad en la manipulación y partición de datasets para la implementación de procesos de validación de modelos predictivos.</p>
-<div class="toctree-wrapper compound">
+<style>
+.right{
+    float:right;
+}
+</style>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.01 - ¿Qué es gestión de modelos?</strong>  <span class="right"><font color="red">Video 9mins</font></span> <br/>Presentación y objetivos de este módulo.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/5AgNRVUHsvc" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.02 - Objetivos de negocio</strong>  <span class="right"><font color="red">Video 20mins</font></span> <br/>Mostramos cómo un modelo predictivo se integra con un objetivo de negocio para el cual es instrumental.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/e6-6vsnewak" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.03 - Evaluación de modelos</strong>  <span class="right"><font color="red">Video 10mins</font></span> <br/>Iniciamos el tema de evaluación de modelos y presentamos el dataset de ejemplo con el que vamos a trabajar<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/tawWpn1_EWo" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.04 - Definición de métricas</strong>  <span class="right"><font color="red">Video 17mins</font></span> <br/>Generamos un primer modelo para nuestro dataset y definimos qué métrica de desempeño vamos a usar.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/_S96hztsXZM" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.05 - Análisis de error</strong>  <span class="right"><font color="red">Video 5mins</font></span> <br/>Ilustramos cómo es un procedimiento sencillo de análisis de error de las predicciones de un modelo.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/nXjaZjETghE" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.06 - Validación</strong>  <span class="right"><font color="red">Video 15mins</font></span> <br/>Mostramos los dos métodos más usados para obtener medidas mínimante robustas del desempeño de un modelo.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/8If28g7sZOw" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.07 - Curvas de aprendizaje</strong>  <span class="right"><font color="red">Video 11mins</font></span> <br/>Describimos las curvas de aprendizaje como herramiénta para el diagnóstico de modelos.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/MqUAOlt5ofk" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.08 - Diagnóstico de modelos</strong>  <span class="right"><font color="red">Video 15mins</font></span> <br/>Explicamos cómo realizar un primer diagnóstico del desempeño de un modelo y las posibles acciones que pueden ayudar a mejorarlo.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/lxIb98qQa6o" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.09 - Ejemplo de diagnóstico</strong>  <span class="right"><font color="red">Video 12mins</font></span> <br/>Desarrollamos el diagnóstico de modelos con curvas de aprendizaje a través de un ejemplo práctico.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/F5vsqys2MV4" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.10 - Selección de modelos</strong>  <span class="right"><font color="red">Video 16mins</font></span> <br/>Explicamos el proceso de selección de modelos, sus retos y necesidades.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/7AHu5s6zs0Q" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.11 - Ejemplo de selección de modelos</strong>  <span class="right"><font color="red">Video 16mins</font></span> <br/>Planteamos un ejemplo con varios modelos sobre los que hacer el proceso de selección.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/iPJxk8emRno" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.12 - Automatización de selección de modelos</strong>  <span class="right"><font color="red">Video 12 mins</font></span> <br/>Completamos el ejemplo y automatizamos el proceso de selección.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/sd0fTBoxE_4" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.13 - Monitoreo y producción</strong>  <span class="right"><font color="red">Video 13mins</font></span> <br/>Simulamos el proceso de monitoreo de modelos en un entorno hipotético de producción y compartimos varias consideraciones al respecto.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/1T7sQ1645vw" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>5.14 - Participación en Kaggle</strong>  <span class="right"><font color="red">Video 21mins</font></span> <br/>Mostramos el proceso completo de participación en una competencia de Kaggle, desde la obtención de los datos hasta el envío de predicciones a la plataforma.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/0eoUJTl1dRs" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>LAB 05.01 - Métricas de ML vs métricas de negocio</strong>  <span class="right"><font color="red">Video 13mins</font></span> <br/>En este laboratorio descubrimos la relación entre porcentaje de acierto y ganancia o pérdida simulando modelos predictivos de tendencias de precios de un cierto instrumento financiero.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/UvoAvi-c6w4" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>LAB 05.02 - Data splits</strong>  <span class="right"><font color="red">Video 4mins</font></span> <br/>El objetivo de este laboratorio es adquirir agilidad en la manipulación y partición de datasets para la implementación de procesos de validación de modelos predictivos.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/NTS1KsF7ldg" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><div class="toctree-wrapper compound">
 </div>
 </div>
 

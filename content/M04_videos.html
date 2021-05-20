@@ -440,16 +440,147 @@
                 
   <div class="section" id="modulo-4-gestion-de-datos">
 <h1>MODULO 4: Gestión de datos<a class="headerlink" href="#modulo-4-gestion-de-datos" title="Permalink to this headline">¶</a></h1>
-<p><strong>4.01 - Carga de datos y exploración inicial</strong> <a class="reference external" href="https://youtu.be/yDUibzYS9Go">Video 12mins</a> <br/>  Nos enfrentamos por primera vez a un dataset de un problema real, basado en una competición de Kaggle.</p>
-<p><strong>4.02 - Exploración de variables continuas</strong> <a class="reference external" href="https://youtu.be/ocGrjw7LRfg">Video 9mins</a> <br/>  Consideraciones sobre la exploración de variables continuas</p>
-<p><strong>4.03 - Exploración de variables categóricas</strong> <a class="reference external" href="https://youtu.be/y3H_2XPx6vQ">Video 4mins</a> <br/>  Consideraciones sobre la exploración de variables categóricas</p>
-<p><strong>4.04 - Visión sobre datos faltantes</strong> <a class="reference external" href="https://youtu.be/_5lweSCx-2I">Video 3mins</a> <br/> Mostramos como tener una visión global sobre las variables faltantes de un dataset.</p>
-<p><strong>4.05 - Reparación de datos faltantes</strong> <a class="reference external" href="https://youtu.be/ihpEYrq1UYc">Video 13mins</a> <br/> Mostramos distintas alternativas para la imputación de datos faltantes.</p>
-<p><strong>4.06 - Tests de hipótesis - Intuición</strong> <a class="reference external" href="https://youtu.be/dyf33Y2owkY">Video 18mins</a> <br/> Recordamos la intuición y mecanismo de los test de hipótesis para evaluar estadísticamente distintas alternativas</p>
-<p><strong>4.07 - Tests de hipótesis - Terminología</strong> <a class="reference external" href="https://youtu.be/iao0Ssyalig">Video 8mins</a> <br/> Vinculamos la intuición con la práctica estándar de tests de hipótesis</p>
-<p><strong>4.08 - Tests de hipótesis - Comparación de dos grupos</strong> <a class="reference external" href="https://youtu.be/BvoGm5fK9lM">Video 18mins</a> <br/> Ilustramos el mismo procedimiento de simulación con un problema distinto.</p>
-<p><strong>LAB 04.01 y 04.02</strong> <a class="reference external" href="https://youtu.be/mb0fH3AXhZ4">Video 9mins</a> <br/> Talleres de carga y manipulación de datos y de construcción de datasets.</p>
-<div class="toctree-wrapper compound">
+<style>
+.right{
+    float:right;
+}
+</style>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>4.01 - Carga de datos y exploración inicial</strong>  <span class="right"><font color="red">Video 12mins</font></span> <br/>Nos enfrentamos por primera vez a un dataset de un problema real, basado en una competición de Kaggle.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/yDUibzYS9Go" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>4.02 - Exploración de variables continuas</strong>  <span class="right"><font color="red">Video 9mins</font></span> <br/>Consideraciones sobre la exploración de variables continuas<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/ocGrjw7LRfg" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>4.03 - Exploración de variables categóricas</strong>  <span class="right"><font color="red">Video 4mins</font></span> <br/>Consideraciones sobre la exploración de variables categóricas<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/y3H_2XPx6vQ" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>4.04 - Visión sobre datos faltantes</strong>  <span class="right"><font color="red">Video 3mins</font></span> <br/>Mostramos como tener una visión global sobre las variables faltantes de un dataset.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/_5lweSCx-2I" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>4.05 - Reparación de datos faltantes</strong>  <span class="right"><font color="red">Video 13mins</font></span> <br/>Mostramos distintas alternativas para la imputación de datos faltantes.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/ihpEYrq1UYc" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>4.06 - Tests de hipótesis - Intuición</strong>  <span class="right"><font color="red">Video 18mins</font></span> <br/>Recordamos la intuición y mecanismo de los test de hipótesis para evaluar estadísticamente distintas alternativas<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/dyf33Y2owkY" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>4.07 - Tests de hipótesis - Terminología</strong>  <span class="right"><font color="red">Video 8mins</font></span> <br/>Vinculamos la intuición con la práctica estándar de tests de hipótesis<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/iao0Ssyalig" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>4.08 - Tests de hipótesis - Comparación de dos grupos</strong>  <span class="right"><font color="red">Video 18mins</font></span> <br/>Ilustramos el mismo procedimiento de simulación con un problema distinto.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/BvoGm5fK9lM" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>LAB 04.01 y 04.02</strong>  <span class="right"><font color="red">Video 9mins</font></span> <br/>Talleres de carga y manipulación de datos y de construcción de datasets.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/mb0fH3AXhZ4" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><div class="toctree-wrapper compound">
 </div>
 </div>
 

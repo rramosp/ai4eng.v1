@@ -440,19 +440,192 @@
                 
   <div class="section" id="modulo-6-metodos-no-supervisados">
 <h1>MODULO 6: Métodos no supervisados<a class="headerlink" href="#modulo-6-metodos-no-supervisados" title="Permalink to this headline">¶</a></h1>
-<p><strong>6.01 - Aprendizaje no supervisado</strong> <a class="reference external" href="https://youtu.be/13-n1Q3uVTE">Video 11mins</a> <br/> Planteamos el esquema general de algoritmos de aprendizaje no supervisado.</p>
-<p><strong>6.02 - Clustering</strong> <a class="reference external" href="https://youtu.be/eEblaOFeuOc">Video 17mins</a><br/>Explicamos el algoritmo de clustering KMeans.</p>
-<p><strong>6.03 - Silhouette coefficient</strong> <a class="reference external" href="https://youtu.be/3VcDoen1mno">Video 17mins</a><br/>Describimos una métrica general para algoritmos de clustering.</p>
-<p><strong>6.04 - Métodos de clustering basados en conectividad</strong> <a class="reference external" href="https://youtu.be/_D81mo4hC5M">Video 18mins</a><br/>Mostramos algoritmos de clustering con una aproximación alternativa aplicables a casos más generales.</p>
-<p><strong>6.05 - Principal Component Analysis</strong> <a class="reference external" href="https://youtu.be/Buh2uAfQmyc">Video 15mins</a><br/>Detallamos la intuición detrás de uno de los algoritmos más sencillos y más usados para la reducción de dimensionalidad.</p>
-<p><strong>6.06 - Programando PCA</strong> <a class="reference external" href="https://youtu.be/3XmMFGmCwyQ">Video 11mins</a><br/>Llevamos a la programación la intuición desarrollada en el video anterior.</p>
-<p><strong>6.07 - PCA Ejemplo práctico</strong> <a class="reference external" href="https://youtu.be/FUwnh8e4Ia4">Video 17mins</a><br/>Realizamos un ejemplo práctico de PCA como preprocesamiento de un pipeline de clasificación de MNIST.</p>
-<p><strong>6.08 - PCA Componentes y reconstrucción</strong> <a class="reference external" href="https://youtu.be/O6nq-vJnMkA">Video 14mins</a><br/>Mostramos cómo interpretar los componentes de PCA y su papel en la reconstrucción de los datos originales.</p>
-<p><strong>6.09 - Non Negative Matrix Factorization</strong> <a class="reference external" href="https://youtu.be/nmydWYzDWUw">Video 11mins</a><br/>Describimos un algoritmo nuevo de reducción de la dimensionalidad (descomposición en componentes) y la motivación de su existencia.</p>
-<p><strong>6.10 - NMF para reconocimiento de rostros</strong> <a class="reference external" href="https://youtu.be/JnHv05Vqtoc">Video 9mins</a><br/>Ilustramos distintos modos de usar NMF en un caso de uso muy común.</p>
-<p><strong>LAB 06.01 - Clustering en instrumentos financieros</strong> <a class="reference external" href="https://youtu.be/RFLjtLnr-XU">Video 13mins</a><br/>Taller con el objetivo de agrupar empresas con comportamientos similares en bolsa.</p>
-<p><strong>LAB 06.02 - NMF para búsqueda de rostros</strong> <a class="reference external" href="https://youtu.be/SsTtmDtYzW8">Video 7mins</a><br/>Taller en el que usarás NMF para buscar rostros similares a uno dado.</p>
-<div class="toctree-wrapper compound">
+<style>
+.right{
+    float:right;
+}
+</style>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>6.01 - Aprendizaje no supervisado</strong>  <span class="right"><font color="red">Video 11mins</font></span> <br/>Planteamos el esquema general de algoritmos de aprendizaje no supervisado.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/13-n1Q3uVTE" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>6.02 - Clustering</strong>  <span class="right"><font color="red">Video 17mins</font></span> <br/>Explicamos el algoritmo de clustering KMeans.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/eEblaOFeuOc" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>6.03 - Silhouette coefficient</strong>  <span class="right"><font color="red">Video 17mins</font></span> <br/>Describimos una métrica general para algoritmos de clustering.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/3VcDoen1mno" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>6.04 - Métodos de clustering basados en conectividad</strong>  <span class="right"><font color="red">Video 18mins</font></span> <br/>Mostramos algoritmos de clustering con una aproximación alternativa aplicables a casos más generales.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/_D81mo4hC5M" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>6.05 - Principal Component Analysis</strong>  <span class="right"><font color="red">Video 15mins</font></span> <br/>Detallamos la intuición detrás de uno de los algoritmos más sencillos y más usados para la reducción de dimensionalidad.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Buh2uAfQmyc" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>6.06 - Programando PCA</strong>  <span class="right"><font color="red">Video 11mins</font></span> <br/>Llevamos a la programación la intuición desarrollada en el video anterior.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/3XmMFGmCwyQ" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>6.07 - PCA Ejemplo práctico</strong>  <span class="right"><font color="red">Video 17mins</font></span> <br/>Realizamos un ejemplo práctico de PCA como preprocesamiento de un pipeline de clasificación de MNIST.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/FUwnh8e4Ia4" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>6.08 - PCA Componentes y reconstrucción</strong>  <span class="right"><font color="red">Video 14mins</font></span> <br/>Mostramos cómo interpretar los componentes de PCA y su papel en la reconstrucción de los datos originales.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/O6nq-vJnMkA" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>6.09 - Non Negative Matrix Factorization</strong>  <span class="right"><font color="red">Video 11mins</font></span> <br/>Describimos un algoritmo nuevo de reducción de la dimensionalidad (descomposición en componentes) y la motivación de su existencia.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/nmydWYzDWUw" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>6.10 - NMF para reconocimiento de rostros</strong>  <span class="right"><font color="red">Video 9mins</font></span> <br/>Ilustramos distintos modos de usar NMF en un caso de uso muy común.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/JnHv05Vqtoc" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>LAB 06.01 - Clustering en instrumentos financieros</strong>  <span class="right"><font color="red">Video 13mins</font></span> <br/>Taller con el objetivo de agrupar empresas con comportamientos similares en bolsa.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/RFLjtLnr-XU" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>LAB 06.02 - NMF para búsqueda de rostros</strong>  <span class="right"><font color="red">Video 7mins</font></span> <br/>Taller en el que usarás NMF para buscar rostros similares a uno dado.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/SsTtmDtYzW8" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><div class="toctree-wrapper compound">
 </div>
 </div>
 

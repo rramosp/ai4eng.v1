@@ -430,6 +430,19 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#talleres">
+   Talleres
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -440,18 +453,180 @@
                 
   <div class="section" id="modulo-3-generacion-de-modelos">
 <h1>MODULO 3: Generación de modelos<a class="headerlink" href="#modulo-3-generacion-de-modelos" title="Permalink to this headline">¶</a></h1>
-<p><strong>3.01 - Flujo de trabajo de Machine Learning</strong> <a class="reference external" href="https://www.youtube.com/watch?v=VicKyzFGBM0">Video 10mins</a> <br/> Explicamos el flujo de trabajo general que se realiza al desarrollar modelos de Machine Learning.</p>
-<p><strong>3.02 - Calibración de un modelo 1D</strong> <a class="reference external" href="https://www.youtube.com/watch?v=sqU23q_7X5M">Video 20mins</a> <br/>  Describimos el proceso de calibración manual y analítica de un modelo muy sencillo .</p>
-<p><strong>3.03 - Calibración con datos y fronteras de clasificación</strong> <a class="reference external" href="https://www.youtube.com/watch?v=yGX1o7-1cVU">Video 25mins</a> <br/>  Realizamos el proceso de calibración con datos, introducimos el concepto de frontera bayesiana y aumentamos la complejidad del ejemplo, generando fronteras de clasificación en 2D.</p>
-<p><strong>3.04 - Complejidad de los datos vs complejidad de los modelos</strong> <a class="reference external" href="https://www.youtube.com/watch?v=MP7E9b5jhkw">Video 22mins</a> <br/>   Vemos cómo usamos los <em>hiperparámetros</em> de distintos algoritmos para regular complejidad de las fronteras generadas por los modelos y cómo podemos desarrollar algunas pistas sobre su relación con la complejidad de los datos.</p>
-<p><strong>3.05 - Métricas de desempeño</strong> <a class="reference external" href="https://www.youtube.com/watch?v=3e2wWllq5NE">Video 24mins</a> <br/>  Mostramos algunas métricas para medir el desempeño de los modelos y explicamos la relación con las métricas de negocio.</p>
-<p><strong>3.06 - Algoritmos supervisados. Clasificación lineal</strong> <a class="reference external" href="https://www.youtube.com/watch?v=Srbcs4Pumt8">Video 22mins</a> <br/>  Explicamos cómo usar la regresión logística en Python.</p>
-<p><strong>3.07 - Algoritmos supervisados. Árboles y bosques de decisión</strong> <a class="reference external" href="https://www.youtube.com/watch?v=kLC3Zfgz8y8">Video 17mins</a> <br/>  Mostramos la intuición detrás de los árboles de decisión y los random forests, y cómo usarlos.</p>
-<p><strong>3.08 - Algoritmos supervisados. Naive Bayes</strong> <a class="reference external" href="https://www.youtube.com/watch?v=3NPYwIzsYUU">Video 10mins</a> <br/>  Mostramos la intuición detrás de los clasificadores gausianos, y cómo usarlos.</p>
-<p><strong>3.09 - Algoritmos supervisados. Support Vector Machines</strong> <a class="reference external" href="https://www.youtube.com/watch?v=dYGW7MDgS40">Video 12mins</a> <br/>  Explicamos la idea de transformación de características y la intuición y utilización de las máquinas de soporte vectorial para clasificación.</p>
-<p><strong>LAB 03.01 - MODEL GENERATION</strong> <a class="reference external" href="https://www.youtube.com/watch?v=Zj77iukp1LU">Video 16mins</a> <br/>  Desarrollamos un algoritmo muy sencillo para calibrar un modelo lineal.</p>
-<p><strong>LAB 03.02 - TIME SERIES MODEL</strong> <a class="reference external" href="https://www.youtube.com/watch?v=Ts1VXW30hn8">Video 16mins</a> <br/>  Creamos un dataset desde una serie temporal, aplicamos un modelo de regresión lineal y medimos su desempeño.</p>
-<div class="toctree-wrapper compound">
+<style>
+.right{
+    float:right;
+}
+</style>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>3.01 - Flujo de trabajo de Machine Learning</strong>  <span class="right"><font color="red">Video 10mins</font></span> <br/>Explicamos el flujo de trabajo general que se realiza al desarrollar modelos de Machine Learning.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/VicKyzFGBM0" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>3.02 - Calibración de un modelo 1D</strong>  <span class="right"><font color="red">Video 20mins</font></span> <br/>Describimos el proceso de calibración manual y analítica de un modelo muy sencillo.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/sqU23q_7X5M" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>3.03 - Calibración con datos y fronteras de clasificación</strong> <span class="right"><font color="red">Video 25mins</font></span> <br/>Realizamos el proceso de calibración con datos, introducimos el concepto de frontera bayesiana y aumentamos la complejidad del ejemplo, generando fronteras de clasificación en 2D.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/yGX1o7-1cVU" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>3.04 - Complejidad de los datos vs complejidad de los modelos</strong> <span class="right"><font color="red">Video 22mins</font></span> <br/>Vemos cómo usamos los <em>hiperparámetros</em> de distintos algoritmos para regular complejidad de las fronteras generadas por los modelos y cómo podemos desarrollar algunas pistas sobre su relación con la complejidad de los datos.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/MP7E9b5jhkw" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>3.05 - Métricas de desempeño</strong> <span class="right"><font color="red">Video 24mins</font></span> <br/> Mostramos algunas métricas para medir el desempeño de los modelos y explicamos la relación con las métricas de negocio.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/3e2wWllq5NE" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>3.06 - Algoritmos supervisados. Clasificación lineal</strong> <span class="right"><font color="red">Video 22mins</font></span> <br/>Explicamos cómo usar la regresión logística en Python.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Srbcs4Pumt8" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>3.07 - Algoritmos supervisados. Árboles y bosques de decisión</strong> <span class="right"><font color="red">Video 17mins</font></span> <br/>Mostramos la intuición detrás de los árboles de decisión y los random forests, y cómo usarlos.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/kLC3Zfgz8y8" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>3.08 - Algoritmos supervisados. Naive Bayes</strong> <span class="right"><font color="red">Video 10mins</font></span> <br/>Mostramos la intuición detrás de los clasificadores gausianos, y cómo usarlos.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/3NPYwIzsYUU" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>3.09 - Algoritmos supervisados. Support Vector Machines</strong>  <span class="right"><font color="red">Video 12mins</font></span> <br/>Explicamos la idea de transformación de características y la intuición y utilización de las máquinas de soporte vectorial para clasificación.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/dYGW7MDgS40" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><div class="section" id="talleres">
+<h2>Talleres<a class="headerlink" href="#talleres" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>LAB 03.01 - MODEL GENERATION</strong> <span class="right"><font color="red">Video 16mins</font></span> <br/>Desarrollamos un algoritmo muy sencillo para calibrar un modelo lineal.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Zj77iukp1LU" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+<strong>LAB 03.02 - TIME SERIES MODEL</strong> <span class="right"><font color="red">Video 16mins</font></span> <br/>Creamos un dataset desde una serie temporal, aplicamos un modelo de regresión lineal y medimos su desempeño.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Ts1VXW30hn8" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
+</div>
+</details><div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
