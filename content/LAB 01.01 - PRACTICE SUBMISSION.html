@@ -510,8 +510,7 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">inspect</span>
 <span class="kn">from</span> <span class="nn">local.lib.rlxmoocapi</span> <span class="kn">import</span> <span class="n">session</span>
-<span class="n">student</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Session</span><span class="p">(</span><span class="n">init</span><span class="o">.</span><span class="n">endpoint</span><span class="p">)</span><span class="o">.</span><span class="n">login</span><span class="p">(</span> <span class="n">course_id</span><span class="o">=</span><span class="n">init</span><span class="o">.</span><span class="n">course_id</span><span class="p">,</span> 
-                                                <span class="n">lab_id</span><span class="o">=</span><span class="s2">&quot;L01.01&quot;</span> <span class="p">)</span>
+<span class="n">session</span><span class="o">.</span><span class="n">LoginSequence</span><span class="p">(</span><span class="n">endpoint</span><span class="o">=</span><span class="n">init</span><span class="o">.</span><span class="n">endpoint</span><span class="p">,</span> <span class="n">course_id</span><span class="o">=</span><span class="n">init</span><span class="o">.</span><span class="n">course_id</span><span class="p">,</span> <span class="n">lab_id</span><span class="o">=</span><span class="s2">&quot;L01.01&quot;</span><span class="p">,</span> <span class="n">varname</span><span class="o">=</span><span class="s2">&quot;student&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -539,7 +538,7 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">suma_matrices</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
     <span class="c1">## --- TU CODIGO AQUI ---</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="o">....</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
     <span class="k">return</span> <span class="n">result</span>
 </pre></div>
 </div>
