@@ -18,6 +18,9 @@
 - [Exploratory Data Analysis with Python and Pandas](https://bit.ly/2QXMpxJ)
 - [Complete Python Programmer Bootcamp](http://bit.ly/2OwUA09)
 
+- [Python Programmer](https://www.youtube.com/c/FlickThrough/videos)
+
+
 <p/>
 
 ## Fundamentos de Python
