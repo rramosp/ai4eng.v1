@@ -15,6 +15,9 @@
 - [https://www.edx.org/xseries/mitx-computational-thinking-using-python](https://www.edx.org/xseries/mitx-computational-thinking-using-python)
 - [Python for beginners (Full Course)](https://www.youtube.com/watch?v=_uQrJ0TkZlc)
 
+- [Exploratory Data Analysis with Python and Pandas](https://bit.ly/2QXMpxJ)
+- [Complete Python Programmer Bootcamp](http://bit.ly/2OwUA09)
+
 <p/>
 
 ## Fundamentos de Python
