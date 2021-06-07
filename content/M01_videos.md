@@ -7,7 +7,7 @@
 </style>
 
 
-**Cursos complementario recomendado** 
+**Cursos complementarios recomendados** 
 - [Google - Crash Course in Machine Learning](https://developers.google.com/machine-learning/crash-course)
 - [Google - Introduction to Machine Learning Problem Framing](https://developers.google.com/machine-learning/problem-framing)
 
