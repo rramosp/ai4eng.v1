@@ -58,7 +58,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 ## Fechas de entregas
 
-        05/nov/2021    REGISTRO GRUPOS DE PROYECTO
+        05/dic/2021    REGISTRO GRUPOS DE PROYECTO
         19/dic/2021    LABS 1-2
         22/dic/2021    PROYECTO ENTREGA 1
         13/feb/2022    LABS 3-4
