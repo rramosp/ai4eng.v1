@@ -1,4 +1,4 @@
-# Información del curso
+# Información del curso abierto
 
 Bienvenid@s al curso de **Inteligencia Artificial para las Ciencias y las Ingenierías**. Este es un <big><font color='red'>**CURSO ABIERTO**</font></big>, que está basado sobre el curso análogo que ofrecemos en la **Facultad de Ingeniería**, en la **Universidad de Antioquia**, en Medellín, Colombia.
 
