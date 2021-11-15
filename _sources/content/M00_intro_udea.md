@@ -35,7 +35,7 @@ Las sesiones se realizarán por Zoom a través del siguiente enlace
 
 Indícanos cualquier duda, sugerencia o incidencia, o inicia una discusión con la comunidad del curso en el siguiente foro. Las discusiones son en abierto. Si quieres participar tendrás que utilizar tu usuario Github.
 
-<center>[FORO DE DISCUSIONES](https://github.com/rramosp/ai4eng.v1/discussions)</center>
+<center><big><a href="https://github.com/rramosp/ai4eng.v1/discussions">FORO DE DISCUSIONES DEL CURSO</a></big></center>
 
 Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspectos generales, administrativos, fechas, evaluaciones, etc. los puedes formular en la categoría **UDEA ai4eng 2021.2**.
 
