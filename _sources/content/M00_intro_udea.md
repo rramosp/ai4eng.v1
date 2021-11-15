@@ -10,6 +10,12 @@ Universidad de Antioquia, Medellín.</font>
 - [RESGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea/20212)
 - [ACCESO A LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) para ver tus calificaciones y descargar el certificado cuando completes el curso.
 
+Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
+
+- **Trabajando con los materiales del curso** [Video 13mins](https://youtu.be/Rg0_9EBtUIc)
+- **Talleres y plataforma de autocorrección** [Video 13mins](https://youtu.be/eISlF6k0y58)
+
+
 
 **Grupos de proyecto**
 
