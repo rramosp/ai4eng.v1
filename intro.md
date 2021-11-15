@@ -65,11 +65,11 @@ Por nuestra experiencia, una dedicación de entre **5 horas a la semana** repart
 
 - Si, además, te registraste en nuestra **plataforma de seguimiento** podrás tener una <font color='red'>**evaluación en línea**</font> de las soluciones que desarrolles para los laboratorios y un <font color='red'>**certificado del curso**</font> si lo pasas.
 
-## Evaluación y certificado
+## Evaluación y certificado 
 
+- Para pasar el curso abierto tendrás que solucionar al menos el <font color='red'>**90% de los ejercicios de los laboratorios**</font>. Cada ejercicio y laboratorio se califica con una nota entre 0 y 5. Por tanto, tendrás que tener una calificación <font color="red">**4.5 o mayor**</font> para pasar el curso y obtener el certificado.
 
-- Para pasar el curso tendrás que solucionar al menos el <font color='red'>**90% de los ejercicios de los laboratorios**</font>. Cada ejercicio y laboratorio se califica con una nota entre 0 y 5. Por tanto, tendrás que tener una calificación <font color="red">**4.5 o mayor**</font> para pasar el curso y obtener el certificado.
-
+- Si estás matriculado en una sesión como parte de un programa de la Universidad de Antioquia consulta la página correspondiente para informarte sobre las evaluaciones y las fechas límite para las entregas.
 
 - El certificado es emitido por nuestro grupo de investigación <font color='red'>**IN2LAB: Intelligent Information Systems Lab**</font> de la **Facultad de Ingeniería** de la **Universidad de Antioquia, Medellín, Colombia**, que está acreditado como **A1** ante el Ministerio de Ciencias, de Colombia. Los profesores que estamos al frente de este grupo somos:
 
