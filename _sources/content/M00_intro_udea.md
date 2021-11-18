@@ -59,11 +59,11 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 ## Fechas de entregas
 
         05/dic/2021    REGISTRO GRUPOS DE PROYECTO
-        19/dic/2021    LABS 1-2
+        19/dic/2021    LABS MODULOS 1-2
         22/dic/2021    PROYECTO ENTREGA 1
-        13/feb/2022    LABS 3-4
+        13/feb/2022    LABS MODULOS 3-4S
         27/feb/2022    AI4Everyone
-        20/mar/2022    LABS 5-6-7
+        20/mar/2022    LABS MODULOS 5-6-7
          9/abr/2022    PROYECTO ENTREGA 2
 <br/>
 
