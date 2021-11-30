@@ -43,9 +43,19 @@ Indícanos cualquier duda, sugerencia o incidencia, o inicia una discusión con 
 
 <center><big><a href="https://github.com/rramosp/ai4eng.v1/discussions">FORO DE DISCUSIONES DEL CURSO</a></big></center>
 
+
 Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspectos generales, administrativos, fechas, evaluaciones, etc. los puedes formular en la categoría **UDEA ai4eng 2021.2**.
 
 Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS que se FORMULEN PREVIAMENTE por EL FORO</b></font> en el orden en el que aparezcan.
+
+
+## Grupo whatsapp estudiantes
+
+
+https://chat.whatsapp.com/IOSb9lorLutDrrUqoZvbia
+
+
+<font color="red"><b>NO SE RESPONDERÁN PREGUNTAS o INQUETUDES SOBRE EL CURSO EN ESTE GRUPO de WHATSAPP. SOLO POR EL FORO de DISCUSIONES</b></font>
 
 
 ## Evaluación
