@@ -69,8 +69,8 @@ https://chat.whatsapp.com/IOSb9lorLutDrrUqoZvbia
 ## Fechas de entregas
 
         05/dic/2021    REGISTRO GRUPOS DE PROYECTO
-        19/dic/2021    LABS MODULOS 1-2
-        22/dic/2021    PROYECTO ENTREGA 1
+        31/dic/2021    LABS MODULOS 1-2
+        31/dic/2021    PROYECTO ENTREGA 1
         13/feb/2022    LABS MODULOS 3-4S
         27/feb/2022    AI4Everyone
         20/mar/2022    LABS MODULOS 5-6-7
