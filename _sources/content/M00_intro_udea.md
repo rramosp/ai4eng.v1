@@ -73,7 +73,7 @@ https://chat.whatsapp.com/IOSb9lorLutDrrUqoZvbia
         31/dic/2021    PROYECTO ENTREGA 1
         13/feb/2022    LABS MODULOS 3-4S
         20/mar/2022    AI4Everyone
-        20/mar/2022    LABS MODULOS 5-6-7
+        30/mar/2022    LABS MODULOS 5-6-7
          9/abr/2022    PROYECTO ENTREGA 2
 <br/>
 
