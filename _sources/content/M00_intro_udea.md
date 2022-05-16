@@ -11,6 +11,7 @@ frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 </center>
+<br/>
 
 **Plataforma de autocorrectores para los laboratorios**
 
@@ -53,7 +54,7 @@ Indícanos cualquier duda, sugerencia o incidencia, o inicia una discusión con 
 
 <br/>
 
-Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspectos generales, administrativos, fechas, evaluaciones, etc. los puedes formular en la categoría **UDEA ai4eng**.
+Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspectos generales, administrativos, fechas, evaluaciones, etc. los puedes formular en la categoría **GENERAL**.
 
 Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS que se FORMULEN PREVIAMENTE por EL FORO</b></font> en el orden en el que aparezcan.
 
@@ -66,19 +67,22 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 68 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
 
-- El nombrado de archivos en cualquier entrega es estricto según las instrucciones más abajo. <font color="red">CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO, AUNQUE SEA ENTREGADO ANTES DE LAS FECHAS LÍMITE</font>
+- El nombrado de archivos en cualquier entrega es estricto según las instrucciones y el ejemplo de entrega más abajo. <font color="red">CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO</font>,aunque sea entregado antes de las fechas límite.
 
-- La duración del video acompañante al informe final de proyecto ha de ser de entre 3min y 4min. <font color="RED">CUALQUIER VIDEO DE OTRA DURACIÓN NO SERÁ TENIDO EN CUENTA</font>.
+- La duración de los videos de las entregas de proyecto ha de ser estrictamente según se indica. <font color="RED">CUALQUIER VIDEO DE OTRA DURACIÓN NO SERÁ TENIDO EN CUENTA</font>.
 
-- cualquier entrega del proyecto fuera de fechas será <font color="RED"> penalizada con el 50% de la calificación.</font>
+- Cualquier entrega del proyecto fuera de fechas será <font color="RED"> penalizada con el 50% de la calificación.</font>
 
 ## Evaluación
 
     40% (2.0 puntos) LABS
+
     10% (0.5 puntos) EVALUACIONES SOBRE LABS 
                      1/2: módulos 3-4
                      1/2: módulos 5-6-7
+    
     10% (0.5 puntos) PROYECTO ENTREGA 1 y 2
+    
     40% (2.0 puntos) PROYECTO ENTREGA FINAL
                      1/3: claridad
                      1/3: reproducibilidad
@@ -126,9 +130,9 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
 
 -  Podrá hacerse individual o formarse grupos de 2 o 3 estudiantes.
 
-- Tendrás que hacer esta entrega en la carpeta compartida contigo. **TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE REALIZAR LA ENTREGA EN SU CARPETA PROPIA**.
+- Tendrás que hacer CADA entrega en la carpeta compartida contigo. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN SU CARPETA PROPIA</font>.
 
-- Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Sólo se aceptan documentos en PDF.
+- Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Para los informes, sólo se aceptan documentos en PDF.
 
 
 #### Datasets
@@ -158,7 +162,7 @@ Tendrás que hacer tres entregas del proyecto:
 
 ##### ENTREGA 1
 
-Un archivo en el que (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción. 
+Esta primera entrega sólo consta de un archivo en el que (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción. 
 
 Dos ejemplos del punto (4) anterior:
 
@@ -171,16 +175,20 @@ Como en cualquier proyecto de analítica, esto supone un **primer** criterio, qu
 ##### ENTREGA 2
 
 - **Informe**
-Incluye un informe de entre 2 y 5 páginas que incluya:
-    - Descripción de la estructura de los notebooks hasta la fecha desarrollados
-    - Descripción del progreso alcanzado (p.ej. preprocesamos el dataset, hicimos unos primeros modelos que no funcionaron muy bien, etc.)
+    - Incluye un informe de entre 2 y 5 páginas. El informe ha de contener:
+      - Descripción de la estructura de los notebooks hasta la fecha desarrollados
+      - Descripción del progreso alcanzado (p.ej. preprocesamos el dataset, hicimos unos primeros modelos que no funcionaron muy bien, etc.)
+
+- **Notebooks**:
+  - Incluye el estado actual de los notebooks que demuestran el trabajo realizado hasta la fecha. No importa que sean muchos o pocos notebooks (o sólo uno), lo que importa es que muestren que estás trabajando en el proyecto.
+  - Han de ser reproducibles, al igual que se indica en la entrega final.
 
 - **Video**
   - Elabora un vídeo de entre 3mins y 4mins.
   - En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con la cámara, enunciando su nombre y el programa en el que están matriculados.
   - En el video ha de explicar brevemente el estado de avance del proyecto, dificultades actuales, etc.
   - Todos los miembros del equipo han de participar en la explicación.
-- 
+  
 ##### ENTREGA FINAL
 
 - **Notebooks reproducibles**
@@ -212,7 +220,7 @@ Incluye un informe de entre 2 y 5 páginas que incluya:
      carpeta de tu entrega. El nombrado de los ficheros de datos no es estricto, pero <b>ha
      de ser ordenado y limpio</b>. P.ej. no incluyas nombres tipo `datos (1).csv`, resultado
      de varias descargas consecutivas, o que no tengan ningún significado como `a.csv`, o que 
-     la extensión no se corresponde con el contenido (un `.xlsx` con contenido texto o csv).
+     la extensión no se corresponda con el contenido (un `.xlsx` con contenido texto o csv).
    - Si no es posible, incluye en tu informe cómo obtener y hacer disponibles tus datos
      a los procesos implementados en tus notebooks.
 

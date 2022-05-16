@@ -3,7 +3,7 @@
 Bienvenid@s al curso de **Inteligencia Artificial para las Ciencias y las Ingenierías**. Este es un <big><font color='red'>**CURSO ABIERTO**</font></big>, que está basado sobre el curso análogo que ofrecemos en la **Facultad de Ingeniería**, en la **Universidad de Antioquia**, en Medellín, Colombia.
 
 
-<big><font="RED">SI ESTÁS MATRICULADO EN LA MATERIA EN LA FACULTAD DE INGENIERÍA DE LA UDEA EN 2022-2</font> accede a [ESTA PÁGINA](contents/../content/M00_intro_udea_20212.html)
+<big><font color="RED">SI ESTÁS MATRICULADO EN LA MATERIA EN LA FACULTAD DE INGENIERÍA DE LA UDEA EN 2022-2</font></big> accede a [ESTA PÁGINA](content/M00_intro_udea)
 
 <center>
 <iframe width="560" height="315"
@@ -12,6 +12,8 @@ frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe>
 </center>
+
+<br/>
 
 ## Registro y plataforma
 
