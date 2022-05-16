@@ -1,4 +1,4 @@
-# Información 2022.2 - UdeA
+# Información 2021.2 - UdeA
 
 <font color="red">Esta es información para los matriculados en el curso ofrecido por el Departamento de Ingeniería de Sistemas, Facultad de Ingeniería,
 Universidad de Antioquia, Medellín.</font>
@@ -49,25 +49,21 @@ Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspect
 Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS que se FORMULEN PREVIAMENTE por EL FORO</b></font> en el orden en el que aparezcan.
 
 
-## NORMAS DE DESARROLLO DE LA MATERIA y ENTREGAS
+## Grupo whatsapp estudiantes
 
-- Todas las preguntas han de hacerse en el foro. <font color="red"><b>NO SE RESPONDERÁN PREGUNTAS o INQUETUDES SOBRE EL CURSO POR CORREO ELECTRÓNICO. SOLO POR EL FORO de DISCUSIONES</b></font>
 
-- Cada estudiante ha de ser responsable de sus entregas de proyecto. <font color="red">CADA MIEMBRO DE UN EQUIPO HA DE DEPOSITAR LAS ENTREGAS EN SU RESPECTIVAS CARPETAS DE DRIVE</font>. No se harán excepciones. Si un estudiante no realiza las entregas en su propia carpeta de Drive, no tendrá calificación, independientemente de lo que hayan entregado o no los otros miembros del equipo.
+https://chat.whatsapp.com/IOSb9lorLutDrrUqoZvbia
 
-- Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 68 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
 
-- El nombrado de archivos en cualquier entrega es estricto según las instrucciones más abajo. <font color="red"><b>CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO, AUNQUE SEA ENTREGADO ANTES DE LAS FECHAS LÍMITE</b></font>
-
-- La duración del video acompañante al informe final de proyecto ha de ser de entre 3min y 4min. <font color="RED">CUALQUIER VIDEO DE OTRA DURACIÓN NO SERÁ TENIDO EN CUENTA</font>.
+<font color="red"><b>NO SE RESPONDERÁN PREGUNTAS o INQUETUDES SOBRE EL CURSO EN ESTE GRUPO de WHATSAPP. SOLO POR EL FORO de DISCUSIONES</b></font>
 
 
 ## Evaluación
 
-     5% (0.25 puntos) REGISTRO DE PROYECTO y PRIMERA ENTREGA
-    40% (2.0  puntos) LABS
-    15% (0.75 puntos) Evaluaciones (5% por entrega de módulos)
-    40% (2.0  puntos) PROYECTO ENTREGA FINAL
+    10% (0.5 puntos) PROYECTO PRIMERA ENTREGA
+    50% (2.5 puntos) LABS
+    10% (0.5 puntos) AI4Everyone
+    30% (1.5 puntos) PROYECTO ENTREGA FINAL
 
 
 ## Fechas de entregas
@@ -75,22 +71,13 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
         05/dic/2021    REGISTRO GRUPOS DE PROYECTO
         31/dic/2021    LABS MODULOS 1-2
         31/dic/2021    PROYECTO ENTREGA 1
-        13/feb/2022    LABS MODULOS 3-4
+        13/feb/2022    LABS MODULOS 3-4S
         20/mar/2022    AI4Everyone
         30/mar/2022    LABS MODULOS 5-6-7
         12/abr/2022    PROYECTO ENTREGA 2
 <br/>
 
 **Calendario oficial**
-
-
-            16/may/2022  Inicio de clases
-            23/jul/2022  Evaluación 40%
-            24/sep/2022  Finalización clase
-    26/sep - 1/oct/2022  Exámentes finales
-     3/oct - 8/oct/2022  Habilitación y validación
-            10/oct/2022  Terminación oficial
-
 
        16/nov/2021  Inicio de clases
         2/abr/2022  Fin clases
@@ -132,9 +119,7 @@ Te recomendamos que:
 
 Tendrás que hacer dos entregas del proyecto:
 
-##### ENTREGA 1
-
-Un archivo llamado **PROYECTO_ENTREGA1.pdf** en el que (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción. 
+- **ENTREGA 1**: Un archivo llamado **PROYECTO_FASE1.pdf** en el que (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción. 
 
 Dos ejemplos del punto (4) anterior:
 
@@ -145,57 +130,24 @@ Dos ejemplos del punto (4) anterior:
 Como en cualquier proyecto de analítica, esto supone un **primer** criterio, que probablemente se refine o modifique según se avanza en el proyecto, se entiende mejor el posible desempeño de los modelos, con el cliente se va definiendo cómo se usan los modelos en producción/operación, etc.
 
 
-##### ENTREGA 2
-
-Tendrás que hacer esta entrega en la carpeta compartida contigo. **TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE REALIZAR LA ENTREGA EN SU CARPETA PROPIA**.
-
-- **Notebooks reproducibles**
-   - Incluye los notebooks que consideres que implementen tu solución o las iteraciones
-     que hiciste sobre la misma (distintas modelos, etc.)
-   - Los notebooks han de ser **directamente reproducibles**. <font color='red'>CUALQUIER
-     NOTEBOOK QUE PRODUZCA ERRORES AL EJECUTARSE SERÁ DESCARTADO DE TU ENTREGA</font>
-   - Nombra tus notebooks como quieras, pero <font color="red">organízalos con un prefijo</font> numérico para que estén ordenados, mira el ejemplo.
-     de estructura de tu carpeta de entrega más abajo
-
-- **Informe**
-   - Redacta un informe **ejecutivo** e inclúyelo en la carpeta compartida en **formato PDF**.
-     El informe no debería de ser muy largo (p.ej. sobre 5 páginas), y ha de incluir:
-        - Descripción de la estructura de los notebooks entregados
-        - Descripción de tu solución (modelos, preprocesado de datos, etc.)
-        - Descripción de las iteraciones que hiciste
-        - Descripción de los resultados.
-
-   - El fichero con el informe se ha de llamar **INFORME_PROYECTO.PDF**. <font color="red">SI
-     USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>
-
-- **Video**
-  - Elabora un vídeo de entre 3mins y 4mins
-
-- **Datos**
-   - Si es posible, incluye tus datos en una carpeta llamada `data` dentro de la misma
-     carpeta de tu entrega. El nombrado de los ficheros de datos no es estricto, pero <b>ha
-     de ser ordenado y limpio</b>. P.ej. no incluyas nombres tipo `datos (1).csv`, resultado
-     de varias descargas consecutivas, o que no tengan ningún significado como `a.csv`, o que 
-     la extensión no se corresponde con el contenido (un `.xlsx` con contenido texto o csv).
-   - Si no es posible, incluye en tu informe cómo obtener y hacer disponibles tus datos
-     a los procesos implementados en tus notebooks.
-
-Estructura de ejemplo de la carpeta de entrega. 
-
-        |
-        +-  PROYECTO_ENTREGA1.PDF
-        +-  INFORME_PROYECTO.PDF
-        +-  VIDEO_PROYECTO.MP4
-        +-  01 - exploración de datos.ipynb
-        +-  02 - preprocesado.ipynb
-        +-  03 - modelo con SVM.ipynb
-        +-  04 - modelo con Random Forest.ipynb
-        +-  otros_notebooks
-        +-  data +
-        |        +- datos.csv
-        |        +- datos_test.csv
-                 +- otros ficheros de datos
-
+- **ENTREGA 2**: Un archivo llamado **PROYECTO_FASE2.pdf** en el que describas el resto de la ejecucióndel proyecto, con la evidencia necesaria. Tendrás que incluir una carpeta llamada **PROYECTO_FASE2_MATERIALES** donde incluyas todas las herramientas necesarias para reproducir los resultados que obtuviste (muestras de los datasets, notebooks, instrucciones de uso de las herramientas que hayas usado, etc.)
 
 **TODAS LAS ENTREGAS HAN DE DEPOSITARSE EN LA CARPETA DRIVE DE CADA ESTUDIANTE**.
 
+
+
+
+## AI for Everyone
+
+Deberás de completar el curso [AI for Everyone](https://www.deeplearning.ai/ai-for-everyone/) y hacer un resumen del mismo. El resumen deberá contener:
+
+- tres páginas como máximo
+- un párrafo por cada módulo del curso que decriba los puntos más importantes del mismo
+- un pantallazo en el que se vea que has visualizado los videos
+- una apreciación por tu parte acerca de la aplicabilidad de lo visto en el curso en proyectos relacionados con tu área de conocimiento.
+
+Deberás de depositar el resumen en un fichero llamado **RESUMEN_AI4EVERYONE.pdf** en la carpeta compartida del curso.
+
+## EL NOMBRADO DE ARCHIVOS ES ESTRICTO
+
+<font color="red"><b>CUALQUIER ARCHIVO CON UN NOMBRE DISTINTO SERÁ IGNORADO, AUNQUE SEA ENTREGADO ANTES DE LAS FECHAS LÍMITE</b></font>
