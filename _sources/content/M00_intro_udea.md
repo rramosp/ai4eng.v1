@@ -1,13 +1,20 @@
-# Información 2022.2 - UdeA
+# Información 2022 Semestre 1 - Universidad de Antioquia
 
 <font color="red">Esta es información para los matriculados en el curso ofrecido por el Departamento de Ingeniería de Sistemas, Facultad de Ingeniería,
 Universidad de Antioquia, Medellín.</font>
 
-## 2021 Semestre 2 - Universidad de Antioquia
+
+<center>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/7zkdXumgkVk" 
+frameborder="0" 
+allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</center>
 
 **Plataforma de autocorrectores para los laboratorios**
 
-- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea/20212) para poder someter las soluciones a los talleres del curso.
+- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea/20221) para poder someter las soluciones a los talleres del curso.
 - [ACCESO A LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) para ver tus calificaciones y descargar el certificado cuando completes el curso.
 
 Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
@@ -19,8 +26,8 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 **Grupos de proyecto**
 
-- [REGISTRO DE GRUPOS DE PROYECTO](https://forms.gle/vYdPzTBvnDcepFtS9) (solo un registro por grupo)
-
+- [REGISTRO DE GRUPOS DE PROYECTO](https://forms.gle/omGcgPXWZBV6fnX78) (solo un registro por grupo)
+<br/>
 
 ## Horario de clases
     
@@ -30,11 +37,12 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 Las sesiones se realizarán por Zoom a través del siguiente enlace 
 
-<center><big><a href="https://udea.zoom.us/j/97304122517">https://udea.zoom.us/j/97304122517</a></big></center>
+<center><big><a href="https://udea.zoom.us/j/97304122517">https://udea.zoom.us/j/91975422361</a></big></center>
 
 <br/>
 
-**Grabaciones**: Accede en [este enlace](http://ingeniaudea.edu.co/zoom-recordings/recordings/docenciaingenia54@udea.edu.co/97304122517/2021-02-28) al repositorio de grabaciones de las sesiones sincrónicas del curso.
+**Grabaciones**: Accede en [este enlace](http://ingeniaudea.edu.co/zoom-recordings/recordings/docenciaingenia25@udea.edu.co/91975422361/2021-02-28) al repositorio de grabaciones de las sesiones sincrónicas del curso.
+<br/>
 
 
 ## Discusiones, Q&A, Incidencias
@@ -43,46 +51,52 @@ Indícanos cualquier duda, sugerencia o incidencia, o inicia una discusión con 
 
 <center><big><a href="https://github.com/rramosp/ai4eng.v1/discussions">FORO DE DISCUSIONES DEL CURSO</a></big></center>
 
+<br/>
 
-Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspectos generales, administrativos, fechas, evaluaciones, etc. los puedes formular en la categoría **UDEA ai4eng 2021.2**.
+Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspectos generales, administrativos, fechas, evaluaciones, etc. los puedes formular en la categoría **UDEA ai4eng**.
 
 Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS que se FORMULEN PREVIAMENTE por EL FORO</b></font> en el orden en el que aparezcan.
 
 
 ## NORMAS DE DESARROLLO DE LA MATERIA y ENTREGAS
 
-- Todas las preguntas han de hacerse en el foro. <font color="red"><b>NO SE RESPONDERÁN PREGUNTAS o INQUETUDES SOBRE EL CURSO POR CORREO ELECTRÓNICO. SOLO POR EL FORO de DISCUSIONES</b></font>
+- Todas las preguntas han de hacerse en el foro. <font color="red">NO SE RESPONDERÁN PREGUNTAS o INQUETUDES SOBRE EL CURSO POR CORREO ELECTRÓNICO. SOLO POR EL FORO de DISCUSIONES</font>
 
 - Cada estudiante ha de ser responsable de sus entregas de proyecto. <font color="red">CADA MIEMBRO DE UN EQUIPO HA DE DEPOSITAR LAS ENTREGAS EN SU RESPECTIVAS CARPETAS DE DRIVE</font>. No se harán excepciones. Si un estudiante no realiza las entregas en su propia carpeta de Drive, no tendrá calificación, independientemente de lo que hayan entregado o no los otros miembros del equipo.
 
 - Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 68 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
 
-- El nombrado de archivos en cualquier entrega es estricto según las instrucciones más abajo. <font color="red"><b>CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO, AUNQUE SEA ENTREGADO ANTES DE LAS FECHAS LÍMITE</b></font>
+- El nombrado de archivos en cualquier entrega es estricto según las instrucciones más abajo. <font color="red">CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO, AUNQUE SEA ENTREGADO ANTES DE LAS FECHAS LÍMITE</font>
 
 - La duración del video acompañante al informe final de proyecto ha de ser de entre 3min y 4min. <font color="RED">CUALQUIER VIDEO DE OTRA DURACIÓN NO SERÁ TENIDO EN CUENTA</font>.
 
+- cualquier entrega del proyecto fuera de fechas será <font color="RED"> penalizada con el 50% de la calificación.</font>
 
 ## Evaluación
 
-     5% (0.25 puntos) REGISTRO DE PROYECTO y PRIMERA ENTREGA
-    40% (2.0  puntos) LABS
-    15% (0.75 puntos) Evaluaciones (5% por entrega de módulos)
-    40% (2.0  puntos) PROYECTO ENTREGA FINAL
-
+    40% (2.0 puntos) LABS
+    10% (0.5 puntos) EVALUACIONES SOBRE LABS 
+                     1/2: módulos 3-4
+                     1/2: módulos 5-6-7
+    10% (0.5 puntos) PROYECTO ENTREGA 1 y 2
+    40% (2.0 puntos) PROYECTO ENTREGA FINAL
+                     1/3: claridad
+                     1/3: reproducibilidad
+                     1/3: compleción
 
 ## Fechas de entregas
 
-        05/dic/2021    REGISTRO GRUPOS DE PROYECTO
-        31/dic/2021    LABS MODULOS 1-2
-        31/dic/2021    PROYECTO ENTREGA 1
-        13/feb/2022    LABS MODULOS 3-4
-        20/mar/2022    AI4Everyone
-        30/mar/2022    LABS MODULOS 5-6-7
-        12/abr/2022    PROYECTO ENTREGA 2
+        15/jun/2022    LABS MODULOS 1-2
+        20/jun/2022    REGISTRO GRUPOS DE PROYECTO
+        30/jun/2022    PROYECTO ENTREGA 1
+        15/jul/2022    LABS MODULOS 3-4
+        15/ago/2022    PROYECTO ENTREGA 2
+        30/ago/2022    LABS MODULOS 5-6-7
+        24/sep/2022    PROYECTO ENTREGA FINAL
+
 <br/>
 
 **Calendario oficial**
-
 
             16/may/2022  Inicio de clases
             23/jul/2022  Evaluación 40%
@@ -90,14 +104,6 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
     26/sep - 1/oct/2022  Exámentes finales
      3/oct - 8/oct/2022  Habilitación y validación
             10/oct/2022  Terminación oficial
-
-
-       16/nov/2021  Inicio de clases
-        2/abr/2022  Fin clases
-      4-9/abr/2022  Exámenes finales
-       17/abr/2022  Fecha límite cierre notas finales
-    18-23/abr/2022  Habilitación y validación
-       25/abr/2022  Terminación oficial
 
 
 ## Proyecto
@@ -115,11 +121,29 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
     1. Una recomendación justificada de qué pasos a seguir si tuvieras que intentar mejorar el desempeño obtenido.
     1. Una evaluación sobre los retos y condiciones para desplegar en producción un modelo (como establecerías el nivel de desempeño mínimo para desplegar en producción, cómo se desplegaría en producción, cómo serían los procesos de monitoreo del desempeño en producción)
 
-**Podrá hacerse individual o formarse grupos de 2 o 3 estudiantes**
 
-#### Recomendaciones
+#### Reglamentación del proyecto
 
-Te recomendamos que:
+-  Podrá hacerse individual o formarse grupos de 2 o 3 estudiantes.
+
+- Tendrás que hacer esta entrega en la carpeta compartida contigo. **TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE REALIZAR LA ENTREGA EN SU CARPETA PROPIA**.
+
+- Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Sólo se aceptan documentos en PDF.
+
+
+#### Datasets
+
+
+El dataset seleccionado ha de cumplir con los siguientes requisitos:
+
+1. al menos 5000 instancias (filas, imágenes, etc.)
+2. al menos 30 columnas
+3. al menos el 10% de las columnas han de ser categóricas
+4. al menos ha de tener un 5% de datos faltantes en al menos el 3 columnas.
+
+Si tu dataset no cumple con alguna de las dos últimas condiciones, **LO PUEDES SIMULAR**. Es decir, puedes eliminar aleatoriamente un 5% por ciento de datos en distintas columnas, o puedes convertir datos contínuos en categóricos.
+
+Para seleccionar tu datasets, te recomendamos que:
 
 - Mires en [www.kaggle.com](https://www.kaggle.com) por ideas si no sabes qué hacer.
 - Verifiques que los datos están disponibles antes de escoger tu proyecto.
@@ -130,11 +154,11 @@ Te recomendamos que:
 
 #### Entregas del proyecto
 
-Tendrás que hacer dos entregas del proyecto:
+Tendrás que hacer tres entregas del proyecto:
 
 ##### ENTREGA 1
 
-Un archivo llamado **PROYECTO_ENTREGA1.pdf** en el que (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción. 
+Un archivo en el que (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción. 
 
 Dos ejemplos del punto (4) anterior:
 
@@ -144,32 +168,44 @@ Dos ejemplos del punto (4) anterior:
 
 Como en cualquier proyecto de analítica, esto supone un **primer** criterio, que probablemente se refine o modifique según se avanza en el proyecto, se entiende mejor el posible desempeño de los modelos, con el cliente se va definiendo cómo se usan los modelos en producción/operación, etc.
 
-
 ##### ENTREGA 2
 
-Tendrás que hacer esta entrega en la carpeta compartida contigo. **TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE REALIZAR LA ENTREGA EN SU CARPETA PROPIA**.
+- **Informe**
+Incluye un informe de entre 2 y 5 páginas que incluya:
+    - Descripción de la estructura de los notebooks hasta la fecha desarrollados
+    - Descripción del progreso alcanzado (p.ej. preprocesamos el dataset, hicimos unos primeros modelos que no funcionaron muy bien, etc.)
+
+- **Video**
+  - Elabora un vídeo de entre 3mins y 4mins.
+  - En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con la cámara, enunciando su nombre y el programa en el que están matriculados.
+  - En el video ha de explicar brevemente el estado de avance del proyecto, dificultades actuales, etc.
+  - Todos los miembros del equipo han de participar en la explicación.
+- 
+##### ENTREGA FINAL
 
 - **Notebooks reproducibles**
    - Incluye los notebooks que consideres que implementen tu solución o las iteraciones
-     que hiciste sobre la misma (distintas modelos, etc.)
+     que hiciste sobre la misma (preprocesado, distintos modelos, etc.)
    - Los notebooks han de ser **directamente reproducibles**. <font color='red'>CUALQUIER
      NOTEBOOK QUE PRODUZCA ERRORES AL EJECUTARSE SERÁ DESCARTADO DE TU ENTREGA</font>
-   - Nombra tus notebooks como quieras, pero <font color="red">organízalos con un prefijo</font> numérico para que estén ordenados, mira el ejemplo.
-     de estructura de tu carpeta de entrega más abajo
+   - Nombra tus notebooks como quieras, pero <font color="red">organízalos con un prefijo</font> numérico para que estén ordenados, mira el ejemplo de estructura de tu carpeta de entrega más abajo
 
 - **Informe**
    - Redacta un informe **ejecutivo** e inclúyelo en la carpeta compartida en **formato PDF**.
      El informe no debería de ser muy largo (p.ej. sobre 5 páginas), y ha de incluir:
         - Descripción de la estructura de los notebooks entregados
         - Descripción de tu solución (modelos, preprocesado de datos, etc.)
-        - Descripción de las iteraciones que hiciste
+        - Descripción de las iteraciones que hiciste (cosas que probaste y no funcionaron, etc.)
         - Descripción de los resultados.
 
-   - El fichero con el informe se ha de llamar **INFORME_PROYECTO.PDF**. <font color="red">SI
-     USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>
 
 - **Video**
-  - Elabora un vídeo de entre 3mins y 4mins
+  - Elabora un vídeo de entre 3mins y 4mins.
+  - En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con
+    la cámara, enunciando su nombre y el programa en el que están matriculados.
+  - En el video ha de explicar brevemente los cuatro puntos del informe ejecutivo.
+  - Todos los miembros del equipo han de participar en la explicación.
+
 
 - **Datos**
    - Si es posible, incluye tus datos en una carpeta llamada `data` dentro de la misma
@@ -184,18 +220,21 @@ Estructura de ejemplo de la carpeta de entrega.
 
         |
         +-  PROYECTO_ENTREGA1.PDF
-        +-  INFORME_PROYECTO.PDF
-        +-  VIDEO_PROYECTO.MP4
+        +-  PROYECTO_ENTREGA2.PDF
+        +-  PROYECTO_INFORME_FINAL.PDF
+        +-  PROYECTO_VIDEO_ENTREGA2.MP4
+        +-  PROYECTO_VIDEO_ENTREGAFINAL.MP4
         +-  01 - exploración de datos.ipynb
         +-  02 - preprocesado.ipynb
         +-  03 - modelo con SVM.ipynb
         +-  04 - modelo con Random Forest.ipynb
-        +-  otros_notebooks
+        +-  0x - otros_notebooks_numerados.ipynb
         +-  data +
         |        +- datos.csv
         |        +- datos_test.csv
                  +- otros ficheros de datos
 
 
-**TODAS LAS ENTREGAS HAN DE DEPOSITARSE EN LA CARPETA DRIVE DE CADA ESTUDIANTE**.
+## AI for Everyone
 
+Te recomendamos completar o visualizar el curso [AI for Everyone](https://www.deeplearning.ai/ai-for-everyone/) 
