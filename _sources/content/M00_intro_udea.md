@@ -59,6 +59,11 @@ Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspect
 
 Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS que se FORMULEN PREVIAMENTE por EL FORO</b></font> en el orden en el que aparezcan.
 
+<br/>
+[Whatsapp de estudiantes](https://chat.whatsapp.com/JDKjK7h2vKGDbFDVj02eKo): este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
+
+<br/>
+
 
 ## NORMAS DE DESARROLLO DE LA MATERIA y ENTREGAS
 
