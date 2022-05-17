@@ -38,7 +38,8 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 Las sesiones se realizarán por Zoom a través del siguiente enlace 
 
-<center><big><a href="https://udea.zoom.us/j/97304122517">https://udea.zoom.us/j/91975422361</a></big></center>
+<center><big><a href="https://udea.zoom.us/j/97304122517">https://udea.zoom.us/j/91975422361
+</a></big></center>
 
 <br/>
 
