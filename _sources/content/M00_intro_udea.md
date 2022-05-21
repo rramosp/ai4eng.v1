@@ -15,7 +15,7 @@ allowfullscreen></iframe>
 
 **Plataforma de autocorrectores para los laboratorios**
 
-- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea/20221) para poder someter las soluciones a los talleres del curso.
+- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r2/2022.1) para poder someter las soluciones a los talleres del curso.
 - [ACCESO A LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) para ver tus calificaciones y descargar el certificado cuando completes el curso.
 
 Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
@@ -38,7 +38,7 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 Las sesiones se realizarán por Zoom a través del siguiente enlace 
 
-<center><big><a href="https://udea.zoom.us/j/97304122517">https://udea.zoom.us/j/91975422361
+<center><big><a href="https://udea.zoom.us/j/97304122517">https://udea.zoom.us/j/97304122517
 </a></big></center>
 
 <br/>
@@ -60,7 +60,7 @@ Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspect
 Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS que se FORMULEN PREVIAMENTE por EL FORO</b></font> en el orden en el que aparezcan.
 
 <br/>
-[Whatsapp de estudiantes](https://chat.whatsapp.com/JDKjK7h2vKGDbFDVj02eKo): este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
+[Whatsapp de estudiantes](https://chat.whatsapp.com/JDKjK7h2vKGDbFDVj02eKo) : este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
 
 <br/>
 
