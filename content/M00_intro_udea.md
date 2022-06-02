@@ -60,7 +60,9 @@ Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspect
 Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS que se FORMULEN PREVIAMENTE por EL FORO</b></font> en el orden en el que aparezcan.
 
 <br/>
-[Whatsapp de estudiantes](https://chat.whatsapp.com/JDKjK7h2vKGDbFDVj02eKo) : este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
+
+<b>Whatsapp de estudiantes</b> (<a href="https://chat.whatsapp.com/JDKjK7h2vKGDbFDVj02eKo">enlace</a>) : este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
+
 
 <br/>
 
@@ -136,10 +138,21 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
 
 -  Podrá hacerse individual o formarse grupos de 2 o 3 estudiantes.
 
-- Tendrás que hacer CADA entrega en la carpeta compartida contigo. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN SU CARPETA PROPIA</font>.
+- Tendrás que hacer CADA entrega en un repositorio github propio. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO</font>.
 
 - Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Para los informes, sólo se aceptan documentos en PDF.
 
+- Cada miembro del grupo tiene que tener su propio repositorio github con una copia de las distintas entregas.
+
+- Los videos de las distintas entregas han de subirse a YouTube. No es necesario que todos los miembros suban todos los videos. Una copia de cada video en YouTube es suficiente.
+
+- Tienes que incluir un fichero **README.md** que contenga: 
+    - Nombre, cédula y programa matriculado de cada integrante del proyecto.  
+    - En enlace a la fuente de los datos usados.
+    - Cómo obtener los datos y hacerlos disponibles en los notebooks cuando se ejecutan en Colab. **No es suficiente con el enlace anterior**, es necesario incluir estas instrucciones.
+    - Los enlaces a los videos en YouTube de cada entrega.
+
+- Se pondrá a disposición un formulario en el que cada estudiante indicará cual es su repositorio de github.
 
 #### Datasets
 
@@ -181,9 +194,7 @@ Como en cualquier proyecto de analítica, esto supone un **primer** criterio, qu
 ##### ENTREGA 2
 
 - **Informe**
-    - Incluye un informe de entre 2 y 5 páginas. El informe ha de contener:
-      - Descripción de la estructura de los notebooks hasta la fecha desarrollados
-      - Descripción del progreso alcanzado (p.ej. preprocesamos el dataset, hicimos unos primeros modelos que no funcionaron muy bien, etc.)
+    - Incluye un informe de entre 2 y 5 páginas. El informe ha de contener una descripción del progreso alcanzado (p.ej. preprocesamos el dataset, hicimos unos primeros modelos que no funcionaron muy bien, etc.), incluyendo las secciones del informe final que se consideren oportunas.
 
 - **Notebooks**:
   - Incluye el estado actual de los notebooks que demuestran el trabajo realizado hasta la fecha. No importa que sean muchos o pocos notebooks (o sólo uno), lo que importa es que muestren que estás trabajando en el proyecto.
@@ -200,18 +211,28 @@ Como en cualquier proyecto de analítica, esto supone un **primer** criterio, qu
 - **Notebooks reproducibles**
    - Incluye los notebooks que consideres que implementen tu solución o las iteraciones
      que hiciste sobre la misma (preprocesado, distintos modelos, etc.)
-   - Los notebooks han de ser **directamente reproducibles**. <font color='red'>CUALQUIER
+   - Los notebooks han de ser **directamente reproducibles** desde colab. <font color='red'>CUALQUIER
      NOTEBOOK QUE PRODUZCA ERRORES AL EJECUTARSE SERÁ DESCARTADO DE TU ENTREGA</font>
    - Nombra tus notebooks como quieras, pero <font color="red">organízalos con un prefijo</font> numérico para que estén ordenados, mira el ejemplo de estructura de tu carpeta de entrega más abajo
 
 - **Informe**
    - Redacta un informe **ejecutivo** e inclúyelo en la carpeta compartida en **formato PDF**.
-     El informe no debería de ser muy largo (p.ej. sobre 5 páginas), y ha de incluir:
-        - Descripción de la estructura de los notebooks entregados
-        - Descripción de tu solución (modelos, preprocesado de datos, etc.)
-        - Descripción de las iteraciones que hiciste (cosas que probaste y no funcionaron, etc.)
-        - Descripción de los resultados.
-
+     El informe no debería de ser muy largo (p.ej. entre 10 y 20 páginas), y ha de incluir las siguientes secciones:
+        - 1. Introducción. Con los apartados e información de la primera entrega pero revisada en función de lo que haya cambiado durante el proyecto.
+        - 2. Exploración descriptiva del dataset
+        - 3. Iteraciones de desarrollo. Para cada iteración, incluye los elemntos que consideres de los siguientes:
+            - Preprocesado de datos
+            - Modelos supervisados 
+            - Modelos no supervisados
+            - Resultados, métricas y curvas de aprendizaje. 
+        - 4. Retos y consideraciones de despliegue
+        - 5. Conclusiones
+     
+   - Ten en cuenta que:
+       - No todas las iteraciones tienen por qué ser exitosas.
+       - Tampoco tienes que incluir todas las iteraciones que hayas hecho. 
+       - Por ejemplo, puedes incluir una iteración que no haya dado un buen resultado, pero en la que hayas aprendido que tal parámetro o aproximación no es adecuada.
+     
 
 - **Video**
   - Elabora un vídeo de entre 3mins y 4mins.
@@ -220,33 +241,25 @@ Como en cualquier proyecto de analítica, esto supone un **primer** criterio, qu
   - En el video ha de explicar brevemente los cuatro puntos del informe ejecutivo.
   - Todos los miembros del equipo han de participar en la explicación.
 
-
 - **Datos**
-   - Si es posible, incluye tus datos en una carpeta llamada `data` dentro de la misma
-     carpeta de tu entrega. El nombrado de los ficheros de datos no es estricto, pero <b>ha
-     de ser ordenado y limpio</b>. P.ej. no incluyas nombres tipo `datos (1).csv`, resultado
-     de varias descargas consecutivas, o que no tengan ningún significado como `a.csv`, o que 
-     la extensión no se corresponda con el contenido (un `.xlsx` con contenido texto o csv).
-   - Si no es posible, incluye en tu informe cómo obtener y hacer disponibles tus datos
-     a los procesos implementados en tus notebooks.
+  - Los datasets utilizados han de ser descargables directametne desde su fuente original al notebook en Colan.
+  - <b><font color="red">No se recibirán soluciones que requieran bajarse los datos a la máquina personal y luego subirlos a Colab</font></b>.
+  - Si usas datos de Kaggle, esto lo puedes hacer con [Kaggle CLI](https://github.com/floydwch/kaggle-cli).
 
-Estructura de ejemplo de la carpeta de entrega. 
+Realiza tu entrega como un repositorio github con una estructura como la siguiente:
 
         |
+        +-  README-md
         +-  PROYECTO_ENTREGA1.PDF
         +-  PROYECTO_ENTREGA2.PDF
         +-  PROYECTO_INFORME_FINAL.PDF
-        +-  PROYECTO_VIDEO_ENTREGA2.MP4
-        +-  PROYECTO_VIDEO_ENTREGAFINAL.MP4
         +-  01 - exploración de datos.ipynb
         +-  02 - preprocesado.ipynb
         +-  03 - modelo con SVM.ipynb
         +-  04 - modelo con Random Forest.ipynb
         +-  0x - otros_notebooks_numerados.ipynb
-        +-  data +
-        |        +- datos.csv
-        |        +- datos_test.csv
-                 +- otros ficheros de datos
+
+El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier
 
 
 ## AI for Everyone
