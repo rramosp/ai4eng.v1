@@ -242,7 +242,7 @@ Como en cualquier proyecto de analítica, esto supone un **primer** criterio, qu
   - Todos los miembros del equipo han de participar en la explicación.
 
 - **Datos**
-  - Los datasets utilizados han de ser descargables directametne desde su fuente original al notebook en Colan.
+  - Los datasets utilizados han de ser descargables directametne desde su fuente original al notebook en Colab.
   - <b><font color="red">No se recibirán soluciones que requieran bajarse los datos a la máquina personal y luego subirlos a Colab</font></b>.
   - Si usas datos de Kaggle, esto lo puedes hacer con [Kaggle CLI](https://github.com/floydwch/kaggle-cli).
 
