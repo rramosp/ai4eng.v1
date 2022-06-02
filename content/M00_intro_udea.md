@@ -71,7 +71,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - Todas las preguntas han de hacerse en el foro. <font color="red">NO SE RESPONDERÁN PREGUNTAS o INQUETUDES SOBRE EL CURSO POR CORREO ELECTRÓNICO. SOLO POR EL FORO de DISCUSIONES</font>
 
-- Cada estudiante ha de ser responsable de sus entregas de proyecto. <font color="red">CADA MIEMBRO DE UN EQUIPO HA DE DEPOSITAR LAS ENTREGAS EN SU RESPECTIVAS CARPETAS DE DRIVE</font>. No se harán excepciones. Si un estudiante no realiza las entregas en su propia carpeta de Drive, no tendrá calificación, independientemente de lo que hayan entregado o no los otros miembros del equipo.
+- Cada estudiante ha de ser responsable de sus entregas de proyecto. <font color="red">CADA MIEMBRO DE UN EQUIPO HA DE DEPOSITAR LAS ENTREGAS EN SU RESPECTIVAS REPOSITORIO GITHUB</font>. No se harán excepciones. Si un estudiante no realiza las entregas en un repositorio propio de github, no tendrá calificación, independientemente de lo que hayan entregado o no los otros miembros del equipo.
 
 - Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 68 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
 
@@ -212,7 +212,7 @@ Como en cualquier proyecto de analítica, esto supone un **primer** criterio, qu
    - Incluye los notebooks que consideres que implementen tu solución o las iteraciones
      que hiciste sobre la misma (preprocesado, distintos modelos, etc.)
    - Incluye el botón **open in colab** en cada notebook para que se abra directamente en Colab desde github. <font color='red'>SIN ESTE BOTÓN EL NOTEBOOK NO SERÁ CONSIDERADO</font>
-   - Los notebooks han de ser **directamente reproducibles** desde colab. <font color='red'>CUALQUIER
+   - Los notebooks han de ser **directamente reproducibles** desde colab con el botón **open in colab**. <font color='red'>CUALQUIER
      NOTEBOOK QUE PRODUZCA ERRORES AL EJECUTARSE SERÁ DESCARTADO DE TU ENTREGA</font>
    - Nombra tus notebooks como quieras, pero <font color="red">organízalos con un prefijo</font> numérico para que estén ordenados, mira el ejemplo de estructura de tu carpeta de entrega más abajo
 
@@ -260,7 +260,7 @@ Realiza tu entrega como un repositorio github con una estructura como la siguien
         +-  04 - modelo con Random Forest.ipynb
         +-  0x - otros_notebooks_numerados.ipynb
 
-El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier
+El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier archivo con otro nombre será ignorado. Para el nombrado de los notebook se exige únicamente que estén numerados como en el ejemplo en una secuencia lógica.
 
 
 ## AI for Everyone
