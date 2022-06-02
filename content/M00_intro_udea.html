@@ -745,7 +745,7 @@ allowfullscreen></iframe>
 <p>Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspectos generales, administrativos, fechas, evaluaciones, etc. los puedes formular en la categoría <strong>GENERAL</strong>.</p>
 <p>Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS que se FORMULEN PREVIAMENTE por EL FORO</b></font> en el orden en el que aparezcan.</p>
 <br/>
-[Whatsapp de estudiantes](https://chat.whatsapp.com/JDKjK7h2vKGDbFDVj02eKo) : este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
+<p><b>Whatsapp de estudiantes</b> (<a href="https://chat.whatsapp.com/JDKjK7h2vKGDbFDVj02eKo">enlace</a>) : este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.</p>
 <br/>
 </div>
 <div class="section" id="normas-de-desarrollo-de-la-materia-y-entregas">
@@ -820,8 +820,19 @@ allowfullscreen></iframe>
 <h3>Reglamentación del proyecto<a class="headerlink" href="#reglamentacion-del-proyecto" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Podrá hacerse individual o formarse grupos de 2 o 3 estudiantes.</p></li>
-<li><p>Tendrás que hacer CADA entrega en la carpeta compartida contigo. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN SU CARPETA PROPIA</font>.</p></li>
+<li><p>Tendrás que hacer CADA entrega en un repositorio github propio. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO</font>.</p></li>
 <li><p>Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Para los informes, sólo se aceptan documentos en PDF.</p></li>
+<li><p>Cada miembro del grupo tiene que tener su propio repositorio github con una copia de las distintas entregas.</p></li>
+<li><p>Los videos de las distintas entregas han de subirse a YouTube. No es necesario que todos los miembros suban todos los videos. Una copia de cada video en YouTube es suficiente.</p></li>
+<li><p>Tienes que incluir un fichero <strong><a class="reference external" href="http://README.md">README.md</a></strong> que contenga:</p>
+<ul>
+<li><p>Nombre, cédula y programa matriculado de cada integrante del proyecto.</p></li>
+<li><p>En enlace a la fuente de los datos usados.</p></li>
+<li><p>Cómo obtener los datos y hacerlos disponibles en los notebooks cuando se ejecutan en Colab. <strong>No es suficiente con el enlace anterior</strong>, es necesario incluir estas instrucciones.</p></li>
+<li><p>Los enlaces a los videos en YouTube de cada entrega.</p></li>
+</ul>
+</li>
+<li><p>Se pondrá a disposición un formulario en el que cada estudiante indicará cual es su repositorio de github.</p></li>
 </ul>
 </div>
 <div class="section" id="datasets">
@@ -860,12 +871,7 @@ allowfullscreen></iframe>
 <ul class="simple">
 <li><p><strong>Informe</strong></p>
 <ul>
-<li><p>Incluye un informe de entre 2 y 5 páginas. El informe ha de contener:</p>
-<ul>
-<li><p>Descripción de la estructura de los notebooks hasta la fecha desarrollados</p></li>
-<li><p>Descripción del progreso alcanzado (p.ej. preprocesamos el dataset, hicimos unos primeros modelos que no funcionaron muy bien, etc.)</p></li>
-</ul>
-</li>
+<li><p>Incluye un informe de entre 2 y 5 páginas. El informe ha de contener una descripción del progreso alcanzado (p.ej. preprocesamos el dataset, hicimos unos primeros modelos que no funcionaron muy bien, etc.), incluyendo las secciones del informe final que se consideren oportunas.</p></li>
 </ul>
 </li>
 <li><p><strong>Notebooks</strong>:</p>
@@ -886,12 +892,12 @@ allowfullscreen></iframe>
 </div>
 <div class="section" id="entrega-final">
 <h4>ENTREGA FINAL<a class="headerlink" href="#entrega-final" title="Permalink to this headline">¶</a></h4>
-<ul class="simple">
-<li><p><strong>Notebooks reproducibles</strong></p>
 <ul>
+<li><p><strong>Notebooks reproducibles</strong></p>
+<ul class="simple">
 <li><p>Incluye los notebooks que consideres que implementen tu solución o las iteraciones
 que hiciste sobre la misma (preprocesado, distintos modelos, etc.)</p></li>
-<li><p>Los notebooks han de ser <strong>directamente reproducibles</strong>. <font color='red'>CUALQUIER
+<li><p>Los notebooks han de ser <strong>directamente reproducibles</strong> desde colab. <font color='red'>CUALQUIER
 NOTEBOOK QUE PRODUZCA ERRORES AL EJECUTARSE SERÁ DESCARTADO DE TU ENTREGA</font></p></li>
 <li><p>Nombra tus notebooks como quieras, pero <font color="red">organízalos con un prefijo</font> numérico para que estén ordenados, mira el ejemplo de estructura de tu carpeta de entrega más abajo</p></li>
 </ul>
@@ -899,18 +905,47 @@ NOTEBOOK QUE PRODUZCA ERRORES AL EJECUTARSE SERÁ DESCARTADO DE TU ENTREGA</font
 <li><p><strong>Informe</strong></p>
 <ul>
 <li><p>Redacta un informe <strong>ejecutivo</strong> e inclúyelo en la carpeta compartida en <strong>formato PDF</strong>.
-El informe no debería de ser muy largo (p.ej. sobre 5 páginas), y ha de incluir:</p>
+El informe no debería de ser muy largo (p.ej. entre 10 y 20 páginas), y ha de incluir las siguientes secciones:</p>
 <ul>
-<li><p>Descripción de la estructura de los notebooks entregados</p></li>
-<li><p>Descripción de tu solución (modelos, preprocesado de datos, etc.)</p></li>
-<li><p>Descripción de las iteraciones que hiciste (cosas que probaste y no funcionaron, etc.)</p></li>
-<li><p>Descripción de los resultados.</p></li>
+<li><ol class="simple">
+<li><p>Introducción. Con los apartados e información de la primera entrega pero revisada en función de lo que haya cambiado durante el proyecto.</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>Exploración descriptiva del dataset</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>Iteraciones de desarrollo. Para cada iteración, incluye los elemntos que consideres de los siguientes:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Preprocesado de datos</p></li>
+<li><p>Modelos supervisados</p></li>
+<li><p>Modelos no supervisados</p></li>
+<li><p>Resultados, métricas y curvas de aprendizaje.</p></li>
+</ul>
+</li>
+<li><ol class="simple">
+<li><p>Retos y consideraciones de despliegue</p></li>
+</ol>
+</li>
+<li><ol class="simple">
+<li><p>Conclusiones</p></li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>Ten en cuenta que:</p>
+<ul class="simple">
+<li><p>No todas las iteraciones tienen por qué ser exitosas.</p></li>
+<li><p>Tampoco tienes que incluir todas las iteraciones que hayas hecho.</p></li>
+<li><p>Por ejemplo, puedes incluir una iteración que no haya dado un buen resultado, pero en la que hayas aprendido que tal parámetro o aproximación no es adecuada.</p></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><p><strong>Video</strong></p>
-<ul>
+<ul class="simple">
 <li><p>Elabora un vídeo de entre 3mins y 4mins.</p></li>
 <li><p>En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con
 la cámara, enunciando su nombre y el programa en el que están matriculados.</p></li>
@@ -919,35 +954,27 @@ la cámara, enunciando su nombre y el programa en el que están matriculados.</p
 </ul>
 </li>
 <li><p><strong>Datos</strong></p>
-<ul>
-<li><p>Si es posible, incluye tus datos en una carpeta llamada <code class="docutils literal notranslate"><span class="pre">data</span></code> dentro de la misma
-carpeta de tu entrega. El nombrado de los ficheros de datos no es estricto, pero <b>ha
-de ser ordenado y limpio</b>. P.ej. no incluyas nombres tipo <code class="docutils literal notranslate"><span class="pre">datos</span> <span class="pre">(1).csv</span></code>, resultado
-de varias descargas consecutivas, o que no tengan ningún significado como <code class="docutils literal notranslate"><span class="pre">a.csv</span></code>, o que
-la extensión no se corresponda con el contenido (un <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> con contenido texto o csv).</p></li>
-<li><p>Si no es posible, incluye en tu informe cómo obtener y hacer disponibles tus datos
-a los procesos implementados en tus notebooks.</p></li>
+<ul class="simple">
+<li><p>Los datasets utilizados han de ser descargables directametne desde su fuente original al notebook en Colan.</p></li>
+<li><p><b><font color="red">No se recibirán soluciones que requieran bajarse los datos a la máquina personal y luego subirlos a Colab</font></b>.</p></li>
+<li><p>Si usas datos de Kaggle, esto lo puedes hacer con <a class="reference external" href="https://github.com/floydwch/kaggle-cli">Kaggle CLI</a>.</p></li>
 </ul>
 </li>
 </ul>
-<p>Estructura de ejemplo de la carpeta de entrega.</p>
+<p>Realiza tu entrega como un repositorio github con una estructura como la siguiente:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    |
+    +-  README-md
     +-  PROYECTO_ENTREGA1.PDF
     +-  PROYECTO_ENTREGA2.PDF
     +-  PROYECTO_INFORME_FINAL.PDF
-    +-  PROYECTO_VIDEO_ENTREGA2.MP4
-    +-  PROYECTO_VIDEO_ENTREGAFINAL.MP4
     +-  01 - exploración de datos.ipynb
     +-  02 - preprocesado.ipynb
     +-  03 - modelo con SVM.ipynb
     +-  04 - modelo con Random Forest.ipynb
     +-  0x - otros_notebooks_numerados.ipynb
-    +-  data +
-    |        +- datos.csv
-    |        +- datos_test.csv
-             +- otros ficheros de datos
 </pre></div>
 </div>
+<p>El nombrado de los archivos de los informes <strong>ES ESTRICTO</strong>. Cualquier</p>
 </div>
 </div>
 </div>
