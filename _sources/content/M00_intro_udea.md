@@ -211,6 +211,7 @@ Como en cualquier proyecto de analítica, esto supone un **primer** criterio, qu
 - **Notebooks reproducibles**
    - Incluye los notebooks que consideres que implementen tu solución o las iteraciones
      que hiciste sobre la misma (preprocesado, distintos modelos, etc.)
+   - Incluye el botón **open in colab** en cada notebook para que se abra directamente en Colab desde github. <font color='red'>SIN ESTE BOTÓN EL NOTEBOOK NO SERÁ CONSIDERADO</font>
    - Los notebooks han de ser **directamente reproducibles** desde colab. <font color='red'>CUALQUIER
      NOTEBOOK QUE PRODUZCA ERRORES AL EJECUTARSE SERÁ DESCARTADO DE TU ENTREGA</font>
    - Nombra tus notebooks como quieras, pero <font color="red">organízalos con un prefijo</font> numérico para que estén ordenados, mira el ejemplo de estructura de tu carpeta de entrega más abajo
@@ -246,7 +247,7 @@ Como en cualquier proyecto de analítica, esto supone un **primer** criterio, qu
   - <b><font color="red">No se recibirán soluciones que requieran bajarse los datos a la máquina personal y luego subirlos a Colab</font></b>.
   - Si usas datos de Kaggle, esto lo puedes hacer con [Kaggle CLI](https://github.com/floydwch/kaggle-cli).
 
-Realiza tu entrega como un repositorio github con una estructura como la siguiente:
+Realiza tu entrega como un repositorio github con una estructura como la siguiente. Mira [este proyecto de ejemplo](https://github.com/rramosp/ai4eng_example_project) para hacerte una idea:
 
         |
         +-  README-md
