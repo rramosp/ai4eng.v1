@@ -183,7 +183,16 @@ Tendrás que hacer tres entregas del proyecto:
 
 Esta primera entrega sólo consta de un archivo en el que (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción. 
 
-Dos ejemplos del punto (4) anterior:
+Por ejemplo:
+
+1. dadas las caracetrísticas de una casa (superficie, localización, etc.) vamos predecir el precio de venta de una casa en el mercado.
+2. vamos a usar el dataset de kaggle esta competición (poner el enlace), que tiene X número de muestras (casas) y tales columnas (poner la lista de columnas, o si es muy grande, poner las que se consideren más representativas para dar una idea de cómo es el dataset).
+3. como métrica de machine learning vamos a usar el MAE (Mean Absolute Error) que es el define la propia competencia (podría ser otro si el de la competencia es complicado). Por ejemplo, si el precio de una casa es 100K y un modelo predice 120K, entonces el error es del 120%. Pero si el precio es de 40K y el modelo predice 20K el error es del 50%. Como métrica de negocio se podría usar el incremento en ventas gracias a la utilización del modelo.
+4. si las ventas no aumentan más de un 10% no merece la pena poner el modelo en producción ya que el coste de desarrollo y mantenimiento no cubriría las ganacias adicionales de ese aumento.
+
+tened en cuenta que el proyecto va hasta la métrica de machine learning (tenéis que reportar el rendimiento de los modelos). La métrica de negocio y el punto (4) es más una reflexión de cómo se usaría el modelo es un caso hipotético de que se integrase en la operación de una empresa u organización
+
+Otros ejemplos de los puntos 3 y 4:
 
 - **Ejemplo 1**: nuestro modelo de predicción de la patología X en pacientes debería de tener un porcentaje de acierto >80%, pero también un false negative rate <5%, ya que es una patología grave y es preferible no fallar una detección de un paciente que verdaderamente tiene la patología, aunque eso implique que aumente el número de falsos positivos.
 
@@ -219,15 +228,15 @@ Como en cualquier proyecto de analítica, esto supone un **primer** criterio, qu
 - **Informe**
    - Redacta un informe **ejecutivo** e inclúyelo en la carpeta compartida en **formato PDF**.
      El informe no debería de ser muy largo (p.ej. entre 10 y 20 páginas), y ha de incluir las siguientes secciones:
-        - 1. Introducción. Con los apartados e información de la primera entrega pero revisada en función de lo que haya cambiado durante el proyecto.
-        - 2. Exploración descriptiva del dataset
-        - 3. Iteraciones de desarrollo. Para cada iteración, incluye los elemntos que consideres de los siguientes:
+        1. Introducción. Con los apartados e información de la primera entrega pero revisada en función de lo que haya cambiado durante el proyecto.
+        2. Exploración descriptiva del dataset
+        3. Iteraciones de desarrollo. Para cada iteración, incluye los elemntos que consideres de los siguientes:
             - Preprocesado de datos
             - Modelos supervisados 
             - Modelos no supervisados
             - Resultados, métricas y curvas de aprendizaje. 
-        - 4. Retos y consideraciones de despliegue
-        - 5. Conclusiones
+        4. Retos y consideraciones de despliegue
+        5. Conclusiones
      
    - Ten en cuenta que:
        - No todas las iteraciones tienen por qué ser exitosas.
