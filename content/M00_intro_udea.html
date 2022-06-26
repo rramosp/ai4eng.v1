@@ -859,7 +859,15 @@ allowfullscreen></iframe>
 <div class="section" id="entrega-1">
 <h4>ENTREGA 1<a class="headerlink" href="#entrega-1" title="Permalink to this headline">¶</a></h4>
 <p>Esta primera entrega sólo consta de un archivo en el que (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción.</p>
-<p>Dos ejemplos del punto (4) anterior:</p>
+<p>Por ejemplo:</p>
+<ol class="simple">
+<li><p>dadas las caracetrísticas de una casa (superficie, localización, etc.) vamos predecir el precio de venta de una casa en el mercado.</p></li>
+<li><p>vamos a usar el dataset de kaggle esta competición (poner el enlace), que tiene X número de muestras (casas) y tales columnas (poner la lista de columnas, o si es muy grande, poner las que se consideren más representativas para dar una idea de cómo es el dataset).</p></li>
+<li><p>como métrica de machine learning vamos a usar el MAE (Mean Absolute Error) que es el define la propia competencia (podría ser otro si el de la competencia es complicado). Por ejemplo, si el precio de una casa es 100K y un modelo predice 120K, entonces el error es del 120%. Pero si el precio es de 40K y el modelo predice 20K el error es del 50%. Como métrica de negocio se podría usar el incremento en ventas gracias a la utilización del modelo.</p></li>
+<li><p>si las ventas no aumentan más de un 10% no merece la pena poner el modelo en producción ya que el coste de desarrollo y mantenimiento no cubriría las ganacias adicionales de ese aumento.</p></li>
+</ol>
+<p>tened en cuenta que el proyecto va hasta la métrica de machine learning (tenéis que reportar el rendimiento de los modelos). La métrica de negocio y el punto (4) es más una reflexión de cómo se usaría el modelo es un caso hipotético de que se integrase en la operación de una empresa u organización</p>
+<p>Otros ejemplos de los puntos 3 y 4:</p>
 <ul class="simple">
 <li><p><strong>Ejemplo 1</strong>: nuestro modelo de predicción de la patología X en pacientes debería de tener un porcentaje de acierto &gt;80%, pero también un false negative rate &lt;5%, ya que es una patología grave y es preferible no fallar una detección de un paciente que verdaderamente tiene la patología, aunque eso implique que aumente el número de falsos positivos.</p></li>
 <li><p><strong>Ejemplo 2</strong>: según el departamento de marketing de cierta empresa, un modelo de predicción del siguiente producto que compre un cliente debería de tener un porcentaje de acierto de al menos 50%, ya que se usará el modelo para sugerir recomendaciones a los usuarios. Si el porcentaje de acierto es menor sería contraproducente porque perderíamos ventas.</p></li>
@@ -892,9 +900,9 @@ allowfullscreen></iframe>
 </div>
 <div class="section" id="entrega-final">
 <h4>ENTREGA FINAL<a class="headerlink" href="#entrega-final" title="Permalink to this headline">¶</a></h4>
-<ul>
-<li><p><strong>Notebooks reproducibles</strong></p>
 <ul class="simple">
+<li><p><strong>Notebooks reproducibles</strong></p>
+<ul>
 <li><p>Incluye los notebooks que consideres que implementen tu solución o las iteraciones
 que hiciste sobre la misma (preprocesado, distintos modelos, etc.)</p></li>
 <li><p>Incluye el botón <strong>open in colab</strong> en cada notebook para que se abra directamente en Colab desde github. <font color='red'>SIN ESTE BOTÓN EL NOTEBOOK NO SERÁ CONSIDERADO</font></p></li>
@@ -907,37 +915,23 @@ NOTEBOOK QUE PRODUZCA ERRORES AL EJECUTARSE SERÁ DESCARTADO DE TU ENTREGA</font
 <ul>
 <li><p>Redacta un informe <strong>ejecutivo</strong> e inclúyelo en la carpeta compartida en <strong>formato PDF</strong>.
 El informe no debería de ser muy largo (p.ej. entre 10 y 20 páginas), y ha de incluir las siguientes secciones:</p>
-<ul>
-<li><ol class="simple">
+<ol class="simple">
 <li><p>Introducción. Con los apartados e información de la primera entrega pero revisada en función de lo que haya cambiado durante el proyecto.</p></li>
-</ol>
-</li>
-<li><ol class="simple">
 <li><p>Exploración descriptiva del dataset</p></li>
-</ol>
-</li>
-<li><ol class="simple">
-<li><p>Iteraciones de desarrollo. Para cada iteración, incluye los elemntos que consideres de los siguientes:</p></li>
-</ol>
-<ul class="simple">
+<li><p>Iteraciones de desarrollo. Para cada iteración, incluye los elemntos que consideres de los siguientes:</p>
+<ul>
 <li><p>Preprocesado de datos</p></li>
 <li><p>Modelos supervisados</p></li>
 <li><p>Modelos no supervisados</p></li>
 <li><p>Resultados, métricas y curvas de aprendizaje.</p></li>
 </ul>
 </li>
-<li><ol class="simple">
 <li><p>Retos y consideraciones de despliegue</p></li>
-</ol>
-</li>
-<li><ol class="simple">
 <li><p>Conclusiones</p></li>
 </ol>
 </li>
-</ul>
-</li>
 <li><p>Ten en cuenta que:</p>
-<ul class="simple">
+<ul>
 <li><p>No todas las iteraciones tienen por qué ser exitosas.</p></li>
 <li><p>Tampoco tienes que incluir todas las iteraciones que hayas hecho.</p></li>
 <li><p>Por ejemplo, puedes incluir una iteración que no haya dado un buen resultado, pero en la que hayas aprendido que tal parámetro o aproximación no es adecuada.</p></li>
@@ -946,7 +940,7 @@ El informe no debería de ser muy largo (p.ej. entre 10 y 20 páginas), y ha de 
 </ul>
 </li>
 <li><p><strong>Video</strong></p>
-<ul class="simple">
+<ul>
 <li><p>Elabora un vídeo de entre 3mins y 4mins.</p></li>
 <li><p>En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con
 la cámara, enunciando su nombre y el programa en el que están matriculados.</p></li>
@@ -955,7 +949,7 @@ la cámara, enunciando su nombre y el programa en el que están matriculados.</p
 </ul>
 </li>
 <li><p><strong>Datos</strong></p>
-<ul class="simple">
+<ul>
 <li><p>Los datasets utilizados han de ser descargables directametne desde su fuente original al notebook en Colab.</p></li>
 <li><p><b><font color="red">No se recibirán soluciones que requieran bajarse los datos a la máquina personal y luego subirlos a Colab</font></b>.</p></li>
 <li><p>Si usas datos de Kaggle, esto lo puedes hacer con <a class="reference external" href="https://github.com/floydwch/kaggle-cli">Kaggle CLI</a>.</p></li>
