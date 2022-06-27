@@ -100,7 +100,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
         22/jun/2022    LABS MODULOS 1-2
         20/jun/2022    REGISTRO GRUPOS DE PROYECTO
-        30/jun/2022    PROYECTO ENTREGA 1
+        05/jul/2022    PROYECTO ENTREGA 1
         15/jul/2022    LABS MODULOS 3-4
         15/ago/2022    PROYECTO ENTREGA 2
         30/ago/2022    LABS MODULOS 5-6-7
@@ -119,6 +119,10 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 
 ## Proyecto
+
+<h2><font color="red"><b>REGISTRA <a href="https://forms.gle/4Vkj8cFpu1oWo8Bd7">EN ESTE FORMULARIO</a> TU REPOSITORIO GITHUB PARA LAS ENTREGAS</b></font></h2>
+
+
 
 Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
 
