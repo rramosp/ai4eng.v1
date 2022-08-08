@@ -102,7 +102,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
         20/jun/2022    REGISTRO GRUPOS DE PROYECTO
         05/jul/2022    PROYECTO ENTREGA 1
         22/jul/2022    LABS MODULOS 3-4
-        15/ago/2022    PROYECTO ENTREGA 2
+        22/ago/2022    PROYECTO ENTREGA 2
         30/ago/2022    LABS MODULOS 5-6-7
         24/sep/2022    PROYECTO ENTREGA FINAL
 
