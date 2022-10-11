@@ -103,8 +103,8 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
         05/jul/2022    PROYECTO ENTREGA 1
         22/jul/2022    LABS MODULOS 3-4
         22/ago/2022    PROYECTO ENTREGA 2
-        10/sep/2022    LABS MODULOS 5-6-7
-        24/sep/2022    PROYECTO ENTREGA FINAL
+        17/oct/2022    LABS MODULOS 5-6-7
+        12/nov/2022    PROYECTO ENTREGA FINAL
 
 <br/>
 
