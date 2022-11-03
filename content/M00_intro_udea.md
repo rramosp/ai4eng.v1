@@ -110,13 +110,13 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 **Calendario oficial**
 
-            16/may/2022  Inicio de clases
-            23/jul/2022  Evaluación 40%
-            12/nov/2022  Finalización clase
-   15/nov - 19/nov/2022  Exámentes finales
-            21/nov/2022  Fecha límite cierre de notas
-   21/nov - 26/nov/2022  Habilitación y validación
-            28/nov/2022  Terminación oficial
+              16/may/2022  Inicio de clases
+              23/jul/2022  Evaluación 40%
+              12/nov/2022  Finalización clase
+     15/nov - 19/nov/2022  Exámentes finales
+              21/nov/2022  Fecha límite cierre de notas
+     21/nov - 26/nov/2022  Habilitación y validación
+              28/nov/2022  Terminación oficial
 
 
 ## Proyecto
