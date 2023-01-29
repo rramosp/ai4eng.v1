@@ -1,4 +1,4 @@
-# Información 2022 Semestre 1 - Universidad de Antioquia
+# Información 2023 Semestre 1 - Universidad de Antioquia
 
 <font color="red">Esta es información para los matriculados en el curso ofrecido por el Departamento de Ingeniería de Sistemas, Facultad de Ingeniería,
 Universidad de Antioquia, Medellín.</font>
@@ -15,7 +15,7 @@ allowfullscreen></iframe>
 
 **Plataforma de autocorrectores para los laboratorios**
 
-- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r2/2022.1) para poder someter las soluciones a los talleres del curso.
+- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r2/2023.1) para poder someter las soluciones a los talleres del curso.
 - [ACCESO A LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) para ver tus calificaciones y descargar el certificado cuando completes el curso.
 
 Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
@@ -25,9 +25,9 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 
 
-**Grupos de proyecto**
+**Registro de proyecto y repositorio github**
 
-- [REGISTRO DE GRUPOS DE PROYECTO](https://forms.gle/omGcgPXWZBV6fnX78) (solo un registro por grupo)
+- [REGISTRO DE PROYECTOS](https://forms.gle/2BLLUFhhcxDEMVWr7) (cada estudiante ha de rellenar su propio registro)
 <br/>
 
 ## Horario de clases
@@ -38,12 +38,12 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 Las sesiones se realizarán por Zoom a través del siguiente enlace 
 
-<center><big><a href="https://udea.zoom.us/j/91975422361">https://udea.zoom.us/j/91975422361
+<center><big><a href="https://udea.zoom.us/j/91975422361">https://udea.zoom.us/j/97981918705
 </a></big></center>
 
 <br/>
 
-**Grabaciones**: Accede en [este enlace](http://ingeniaudea.edu.co/zoom-recordings/recordings/docenciaingenia25@udea.edu.co/91975422361/2021-02-28) al repositorio de grabaciones de las sesiones sincrónicas del curso.
+**Grabaciones**: Accede en [este enlace](https://ingenia.udea.edu.co/zoom/meeting/93415817509) al repositorio de grabaciones de las sesiones sincrónicas del curso.
 <br/>
 
 
@@ -71,7 +71,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - Todas las preguntas han de hacerse en el foro. <font color="red">NO SE RESPONDERÁN PREGUNTAS o INQUETUDES SOBRE EL CURSO POR CORREO ELECTRÓNICO. SOLO POR EL FORO de DISCUSIONES</font>
 
-- Cada estudiante ha de ser responsable de sus entregas de proyecto. <font color="red">CADA MIEMBRO DE UN EQUIPO HA DE DEPOSITAR LAS ENTREGAS EN SU RESPECTIVAS REPOSITORIO GITHUB</font>. No se harán excepciones. Si un estudiante no realiza las entregas en un repositorio propio de github, no tendrá calificación, independientemente de lo que hayan entregado o no los otros miembros del equipo.
+- Cada estudiante ha de ser responsable de sus entregas de proyecto. <font color="red">CADA MIEMBRO DE UN EQUIPO HA DE DEPOSITAR LAS ENTREGAS EN SU RESPECTIVAS REPOSITORIO GITHUB y RELLENAR ADECUADAMENTE EL FORMULARIO DE REGISTRO DE PROYECTO</font>. No se harán excepciones. Si un estudiante no realiza las entregas en un repositorio propio de github, no tendrá calificación, independientemente de lo que hayan entregado o no los otros miembros del equipo. 
 
 - Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 68 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
 
@@ -96,34 +96,30 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
                      1/3: reproducibilidad
                      1/3: compleción
 
+
 ## Fechas de entregas
 
-        22/jun/2022    LABS MODULOS 1-2
-        20/jun/2022    REGISTRO GRUPOS DE PROYECTO
-        05/jul/2022    PROYECTO ENTREGA 1
-        22/jul/2022    LABS MODULOS 3-4
-        22/ago/2022    PROYECTO ENTREGA 2
-        17/oct/2022    LABS MODULOS 5-6-7
-        12/nov/2022    PROYECTO ENTREGA FINAL
+        26/feb/2023    LABS MODULOS 1-2
+         5/mar/2022    PROYECTO ENTREGA 1 y REGISTRO DE PROYECTO
+        26/mar/2022    LABS MODULOS 3-4
+        16/abr/2022    PROYECTO ENTREGA 2
+         7/may/2022    LABS MODULOS 5-6-7
+        28/may/2022    PROYECTO ENTREGA FINAL
 
 <br/>
 
 **Calendario oficial**
 
-              16/may/2022  Inicio de clases
-              23/jul/2022  Evaluación 40%
-              12/nov/2022  Finalización clase
-     15/nov - 19/nov/2022  Exámentes finales
-              21/nov/2022  Fecha límite cierre de notas
-     21/nov - 26/nov/2022  Habilitación y validación
-              28/nov/2022  Terminación oficial
+               1/feb/2023  Inicio de clases
+              25/mar/2023  Evaluación 40%
+              27/may/2023  Finalización clase
+     29/may -  1/jun/2022  Exámentes finales
+               3/jun/2023  Fecha límite cierre de notas
+      5/jun - 10/jun/2023  Habilitación y validación
+              13/jun/2023  Terminación oficial
 
 
 ## Proyecto
-
-<h2><font color="red"><b>REGISTRA <a href="https://forms.gle/4Vkj8cFpu1oWo8Bd7">EN ESTE FORMULARIO</a> TU REPOSITORIO GITHUB PARA LAS ENTREGAS</b></font></h2>
-
-
 
 Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
 
@@ -135,8 +131,8 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
 6. Realizar las curvas de aprendizaje  para cada uno de los cuatro casos anteriores
 7. Realizar una evaluación diagnóstica que contenga:
     1. Para cada uno de los cuatro casos anteriores un diagnóstico de overfitting/bias etc.
-    1. Una recomendación justificada de qué pasos a seguir si tuvieras que intentar mejorar el desempeño obtenido.
-    1. Una evaluación sobre los retos y condiciones para desplegar en producción un modelo (como establecerías el nivel de desempeño mínimo para desplegar en producción, cómo se desplegaría en producción, cómo serían los procesos de monitoreo del desempeño en producción)
+    2. Una recomendación justificada de qué pasos a seguir si tuvieras que intentar mejorar el desempeño obtenido.
+    3. Una evaluación sobre los retos y condiciones para desplegar en producción un modelo (como establecerías el nivel de desempeño mínimo para desplegar en producción, cómo se desplegaría en producción, cómo serían los procesos de monitoreo del desempeño en producción)
 
 
 #### Reglamentación del proyecto
@@ -145,11 +141,15 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
 
 - Tendrás que hacer CADA entrega en un repositorio github propio. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO</font>.
 
+- Cada miembro del grupo tiene que rellenar el formulario de registro de proyectos. Puedes editar tu respuesta en el registro de proyectos de grupo si cambias de grupo o de proyecto.
+
 - Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Para los informes, sólo se aceptan documentos en PDF.
 
-- Cada miembro del grupo tiene que tener su propio repositorio github con una copia de las distintas entregas.
+- Cada miembro del grupo tiene que tener <font color="red">su propio repositorio github</font> con una copia de las distintas entregas.
 
-- Los videos de las distintas entregas han de subirse a YouTube. No es necesario que todos los miembros suban todos los videos. Una copia de cada video en YouTube es suficiente.
+- Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>.
+
+- Los videos de las distintas entregas han de subirse a YouTube y enlazarse desde el **README.md** de github de tu repositorio. No es necesario que todos los miembros suban todos los videos. Una copia de cada video en YouTube es suficiente, pero el enlace debe de aparecer en el **README.md** del repositorio de cada estudiante.
 
 - Tienes que incluir un fichero **README.md** que contenga: 
     - Nombre, cédula y programa matriculado de cada integrante del proyecto.  
@@ -160,7 +160,6 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
 - Se pondrá a disposición un formulario en el que cada estudiante indicará cual es su repositorio de github.
 
 #### Datasets
-
 
 El dataset seleccionado ha de cumplir con los siguientes requisitos:
 
