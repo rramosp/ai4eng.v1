@@ -79,7 +79,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - La duración de los videos de las entregas de proyecto ha de ser estrictamente según se indica. <font color="RED">CUALQUIER VIDEO DE OTRA DURACIÓN NO SERÁ TENIDO EN CUENTA</font>.
 
-- Cualquier entrega del proyecto fuera de fechas será <font color="RED"> penalizada con el 50% de la calificación.</font>
+- Cualquier entrega fuera de fechas será <font color="RED"> penalizada con el 50% de la calificación.</font>
 
 ## Evaluación
 
@@ -89,7 +89,9 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
                      1/2: módulos 3-4
                      1/2: módulos 5-6-7
     
-    10% (0.5 puntos) PROYECTO ENTREGA 1 y 2
+    10% (0.5 puntos) REGISTRO DE PROYECTO (0.1 puntos)
+                     PROYECTO ENTREGA 1 (0.2 puntos) 
+                     PROYECTO ENTREGA 2 (0.2 puntos)
     
     40% (2.0 puntos) PROYECTO ENTREGA FINAL
                      1/3: claridad
@@ -273,7 +275,7 @@ Realiza tu entrega como un repositorio github con una estructura como la siguien
         +-  04 - modelo con Random Forest.ipynb
         +-  0x - otros_notebooks_numerados.ipynb
 
-El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier archivo con otro nombre será ignorado. Para el nombrado de los notebook se exige únicamente que estén numerados como en el ejemplo en una secuencia lógica.
+El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier archivo con otro nombre será ignorado. Para el nombrado de los notebookw se exige únicamente que estén numerados como en el ejemplo en una secuencia lógica.
 
 
 ## AI for Everyone
