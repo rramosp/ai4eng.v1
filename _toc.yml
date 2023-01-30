@@ -1,4 +1,6 @@
 - file: intro
+- file: content/M00_intro_udea
+  title: 2023.1 UDEA
 - file: content/M01_videos
   sections:
     - file: "content/LAB 01.01 - PRACTICE SUBMISSION"
@@ -53,9 +55,6 @@
     - file: "content/NOTES 07.04 - NEURAL NETWORKS WITH TENSORFLOW"
     - file: "content/LAB 07.01 - OPTIMIZATION FOR ML"
     - file: "content/LAB 07.02 - NEURAL NETWORKS"
-
-- file: content/M00_intro_udea
-  title: 2023.1 UDEA
 
 
 
