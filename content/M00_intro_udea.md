@@ -143,10 +143,6 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
 
 - Tendrás que hacer CADA entrega en un repositorio github propio. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO</font>.
 
-- Cada miembro del grupo tiene que rellenar el formulario de [REGISTRO DE PROYECTO](https://forms.gle/2BLLUFhhcxDEMVWr7). 
- 
-- Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>. Finalmente actualiza tu información en el formulario de [REGISTRO DE PROYECTO](https://forms.gle/2BLLUFhhcxDEMVWr7)
-
 - Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Para los informes, sólo se aceptan documentos en PDF.
 
 - Los videos de las distintas entregas han de subirse a YouTube y enlazarse desde el **README.md** de github de tu repositorio. No es necesario que todos los miembros suban todos los videos. Una copia de cada video en YouTube es suficiente, pero el enlace debe de aparecer en el **README.md** del repositorio de cada estudiante.
@@ -157,7 +153,13 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
     - Cómo obtener los datos y hacerlos disponibles en los notebooks cuando se ejecutan en Colab. **No es suficiente con el enlace anterior**, es necesario incluir estas instrucciones.
     - Los enlaces a los videos en YouTube de cada entrega.
 
-- Se pondrá a disposición un formulario en el que cada estudiante indicará cual es su repositorio de github.
+
+**REGISTRO DE PROYECTO**
+- Cada miembro del grupo tiene que rellenar el formulario de [REGISTRO DE PROYECTO](https://forms.gle/2BLLUFhhcxDEMVWr7). 
+ 
+- Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>. Finalmente actualiza tu información en el formulario de [REGISTRO DE PROYECTO](https://forms.gle/2BLLUFhhcxDEMVWr7)
+
+- Si tu grupo cambia de miembros (p.ej. porque alguien cancela o cambia de grupo) <font color='red'>TÚ ERES RESPONSABLE</font> de mantener tu registro actualizado con los componentes del grupo. Cualquier información incorrecta <font color='red'>SERÁ PENALIZADA</font>
 
 #### Datasets
 
