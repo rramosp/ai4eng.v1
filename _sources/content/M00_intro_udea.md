@@ -73,7 +73,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - Cada estudiante ha de ser responsable de sus entregas de proyecto. <font color="red">CADA MIEMBRO DE UN EQUIPO HA DE DEPOSITAR LAS ENTREGAS EN SU RESPECTIVAS REPOSITORIO GITHUB y RELLENAR ADECUADAMENTE EL FORMULARIO DE REGISTRO DE PROYECTO</font>. No se harán excepciones. Si un estudiante no realiza las entregas en un repositorio propio de github, no tendrá calificación, independientemente de lo que hayan entregado o no los otros miembros del equipo. 
 
-- Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 68 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
+- Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 64 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
 
 - El nombrado de archivos en cualquier entrega es estricto según las instrucciones y el ejemplo de entrega más abajo. <font color="red">CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO</font>,aunque sea entregado antes de las fechas límite.
 
@@ -115,7 +115,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
                1/feb/2023  Inicio de clases
               25/mar/2023  Evaluación 40%
               27/may/2023  Finalización clase
-     29/may -  1/jun/2022  Exámentes finales
+     29/may -  3/jun/2022  Exámentes finales
                3/jun/2023  Fecha límite cierre de notas
       5/jun - 10/jun/2023  Habilitación y validación
               13/jun/2023  Terminación oficial
@@ -275,7 +275,7 @@ Realiza tu entrega como un repositorio github con una estructura como la siguien
         +-  04 - modelo con Random Forest.ipynb
         +-  0x - otros_notebooks_numerados.ipynb
 
-El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier archivo con otro nombre será ignorado. Para el nombrado de los notebookw se exige únicamente que estén numerados como en el ejemplo en una secuencia lógica.
+El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier archivo con otro nombre será ignorado. Para el nombrado de los notebooks se exige únicamente que estén numerados como en el ejemplo en una secuencia lógica.
 
 
 ## AI for Everyone
