@@ -141,7 +141,7 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
 
 -  Podrá hacerse individual o formarse grupos de 2 o 3 estudiantes.
 
-- Tendrás que hacer CADA entrega en un repositorio github propio. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO</font>.
+- Tendrás que hacer CADA entrega en un repositorio github propio tuyo. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO DE CADA MIEMBRO</font>.
 
 - Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Para los informes, sólo se aceptan documentos en PDF.
 
