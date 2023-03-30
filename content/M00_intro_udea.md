@@ -187,7 +187,10 @@ Tendrás que hacer tres entregas del proyecto:
 
 ##### ENTREGA 1
 
-Esta primera entrega sólo consta de un archivo en el que (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción. 
+Esta primera entrega sólo consta de dos archivoa:
+
+- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante
+- **PROYECTO_ENTREGA1.pdf**, donde (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción. 
 
 Por ejemplo:
 
