@@ -67,7 +67,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - Todas las preguntas han de hacerse en el foro. <font color="red">NO SE RESPONDERÁN PREGUNTAS o INQUETUDES SOBRE EL CURSO POR CORREO ELECTRÓNICO. SOLO POR EL FORO de DISCUSIONES</font>
 
-- Cada estudiante ha de ser responsable de sus entregas de proyecto. <font color="red">CADA MIEMBRO DE UN EQUIPO HA DE DEPOSITAR LAS ENTREGAS EN SU RESPECTIVAS REPOSITORIO GITHUB y RELLENAR ADECUADAMENTE EL FORMULARIO DE REGISTRO DE PROYECTO</font>. No se harán excepciones. Si un estudiante no realiza las entregas en un repositorio propio de github, no tendrá calificación, independientemente de lo que hayan entregado o no los otros miembros del equipo. 
+- Cada estudiante ha de ser responsable de sus entregas de proyecto. <font color="red">CADA MIEMBRO DE UN EQUIPO HA DE DEPOSITAR LAS ENTREGAS EN SU RESPECTIVAS REPOSITORIO GITHUB y RELLENAR ADECUADAMENTE EL FORMULARIO DE CADA ENTREGA</font>. No se harán excepciones. Si un estudiante no realiza las entregas en un repositorio propio de github, no tendrá calificación, independientemente de lo que hayan entregado o no los otros miembros del equipo. 
 
 - Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 64 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
 
@@ -85,9 +85,8 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
                      1/2: módulos 3-4
                      1/2: módulos 5-6-7
     
-    10% (0.5 puntos) REGISTRO DE PROYECTO (0.1 puntos)
-                     PROYECTO ENTREGA 1 (0.2 puntos) 
-                     PROYECTO ENTREGA 2 (0.2 puntos)
+    10% (0.5 puntos) PROYECTO ENTREGA 1 (0.2 puntos) 
+                     PROYECTO ENTREGA 2 (0.3 puntos)
     
     40% (2.0 puntos) PROYECTO ENTREGA FINAL
                      1/3: claridad
