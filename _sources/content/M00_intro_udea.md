@@ -1,4 +1,4 @@
-# Información 2023 Semestre 1 - Universidad de Antioquia
+# Información 2023 Semestre 2 - Universidad de Antioquia
 
 <font color="red">Esta es información para los matriculados en el curso ofrecido por el Departamento de Ingeniería de Sistemas, Facultad de Ingeniería,
 Universidad de Antioquia, Medellín.</font>
@@ -15,7 +15,7 @@ allowfullscreen></iframe>
 
 **Plataforma de autocorrectores para los laboratorios**
 
-- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r2/2023.1) para poder someter las soluciones a los talleres del curso.
+- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r2/2023.2) para poder someter las soluciones a los talleres del curso.
 - [ACCESO A LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) para ver tus calificaciones y descargar el certificado cuando completes el curso.
 
 Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
@@ -24,10 +24,6 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 - **Talleres y plataforma de autocorrección** [Video 13mins](https://youtu.be/eISlF6k0y58)
 
 
-
-**Registro de proyecto y repositorio github**
-
-- [REGISTRO DE PROYECTO](https://forms.gle/2BLLUFhhcxDEMVWr7) (cada estudiante ha de rellenar su propio registro)
 <br/>
 
 ## Horario de clases
@@ -38,12 +34,12 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 Las sesiones se realizarán por Zoom a través del siguiente enlace 
 
-<center><big><a href="https://udea.zoom.us/j/93415817509"> https://udea.zoom.us/j/93415817509
+<center><big><a href="https://udea.zoom.us/j/93614993384"> https://udea.zoom.us/j/93614993384
 </a></big></center>
 
 <br/>
 
-**Grabaciones**: Accede en [este enlace](https://ingenia.udea.edu.co/zoom/meeting/93415817509) al repositorio de grabaciones de las sesiones sincrónicas del curso.
+**Grabaciones**: Accede en [este enlace](https://ingenia.udea.edu.co/zoom/meeting/93614993384) al repositorio de grabaciones de las sesiones sincrónicas del curso.
 <br/>
 
 
@@ -101,24 +97,23 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 ## Fechas de entregas
 
-         3/mar/2023    LABS MODULOS 1-2
-        12/mar/2023    PROYECTO ENTREGA 1 y REGISTRO DE PROYECTO
-         2/abr/2023    LABS MODULOS 3-4
-        23/abr/2023    PROYECTO ENTREGA 2
-        14/may/2023    LABS MODULOS 5-6-7
-        28/may/2023    PROYECTO ENTREGA FINAL
+        10/sep/2023    LABS MODULOS 1-2
+        24/sep/2023    PROYECTO ENTREGA 1
+         8/oct/2023    LABS MODULOS 3-4
+        15/abr/2023    PROYECTO ENTREGA 2
+         5/nov/2023    LABS MODULOS 5-6-7
+        19/nov/2023    PROYECTO ENTREGA FINAL
 
 <br/>
 
 **Calendario oficial**
 
-               1/feb/2023  Inicio de clases
-              25/mar/2023  Evaluación 40%
-              27/may/2023  Finalización clase
-     29/may -  3/jun/2022  Exámentes finales
-               3/jun/2023  Fecha límite cierre de notas
-      5/jun - 10/jun/2023  Habilitación y validación
-              13/jun/2023  Terminación oficial
+               8/ago/2023  Inicio de clases
+              21/ago/2023  Finalización clase
+     29/nov - 28/nov/2022  Exámentes finales
+              29/nov/2023  Fecha límite cierre de notas
+     29/nov - 12/dic/2023  Habilitación y validación
+              15/dic/2023  Terminación oficial
 
 
 ## Proyecto
@@ -153,13 +148,6 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
     - Cómo obtener los datos y hacerlos disponibles en los notebooks cuando se ejecutan en Colab. **No es suficiente con el enlace anterior**, es necesario incluir estas instrucciones.
     - Los enlaces a los videos en YouTube de cada entrega.
 
-
-**REGISTRO DE PROYECTO**
-- Cada miembro del grupo tiene que rellenar el formulario de [REGISTRO DE PROYECTO](https://forms.gle/2BLLUFhhcxDEMVWr7). 
- 
-- Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>. Finalmente actualiza tu información en el formulario de [REGISTRO DE PROYECTO](https://forms.gle/2BLLUFhhcxDEMVWr7)
-
-- Si tu grupo cambia de miembros (p.ej. porque alguien cancela o cambia de grupo) <font color='red'>TÚ ERES RESPONSABLE</font> de mantener tu registro actualizado con los componentes del grupo. Cualquier información incorrecta <font color='red'>SERÁ PENALIZADA</font>
 
 #### Datasets
 
@@ -278,7 +266,13 @@ Realiza tu entrega como un repositorio github con una estructura como la siguien
         +-  04 - modelo con Random Forest.ipynb
         +-  0x - otros_notebooks_numerados.ipynb
 
-El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier archivo con otro nombre será ignorado. Para el nombrado de los notebooks se exige únicamente que estén numerados como en el ejemplo en una secuencia lógica.
+- El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier archivo con otro nombre será ignorado. Para el nombrado de los notebooks se exige únicamente que estén numerados como en el ejemplo en una secuencia lógica.
+
+- Cada miembro del grupo tiene que rellenar el formulario que se pondrá a disposición para cada entrega de proyecto.
+
+- Cada miembro del grupo <font color="red">ES RESPONSABLE DE SU PROPIA ENTREGA</font>, independientemente de si sus compañeros de grupo entregan o no.
+
+- Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>.
 
 
 ## AI for Everyone
