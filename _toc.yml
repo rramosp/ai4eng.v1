@@ -1,6 +1,8 @@
 - file: intro
 - file: content/M00_intro_udea
   title: 2023.2 UDEA
+- file: content/M00_modelos1_proyecto
+  title: 2023.3 M1 - proyecto sustituto
 - file: content/M01_videos
   sections:
     - file: "content/LAB 01.01 - PRACTICE SUBMISSION"
