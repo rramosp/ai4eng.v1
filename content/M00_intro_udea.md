@@ -51,6 +51,8 @@ Indícanos cualquier duda, sugerencia o incidencia, o inicia una discusión con 
 
 <br/>
 
+Cualquier asunto personal escribidnos a ambos Felipe y a mì <tt>raul.ramos@udea.edu.co</tt> y <tt>felipe.rodrigueza@udea.edu.co</tt>
+
 Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspectos generales, administrativos, fechas, evaluaciones, etc. los puedes formular en la categoría **GENERAL**.
 
 Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS que se FORMULEN PREVIAMENTE por EL FORO</b></font> en el orden en el que aparezcan.
@@ -69,7 +71,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - Cada estudiante ha de ser responsable de sus entregas de proyecto. <font color="red">CADA MIEMBRO DE UN EQUIPO HA DE DEPOSITAR LAS ENTREGAS EN SU RESPECTIVAS REPOSITORIO GITHUB y RELLENAR ADECUADAMENTE EL FORMULARIO DE CADA ENTREGA</font>. No se harán excepciones. Si un estudiante no realiza las entregas en un repositorio propio de github, no tendrá calificación, independientemente de lo que hayan entregado o no los otros miembros del equipo. 
 
-- Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 64 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
+- Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 64 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), [felipe.rodrigueza@udea.edu.co](felipe.rodrigueza@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
 
 - El nombrado de archivos en cualquier entrega es estricto según las instrucciones y el ejemplo de entrega más abajo. <font color="red">CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO</font>,aunque sea entregado antes de las fechas límite.
 
@@ -99,7 +101,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
         10/sep/2023    LABS MODULOS 1-2
         24/sep/2023    PROYECTO ENTREGA 1
          8/oct/2023    LABS MODULOS 3-4
-        15/abr/2023    PROYECTO ENTREGA 2
+        15/oct/2023    PROYECTO ENTREGA 2
          5/nov/2023    LABS MODULOS 5-6-7
         19/nov/2023    PROYECTO ENTREGA FINAL
 
