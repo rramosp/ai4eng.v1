@@ -273,7 +273,7 @@ Realiza tu entrega como un repositorio github con una estructura como la siguien
 
 - Cada miembro del grupo <font color="red">ES RESPONSABLE DE SU PROPIA ENTREGA</font>, independientemente de si sus compañeros de grupo entregan o no.
 
-- Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>.
+- Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt>, <tt>felipe.rodrigueza@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>.
 
 
 ## AI for Everyone
