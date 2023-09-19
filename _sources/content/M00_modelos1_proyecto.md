@@ -33,6 +33,12 @@ Tendrás que entregar tu proyecto en un repositorio de github, que contenga:
 
 Añade un `README.md` al repositorio github donde se describan los pasos para ejecutar cada elemento de cada fase.
 
+## Formularios para las entregas
+
+- Fase 1: [FORMULARIO Entrega fase 1](https://forms.gle/Ab8JgStescGhM6KB9)
+- Fase 2: disponible próximamente
+- Fase 3: disponible próximamente
+
 ## Fechas
 
     FASE 1: 26 de septiembre
