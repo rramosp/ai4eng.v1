@@ -108,7 +108,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 ## Fechas de entregas
 
         10/sep/2023    LABS MODULOS 1-2
-        24/sep/2023    PROYECTO ENTREGA 1
+        26/sep/2023    PROYECTO ENTREGA 1
          8/oct/2023    LABS MODULOS 3-4
         15/oct/2023    PROYECTO ENTREGA 2
          5/nov/2023    LABS MODULOS 5-6-7
