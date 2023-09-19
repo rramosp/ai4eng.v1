@@ -73,11 +73,20 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 64 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), [felipe.rodrigueza@udea.edu.co](felipe.rodrigueza@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
 
-- El nombrado de archivos en cualquier entrega es estricto según las instrucciones y el ejemplo de entrega más abajo. <font color="red">CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO</font>,aunque sea entregado antes de las fechas límite.
+- El nombrado de archivos en cualquier entrega es estricto según las instrucciones y el ejemplo de entrega más abajo. <font color="red">CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO</font>, aunque sea entregado antes de las fechas límite.
 
 - La duración de los videos de las entregas de proyecto ha de ser estrictamente según se indica. <font color="RED">CUALQUIER VIDEO DE OTRA DURACIÓN NO SERÁ TENIDO EN CUENTA</font>.
 
 - Cualquier entrega fuera de fechas será <font color="RED"> penalizada con el 50% de la calificación.</font>
+
+## FORMULARIO PARA LAS ENTREGAS
+
+<font color='red'>CADA MIEMBRO DE UN EQUIPO HA DE RELLENAR ESTE FORMULARIO CON SU PROPIO REPOSITORIO GITHUB</font>
+
+- **Entrega 1**: [FORMULARIO Entrega 1](https://forms.gle/Ab8JgStescGhM6KB9)
+- **Entrega 2**: Próximamente disponible
+- **Entrega FINAL**: Próximamente disponible
+
 
 ## Evaluación
 
