@@ -25,6 +25,11 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 
 <br/>
+## Sesiones temáticas
+
+- Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</href> (29 Ago 2023)
+
+<br/>
 
 ## Horario de clases
     

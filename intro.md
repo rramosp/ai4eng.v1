@@ -18,11 +18,10 @@ allowfullscreen></iframe>
 
 En el menú de la izquierda podrás **navegar por los materiales del curso**, acceder a los videos notebooks y talleres.
 
-<!-- 
 Rellena <big>[ESTE FORMULARIO](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1/open)</big> para recibir una invitación para unirte formalmente al curso y a la **plataforma de seguimiento**.
 
 Una vez registrado podrás entrar a la [**PLATAFORMA DE SEGUIMIENTO**](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) y acceder a las evaluaciones automáticas y en línea del curso y al certificado final del mismo.
--->
+
 Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
 
 - **Trabajando con los materiales del curso** [Video 13mins](https://youtu.be/Rg0_9EBtUIc)
