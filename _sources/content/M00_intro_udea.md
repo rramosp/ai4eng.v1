@@ -89,7 +89,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 <font color='red'>CADA MIEMBRO DE UN EQUIPO HA DE RELLENAR ESTE FORMULARIO CON SU PROPIO REPOSITORIO GITHUB</font>
 
 - **Entrega 1**: [FORMULARIO Entrega 1](https://forms.gle/Ab8JgStescGhM6KB9)
-- **Entrega 2**: Próximamente disponible
+- **Entrega 2**: [FORMULARIO Entrega 2](https://forms.gle/ApGxJL6D2ZMnKV3a7)
 - **Entrega FINAL**: Próximamente disponible
 
 
