@@ -24,6 +24,15 @@ El proyecto tendrá tres fases:
   - `predict`: que con un dato nuevo devuelve su predicción
   - `train`: que lanza un proceso de entrenamiento, con unso datos de entrenamiento estándar.
 
+<br/>
+
+## Sesiones temáticas
+
+- Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)
+- Introducción a docker <a href='https://udea.zoom.us/rec/play/vOwql6zvWfFWmYrlEPqAA9noBGTS_LqGCVgiacnwzDMDbWR0OSRSp4C2plW0JfLsGHSDvNbyEPgve7u1.vYoWWj4Lg46AADpt?canPlayFromShare=true&from=my_recording&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fudea.zoom.us%2Frec%2Fshare%2F3uWxP0umRyJRXv-6NexPVtVXjW97-CJxszC6ZQStJ4IbNnYMPes4XWPoZ0pOrWxg.F-GyXrDZgL9aQSnr'>Grabación de la sesión sincrónica</a> (24 oct 2023)
+
+<br/>
+
 ## Entregas
 
 Tendrás que entregar tu proyecto en un repositorio de github, que contenga:
