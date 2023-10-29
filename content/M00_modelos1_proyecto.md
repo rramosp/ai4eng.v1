@@ -52,7 +52,7 @@ Añade un `README.md` al repositorio github donde se describan los pasos para ej
 
     FASE 1: 26 de septiembre
     FASE 2: 24 de octubre
-    FASE 3: 14 de noviembre
+    FASE 3: 21 de noviembre
 
 ## Evaluación
 
