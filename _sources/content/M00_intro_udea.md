@@ -92,7 +92,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - **Entrega 1**: [FORMULARIO Entrega 1](https://forms.gle/Ab8JgStescGhM6KB9)
 - **Entrega 2**: [FORMULARIO Entrega 2](https://forms.gle/ApGxJL6D2ZMnKV3a7)
-- **Entrega FINAL**: [FORMULARIO Entrega 3](https://forms.gle/TdxkLJCx9r2hBCB27)
+- **Entrega 3 - FINAL**: [FORMULARIO Entrega 3 - FINAL](https://forms.gle/TdxkLJCx9r2hBCB27)
 
 
 ## Evaluación
