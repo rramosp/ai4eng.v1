@@ -818,13 +818,14 @@ allowfullscreen></iframe>
                  PROYECTO ENTREGA 2 (0.4 puntos)
 
 40% (2.0 puntos) PROYECTO ENTREGA FINAL
-                 1/3: claridad
-                 1/3: reproducibilidad
-                 1/3: posición en el ranking de la competición
-                      tendrá un 5 quien quede primero
-                      tendrá un 1 quien quede de último
-                      el puntaje del resto será entre 1 y 5, linalmente proporcional a la posición obtenida
-                      tendrá un cero quien no haya enviado ninguna solución
+                 1/2: claridad y compleción
+                 1/2: posición en el ranking de la competición
+                      - tendrá un 5 quien quede primero
+                      - tendrá un 1 quien quede de último
+                      - el puntaje del resto será entre 1 y 5, linalmente proporcional a la posición obtenida
+                      - tendrá un cero quien no haya enviado ninguna solución
+                      - tendrá un cero quien no tenga en su repositorio github el notebook correspondiente
+                        para generar la solución enviada a Kaggle, según se describe más abajo
 </pre></div>
 </div>
 </div>
@@ -869,14 +870,7 @@ allowfullscreen></iframe>
 <li><p>Cada miembro de un grupo tendrá  entrega en un repositorio github propio tuyo. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO DE CADA MIEMBRO</font>.</p></li>
 <li><p>Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Para los informes, sólo se aceptan documentos en PDF.</p></li>
 <li><p>Los videos de las distintas entregas han de subirse a YouTube y enlazarse desde el <strong><a class="reference external" href="http://README.md">README.md</a></strong> de github de tu repositorio. No es necesario que todos los miembros suban todos los videos. Una copia de cada video en YouTube es suficiente, pero el enlace debe de aparecer en el <strong><a class="reference external" href="http://README.md">README.md</a></strong> del repositorio de cada estudiante.</p></li>
-<li><p>Tienes que incluir un fichero <strong><a class="reference external" href="http://README.md">README.md</a></strong> que contenga:</p>
-<ul>
-<li><p>Nombre, cédula y programa matriculado de cada integrante del proyecto.</p></li>
-<li><p>En enlace a la fuente de los datos usados.</p></li>
-<li><p>Cómo obtener los datos y hacerlos disponibles en los notebooks cuando se ejecutan en Colab. <strong>No es suficiente con el enlace anterior</strong>, es necesario incluir estas instrucciones.</p></li>
-<li><p>Los enlaces a los videos en YouTube de cada entrega.</p></li>
-</ul>
-</li>
+<li><p>La duración del video ha de ser la indicada más abajo. Si te <strong>excedes en más de 10segs</strong> o es corto de más de 10segs se te penalizará con el 50% de la calificación de la entrega.</p></li>
 </ul>
 </div>
 <div class="section" id="entregas-del-proyecto">
@@ -902,14 +896,15 @@ allowfullscreen></iframe>
 <li><p>Todos los miembros del equipo han de participar en la explicación.</p></li>
 </ul>
 </li>
-<li><p><strong><a class="reference external" href="http://README.md">README.md</a></strong> con los nombres, cédulas y progama en el que está inscrito cada participante <strong>y con en enlace la video de esta entrega</strong>.</p></li>
+<li><p><strong><a class="reference external" href="http://README.md">README.md</a></strong> con los nombres, cédulas y progama en el que está inscrito cada participante <strong>y con el enlace la video de esta entrega</strong>.</p></li>
 <li><p><strong>02 - preprocesado.ipynb</strong> donde se muestra cómo cargas el archivo <code class="docutils literal notranslate"><span class="pre">train.csv</span></code> de la competencia y realizas las operaciones de limpieza y preprocesado de datos que necesites (p.ej. convertir columnas en one-hot, normalizar valores de rangos, imputar datos faltantes, etc.)</p></li>
 </ul>
 </div>
 <div class="section" id="entrega-final">
 <h4>ENTREGA FINAL<a class="headerlink" href="#entrega-final" title="Permalink to this headline">¶</a></h4>
-<p>además del contenido de las entregas anteriores</p>
+<p>además del contenido de las entregas anteriores tendrás que añadir</p>
 <ul class="simple">
+<li><p><strong><a class="reference external" href="http://README.md">README.md</a></strong> con los nombres, cédulas y progama en el que está inscrito cada participante <strong>y con el enlace al video de la entrega 2 y el enlance al video de esta entrega</strong>.</p></li>
 <li><p><strong>Video</strong></p>
 <ul>
 <li><p>Elabora un vídeo de entre 3mins y 4mins.</p></li>
@@ -919,15 +914,23 @@ la cámara, enunciando su nombre y el programa en el que están matriculados.</p
 <li><p>Todos los miembros del equipo han de participar en la explicación. Quien no participe en el video se considerará que no ha realizado esta entrega.</p></li>
 </ul>
 </li>
+<li><p><strong>99 - modelo solución.ipynb</strong> - Un notebook con tu solución completa, desde cargar <code class="docutils literal notranslate"><span class="pre">train.csv</span></code> hasta generar el archivo que se envía a Kaggle. Mira las <strong>NOTES 05.03</strong> para tener un ejemplo.</p></li>
+<li><p><strong>al menos dos notebooks adicionales</strong> con aproximaciones distantas a la de la solución, porque usan distintos modelos, o estrategias de limpieza o preprocesado, etc.</p></li>
 </ul>
-<p>Al final tu repositorio ha de tener la siguiente estructura</p>
+<p>los criterios de evaluación son los siguientes:</p>
+<ul class="simple">
+<li><p><strong>CLARIDAD</strong>: los notebooks contienen textos que explican brevemente lo que se está haciendo</p></li>
+<li><p><strong>COMPLECIÓN</strong>: la entrega contiene todos los notebooks que se describieron justo arriba.</p></li>
+<li><p><strong>REPRODUCIBILIDAD</strong>: la solución que genera el notebook <strong>99 - modelo solución.ipynb</strong> coincide con la enviada a Kaggle.</p></li>
+</ul>
+<p>Al final tu repositorio habrá de tener la siguiente estructura</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    |
     +-  README-md
     +-  01 - exploración.ipynb
     +-  02 - preprocesado.ipynb
     +-  03 - modelo con preprocesado de tal forma y SVM.ipynb
     +-  04 - modelo con preprocesado de otra forma y Random Forest.ipynb
-    +-  99 - modelo solución .ipynb
+    +-  99 - modelo solución.ipynb
 </pre></div>
 </div>
 <ul class="simple">
