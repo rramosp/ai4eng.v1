@@ -109,13 +109,14 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
                      PROYECTO ENTREGA 2 (0.4 puntos)
     
     40% (2.0 puntos) PROYECTO ENTREGA FINAL
-                     1/3: claridad
-                     1/3: reproducibilidad
-                     1/3: posición en el ranking de la competición
-                          tendrá un 5 quien quede primero
-                          tendrá un 1 quien quede de último
-                          el puntaje del resto será entre 1 y 5, linalmente proporcional a la posición obtenida
-                          tendrá un cero quien no haya enviado ninguna solución
+                     1/2: claridad y compleción
+                     1/2: posición en el ranking de la competición
+                          - tendrá un 5 quien quede primero
+                          - tendrá un 1 quien quede de último
+                          - el puntaje del resto será entre 1 y 5, linalmente proporcional a la posición obtenida
+                          - tendrá un cero quien no haya enviado ninguna solución
+                          - tendrá un cero quien no tenga en su repositorio github el notebook correspondiente
+                            para generar la solución enviada a Kaggle, según se describe más abajo
 
 
 ## Fechas de entregas
@@ -166,12 +167,7 @@ Para ello tendrás que
 
 - Los videos de las distintas entregas han de subirse a YouTube y enlazarse desde el **README.md** de github de tu repositorio. No es necesario que todos los miembros suban todos los videos. Una copia de cada video en YouTube es suficiente, pero el enlace debe de aparecer en el **README.md** del repositorio de cada estudiante.
 
-- Tienes que incluir un fichero **README.md** que contenga: 
-    - Nombre, cédula y programa matriculado de cada integrante del proyecto.  
-    - En enlace a la fuente de los datos usados.
-    - Cómo obtener los datos y hacerlos disponibles en los notebooks cuando se ejecutan en Colab. **No es suficiente con el enlace anterior**, es necesario incluir estas instrucciones.
-    - Los enlaces a los videos en YouTube de cada entrega.
-
+- La duración del video ha de ser la indicada más abajo. Si te **excedes en más de 10segs** o es corto de más de 10segs se te penalizará con el 50% de la calificación de la entrega.
 
 #### Entregas del proyecto
 
@@ -194,14 +190,15 @@ además del contenido de la entrega 1:
   - En el video ha de explicar brevemente el estado de avance del proyecto, dificultades actuales, etc.
   - Todos los miembros del equipo han de participar en la explicación.
 
-- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante **y con en enlace la video de esta entrega**.
+- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante **y con el enlace la video de esta entrega**.
 - **02 - preprocesado.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y realizas las operaciones de limpieza y preprocesado de datos que necesites (p.ej. convertir columnas en one-hot, normalizar valores de rangos, imputar datos faltantes, etc.)
 
   
 ##### ENTREGA FINAL
 
-además del contenido de las entregas anteriores
+además del contenido de las entregas anteriores tendrás que añadir
 
+- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante **y con el enlace al video de la entrega 2 y el enlance al video de esta entrega**.
 - **Video**
   - Elabora un vídeo de entre 3mins y 4mins.
   - En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con
@@ -209,7 +206,15 @@ además del contenido de las entregas anteriores
   - En el video ha de explicar brevemente la aproximación a la solución enviada a Kaggle y **ha de mostrar vuestra posición en el ranking** compartiendo la pantalla mientras se consulta el **leaderboard** de Kaggle. Esta posición, por supuesto, puede que no sea la definitiva si hay equipos que envian sus soluciones después.
   - Todos los miembros del equipo han de participar en la explicación. Quien no participe en el video se considerará que no ha realizado esta entrega.
 
-Al final tu repositorio ha de tener la siguiente estructura
+- **99 - modelo solución.ipynb** - Un notebook con tu solución completa, desde cargar `train.csv` hasta generar el archivo que se envía a Kaggle. Mira las **NOTES 05.03** para tener un ejemplo. 
+- **al menos dos notebooks adicionales** con aproximaciones distantas a la de la solución, porque usan distintos modelos, o estrategias de limpieza o preprocesado, etc.
+
+los criterios de evaluación son los siguientes:
+- **CLARIDAD**: los notebooks contienen textos que explican brevemente lo que se está haciendo
+- **COMPLECIÓN**: la entrega contiene todos los notebooks que se describieron justo arriba.
+- **REPRODUCIBILIDAD**: la solución que genera el notebook **99 - modelo solución.ipynb** coincide con la enviada a Kaggle.
+
+Al final tu repositorio habrá de tener la siguiente estructura
 
         |
         +-  README-md
@@ -217,7 +222,7 @@ Al final tu repositorio ha de tener la siguiente estructura
         +-  02 - preprocesado.ipynb
         +-  03 - modelo con preprocesado de tal forma y SVM.ipynb
         +-  04 - modelo con preprocesado de otra forma y Random Forest.ipynb
-        +-  99 - modelo solución .ipynb
+        +-  99 - modelo solución.ipynb
 
 - El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier archivo con otro nombre será ignorado. Para el nombrado de los notebooks se exige únicamente que estén numerados como en el ejemplo en una secuencia lógica.
 
