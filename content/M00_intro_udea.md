@@ -82,10 +82,6 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - Las solicitudes de cambio de fechas habrán de hacerse <font color="red">AL MENOS 5 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 64 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co), [felipe.rodrigueza@udea.edu.co](felipe.rodrigueza@udea.edu.co), <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso.
 
-- El nombrado de archivos en cualquier entrega es estricto según las instrucciones y el ejemplo de entrega más abajo. <font color="red">CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO</font>, aunque sea entregado antes de las fechas límite.
-
-- La duración de los videos de las entregas de proyecto ha de ser estrictamente según se indica. <font color="RED">CUALQUIER VIDEO DE OTRA DURACIÓN NO SERÁ TENIDO EN CUENTA</font>.
-
 - Cualquier entrega fuera de fechas será <font color="RED"> penalizada con el 50% de la calificación.</font>
 
 ## FORMULARIO PARA LAS ENTREGAS
@@ -149,7 +145,7 @@ Tendrás que participar en esta competición de Kaggle
 Para ello tendrás que
 
 1. Desarrollar una solución sobre un **repositorio github privado** implementada en varios notebooks.
-2. Compartirlo con los usuarios **rramosp** y **Felipe-RA**
+2. Compartirlo invitando en github a los usuarios **rramosp** y **Felipe-RA** (profe y monitor)
 3. Enviar tu solución a Kaggle para que aparezcas en el ranking de la competición.
 
 
@@ -157,11 +153,13 @@ Para ello tendrás que
 
 - Podrá hacerse individual o formarse grupos de 2 o 3 estudiantes.
 
-- Tendrás que hacer las entregas en en un repositorio github privado y personal y rellenar un formulario.
+- Tendrás que hacer las entregas en en un repositorio github privado y personal y rellenar un formulario donde indicarás tus datos y cuál es tu repositorio.
 
 - En la última entrega es cuando tendrás que someter tu solución a Kaggle. Durante el curso podrás enviar a Kaggle tantas soluciones como quieras. La que sea mejor es la que se tendrá en cuenta.
 
 - Cada miembro de un grupo tendrá  entrega en un repositorio github propio tuyo. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO DE CADA MIEMBRO</font>.
+
+- Los repositorios **han de ser privados** y compartidos con los usuarios **rramosp** y **Felipe-RA**. Si no es así, no se considerará la entrega y tendrá calificación cero.
 
 - Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Para los informes, sólo se aceptan documentos en PDF.
 
@@ -169,37 +167,40 @@ Para ello tendrás que
 
 - La duración del video ha de ser la indicada más abajo. Si te **excedes en más de 10segs** o es corto de más de 10segs se te penalizará con el 50% de la calificación de la entrega.
 
+- El nombrado de archivos en cualquier entrega es estricto según las instrucciones y el ejemplo de entrega más abajo. <font color="red">CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO</font>, aunque sea entregado antes de las fechas límite.
+
+
 #### Entregas del proyecto
 
-Tendrás que hacer tres entregas del proyecto, los contenidos en github han de ser los siguientes:
+Tendrás que hacer tres entregas del proyecto, los contenidos han de ser los siguientes:
 
 ##### ENTREGA 1
 
-Esta primera entrega sólo consta de dos archivoa:
+Esta primera entrega sólo consta de dos archivos que han de estar en tu repositorio github:
 
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante
 - **01 - exploración.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y muestras alguna exploración de datos (por ejemplo, cuantos estudiantes hay de cada clase, por localidades, etc.)
 
 ##### ENTREGA 2
 
-además del contenido de la entrega 1:
+además del contenido de la entrega 1 en github:
 
-- **Video subido a YouTube**
+- **Video subido a YouTube y enlazado en README.md**
   - Elabora un vídeo de entre 3mins y 4mins.
   - En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con la cámara, enunciando su nombre y el programa en el que están matriculados.
   - En el video ha de explicar brevemente el estado de avance del proyecto, dificultades actuales, etc.
   - Todos los miembros del equipo han de participar en la explicación.
 
-- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante **y con el enlace la video de esta entrega**.
+- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante **y con el enlace la video en YouTube de esta entrega**.
 - **02 - preprocesado.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y realizas las operaciones de limpieza y preprocesado de datos que necesites (p.ej. convertir columnas en one-hot, normalizar valores de rangos, imputar datos faltantes, etc.)
 
   
 ##### ENTREGA FINAL
 
-además del contenido de las entregas anteriores tendrás que añadir
+además del contenido de las entregas anteriores tendrás que añadir a tu repositorio github
 
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante **y con el enlace al video de la entrega 2 y el enlance al video de esta entrega**.
-- **Video**
+- **Video subido a YouTube y enlazado en README.md**
   - Elabora un vídeo de entre 3mins y 4mins.
   - En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con
     la cámara, enunciando su nombre y el programa en el que están matriculados.
