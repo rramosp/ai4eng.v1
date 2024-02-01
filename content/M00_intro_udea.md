@@ -114,24 +114,24 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 ## Fechas de entregas
 
-        10/sep/2023    LABS MODULOS 1-2
-        26/sep/2023    PROYECTO ENTREGA 1
-         8/oct/2023    LABS MODULOS 3-4
-        22/oct/2023    PROYECTO ENTREGA 2
-        14/nov/2023    LABS MODULOS 5-6-7
-        25/nov/2023    PROYECTO ENTREGA FINAL
+        10/mar/2024    LABS MODULOS 1-2
+        17/mar/2024    PROYECTO ENTREGA 1
+         7/abr/2024    LABS MODULOS 3-4
+        28/abr/2024    PROYECTO ENTREGA 2
+        12/may/2023    LABS MODULOS 5-6-7
+        26/may/2023    PROYECTO ENTREGA FINAL
 
 <br/>
 
 **Calendario oficial**
 
-               8/ago/2023  Inicio de clases
-              21/ago/2023  Finalización clase
-     29/nov - 28/nov/2022  Exámentes finales
-              29/nov/2023  Fecha límite cierre de notas
-     29/nov - 12/dic/2023  Habilitación y validación
-              15/dic/2023  Terminación oficial
-
+               5/feb/2024  Inicio de clases
+               8/abr/2024  Evaluación al 40%
+               1/jun/202r  Finalización clases
+       4/jun - 8/jun/2022  Exámentes finales
+               9/jun/2023  Fecha límite cierre de notas
+     11/jun - 15/jun/2024  Habilitación y validación
+              17/jun/2024  Terminación oficial
 
 ## Proyecto
 
