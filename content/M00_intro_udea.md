@@ -1,4 +1,4 @@
-# Información 2023 Semestre 2 - Universidad de Antioquia
+# Información 2024 Semestre 1 - Universidad de Antioquia
 
 <font color="red">Esta es información para los matriculados en el curso ofrecido por el Departamento de Ingeniería de Sistemas, Facultad de Ingeniería,
 Universidad de Antioquia, Medellín.</font>
@@ -15,7 +15,7 @@ allowfullscreen></iframe>
 
 **Plataforma de autocorrectores para los laboratorios**
 
-- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r2/2023.2) para poder someter las soluciones a los talleres del curso.
+- [REGISTRATE AQUÍ EN LA PLATAFORMA]([https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r2/2024.1](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r2/2024.1)) para poder someter las soluciones a los talleres del curso.
 - [ACCESO A LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) para ver tus calificaciones y descargar el certificado cuando completes el curso.
 
 Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
@@ -27,6 +27,8 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 <br/>
 
 ## Sesiones temáticas
+
+### SEMESTRE 2023-2
 
 - Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)
 - Introducción a docker <a href='https://udea.zoom.us/rec/play/vOwql6zvWfFWmYrlEPqAA9noBGTS_LqGCVgiacnwzDMDbWR0OSRSp4C2plW0JfLsGHSDvNbyEPgve7u1.vYoWWj4Lg46AADpt?canPlayFromShare=true&from=my_recording&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fudea.zoom.us%2Frec%2Fshare%2F3uWxP0umRyJRXv-6NexPVtVXjW97-CJxszC6ZQStJ4IbNnYMPes4XWPoZ0pOrWxg.F-GyXrDZgL9aQSnr'>Grabación de la sesión sincrónica</a> (24 oct 2023)
@@ -90,9 +92,9 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 <font color='red'>CADA MIEMBRO DE UN EQUIPO HA DE RELLENAR ESTE FORMULARIO CON SU PROPIO REPOSITORIO GITHUB</font>
 
-- **Entrega 1**: [FORMULARIO Entrega 1](https://forms.gle/Ab8JgStescGhM6KB9)
-- **Entrega 2**: [FORMULARIO Entrega 2](https://forms.gle/ApGxJL6D2ZMnKV3a7)
-- **Entrega 3 - FINAL**: [FORMULARIO Entrega 3 - FINAL](https://forms.gle/TdxkLJCx9r2hBCB27)
+- **Entrega 1**: pendiente por publicar
+- **Entrega 2**: pendiente por publicar
+- **Entrega 3 - FINAL**: Pendiente por publicar
 
 
 ## Evaluación
@@ -103,13 +105,17 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
                      1/2: módulos 3-4
                      1/2: módulos 5-6-7
     
-    10% (0.5 puntos) PROYECTO ENTREGA 1 (0.2 puntos) 
-                     PROYECTO ENTREGA 2 (0.3 puntos)
+    10% (0.5 puntos) PROYECTO ENTREGA 1 (0.1 puntos) 
+                     PROYECTO ENTREGA 2 (0.4 puntos)
     
     40% (2.0 puntos) PROYECTO ENTREGA FINAL
                      1/3: claridad
                      1/3: reproducibilidad
-                     1/3: compleción
+                     1/3: posición en el ranking de la competición
+                          tendrá un 5 quien quede primero
+                          tendrá un 1 quien quede de último
+                          el puntaje del resto será entre 1 y 5, linalmente proporcional a la posición obtenida
+                          tendrá un cero quien no haya enviado ninguna solución
 
 
 ## Fechas de entregas
@@ -118,8 +124,8 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
         17/mar/2024    PROYECTO ENTREGA 1
          7/abr/2024    LABS MODULOS 3-4
         28/abr/2024    PROYECTO ENTREGA 2
-        12/may/2023    LABS MODULOS 5-6-7
-        26/may/2023    PROYECTO ENTREGA FINAL
+        12/may/2024    LABS MODULOS 5-6-7
+        26/may/2024    PROYECTO ENTREGA FINAL
 
 <br/>
 
@@ -127,33 +133,34 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
                5/feb/2024  Inicio de clases
                8/abr/2024  Evaluación al 40%
-               1/jun/202r  Finalización clases
-       4/jun - 8/jun/2022  Exámentes finales
-               9/jun/2023  Fecha límite cierre de notas
+               1/jun/2024  Finalización clases
+       4/jun - 8/jun/2024  Exámentes finales
+               9/jun/2024  Fecha límite cierre de notas
      11/jun - 15/jun/2024  Habilitación y validación
               17/jun/2024  Terminación oficial
 
 ## Proyecto
 
-Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
+Tendrás que participar en esta competición de Kaggle
 
-1. Definir un problema predictivo
-2. Obtener un dataset para resolverlo
-3. Realizar el preprocesado y limpieza de datos
-4. Encontrar los mejores hiperparámetros para DOS algoritmos predictivos
-5. Encontrar los mejores hiperparámetros para DOS combinaciones de algoritmo no supervisado + algoritmo predictivo
-6. Realizar las curvas de aprendizaje  para cada uno de los cuatro casos anteriores
-7. Realizar una evaluación diagnóstica que contenga:
-    1. Para cada uno de los cuatro casos anteriores un diagnóstico de overfitting/bias etc.
-    2. Una recomendación justificada de qué pasos a seguir si tuvieras que intentar mejorar el desempeño obtenido.
-    3. Una evaluación sobre los retos y condiciones para desplegar en producción un modelo (como establecerías el nivel de desempeño mínimo para desplegar en producción, cómo se desplegaría en producción, cómo serían los procesos de monitoreo del desempeño en producción)
+[UDEA/ai4eng 20241 - Pruebas Saber Pro Colombia](https://www.kaggle.com/t/2a7ae1e64460dc5d617b0d7c793af450)
+
+Para ello tendrás que
+
+1. Desarrollar una solución sobre un **repositorio github privado** implementada en varios notebooks.
+2. Compartirlo con los usuarios **rramosp** y **Felipe-RA**
+3. Enviar tu solución a Kaggle para que aparezcas en el ranking de la competición.
 
 
 #### Reglamentación del proyecto
 
--  Podrá hacerse individual o formarse grupos de 2 o 3 estudiantes.
+- Podrá hacerse individual o formarse grupos de 2 o 3 estudiantes.
 
-- Tendrás que hacer CADA entrega en un repositorio github propio tuyo. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO DE CADA MIEMBRO</font>.
+- Tendrás que hacer las entregas en en un repositorio github privado y personal y rellenar un formulario.
+
+- En la última entrega es cuando tendrás que someter tu solución a Kaggle. Durante el curso podrás enviar a Kaggle tantas soluciones como quieras. La que sea mejor es la que se tendrá en cuenta.
+
+- Cada miembro de un grupo tendrá  entrega en un repositorio github propio tuyo. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO DE CADA MIEMBRO</font>.
 
 - Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Para los informes, sólo se aceptan documentos en PDF.
 
@@ -166,122 +173,51 @@ Tendrás que hacer un proyecto de analítica de datos para el cual deberás:
     - Los enlaces a los videos en YouTube de cada entrega.
 
 
-#### Datasets
-
-El dataset seleccionado ha de cumplir con los siguientes requisitos:
-
-1. al menos 5000 instancias (filas, imágenes, etc.)
-2. al menos 30 columnas
-3. al menos el 10% de las columnas han de ser categóricas
-4. al menos ha de tener un 5% de datos faltantes en al menos el 3 columnas.
-
-Si tu dataset no cumple con alguna de las dos últimas condiciones, **LO PUEDES SIMULAR**. Es decir, puedes eliminar aleatoriamente un 5% por ciento de datos en distintas columnas, o puedes convertir datos contínuos en categóricos.
-
-Para seleccionar tu datasets, te recomendamos que:
-
-- Mires en [www.kaggle.com](https://www.kaggle.com) por ideas si no sabes qué hacer.
-- Verifiques que los datos están disponibles antes de escoger tu proyecto.
-- Estimes los requerimientos computacionales para generar los modelos que necesites. Reduce el alcance de tu proyecto si lo necesitas (menos datos, menos clases, etc.).
-- Realices una primera iteración cuanto antes. Es decir, que llegues a tener un primer modelo **sencillo** produciendo predicciones. Implementa en esta primera iteración estrictamente lo que necesites para tener un modelo. El objetivo es resolver la mayoría de los problemas técnicos que te puedan surgir para ya, después, enfocarte en todo lo que quieras hacer en las siguientes iteraciones (preprocesado de datos, otros modelos, etc.)
-
-
-
 #### Entregas del proyecto
 
-Tendrás que hacer tres entregas del proyecto:
+Tendrás que hacer tres entregas del proyecto, los contenidos en github han de ser los siguientes:
 
 ##### ENTREGA 1
 
 Esta primera entrega sólo consta de dos archivoa:
 
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante
-- **PROYECTO_ENTREGA1.pdf**, donde (1) describas el problema predictivo a resolver, (2) el dataset que vas a utilizar, (3) las métricas de desempeño requeridas (de machine learning y de negocio); y (4) un primer criterio sobre cual sería el desempeño deseable en producción. 
-
-Por ejemplo:
-
-1. dadas las caracetrísticas de una casa (superficie, localización, etc.) vamos predecir el precio de venta de una casa en el mercado.
-2. vamos a usar el dataset de kaggle esta competición (poner el enlace), que tiene X número de muestras (casas) y tales columnas (poner la lista de columnas, o si es muy grande, poner las que se consideren más representativas para dar una idea de cómo es el dataset).
-3. como métrica de machine learning vamos a usar el MAE (Mean Absolute Error) que es el define la propia competencia (podría ser otro si el de la competencia es complicado). Por ejemplo, si el precio de una casa es 100K y un modelo predice 120K, entonces el error es del 120%. Pero si el precio es de 40K y el modelo predice 20K el error es del 50%. Como métrica de negocio se podría usar el incremento en ventas gracias a la utilización del modelo.
-4. si las ventas no aumentan más de un 10% no merece la pena poner el modelo en producción ya que el coste de desarrollo y mantenimiento no cubriría las ganacias adicionales de ese aumento.
-
-tened en cuenta que el proyecto va hasta la métrica de machine learning (tenéis que reportar el rendimiento de los modelos). La métrica de negocio y el punto (4) es más una reflexión de cómo se usaría el modelo es un caso hipotético de que se integrase en la operación de una empresa u organización
-
-Otros ejemplos de los puntos 3 y 4:
-
-- **Ejemplo 1**: nuestro modelo de predicción de la patología X en pacientes debería de tener un porcentaje de acierto >80%, pero también un false negative rate <5%, ya que es una patología grave y es preferible no fallar una detección de un paciente que verdaderamente tiene la patología, aunque eso implique que aumente el número de falsos positivos.
-
-- **Ejemplo 2**: según el departamento de marketing de cierta empresa, un modelo de predicción del siguiente producto que compre un cliente debería de tener un porcentaje de acierto de al menos 50%, ya que se usará el modelo para sugerir recomendaciones a los usuarios. Si el porcentaje de acierto es menor sería contraproducente porque perderíamos ventas.
-
-Como en cualquier proyecto de analítica, esto supone un **primer** criterio, que probablemente se refine o modifique según se avanza en el proyecto, se entiende mejor el posible desempeño de los modelos, con el cliente se va definiendo cómo se usan los modelos en producción/operación, etc.
+- **01 - exploración.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y muestras alguna exploración de datos (por ejemplo, cuantos estudiantes hay de cada clase, por localidades, etc.)
 
 ##### ENTREGA 2
 
-- **Informe**
-    - Incluye un informe de entre 2 y 5 páginas. El informe ha de contener una descripción del progreso alcanzado (p.ej. preprocesamos el dataset, hicimos unos primeros modelos que no funcionaron muy bien, etc.), incluyendo las secciones del informe final que se consideren oportunas.
+además del contenido de la entrega 1:
 
-- **Notebooks**:
-  - Incluye el estado actual de los notebooks que demuestran el trabajo realizado hasta la fecha. No importa que sean muchos o pocos notebooks (o sólo uno), lo que importa es que muestren que estás trabajando en el proyecto.
-  - Han de ser reproducibles, al igual que se indica en la entrega final.
-
-- **Video**
+- **Video subido a YouTube**
   - Elabora un vídeo de entre 3mins y 4mins.
   - En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con la cámara, enunciando su nombre y el programa en el que están matriculados.
   - En el video ha de explicar brevemente el estado de avance del proyecto, dificultades actuales, etc.
   - Todos los miembros del equipo han de participar en la explicación.
+
+- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante **y con en enlace la video de esta entrega**.
+- **02 - preprocesado.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y realizas las operaciones de limpieza y preprocesado de datos que necesites (p.ej. convertir columnas en one-hot, normalizar valores de rangos, imputar datos faltantes, etc.)
+
   
 ##### ENTREGA FINAL
 
-- **Notebooks reproducibles**
-   - Incluye los notebooks que consideres que implementen tu solución o las iteraciones
-     que hiciste sobre la misma (preprocesado, distintos modelos, etc.)
-   - Si deseas, incluye el botón **open in colab** en cada notebook para que se abra directamente en Colab desde github. Esto es opcional.
-   - Los notebooks han de ser **directamente reproducibles** desde colab con el botón **open in colab**. <font color='red'>CUALQUIER
-     NOTEBOOK QUE PRODUZCA ERRORES AL EJECUTARSE SERÁ DESCARTADO DE TU ENTREGA</font>
-   - Nombra tus notebooks como quieras, pero <font color="red">organízalos con un prefijo</font> numérico para que estén ordenados, mira el ejemplo de estructura de tu carpeta de entrega más abajo
-
-- **Informe**
-   - Redacta un informe **ejecutivo** e inclúyelo en la carpeta compartida en **formato PDF**.
-     El informe no debería de ser muy largo (p.ej. entre 10 y 20 páginas), y ha de incluir las siguientes secciones:
-        1. Introducción. Con los apartados e información de la primera entrega pero revisada en función de lo que haya cambiado durante el proyecto.
-        2. Exploración descriptiva del dataset
-        3. Iteraciones de desarrollo. Para cada iteración, incluye los elemntos que consideres de los siguientes:
-            - Preprocesado de datos
-            - Modelos supervisados 
-            - Modelos no supervisados
-            - Resultados, métricas y curvas de aprendizaje. 
-        4. Retos y consideraciones de despliegue
-        5. Conclusiones
-     
-   - Ten en cuenta que:
-       - No todas las iteraciones tienen por qué ser exitosas.
-       - Tampoco tienes que incluir todas las iteraciones que hayas hecho. 
-       - Por ejemplo, puedes incluir una iteración que no haya dado un buen resultado, pero en la que hayas aprendido que tal parámetro o aproximación no es adecuada.
-     
+además del contenido de las entregas anteriores
 
 - **Video**
   - Elabora un vídeo de entre 3mins y 4mins.
   - En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con
     la cámara, enunciando su nombre y el programa en el que están matriculados.
-  - En el video ha de explicar brevemente los cuatro puntos del informe ejecutivo.
-  - Todos los miembros del equipo han de participar en la explicación.
+  - En el video ha de explicar brevemente la aproximación a la solución enviada a Kaggle y **ha de mostrar vuestra posición en el ranking** compartiendo la pantalla mientras se consulta el **leaderboard** de Kaggle. Esta posición, por supuesto, puede que no sea la definitiva si hay equipos que envian sus soluciones después.
+  - Todos los miembros del equipo han de participar en la explicación. Quien no participe en el video se considerará que no ha realizado esta entrega.
 
-- **Datos**
-  - Los datasets utilizados han de ser descargables directametne desde su fuente original al notebook en Colab.
-  - <b><font color="red">No se recibirán soluciones que requieran bajarse los datos a la máquina personal y luego subirlos a Colab</font></b>.
-  - Si usas datos de Kaggle, esto lo puedes hacer con [Kaggle CLI](https://github.com/floydwch/kaggle-cli).
-
-Realiza tu entrega como un repositorio github con una estructura como la siguiente. Mira [este proyecto de ejemplo](https://github.com/rramosp/ai4eng_example_project) para hacerte una idea:
+Al final tu repositorio ha de tener la siguiente estructura
 
         |
         +-  README-md
-        +-  PROYECTO_ENTREGA1.PDF
-        +-  PROYECTO_ENTREGA2.PDF
-        +-  PROYECTO_INFORME_FINAL.PDF
-        +-  01 - exploración de datos.ipynb
+        +-  01 - exploración.ipynb
         +-  02 - preprocesado.ipynb
-        +-  03 - modelo con SVM.ipynb
-        +-  04 - modelo con Random Forest.ipynb
-        +-  0x - otros_notebooks_numerados.ipynb
+        +-  03 - modelo con preprocesado de tal forma y SVM.ipynb
+        +-  04 - modelo con preprocesado de otra forma y Random Forest.ipynb
+        +-  99 - modelo solución .ipynb
 
 - El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier archivo con otro nombre será ignorado. Para el nombrado de los notebooks se exige únicamente que estén numerados como en el ejemplo en una secuencia lógica.
 
