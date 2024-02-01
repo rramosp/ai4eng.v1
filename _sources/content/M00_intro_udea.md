@@ -161,7 +161,7 @@ Para ello tendrás que
 
 - Los repositorios **han de ser privados** y compartidos con los usuarios **rramosp** y **Felipe-RA**. Si no es así, no se considerará la entrega y tendrá calificación cero.
 
-- Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. Para los informes, sólo se aceptan documentos en PDF.
+- Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. 
 
 - Los videos de las distintas entregas han de subirse a YouTube y enlazarse desde el **README.md** de github de tu repositorio. No es necesario que todos los miembros suban todos los videos. Una copia de cada video en YouTube es suficiente, pero el enlace debe de aparecer en el **README.md** del repositorio de cada estudiante.
 
@@ -179,7 +179,7 @@ Tendrás que hacer tres entregas del proyecto, los contenidos han de ser los sig
 Esta primera entrega sólo consta de dos archivos que han de estar en tu repositorio github:
 
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante
-- **01 - exploración.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y muestras alguna exploración de datos (por ejemplo, cuantos estudiantes hay de cada clase, por localidades, etc.)
+- **01 - exploración.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y muestras alguna exploración de datos (por ejemplo, cuantos estudiantes hay de cada clase, por localidades, etc.). Esta exploración no tiene que ser exhaustiva, tan sólo que muestres que eres capaz de cargar los datos e inspeccionarlos.
 
 ##### ENTREGA 2
 
