@@ -84,13 +84,6 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 - Cualquier entrega fuera de fechas será <font color="RED"> penalizada con el 50% de la calificación.</font>
 
-## FORMULARIO PARA LAS ENTREGAS
-
-<font color='red'>CADA MIEMBRO DE UN EQUIPO HA DE RELLENAR ESTE FORMULARIO CON SU PROPIO REPOSITORIO GITHUB</font>
-
-- **Entrega 1**: pendiente por publicar
-- **Entrega 2**: pendiente por publicar
-- **Entrega 3 - FINAL**: Pendiente por publicar
 
 
 ## Evaluación
@@ -146,7 +139,8 @@ Para ello tendrás que
 
 1. Desarrollar una solución sobre un **repositorio github privado** implementada en varios notebooks.
 2. Compartirlo invitando en github a los usuarios **rramosp** y **Felipe-RA** (profe y monitor)
-3. Enviar tu solución a Kaggle para que aparezcas en el ranking de la competición.
+3. Realizar 3 entregas durante el curso como se describe a continuación 
+4. Enviar tu solución a Kaggle para que aparezcas en el ranking de la competición.
 
 
 #### Reglamentación del proyecto
@@ -172,16 +166,17 @@ Para ello tendrás que
 
 #### Entregas del proyecto
 
-Tendrás que hacer tres entregas del proyecto, los contenidos han de ser los siguientes:
+Tendrás que hacer tres entregas del proyecto, los contenidos han de ser los siguientes. <font color='red'>CADA MIEMBRO DE UN EQUIPO HA DE RELLENAR ESTE FORMULARIO CON SU PROPIO REPOSITORIO GITHUB</font>
 
-##### ENTREGA 1
+
+##### ENTREGA 1 (Formulario pendiente de publicar)
 
 Esta primera entrega sólo consta de dos archivos que han de estar en tu repositorio github:
 
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante
 - **01 - exploración.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y muestras alguna exploración de datos (por ejemplo, cuantos estudiantes hay de cada clase, por localidades, etc.). Esta exploración no tiene que ser exhaustiva, tan sólo que muestres que eres capaz de cargar los datos e inspeccionarlos.
 
-##### ENTREGA 2
+##### ENTREGA 2 (Formulario pendiente de publicar)
 
 además del contenido de la entrega 1 en github:
 
@@ -195,7 +190,7 @@ además del contenido de la entrega 1 en github:
 - **02 - preprocesado.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y realizas las operaciones de limpieza y preprocesado de datos que necesites (p.ej. convertir columnas en one-hot, normalizar valores de rangos, imputar datos faltantes, etc.)
 
   
-##### ENTREGA FINAL
+##### ENTREGA FINAL (Formulario pendiente de publicar)
 
 además del contenido de las entregas anteriores tendrás que añadir a tu repositorio github
 
@@ -225,11 +220,9 @@ Al final tu repositorio habrá de tener la siguiente estructura
         +-  04 - modelo con preprocesado de otra forma y Random Forest.ipynb
         +-  99 - modelo solución.ipynb
 
-- El nombrado de los archivos de los informes **ES ESTRICTO**. Cualquier archivo con otro nombre será ignorado. Para el nombrado de los notebooks se exige únicamente que estén numerados como en el ejemplo en una secuencia lógica.
+- El nombrado de los archivos de los informes **ES ESTRICTO**. Tiene que haber un fichero `README.md` y los notebooks `01`, `02` y `99` nombrados **EXACTAMENTE IGUAL** que se indica arriba. Los notebooks `03`, `04` y posteriores (si tienes más), han de ser nombrados con ese esquema (`número consecutivo - nombre_que_escojes.ipynb`). Cualquier archivo con otro nombre será ignorado. 
 
-- Cada miembro del grupo tiene que rellenar el formulario que se pondrá a disposición para cada entrega de proyecto.
-
-- Cada miembro del grupo <font color="red">ES RESPONSABLE DE SU PROPIA ENTREGA</font>, independientemente de si sus compañeros de grupo entregan o no.
+- Cada miembro del grupo <font color="red">ES RESPONSABLE DE SU PROPIA ENTREGA</font>, independientemente de si sus compañeros de grupo entregan o no. Esto incluye rellenar el formulario y tener un github personal, aunque el contenido sea el mismo que el del resto de los compañeros de grupo.
 
 - Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt>, <tt>felipe.rodrigueza@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>.
 
