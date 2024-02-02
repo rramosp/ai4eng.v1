@@ -143,7 +143,7 @@ Para ello tendrás que
 4. Enviar tu solución a Kaggle para que aparezcas en el ranking de la competición.
 
 
-#### Reglamentación del proyecto
+### Reglamentación del proyecto
 
 - Podrá hacerse individual o formarse grupos de 2 o 3 estudiantes.
 
@@ -151,11 +151,13 @@ Para ello tendrás que
 
 - En la última entrega es cuando tendrás que someter tu solución a Kaggle. Durante el curso podrás enviar a Kaggle tantas soluciones como quieras. La que sea mejor es la que se tendrá en cuenta.
 
-- Cada miembro de un grupo tendrá  entrega en un repositorio github propio tuyo. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO DE CADA MIEMBRO</font>.
+- Cada miembro de un grupo tendrá entrega en un repositorio github propio tuyo. <font color="red">TODOS LOS MIEMBROS DE CADA EQUIPO HAN DE DEPOSITAR UNA COPIA DE CADA ENTREGA EN UN REPOSITORIO GITHUB PROPIO DE CADA MIEMBRO</font>.
+
+- Cada miembro de cada equipo tiene que hacer su **propia submisión a Kaggle** en la entrega final
 
 - Los repositorios **han de ser privados** y compartidos con los usuarios **rramosp** y **Felipe-RA**. Si no es así, no se considerará la entrega y tendrá calificación cero.
 
-- Usa los nombres y formatos indicados en el ejemplo más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. 
+- Usa los nombres y formatos indicados más abajo. <font color="red">SI USAS OTRO NOMBRE O FORMATO LA ENTREGA NO SERÁ VÁLIDA</font>. 
 
 - Los videos de las distintas entregas han de subirse a YouTube y enlazarse desde el **README.md** de github de tu repositorio. No es necesario que todos los miembros suban todos los videos. Una copia de cada video en YouTube es suficiente, pero el enlace debe de aparecer en el **README.md** del repositorio de cada estudiante.
 
@@ -164,19 +166,20 @@ Para ello tendrás que
 - El nombrado de archivos en cualquier entrega es estricto según las instrucciones y el ejemplo de entrega más abajo. <font color="red">CUALQUIER ARCHIVO CON UN NOMBRE o FORMATO DISTINTO SERÁ IGNORADO</font>, aunque sea entregado antes de las fechas límite.
 
 
-#### Entregas del proyecto
+### Entregas del proyecto
 
-Tendrás que hacer tres entregas del proyecto, los contenidos han de ser los siguientes. <font color='red'>CADA MIEMBRO DE UN EQUIPO HA DE RELLENAR ESTE FORMULARIO CON SU PROPIO REPOSITORIO GITHUB</font>
+Cada entrega se hace a través de un formulario donde indicarás tu repositorio github con los contenidos de la misma. <font color='red'>CADA MIEMBRO DE UN EQUIPO HA DE RELLENAR CADA FORMULARIO DE CADA ENTREGA CON SU PROPIO REPOSITORIO GITHUB</font>
 
+Los contenidos de cada entrega son los siguientes:
 
-##### ENTREGA 1 (Formulario pendiente de publicar)
+##### ENTREGA 1 (Formulario de entrega pendiente de publicar)
 
 Esta primera entrega sólo consta de dos archivos que han de estar en tu repositorio github:
 
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante
 - **01 - exploración.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y muestras alguna exploración de datos (por ejemplo, cuantos estudiantes hay de cada clase, por localidades, etc.). Esta exploración no tiene que ser exhaustiva, tan sólo que muestres que eres capaz de cargar los datos e inspeccionarlos.
 
-##### ENTREGA 2 (Formulario pendiente de publicar)
+##### ENTREGA 2 (Formulario de entrega pendiente de publicar)
 
 además del contenido de la entrega 1 en github:
 
@@ -190,11 +193,13 @@ además del contenido de la entrega 1 en github:
 - **02 - preprocesado.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y realizas las operaciones de limpieza y preprocesado de datos que necesites (p.ej. convertir columnas en one-hot, normalizar valores de rangos, imputar datos faltantes, etc.)
 
   
-##### ENTREGA FINAL (Formulario pendiente de publicar)
+##### ENTREGA FINAL (Formulario de entrega pendiente de publicar)
+
+en este entrega tendrás que someter tu solución a Kaggle. **CADA MIEMBRO DE CADA GRUPO TIENE QUE SOMETER SU PROPIA SOLUCIÓN**, aunque sea la misma que la del resto de componentes del grupo.
 
 además del contenido de las entregas anteriores tendrás que añadir a tu repositorio github
 
-- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante **y con el enlace al video de la entrega 2 y el enlance al video de esta entrega**.
+- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante y con los siguientes enlaces**y con el enlace al video de la entrega 2 y el enlance al video de esta entrega**.
 - **Video subido a YouTube y enlazado en README.md**
   - Elabora un vídeo de entre 3mins y 4mins.
   - En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con
