@@ -6,6 +6,8 @@
 
 El objetivo del proyecto es completar la formación anterior llevando un modelo predictivo a un estado listo para que sea integrado en sistema de producción. 
 
+Puedes guiarte por el ejemplo en [https://github.com/rramosp/sklearn_scripts](https://github.com/rramosp/sklearn_scripts)
+
 El proyecto tendrá tres fases:
 
 **FASE 1. Modelo predictivo**:
