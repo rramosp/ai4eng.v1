@@ -227,7 +227,7 @@ Al final tu repositorio habrá de tener la siguiente estructura
         +-  04 - modelo con preprocesado de otra forma y Random Forest.ipynb
         +-  99 - modelo solución.ipynb
 
-- El nombrado de los archivos de los informes **ES ESTRICTO**. Tiene que haber un fichero `README.md` y los notebooks `01`, `02` y `99` nombrados **EXACTAMENTE IGUAL** que se indica arriba. Los notebooks `03`, `04` y posteriores (si tienes más), han de ser nombrados con ese esquema (`número consecutivo - nombre_que_escojes.ipynb`). Cualquier archivo con otro nombre será ignorado. 
+- El nombrado de los archivos **ES ESTRICTO**. Tiene que haber un fichero `README.md` y los notebooks `01`, `02` y `99` nombrados **EXACTAMENTE IGUAL** que se indica arriba. Los notebooks `03`, `04` y posteriores (si tienes más), han de ser nombrados con ese esquema (`número consecutivo - nombre_que_escojes.ipynb`). Cualquier archivo con otro nombre será ignorado. 
 
 - Cada miembro del grupo <font color="red">ES RESPONSABLE DE SU PROPIA ENTREGA</font>, independientemente de si sus compañeros de grupo entregan o no. Esto incluye rellenar el formulario y tener un github personal, aunque el contenido sea el mismo que el del resto de los compañeros de grupo.
 
