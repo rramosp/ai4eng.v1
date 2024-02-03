@@ -43,12 +43,12 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 Las sesiones se realizarán por Zoom a través del siguiente enlace 
 
-<center><big><a href="https://udea.zoom.us/j/93614993384"> https://udea.zoom.us/j/93614993384
+<center><big><a href="https://udea.zoom.us/j/98409764603"> https://udea.zoom.us/j/98409764603
 </a></big></center>
 
 <br/>
 
-**Grabaciones**: Accede en [este enlace](https://ingenia.udea.edu.co/zoom/meeting/93614993384) al repositorio de grabaciones de las sesiones sincrónicas del curso.
+**Grabaciones**: Accede en [este enlace](https://ingenia.udea.edu.co/zoom/meeting/98409764603) al repositorio de grabaciones de las sesiones sincrónicas del curso.
 <br/>
 
 
