@@ -15,7 +15,7 @@ allowfullscreen></iframe>
 
 **Plataforma de autocorrectores para los laboratorios**
 
-- [REGISTRATE AQUÍ EN LA PLATAFORMA]([https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r2/2024.1](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r2/2024.1)) para poder someter las soluciones a los talleres del curso.
+- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r3/2024.1) para poder someter las soluciones a los talleres del curso.
 - [ACCESO A LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) para ver tus calificaciones y descargar el certificado cuando completes el curso.
 
 Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
