@@ -44,15 +44,15 @@ Añade un `README.md` al repositorio github donde se describan los pasos para ej
 
 ## Formularios para las entregas
 
-- Fase 1: [FORMULARIO Entrega fase 1](https://forms.gle/Ab8JgStescGhM6KB9)
-- Fase 2: [FORMULARIO Entrega fase 2](https://forms.gle/ApGxJL6D2ZMnKV3a7)
+- Fase 1: disponible próximamente
+- Fase 2: disponible próximamente
 - Fase 3: disponible próximamente
 
 ## Fechas
 
-    FASE 1: 26 de septiembre
-    FASE 2: 24 de octubre
-    FASE 3: 21 de noviembre
+    FASE 1: 17 de marzo
+    FASE 2: 28 de abril
+    FASE 3: 26 de mayo
 
 ## Evaluación
 
