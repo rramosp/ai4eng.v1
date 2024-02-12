@@ -98,11 +98,11 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
                      PROYECTO ENTREGA 2 (0.4 puntos)
     
     40% (2.0 puntos) PROYECTO ENTREGA FINAL
-                     1/2: GIHUB. claridad y compleción de la entrega en Github
+                     1/2: GITHUB. claridad y compleción de la entrega en Github
                      1/2: KAGGLE. posición en el ranking de la competición
                           - tendrá un 5 quien quede primero
                           - tendrá un 1 quien quede de último
-                          - el puntaje del resto será entre 1 y 5, linalmente proporcional 
+                          - el puntaje del resto será entre 1 y 5, linealmente proporcional 
                             a la posición obtenida
                           - tendrá un cero quien no haya enviado ninguna solución
                           - tendrá un cero quien no tenga en su repositorio github el 
@@ -126,7 +126,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
                5/feb/2024  Inicio de clases
                8/abr/2024  Evaluación al 40%
                1/jun/2024  Finalización clases
-       4/jun - 8/jun/2024  Exámentes finales
+       4/jun - 8/jun/2024  Exámenes finales
                9/jun/2024  Fecha límite cierre de notas
      11/jun - 15/jun/2024  Habilitación y validación
               17/jun/2024  Terminación oficial
@@ -201,7 +201,7 @@ en este entrega tendrás que someter tu solución a Kaggle. **CADA MIEMBRO DE CA
 
 además del contenido de las entregas anteriores tendrás que añadir a tu repositorio github
 
-- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante y con los siguientes enlaces**y con el enlace al video de la entrega 2 y el enlance al video de esta entrega**.
+- **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante y con los siguientes enlaces**y con el enlace al video de la entrega 2 y el enlace al video de esta entrega**.
 - **Video subido a YouTube y enlazado en README.md**
   - Elabora un vídeo de entre 3mins y 4mins.
   - En los primeros 20 segs del vídeo todos los miembros del equipo han de presentarse con
