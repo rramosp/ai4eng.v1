@@ -15,7 +15,7 @@ El proyecto tendrá tres fases:
 - Desarrolla o replica un modelo predictivo para el challenge. Puedes desarrollarlo tú mismo, o puedes seleccionar algún modelo que alguien ya haya realizado mirando la parte de **code** de Kaggle. 
 - No te preocupes si las predicciones no son muy precisas. Lo importante es que emita predicciones.
 
-**FASE 2. Despligue en container**:
+**FASE 2. Despliegue en container**:
 - Configura un contenedor de Docker con todas las librerías necesarias para correr el modelo.
 - El contenedor ha de tener dos scripts:
   - `predict.py`: que dado un conjunto de datos de entrada como un fichero `csv`, emita una predicción para cada dato de entrada, usando un modelo previamente almacenado en disco.
@@ -64,11 +64,11 @@ Añade un `README.md` al repositorio github donde se describan los pasos para ej
 
 
 Para cada fase se evaluará:
-  - 10% que los elementos de la entrega estén presentes (ficherso, github, etc.)
-  - 50% que siguiendo el `README.md` se ejecuten correctamente los elementos de las entregan. Se seguirán paso a paso las instrucciones. Se penalizará cualquier paso que haya que dar que no esté descrito en el fichero. 
+  - 10% que los elementos de la entrega estén presentes (ficheros, github, etc.)
+  - 50% que siguiendo el `README.md` se ejecuten correctamente los elementos de las entregas. Se seguirán paso a paso las instrucciones. Se penalizará cualquier paso que haya que dar que no esté descrito en el fichero. 
   - 40% que tanto el notebook, como los scripts como los dockerfiles estén bien documentados. Es decir:
       - Que el notebook explique brevemente qué hace cada celda.
-      - Que los scripts y las funciones tengan sus correspondientes `doctrings`
+      - Que los scripts y las funciones tengan sus correspondientes `docstrings`
       - Que los dockerfiles tengan un comentario adjunto a cada línea de código.
 
 
