@@ -41,7 +41,7 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 <br/>
 
-Las sesiones se realizarán por Zoom a través del siguiente enlace 
+Las sesiones se realizarán por Zoom a través del siguiente enlace compteción
 
 <center><big><a href="https://udea.zoom.us/j/98409764603"> https://udea.zoom.us/j/98409764603
 </a></big></center>
@@ -102,7 +102,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
                      10% (0.5 puntos): KAGGLE. posición en el ranking de la competición
 
 
-**Criterios de calificación por la posición en el ranking de la compteción en Kaggle**
+**Criterios de calificación por la posición en el ranking de la competición en Kaggle**
 
   - tendrá un 5 quien quede primero
   - tendrá un 1 quien quede de último
@@ -111,7 +111,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
   - tendrá un cero quien no tenga en su repositorio github el notebook correspondiente para generar la solución enviada a Kaggle, según se describe más abajo
   - no se permitirán dos puntuaciones **exactamente** iguales, en cuyo caso prevalecerá la que haya sido enviada primero y cualquier otra quedará en última posición. Excepto si son entre miembros del mismo equipo.
   - se revisarán detalladamente los notebooks con las soluciones por **indicios de plagio**. Cualquier sospecha de plagio será penalizada con un cero a todas las personas implicadas. Excepto entre componentes del mismo equipo.
-  - se analizarán las distribuciones de puntuaciones por programa académico de proveniencia. Si el promedio de la puntuaciones de algún programa es distino del promedio global más una desviación estándar, se realizará un ranking separado para ese programa.
+  - se analizarán las distribuciones de puntuaciones por programa académico de proveniencia. Si el promedio de la puntuaciones de algún programa es distinto del promedio global más una desviación estándar (por arriba o por abajo), se realizará un ranking separado para ese programa.
 
 ## Fechas de entregas
 
