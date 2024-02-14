@@ -98,17 +98,20 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
                      PROYECTO ENTREGA 2 (0.4 puntos)
     
     40% (2.0 puntos) PROYECTO ENTREGA FINAL
-                     1/2: GITHUB. claridad y compleción de la entrega en Github
-                     1/2: KAGGLE. posición en el ranking de la competición
-                          - tendrá un 5 quien quede primero
-                          - tendrá un 1 quien quede de último
-                          - el puntaje del resto será entre 1 y 5, linealmente proporcional 
-                            a la posición obtenida
-                          - tendrá un cero quien no haya enviado ninguna solución
-                          - tendrá un cero quien no tenga en su repositorio github el 
-                            notebook correspondiente para generar la solución enviada a 
-                            Kaggle, según se describe más abajo
+                     30% (1.5 puntos): GITHUB. claridad y compleción de la entrega en Github
+                     10% (0.5 puntos): KAGGLE. posición en el ranking de la competición
 
+
+**Criterios de calificación por la posición en el ranking de la compteción en Kaggle**
+
+  - tendrá un 5 quien quede primero
+  - tendrá un 1 quien quede de último
+  - el puntaje del resto será entre 1 y 5, linealmente proporcional a la posición obtenida
+  - tendrá un cero quien no haya enviado ninguna solución
+  - tendrá un cero quien no tenga en su repositorio github el notebook correspondiente para generar la solución enviada a Kaggle, según se describe más abajo
+  - no se permitirán dos puntuaciones **exactamente** iguales, en cuyo caso prevalecerá la que haya sido enviada primero y cualquier otra quedará en última posición. Excepto si son entre miembros del mismo equipo.
+  - se revisarán detalladamente los notebooks con las soluciones por **indicios de plagio**. Cualquier sospecha de plagio será penalizada con un cero a todas las personas implicadas. Excepto entre componentes del mismo equipo.
+  - se analizarán las distribuciones de puntuaciones por programa académico de proveniencia. Si el promedio de la puntuaciones de algún programa es distino del promedio global más una desviación estándar, se realizará un ranking separado para ese programa.
 
 ## Fechas de entregas
 
