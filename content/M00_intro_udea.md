@@ -27,6 +27,10 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 <br/>
 
 ## Sesiones temáticas
+bación 
+### SEMESTRE 2024-1
+
+- Introducción a Github <a href='https://www.facebook.com/IngeniaUdeA/videos/1102821137726582/?locale=es_LA'>Grabación sesión en la Facultad de Ingeniería</a> (5 mar 2024)
 
 ### SEMESTRE 2023-2
 
