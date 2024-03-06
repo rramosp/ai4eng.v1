@@ -120,8 +120,8 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 
 ## Fechas de entregas
 
-        10/mar/2024    LABS MODULOS 1-2
-        17/mar/2024    PROYECTO ENTREGA 1
+        17/mar/2024    LABS MODULOS 1-2
+        24/mar/2024    PROYECTO ENTREGA 1
          7/abr/2024    LABS MODULOS 3-4
         28/abr/2024    PROYECTO ENTREGA 2
         12/may/2024    LABS MODULOS 5-6-7
