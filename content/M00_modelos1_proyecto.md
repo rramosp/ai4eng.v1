@@ -52,7 +52,7 @@ Añade un `README.md` al repositorio github donde se describan los pasos para ej
 
 ## Fechas
 
-    FASE 1: 17 de marzo
+    FASE 1: 24 de marzo
     FASE 2: 28 de abril
     FASE 3: 26 de mayo
 
