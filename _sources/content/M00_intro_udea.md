@@ -27,11 +27,12 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 <br/>
 
 ## Sesiones temáticas
-bación 
+ 
 ### SEMESTRE 2024-1
 
 - Introducción a Github <a href='https://www.facebook.com/IngeniaUdeA/videos/1102821137726582/?locale=es_LA'>Grabación sesión en la Facultad de Ingeniería</a> (5 mar 2024)
-
+- Cómo hacer disponibles los datos de la competencia de Kaggle en Google Colab <a href='https://www.youtube.com/watch?v=I9VLPqP97b4'>Video 11mins</a>
+ 
 ### SEMESTRE 2023-2
 
 - Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)
@@ -121,7 +122,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
 ## Fechas de entregas
 
         17/mar/2024    LABS MODULOS 1-2
-        24/mar/2024    PROYECTO ENTREGA 1
+        28/mar/2024    PROYECTO ENTREGA 1
          7/abr/2024    LABS MODULOS 3-4
         28/abr/2024    PROYECTO ENTREGA 2
         12/may/2024    LABS MODULOS 5-6-7
