@@ -183,7 +183,7 @@ Cada entrega se hace a través de un formulario donde indicarás tu repositorio 
 
 Los contenidos de cada entrega son los siguientes:
 
-##### ENTREGA 1 (Formulario de entrega pendiente de publicar)
+##### ENTREGA 1  --  <a href='https://forms.gle/aEQEgwAdzh2uiKFk6'>Formulario para la entrega 1</a>
 
 Esta primera entrega sólo consta de dos archivos que han de estar en tu repositorio github:
 
