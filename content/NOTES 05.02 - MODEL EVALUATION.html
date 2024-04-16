@@ -2067,7 +2067,6 @@ endpoint https://m3g87w9l3k.execute-api.us-west-2.amazonaws.com/dev/rlxmooc
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="c1">#from bokeh.charts import *</span>
 <span class="kn">from</span> <span class="nn">bokeh.models</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">bokeh</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">cm</span>
@@ -2093,13 +2092,13 @@ endpoint https://m3g87w9l3k.execute-api.us-west-2.amazonaws.com/dev/rlxmooc
 
     <span class="n">TILES</span> <span class="o">=</span> <span class="n">WMTSTileSource</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">openmap_url</span><span class="p">)</span>
     <span class="n">tools</span><span class="o">=</span><span class="s2">&quot;pan,wheel_zoom,reset&quot;</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">,</span> <span class="n">plot_width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span><span class="n">plot_height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">,</span> <span class="n">min_width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span><span class="n">min_height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
 
     <span class="n">p</span><span class="o">.</span><span class="n">add_tile</span><span class="p">(</span><span class="n">TILES</span><span class="p">)</span>
 
     <span class="n">p</span><span class="o">.</span><span class="n">axis</span><span class="o">.</span><span class="n">visible</span> <span class="o">=</span> <span class="kc">False</span>
 
-    <span class="n">cb</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">plot_width</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">plot_height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>  <span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">)</span>
+    <span class="n">cb</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span><span class="n">min_width</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">max_width</span><span class="o">=</span><span class="mi">40</span><span class="p">,</span> <span class="n">min_height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>  <span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">)</span>
     <span class="n">yc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">color</span><span class="p">),</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">color</span><span class="p">),</span><span class="mi">20</span><span class="p">)</span>
     <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
     <span class="n">dy</span> <span class="o">=</span> <span class="n">yc</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">yc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
