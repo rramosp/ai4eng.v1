@@ -191,7 +191,7 @@ Esta primera entrega sólo consta de dos archivos que han de estar en tu reposit
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante
 - **01 - exploración.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y muestras alguna exploración de datos (por ejemplo, cuantos estudiantes hay de cada clase, por localidades, etc.). Esta exploración no tiene que ser exhaustiva, tan sólo que muestres que eres capaz de cargar los datos e inspeccionarlos.
 
-##### ENTREGA 2 (Formulario de entrega pendiente de publicar)
+##### ENTREGA 2 -- <a href='https://forms.gle/c3dVeBWkL8a1rdKy9'>Formulario para la entrega 2</a>
 
 además del contenido de la entrega 1 en github:
 
