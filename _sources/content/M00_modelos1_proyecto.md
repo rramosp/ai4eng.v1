@@ -49,7 +49,7 @@ Añade un `README.md` al repositorio github donde se describan los pasos para ej
 ## Formularios para las entregas
 
 - Fase 1: [Formulario](https://forms.gle/aEQEgwAdzh2uiKFk6)
-- Fase 2: disponible próximamente
+- Fase 2: [Formulario](https://forms.gle/c3dVeBWkL8a1rdKy9)
 - Fase 3: disponible próximamente
 
 ## Fechas
