@@ -6,7 +6,6 @@
 
 El objetivo del proyecto es completar la formación anterior llevando un modelo predictivo a un estado listo para que sea integrado en sistema de producción. 
 
-Puedes guiarte por el ejemplo en [https://github.com/rramosp/sklearn_scripts](https://github.com/rramosp/sklearn_scripts)
 
 El proyecto tendrá tres fases:
 
@@ -20,11 +19,14 @@ El proyecto tendrá tres fases:
 - El contenedor ha de tener dos scripts:
   - `predict.py`: que dado un conjunto de datos de entrada como un fichero `csv`, emita una predicción para cada dato de entrada, usando un modelo previamente almacenado en disco.
   - `train.py`: que dado un conjunto de entrenamiento (datos más etiquetas), entrene de nuevo el modelo y guarde una versión nueva del mismo.
+- Para estos dos scripts puedes guiarte por el ejemplo en [https://github.com/rramosp/sklearn_scripts](https://github.com/rramosp/sklearn_scripts)
 
 **FASE 3. API REST**:
 - Crea una aplicación REST en un script **python** `apirest.py` (p.ej. con `flask`) que exponga dos `endpoints`:
   - `predict`: que con un dato nuevo devuelve su predicción
   - `train`: que lanza un proceso de entrenamiento, con unso datos de entrenamiento estándar.
+- Para esta fase puedes guiarte con este repo [https://github.com/rramosp/restapiexample](https://github.com/rramosp/restapiexample)
+    
 
 <br/>
 
