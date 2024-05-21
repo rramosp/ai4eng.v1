@@ -127,7 +127,7 @@ Durante las sesiones le daremos prioridad <font color='red'><b>A LAS PREGUNTAS q
         14/abr/2024    LABS MODULO 4
         28/abr/2024    PROYECTO ENTREGA 2
         12/may/2024    LABS MODULOS 5-6-7
-        26/may/2024    PROYECTO ENTREGA FINAL
+         1/jun/2024    PROYECTO ENTREGA FINAL
 
 <br/>
 
