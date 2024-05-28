@@ -205,7 +205,7 @@ además del contenido de la entrega 1 en github:
 - **02 - preprocesado.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y realizas las operaciones de limpieza y preprocesado de datos que necesites (p.ej. convertir columnas en one-hot, normalizar valores de rangos, imputar datos faltantes, etc.)
 
   
-##### ENTREGA FINAL (Formulario de entrega pendiente de publicar)
+##### ENTREGA FINAL -- <a href='https://forms.gle/fiEdNZveQTQWGCLSA'>Formulario para la entrega final</a>
 
 en este entrega tendrás que someter tu solución a Kaggle. **CADA MIEMBRO DE CADA GRUPO TIENE QUE SOMETER SU PROPIA SOLUCIÓN**, aunque sea la misma que la del resto de componentes del grupo.
 
