@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MODULO 4: Gestión de datos &#8212; Inteligencia Artificial para las Ciencias e Ingenierías</title>
+    <title>Proyecto sustitutorio Modelos 1 &#8212; Inteligencia Artificial para las Ciencias e Ingenierías</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -48,8 +48,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="04.01 - DATA EXPLORATION" href="NOTES%2004.01%20-%20DATA%20EXPLORATION.html" />
-    <link rel="prev" title="LAB 03.02 - Timeseries model" href="LAB%2003.02%20-%20TIMESERIES%20MODEL.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -119,7 +117,7 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="M00_intro_udea_20242.html">
    2024.2 UDEA
@@ -241,11 +239,11 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="M04_videos.html">
    MODULO 4: Gestión de datos
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
@@ -477,7 +475,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/content/M04_videos.md"
+        <a href="../_sources/content/M00_modelos1_proyecto_20241.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -537,13 +535,33 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#carga-y-manipulacion-de-datos">
-   Carga y manipulación de datos
+  <a class="reference internal nav-link" href="#estructura-de-proyecto">
+   Estructura de proyecto
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tests-de-hipotesis">
-   Tests de hipótesis
+  <a class="reference internal nav-link" href="#sesiones-tematicas">
+   Sesiones temáticas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entregas">
+   Entregas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formularios-para-las-entregas">
+   Formularios para las entregas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fechas">
+   Fechas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evaluacion">
+   Evaluación
   </a>
  </li>
 </ul>
@@ -555,7 +573,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>MODULO 4: Gestión de datos</h1>
+                <h1>Proyecto sustitutorio Modelos 1</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -566,13 +584,33 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#carga-y-manipulacion-de-datos">
-   Carga y manipulación de datos
+  <a class="reference internal nav-link" href="#estructura-de-proyecto">
+   Estructura de proyecto
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tests-de-hipotesis">
-   Tests de hipótesis
+  <a class="reference internal nav-link" href="#sesiones-tematicas">
+   Sesiones temáticas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#entregas">
+   Entregas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formularios-para-las-entregas">
+   Formularios para las entregas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fechas">
+   Fechas
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#evaluacion">
+   Evaluación
   </a>
  </li>
 </ul>
@@ -585,155 +623,96 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="modulo-4-gestion-de-datos">
-<h1>MODULO 4: Gestión de datos<a class="headerlink" href="#modulo-4-gestion-de-datos" title="Permalink to this headline">¶</a></h1>
-<style>
-.right{
-    float:right;
-}
-</style>
-<div class="section" id="carga-y-manipulacion-de-datos">
-<h2>Carga y manipulación de datos<a class="headerlink" href="#carga-y-manipulacion-de-datos" title="Permalink to this headline">¶</a></h2>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>4.01 - Carga de datos y exploración inicial</strong>  <span class="right"><font color="red">Video 12mins</font></span> <br/>Nos enfrentamos por primera vez a un dataset de un problema real, basado en una competición de Kaggle.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<center>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/yDUibzYS9Go" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</center>
+  <div class="section" id="proyecto-sustitutorio-modelos-1">
+<h1>Proyecto sustitutorio Modelos 1<a class="headerlink" href="#proyecto-sustitutorio-modelos-1" title="Permalink to this headline">¶</a></h1>
+<p><font color="red">Esta es información para los estudiantes matriculados en la materia de Modelos I, que ya han visto previamente la electiva de Inteligencia Artificial.</font></p>
+<div class="section" id="estructura-de-proyecto">
+<h2>Estructura de proyecto<a class="headerlink" href="#estructura-de-proyecto" title="Permalink to this headline">¶</a></h2>
+<p>El objetivo del proyecto es completar la formación anterior llevando un modelo predictivo a un estado listo para que sea integrado en sistema de producción.</p>
+<p>El proyecto tendrá tres fases:</p>
+<p><strong>FASE 1. Modelo predictivo</strong>:</p>
+<ul class="simple">
+<li><p>Escoge un challenge de Kaggle. Mejor si es una competición y no un dataset, ya que las competiciones son más completas y tienen más contribuciones de código. <font color="red">Se recomiendo escoger algún dataset relacionado con el transporte personal (Taxis, Uber, etc.)</font>, para que haya una posibilidad futura de ser integrado en los proyectos de la Escuela de Software. Pero no es obligatorio.</p></li>
+<li><p>Desarrolla o replica un modelo predictivo para el challenge. Puedes desarrollarlo tú mismo, o puedes seleccionar algún modelo que alguien ya haya realizado mirando la parte de <strong>code</strong> de Kaggle.</p></li>
+<li><p>No te preocupes si las predicciones no son muy precisas. Lo importante es que emita predicciones.</p></li>
+</ul>
+<p><strong>FASE 2. Despliegue en container</strong>:</p>
+<ul class="simple">
+<li><p>Configura un contenedor de Docker con todas las librerías necesarias para correr el modelo.</p></li>
+<li><p>El contenedor ha de tener dos scripts:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">predict.py</span></code>: que dado un conjunto de datos de entrada como un fichero <code class="docutils literal notranslate"><span class="pre">csv</span></code>, emita una predicción para cada dato de entrada, usando un modelo previamente almacenado en disco.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">train.py</span></code>: que dado un conjunto de entrenamiento (datos más etiquetas), entrene de nuevo el modelo y guarde una versión nueva del mismo.</p></li>
+</ul>
+</li>
+<li><p>Para estos dos scripts puedes guiarte por el ejemplo en <a class="reference external" href="https://github.com/rramosp/sklearn_scripts">https://github.com/rramosp/sklearn_scripts</a></p></li>
+</ul>
+<p><strong>FASE 3. API REST</strong>:</p>
+<ul class="simple">
+<li><p>Crea una aplicación REST en un script <strong>python</strong> <code class="docutils literal notranslate"><span class="pre">apirest.py</span></code> (p.ej. con <code class="docutils literal notranslate"><span class="pre">flask</span></code>) que exponga dos <code class="docutils literal notranslate"><span class="pre">endpoints</span></code>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">predict</span></code>: que con un dato nuevo devuelve su predicción</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">train</span></code>: que lanza un proceso de entrenamiento, con unso datos de entrenamiento estándar.</p></li>
+</ul>
+</li>
+<li><p>Para esta fase puedes guiarte con este repo <a class="reference external" href="https://github.com/rramosp/restapiexample">https://github.com/rramosp/restapiexample</a></p></li>
+</ul>
+<br/>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>4.02 - Exploración de variables continuas</strong>  <span class="right"><font color="red">Video 9mins</font></span> <br/>Consideraciones sobre la exploración de variables continuas<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<center>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/ocGrjw7LRfg" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</center>
+<div class="section" id="sesiones-tematicas">
+<h2>Sesiones temáticas<a class="headerlink" href="#sesiones-tematicas" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)</p></li>
+<li><p>Introducción a docker <a href='https://udea.zoom.us/rec/play/vOwql6zvWfFWmYrlEPqAA9noBGTS_LqGCVgiacnwzDMDbWR0OSRSp4C2plW0JfLsGHSDvNbyEPgve7u1.vYoWWj4Lg46AADpt?canPlayFromShare=true&from=my_recording&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fudea.zoom.us%2Frec%2Fshare%2F3uWxP0umRyJRXv-6NexPVtVXjW97-CJxszC6ZQStJ4IbNnYMPes4XWPoZ0pOrWxg.F-GyXrDZgL9aQSnr'>Grabación de la sesión sincrónica</a> (24 oct 2023)</p></li>
+</ul>
+<br/>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>4.03 - Exploración de variables categóricas</strong>  <span class="right"><font color="red">Video 4mins</font></span> <br/>Consideraciones sobre la exploración de variables categóricas<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<center>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/y3H_2XPx6vQ" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</center>
+<div class="section" id="entregas">
+<h2>Entregas<a class="headerlink" href="#entregas" title="Permalink to this headline">¶</a></h2>
+<p>El proyecto se podrá realizar <strong>individualmente</strong> o <strong>por parejas</strong>. En cualquier caso, cada persona es responsable de su entrega. Si es en parejas, <strong>ambas personas</strong> han de hacer su entrega por separado, aunque el contenido sea el mismo. Si un miembro de una pareja no hace la entrega, no tendrá nota, independientemente de si su pareja entregó o no.</p>
+<p>Tendrás que entregar tu proyecto en un repositorio de github, que contenga:</p>
+<ul class="simple">
+<li><p>Un directorio <code class="docutils literal notranslate"><span class="pre">fase-1</span></code>, con al menos n notebook que muestre cómo se entrena y se predice con el modelo</p></li>
+<li><p>Un directorio <code class="docutils literal notranslate"><span class="pre">fase-2</span></code>, con los scripts <code class="docutils literal notranslate"><span class="pre">predict.py</span></code> y <code class="docutils literal notranslate"><span class="pre">train.py</span></code> y un <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> para crear el contenedor con las librerías y los scripts anteriores incluidos</p></li>
+<li><p>Un directorio <code class="docutils literal notranslate"><span class="pre">fase-3</span></code>, con los scripts anteriores, más <code class="docutils literal notranslate"><span class="pre">apirest.py</span></code>, más un <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> nuevo que extienda el anterior para instalar todo lo necesario para el API REST.</p></li>
+</ul>
+<p>Añade un <code class="docutils literal notranslate"><span class="pre">README.md</span></code> al repositorio github donde se describan los pasos para ejecutar cada elemento de cada fase.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>4.04 - Visión sobre datos faltantes</strong>  <span class="right"><font color="red">Video 3mins</font></span> <br/>Mostramos como tener una visión global sobre las variables faltantes de un dataset.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<center>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/_5lweSCx-2I" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</center>
+<div class="section" id="formularios-para-las-entregas">
+<h2>Formularios para las entregas<a class="headerlink" href="#formularios-para-las-entregas" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fase 1: <a class="reference external" href="https://forms.gle/aEQEgwAdzh2uiKFk6">Formulario</a></p></li>
+<li><p>Fase 2: <a class="reference external" href="https://forms.gle/c3dVeBWkL8a1rdKy9">Formulario</a></p></li>
+<li><p>Fase 3: <a class="reference external" href="https://forms.gle/fiEdNZveQTQWGCLSA">Formulario</a></p></li>
+</ul>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>4.05 - Reparación de datos faltantes</strong>  <span class="right"><font color="red">Video 13mins</font></span> <br/>Mostramos distintas alternativas para la imputación de datos faltantes.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<center>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/ihpEYrq1UYc" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</center>
+<div class="section" id="fechas">
+<h2>Fechas<a class="headerlink" href="#fechas" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>FASE 1: 24 de marzo
+FASE 2: 28 de abril
+FASE 3:  1 de junio
+</pre></div>
 </div>
-</details></div>
-<div class="section" id="tests-de-hipotesis">
-<h2>Tests de hipótesis<a class="headerlink" href="#tests-de-hipotesis" title="Permalink to this headline">¶</a></h2>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>4.06 - Tests de hipótesis - Intuición</strong>  <span class="right"><font color="red">Video 18mins</font></span> <br/>Recordamos la intuición y mecanismo de los test de hipótesis para evaluar estadísticamente distintas alternativas<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<center>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/dyf33Y2owkY" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</center>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>4.07 - Tests de hipótesis - Terminología</strong>  <span class="right"><font color="red">Video 8mins</font></span> <br/>Vinculamos la intuición con la práctica estándar de tests de hipótesis<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<center>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/iao0Ssyalig" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</center>
+<div class="section" id="evaluacion">
+<h2>Evaluación<a class="headerlink" href="#evaluacion" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>FASE 1: 40%
+FASE 2: 40%
+FASE 3: 20%
+</pre></div>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>4.08 - Tests de hipótesis - Comparación de dos grupos</strong>  <span class="right"><font color="red">Video 18mins</font></span> <br/>Ilustramos el mismo procedimiento de simulación con un problema distinto.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<center>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/BvoGm5fK9lM" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</center>
-</div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-<strong>LAB 04.01 y 04.02</strong>  <span class="right"><font color="red">Video 9mins</font></span> <br/>Talleres de carga y manipulación de datos y de construcción de datasets.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<center>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/mb0fH3AXhZ4" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
-</center>
-</div>
-</details><div class="toctree-wrapper compound">
-</div>
+<p>Para cada fase se evaluará:</p>
+<ul class="simple">
+<li><p>10% que los elementos de la entrega estén presentes (ficheros, github, etc.)</p></li>
+<li><p>50% que siguiendo el <code class="docutils literal notranslate"><span class="pre">README.md</span></code> se ejecuten correctamente los elementos de las entregas. Se seguirán paso a paso las instrucciones. Se penalizará cualquier paso que haya que dar que no esté descrito en el fichero.</p></li>
+<li><p>40% que tanto el notebook, como los scripts como los dockerfiles estén bien documentados. Es decir:</p>
+<ul>
+<li><p>Que el notebook explique brevemente qué hace cada celda.</p></li>
+<li><p>Que los scripts y las funciones tengan sus correspondientes <code class="docutils literal notranslate"><span class="pre">docstrings</span></code></p></li>
+<li><p>Que los dockerfiles tengan un comentario adjunto a cada línea de código.</p></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 
@@ -764,20 +743,6 @@ allowfullscreen></iframe>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="LAB%2003.02%20-%20TIMESERIES%20MODEL.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">LAB 03.02 - Timeseries model</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="NOTES%2004.01%20-%20DATA%20EXPLORATION.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">04.01 - DATA EXPLORATION</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
