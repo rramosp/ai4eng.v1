@@ -2,6 +2,10 @@
 
 <font color="red">Esta es información para los estudiantes de Ingeniería de Sistemas, que ya han visto previamente el contenido la electiva de Inteligencia Artificial.</font>
 
+
+2<br/><img src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
+
+
 ## Estructura de proyecto
 
 El objetivo del proyecto es completar la formación anterior llevando un modelo predictivo a un estado listo para que sea integrado en sistema de producción. 
@@ -43,11 +47,13 @@ El proyecto tendrá tres fases:
 El proyecto se podrá realizar **individualmente** o **por parejas**. En cualquier caso, cada persona es responsable de su entrega. Si es en parejas, **ambas personas** han de hacer su entrega por separado, aunque el contenido sea el mismo. Si un miembro de una pareja no hace la entrega, no tendrá nota, independientemente de si su pareja entregó o no.
 
 Tendrás que entregar tu proyecto en un repositorio de github, que contenga:
-- Un directorio `fase-1`, con al menos n notebook que muestre cómo se entrena y se predice con el modelo
+- Un directorio `fase-1`, con al menos un notebook que muestre cómo se entrena y se predice con el modelo
 - Un directorio `fase-2`, con los scripts `predict.py` y `train.py` y un `Dockerfile` para crear el contenedor con las librerías y los scripts anteriores incluidos  
 - Un directorio `fase-3`, con los scripts anteriores, más `apirest.py`, más un `Dockerfile` nuevo que extienda el anterior para instalar todo lo necesario para el API REST.
 
 Añade un `README.md` al repositorio github donde se describan los pasos para ejecutar cada elemento de cada fase.
+
+Se recomienda que uses el mismo repositorio para todas tus entregas, de forma que, a lo largo del curso, lo vayas poblando con los directorios `fase-1`, `fase-2`, `fase-3`.
 
 ## Formularios para las entregas
 

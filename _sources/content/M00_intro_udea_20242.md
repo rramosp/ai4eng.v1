@@ -24,23 +24,6 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 - **Talleres y plataforma de autocorrección** [Video 13mins](https://youtu.be/eISlF6k0y58)
 
 
-<br/>
-
-## Sesiones temáticas
- 
-### SEMESTRE 2024-1
-
-- Introducción a Github <a href='https://www.facebook.com/IngeniaUdeA/videos/1102821137726582/?locale=es_LA'>Grabación sesión en la Facultad de Ingeniería</a> (5 mar 2024)
-- Cómo hacer disponibles los datos de la competencia de Kaggle en Google Colab <a href='https://www.youtube.com/watch?v=I9VLPqP97b4'>Video 11mins</a>
- 
-### SEMESTRE 2023-2
-
-- Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)
-- Introducción a github <a href='https://www.facebook.com/IngeniaUdeA/videos/301211516059672/'>Grabación sesión en Expoingeniería 2023</a> (4 nov 2023)
-- Introducción a docker <a href='https://udea.zoom.us/rec/play/vOwql6zvWfFWmYrlEPqAA9noBGTS_LqGCVgiacnwzDMDbWR0OSRSp4C2plW0JfLsGHSDvNbyEPgve7u1.vYoWWj4Lg46AADpt?canPlayFromShare=true&from=my_recording&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fudea.zoom.us%2Frec%2Fshare%2F3uWxP0umRyJRXv-6NexPVtVXjW97-CJxszC6ZQStJ4IbNnYMPes4XWPoZ0pOrWxg.F-GyXrDZgL9aQSnr'>Grabación de la sesión sincrónica</a> (24 oct 2023)
-
-<br/>
-
 ## Horario de clases
     
         MARTES 10:00-12:00          JUEVES 10:00-12:00
@@ -179,11 +162,12 @@ Para ello tendrás que
 
   - El nombrado de archivos en cualquier entrega es **ESTRICTO** según las instrucciones y el ejemplo de entrega más abajo. Cualquier archivo con nombre o formato distinto invalidará la entrega, aunque sea entregado antes de las fechas límite.
 
-- **Incumplimiento y penzalizaciones**
+- **Incumplimiento y penalizaciones**
 
-  - Ante **cualquier falta de cumplimiento** de estas normas, se considerará la entrega completa inválida y <font color="red">tendrá una calificación de cero</font>. Con esto, 
+  - Ante **cualquier falta de cumplimiento** de estas normas, se considerará la entrega completa inválida y <font color="red">tendrá una calificación de cero</font>. 
 
   - Cada estudiante tendrá un **plazo de 48 horas** desde la comunicación de las calificaciones de cada entrega para subsanar cualquier error.
+
   - Se aplicará una **penalización del 50%** de la calificación total de la entrega cuando el estudiante subsane los errores en el plazo anterior.
 
 
@@ -278,9 +262,23 @@ La evaluación de la entrega final tiene dos componentes, como se describió má
 
 Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes que hacer el proyecto sustituto
 
-1<br/><img src='local/imgs/proy-sustituto.png'>
-2<br/><img src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
-3<br/><img src='content/local/imgs/proy-sustituto.png'>
+<br/><img src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
+
+
+## Sesiones temáticas
+ 
+ Sesiones complementarias que se realizaron en semestrens pasados y son de interés general.
+
+### SEMESTRE 2024-1
+
+- Introducción a Github <a href='https://www.facebook.com/IngeniaUdeA/videos/1102821137726582/?locale=es_LA'>Grabación sesión en la Facultad de Ingeniería</a> (5 mar 2024)
+- Cómo hacer disponibles los datos de la competencia de Kaggle en Google Colab <a href='https://www.youtube.com/watch?v=I9VLPqP97b4'>Video 11mins</a>
+ 
+### SEMESTRE 2023-2
+
+- Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)
+- Introducción a github <a href='https://www.facebook.com/IngeniaUdeA/videos/301211516059672/'>Grabación sesión en Expoingeniería 2023</a> (4 nov 2023)
+- Introducción a docker <a href='https://udea.zoom.us/rec/play/vOwql6zvWfFWmYrlEPqAA9noBGTS_LqGCVgiacnwzDMDbWR0OSRSp4C2plW0JfLsGHSDvNbyEPgve7u1.vYoWWj4Lg46AADpt?canPlayFromShare=true&from=my_recording&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fudea.zoom.us%2Frec%2Fshare%2F3uWxP0umRyJRXv-6NexPVtVXjW97-CJxszC6ZQStJ4IbNnYMPes4XWPoZ0pOrWxg.F-GyXrDZgL9aQSnr'>Grabación de la sesión sincrónica</a> (24 oct 2023)
 
 
 ## AI for Everyone
