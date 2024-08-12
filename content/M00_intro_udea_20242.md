@@ -278,7 +278,9 @@ La evaluación de la entrega final tiene dos componentes, como se describió má
 
 Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes que hacer el proyecto sustituto
 
-<img src='local/imgs/proy-sustituto.png'>
+1<br/><img src='local/imgs/proy-sustituto.png'>
+2<br/><img src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
+3<br/><img src='content/local/imgs/proy-sustituto.png'>
 
 
 ## AI for Everyone
