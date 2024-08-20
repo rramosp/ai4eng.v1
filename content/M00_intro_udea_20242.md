@@ -114,7 +114,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 Tendrás que participar en la siguiente de Kaggle y realizar tres entregas con el desarrollo progresivo del proyecto.
 
-`INCLUIR ENLACE COMPETENCIA`
+[COMPETENCIA AI4ENG UDEA - Semestre 2024-2](https://www.kaggle.com/competitions/udea-ai4eng-20242)
 
 Para ello tendrás que
 
