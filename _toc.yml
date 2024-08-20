@@ -5,6 +5,7 @@
   title: 2024.2 M1 - proyecto sustituto
 - file: content/M01_videos
   sections:
+    - file: "content/NOTES 01.01 - PROYECTO KAGGLE"
     - file: "content/LAB 01.01 - PRACTICE SUBMISSION"
     - file: "content/LAB 01.02 - METRICS"
 - file: content/M02_videos
