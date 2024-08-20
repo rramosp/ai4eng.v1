@@ -65,7 +65,7 @@ El proyecto se podrá realizar **individualmente** o **por parejas**. En cualqui
 Tendrás que entregar tu proyecto en un repositorio de github, que contenga:
 - Un directorio `fase-1`, con al menos un notebook que muestre cómo se entrena y se predice con el modelo
 - Un directorio `fase-2`, con los scripts `predict.py` y `train.py` y un `Dockerfile` para crear el contenedor con las librerías y los scripts anteriores incluidos  
-- Un directorio `fase-3`, con los scripts anteriores, más `apirest.py`, más un `Dockerfile` nuevo que extienda el anterior para instalar todo lo necesario para el API REST.
+- Un directorio `fase-3`, con los scripts anteriores, más `apirest.py`, más `client.py` que ilustre cómo se llama al api desplegado sobre docker programáticamente, más un `Dockerfile` nuevo que extienda el anterior para instalar todo lo necesario para el API REST.
 
 Añade un `README.md` al repositorio github donde se describan los pasos para ejecutar cada elemento de cada fase.
 

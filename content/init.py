@@ -7,6 +7,13 @@ endpoint = 'https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlx
 zip_file_url ="https://github.com/%s/archive/main.zip"%github_repo
 #endpoint = 'http://localhost:5000/rlxmooc'
 
+import subprocess
+import sys
+import requests, zipfile, io, os, shutil, subprocess
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
 def get_last_modif_date(localdir):
     try:
         import time, os, pytz
@@ -44,27 +51,10 @@ def init(force_download=False):
             shutil.move(dirname+"/local", "local")
         shutil.rmtree(dirname)
 
+    install("rlxutils")
+
 def get_weblink():
     from IPython.display import HTML
     return HTML("<h3>See <a href='"+endpoint+"/web/login' target='_blank'>my courses and progress</a></h2>")
 
-def install_sourcedefender():
-    print('enabling encryption...')
-    output = subprocess.run(['pip', 'install', 'sourcedefender==7.0.0'], stderr=subprocess.PIPE)
-
-    if output.returncode != 0:
-        STDOUT_RED_COLOR = '\033[91m'
-        STDOUT_RESET_COLOR = '\033[0m'
-        print('Sourcedefender installation failed, returning')
-        print(STDOUT_RED_COLOR + output.stderr.decode('ASCII') + STDOUT_RESET_COLOR)
-    else:
-        print('encryption enabled')
-
-
-import requests, zipfile, io, os, shutil, subprocess
-#try:
-#    import sourcedefender
-#except ModuleNotFoundError:
-#    install_sourcedefender()
-#    import sourcedefender
 
