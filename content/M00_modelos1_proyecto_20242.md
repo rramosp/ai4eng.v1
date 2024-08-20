@@ -3,7 +3,23 @@
 <font color="red">Esta es información para los estudiantes de Ingeniería de Sistemas, que ya han visto previamente el contenido la electiva de Inteligencia Artificial.</font>
 
 
-2<br/><img src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
+<br/><img src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
+
+## Horario de clases
+    
+        MARTES 10:00-12:00          JUEVES 10:00-12:00
+
+<br/>
+
+Las sesiones se realizarán por Zoom a través del siguiente enlace compteción
+
+<center><big><a href="https://udea.zoom.us/j/97297493068">https://udea.zoom.us/j/97297493068
+</a></big></center>
+
+<br/>
+
+**Grabaciones**: Accede en [este enlace](https://ingenia.udea.edu.co/zoom/meeting/97297493068) al repositorio de grabaciones de las sesiones sincrónicas del curso.
+<br/>
 
 
 ## Estructura de proyecto
