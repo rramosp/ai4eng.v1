@@ -80,7 +80,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 ## Fechas de entregas
 
-         3/sep/2024    LABS MODULOS 1-2
+        10/sep/2024    LABS MODULOS 1-2
          8/sep/2024    PROYECTO ENTREGA 1
          6/oct/2024    LABS MODULO 3-4
         13/oct/2024    PROYECTO ENTREGA 2
