@@ -1,5 +1,5 @@
 # ------ COURSE PARAMS ------
-course_id = 'ai4eng.v1'
+course_id = 'ai4eng.v1\S*'
 github_repo = 'rramosp/ai4eng.v1'
 endpoint = 'https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc'
 # ------ COURSE PARAMS ------
