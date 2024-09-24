@@ -73,9 +73,9 @@ Se recomienda que uses el mismo repositorio para todas tus entregas, de forma qu
 
 ## Formularios para las entregas
 
-- Fase 1: [Formulario](https://forms.gle/aEQEgwAdzh2uiKFk6)
-- Fase 2: [Formulario](https://forms.gle/c3dVeBWkL8a1rdKy9)
-- Fase 3: [Formulario](https://forms.gle/fiEdNZveQTQWGCLSA)
+- Fase 1: [Formulario](https://forms.gle/jzMm8CPu1M9ypekb6)
+- Fase 2: [Formulario](https://forms.gle/SKRggRbvFtBFDymF6)
+- Fase 3: [Formulario](https://forms.gle/FdzE2QvKgoFK8NqZ7)
 
 ## Fechas
 
