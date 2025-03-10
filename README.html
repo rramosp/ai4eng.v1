@@ -1,114 +1,189 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="./" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Inteligencia Artificial para las Ciencias e Ingenierías &#8212; Inteligencia Artificial para las Ciencias e Ingenierías</title>
-    
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/togglebutton.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-43235448-4"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-43235448-4');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'UA-43235448-4');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'README';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
-<script async="" src="https://www.google-analytics.com/analytics.js"></script>
-<script>
-                        window.ga = window.ga || function () {
-                            (ga.q = ga.q || []).push(arguments) };
-                        ga.l = +new Date;
-                        ga('create', 'UA-43235448-4', 'auto');
-                        ga('set', 'anonymizeIp', true);
-                        ga('send', 'pageview');
-                    </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
-    
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="index.html">
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      
+      
         
       
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
       
-      <img src="_static/fudea.jpg" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Inteligencia Artificial para las Ciencias e Ingenierías</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="_static/fudea.jpg" class="logo__image only-light" alt="Inteligencia Artificial para las Ciencias e Ingenierías - Home"/>
+    <script>document.write(`<img src="_static/fudea.jpg" class="logo__image only-dark" alt="Inteligencia Artificial para las Ciencias e Ingenierías - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -118,474 +193,236 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="content/M00_intro_udea_20242.html">
-   2024.2 UDEA
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="content/M00_modelos1_proyecto_20242.html">
-   2024.2 M1 - proyecto sustituto
-  </a>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="content/M01_videos.html">
-   MODULO 1: Introducción
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2001.01%20-%20PROYECTO%20KAGGLE.html">
-     01.01 - PROYECTO KAGGLE
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2001.01%20-%20PRACTICE%20SUBMISSION.html">
-     LAB 01.01 - Practice submission
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2001.02%20-%20METRICS.html">
-     LAB 01.02 - Metrics
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="content/M02_videos.html">
-   MODULO 2: Python
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2002.01%20-%20PYTHON%20BASIC%20STRUCTURES.html">
-     02.01 - BASIC STRUCTURES
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2002.02%20-%20MORE%20PYTHON.html">
-     02.02 - MORE PYTHON
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2002.03%20-%20PYTHON%20NUMPY.html">
-     02.03 - NUMPY
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2002.04%20-%20PANDAS.html">
-     02.04 - PANDAS
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2002.01%20-%20PYTHON.html">
-     LAB 02.01 - Python
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2002.02%20-%20NUMPY.html">
-     LAB 02.02 - Numpy
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2002.03%20-%20PANDAS.html">
-     LAB 02.03 - Pandas
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2002.04%20-%20CARD%20TRICK.html">
-     LAB 02.04 - Card trick
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="content/M03_videos.html">
-   MODULO 3: Generación de modelos
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2003.01%20-%20MODELS%20DERIVED%20FROM%20DATA.html">
-     03.01 - MODELS FROM DATA
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2003.02%20-%20SUPERVISED%20ALGORITHMS.html">
-     03.02 - SUPERVISED ALGORITHMS
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2003.03%20-%20SVM%20AND%20FEATURE%20TRANSFORMATION.html">
-     03.03 - SVMs
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2003.01%20-%20MODEL%20GENERATION.html">
-     LAB 03.01 - Model Generation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2003.02%20-%20TIMESERIES%20MODEL.html">
-     LAB 03.02 - Timeseries model
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="content/M04_videos.html">
-   MODULO 4: Gestión de datos
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
-  <label for="toctree-checkbox-4">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2004.01%20-%20DATA%20EXPLORATION.html">
-     04.01 - DATA EXPLORATION
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2004.02%20-%20DATA%20CLEANING.html">
-     04.02 - DATA CLEANING
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2004.03%20-%20SIMPLE%20HYPOTHESIS%20TESTING.html">
-     04.03 - HYPOTHESIS TESTING
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2004.04%20-%20HYPOTHESIS%20TESTING%20-%20COMPARING%20SAMPLE%20MEANS.html">
-     04.04 - COMPARING SAMPLES
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2004.01%20-%20CLEANING%20DATA.html">
-     LAB 04.01 - Cleaning Data
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2004.02%20-%20BUILDING%20DATASETS.html">
-     LAB 04.02 - Buiding Datasets
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="content/M05_videos.html">
-   MODULO 5: Gestión de modelos
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2005.01%20-%20A%20TIME%20SERIES%20PREDICTIVE%20STRATEGY.html">
-     05.01 - TIME SERIES PREDICTIONS
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2005.02%20-%20MODEL%20EVALUATION.html">
-     05.02 - MODEL EVALUATION
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2005.03%20-%20MODEL%20SELECTION.html">
-     05.03 - MODEL SELECTION
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2005.04%20-%20EXAMPLE%20SUBMISSION%20TO%20KAGGLE.html">
-     05.04 - PARTICIPATE IN KAGGLE
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2005.01%20-%20MEASURING%20PREDICTIVITY%20IMPACT.html">
-     LAB 05.01 - Predictions impact
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2005.02%20-%20MODEL%20EVALUATION.html">
-     LAB 05.02 - Model evaluation
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="content/M06_videos.html">
-   MODULO 6: Métodos no supervisados
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2006.01%20-%20UNSUPERVISED%20LEARNING%20-%20CLUSTERING.html">
-     06.01 - CLUSTERING
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2006.02%20-%20PCA.html">
-     06.02 - PCA
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2006.03%20-%20DIMENSIONALITY%20REDUCTION.html">
-     06.03 - PCA, NMF IN PRACTICE
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2006.01%20-%20CLUSTERING.html">
-     LAB 06.01 - Clustering companies
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2006.02%20-%20NMF%20face%20search.html">
-     LAB 06.02 - NMF face search
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="content/M07_videos.html">
-   MODULO 7: Diseño de algoritmos
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
-  <label for="toctree-checkbox-7">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2007.01%20-%20OPTIMIZATION.html">
-     07.01 - OPTIMIZATION
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2007.02%20-%20DESIGNING%20ML%20ALGORITHMS.html">
-     07.02 - DESIGN ML ALGORITHMS
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2007.03%20-%20NEURAL%20NETWORKS.html">
-     07.03 - NEURAL NETWORKS
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/NOTES%2007.04%20-%20NEURAL%20NETWORKS%20WITH%20TENSORFLOW.html">
-     07.04 - TENSORFLOW
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2007.01%20-%20OPTIMIZATION%20FOR%20ML.html">
-     LAB 07.01 - Optimization for ML
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="content/LAB%2007.02%20-%20NEURAL%20NETWORKS.html">
-     LAB 07.02 - Neural networks
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1"><a class="reference internal" href="content/M00_intro_udea_20251.html">2025.1 UDEA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="content/M00_modelos1_proyecto_20251.html">2025.1 M1 - proyecto sustituto</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/M01_videos.html">MODULO 1: Introducción</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2001.01%20-%20PROYECTO%20KAGGLE.html">01.01 - PROYECTO KAGGLE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2001.01%20-%20PRACTICE%20SUBMISSION.html">LAB 01.01 - Practice submission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2001.02%20-%20METRICS.html">LAB 01.02 - Metrics</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/M02_videos.html">MODULO 2: Python</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2002.01%20-%20PYTHON%20BASIC%20STRUCTURES.html">02.01 - BASIC STRUCTURES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2002.02%20-%20MORE%20PYTHON.html">02.02 - MORE PYTHON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2002.03%20-%20PYTHON%20NUMPY.html">02.03 - NUMPY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2002.04%20-%20PANDAS.html">02.04 - PANDAS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2002.01%20-%20PYTHON.html">LAB 02.01 - Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2002.02%20-%20NUMPY.html">LAB 02.02 - Numpy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2002.03%20-%20PANDAS.html">LAB 02.03 - Pandas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2002.04%20-%20CARD%20TRICK.html">LAB 02.04 - Card trick</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/M03_videos.html">MODULO 3: Generación de modelos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2003.01%20-%20MODELS%20DERIVED%20FROM%20DATA.html">03.01 - MODELS FROM DATA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2003.02%20-%20SUPERVISED%20ALGORITHMS.html">03.02 - SUPERVISED ALGORITHMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2003.03%20-%20SVM%20AND%20FEATURE%20TRANSFORMATION.html">03.03 - SVMs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2003.01%20-%20MODEL%20GENERATION.html">LAB 03.01 - Model Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2003.02%20-%20TIMESERIES%20MODEL.html">LAB 03.02 - Timeseries model</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/M04_videos.html">MODULO 4: Gestión de datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2004.01%20-%20DATA%20EXPLORATION.html">04.01 - DATA EXPLORATION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2004.02%20-%20DATA%20CLEANING.html">04.02 - DATA CLEANING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2004.03%20-%20SIMPLE%20HYPOTHESIS%20TESTING.html">04.03 - HYPOTHESIS TESTING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2004.04%20-%20HYPOTHESIS%20TESTING%20-%20COMPARING%20SAMPLE%20MEANS.html">04.04 - COMPARING SAMPLES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2004.01%20-%20CLEANING%20DATA.html">LAB 04.01 - Cleaning Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2004.02%20-%20BUILDING%20DATASETS.html">LAB 04.02 - Buiding Datasets</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/M05_videos.html">MODULO 5: Gestión de modelos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2005.01%20-%20A%20TIME%20SERIES%20PREDICTIVE%20STRATEGY.html">05.01 - TIME SERIES PREDICTIONS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2005.02%20-%20MODEL%20EVALUATION.html">05.02 - MODEL EVALUATION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2005.03%20-%20MODEL%20SELECTION.html">05.03 - MODEL SELECTION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2005.04%20-%20EXAMPLE%20SUBMISSION%20TO%20KAGGLE.html">05.04 - PARTICIPATE IN KAGGLE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2005.01%20-%20MEASURING%20PREDICTIVITY%20IMPACT.html">LAB 05.01 - Predictions impact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2005.02%20-%20MODEL%20EVALUATION.html">LAB 05.02 - Model evaluation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/M06_videos.html">MODULO 6: Métodos no supervisados</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2006.01%20-%20UNSUPERVISED%20LEARNING%20-%20CLUSTERING.html">06.01 - CLUSTERING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2006.02%20-%20PCA.html">06.02 - PCA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2006.03%20-%20DIMENSIONALITY%20REDUCTION.html">06.03 - PCA, NMF IN PRACTICE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2006.01%20-%20CLUSTERING.html">LAB 06.01 - Clustering companies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2006.02%20-%20NMF%20face%20search.html">LAB 06.02 - NMF face search</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="content/M07_videos.html">MODULO 7: Diseño de algoritmos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2007.01%20-%20OPTIMIZATION.html">07.01 - OPTIMIZATION</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2007.02%20-%20DESIGNING%20ML%20ALGORITHMS.html">07.02 - DESIGN ML ALGORITHMS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2007.03%20-%20NEURAL%20NETWORKS.html">07.03 - NEURAL NETWORKS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/NOTES%2007.04%20-%20NEURAL%20NETWORKS%20WITH%20TENSORFLOW.html">07.04 - TENSORFLOW</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2007.01%20-%20OPTIMIZATION%20FOR%20ML.html">LAB 07.01 - Optimization for ML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="content/LAB%2007.02%20-%20NEURAL%20NETWORKS.html">LAB 07.02 - Neural networks</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/README.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
 </div>
 
 
-          
 
 
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
-<div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
-
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
-    </div>
-    <div class="header-article__right">
 <button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="_sources/README.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.md</span>
-</a>
 
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </button>
-
-      </li>
+</div></div>
       
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
+    </div>
   
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
-</label>
-
-    </div>
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#https-rramosp-github-io-ai4eng-v1">
-   https://rramosp.github.io/ai4eng.v1
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Inteligencia Artificial para las Ciencias e Ingenierías</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#https-rramosp-github-io-ai4eng-v1">
-   https://rramosp.github.io/ai4eng.v1
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Inteligencia Artificial para las Ciencias e Ingenierías</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#https-rramosp-github-io-ai4eng-v1">https://rramosp.github.io/ai4eng.v1</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
                 
-              <div>
-                
-  <div class="section" id="inteligencia-artificial-para-las-ciencias-e-ingenierias">
-<h1>Inteligencia Artificial para las Ciencias e Ingenierías<a class="headerlink" href="#inteligencia-artificial-para-las-ciencias-e-ingenierias" title="Permalink to this headline">¶</a></h1>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="inteligencia-artificial-para-las-ciencias-e-ingenierias">
+<h1>Inteligencia Artificial para las Ciencias e Ingenierías<a class="headerlink" href="#inteligencia-artificial-para-las-ciencias-e-ingenierias" title="Link to this heading">#</a></h1>
 <p>This repo contains the course’s technical material. It is to be used only by the course developers.</p>
 <p>For full interactive content access</p>
-<div class="section" id="https-rramosp-github-io-ai4eng-v1">
-<h2><a class="reference external" href="https://rramosp.github.io/ai4eng.v1">https://rramosp.github.io/ai4eng.v1</a><a class="headerlink" href="#https-rramosp-github-io-ai4eng-v1" title="Permalink to this headline">¶</a></h2>
-</div>
-</div>
+<section id="https-rramosp-github-io-ai4eng-v1">
+<h2><a class="reference external" href="https://rramosp.github.io/ai4eng.v1">https://rramosp.github.io/ai4eng.v1</a><a class="headerlink" href="#https-rramosp-github-io-ai4eng-v1" title="Link to this heading">#</a></h2>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -599,7 +436,7 @@ title="Print to PDF"
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
@@ -607,36 +444,85 @@ title="Print to PDF"
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#https-rramosp-github-io-ai4eng-v1">https://rramosp.github.io/ai4eng.v1</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-    By Raúl Ramos / Universidad de Antioquia<br/>
-  
-      &copy; Copyright 2020.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
+<p class="component-author">
+By Raúl Ramos / Universidad de Antioquia
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
 </div>
+          </footer>
+        
 
-
-      </div>
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
