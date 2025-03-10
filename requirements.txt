@@ -1,4 +1,6 @@
-jupyter-book==0.10.2
-jinja2==3.0.3
+#jupyter-book==0.10.2
+jupyter-book
+#jinja2==3.0.3
+jinja2
 matplotlib
 numpy
