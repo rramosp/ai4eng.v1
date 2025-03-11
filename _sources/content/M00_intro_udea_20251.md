@@ -55,8 +55,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 <br/>
 
-<b>Whatsapp de estudiantes</b> (<a href="https://chat.whatsapp.com/JDKjK7h2vKGDbFDVj02eKo">enlace</a>) : este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
-
+<b>Whatsapp de estudiantes</b> (<a href="https://chat.whatsapp.com/GvNsOAOBdIx1f08k5ZtxZV">enlace</a>) : este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
 
 <br/>
 
