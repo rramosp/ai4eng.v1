@@ -51,7 +51,10 @@ Indícanos cualquier duda, sugerencia o incidencia, o inicia una discusión con 
 
 Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspectos generales, administrativos, fechas, evaluaciones, etc. los puedes formular en la categoría **GENERAL**.
 
-Por correo electrónico sólo se responderán asuntos personales, no relacionados con el contenido de la materia. Cualquier correo ha de ser enviado a mí con copia al monitor.
+Por correo electrónico sólo se responderán asuntos personales, no relacionados con el contenido de la materia. Cualquier correo ha de ser enviado al profesor con copia al monitor a las siguientes direcciones
+
+<center><tt>raul.ramos@udea.edu.co</tt>, <tt>jonathan.granda@udea.edu.co</tt></center>
+
 
 <br/>
 
@@ -230,7 +233,7 @@ Al final tu repositorio habrá de tener la siguiente estructura
 
 - Cada miembro del grupo <font color="red">ES RESPONSABLE DE SU PROPIA ENTREGA</font>, independientemente de si sus compañeros de grupo entregan o no. Esto incluye rellenar el formulario y tener un github personal, aunque el contenido sea el mismo que el del resto de los compañeros de grupo.
 
-- Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt>, <tt>felipe.rodrigueza@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>.
+- Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt>, <tt>jonathan.granda@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>.
 
 
 ### Evaluación entregas 1 y 2
