@@ -222,7 +222,7 @@ los criterios de evaluación son los siguientes:
 Al final tu repositorio habrá de tener la siguiente estructura
 
         |
-        +-  README-md
+        +-  README.md
         +-  01 - exploración.ipynb
         +-  02 - preprocesado.ipynb
         +-  03 - modelo con preprocesado de tal forma y SVM.ipynb
