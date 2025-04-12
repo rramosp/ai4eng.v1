@@ -83,7 +83,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 ## Fechas de entregas
 
          6/abr/2025    LABS MODULOS 1-2
-        13/abr/2025    PROYECTO ENTREGA 1
+        20/abr/2025    PROYECTO ENTREGA 1
         11/may/2025    LABS MODULO 3-4
         18/may/2025    PROYECTO ENTREGA 2
          8/jun/2025    LABS MODULOS 5-6-7
@@ -181,14 +181,14 @@ Cada entrega se hace a través de un formulario donde indicarás tu repositorio 
 
 Los contenidos y formularios para de cada entrega son los siguientes:
 
-##### ENTREGA 1  --  [por publicar]
+##### ENTREGA 1  --  [FORMULARIO de ENTREGA](https://forms.gle/2wL2an56dHyfurtm7)
 
 Esta primera entrega sólo consta de dos archivos que han de estar en tu repositorio github:
 
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante
 - **01 - exploración.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y muestras alguna exploración de datos (por ejemplo, cuantos estudiantes hay de cada clase, por localidades, etc.). Esta exploración no tiene que ser exhaustiva, tan sólo que muestres que eres capaz de cargar los datos e inspeccionarlos.
 
-##### ENTREGA 2 -- [por publicar]
+##### ENTREGA 2 -- [FORMULARIO de ENTREGA](https://forms.gle/89e1dJRqsqCyF6Te7)
 
 además del contenido de la entrega 1 en github:
 
@@ -200,7 +200,7 @@ además del contenido de la entrega 1 en github:
 - **02 - preprocesado.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y realizas las operaciones de limpieza y preprocesado de datos que necesites (p.ej. convertir columnas en one-hot, normalizar valores de rangos, imputar datos faltantes, etc.)
 
   
-##### ENTREGA FINAL -- [por publicar]
+##### ENTREGA FINAL -- [FORUMARIO de ENTREGA](https://forms.gle/wsmK9GWaYHTa7Me39)
 
 en este entrega tendrás que someter tu solución a Kaggle. **CADA MIEMBRO DE CADA GRUPO TIENE QUE SOMETER SU PROPIA SOLUCIÓN**, aunque sea la misma que la del resto de componentes del grupo.
 
