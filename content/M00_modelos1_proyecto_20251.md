@@ -74,13 +74,13 @@ Se recomienda que uses el mismo repositorio para todas tus entregas, de forma qu
 
 ## Formularios para las entregas
 
-- Fase 1: [por publicar]
-- Fase 2: [por publicar]
-- Fase 3: [por publicar]
+- Fase 1: [FORMULARIO de ENTREGA](https://forms.gle/2wL2an56dHyfurtm7)
+- Fase 2: [FORMULARIO de ENTREGA](https://forms.gle/89e1dJRqsqCyF6Te7)
+- Fase 3: [FORUMARIO de ENTREGA](https://forms.gle/wsmK9GWaYHTa7Me39)
 
 ## Fechas
 
-    FASE 1: 13 de abril
+    FASE 1: 20 de abril
     FASE 2: 18 de mayo
     FASE 3: 22 de junio
 
