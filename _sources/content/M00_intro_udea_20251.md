@@ -154,6 +154,8 @@ Para ello tendrás que
   - En cada vídeo, en los primeros 20 segs, **cada miembro del equipo ha de presentarse con la cámara activada**, enunciando su nombre y el programa en el que están matriculados.
 
   - Todos los miembros de un equipo han de **contribuir con el mismo tiempo aproximado** de intervención en el mismo. Si algún miembro de un equipo no participa, o su participación es meramente simbólica, la entrega completa será inválida para ese miembro del equipo.
+    
+  - Durante el video se tiene que compartir la pantalla mostrando los notebooks y el código del proyecto.
 
 
 - **Fichero `README.md`**
@@ -209,7 +211,7 @@ además del contenido de las entregas anteriores tendrás que añadir a tu repos
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante y con los siguientes enlaces**y con el enlace al video de la entrega 2 y el enlace al video de esta entrega**.
 - **Video subido a YouTube y enlazado en README.md**
   - Elabora un vídeo de entre 3mins y 4mins.
-  - En el video ha de explicar brevemente la aproximación a la solución enviada a Kaggle y **ha de mostrar vuestra posición en el ranking** compartiendo la pantalla mientras se consulta el **leaderboard** de Kaggle. Esta posición, por supuesto, puede que no sea la definitiva si hay equipos que envian sus soluciones después.
+  - En el video ha de explicar brevemente la aproximación a la solución enviada a Kaggle y **ha de mostrar vuestra posición en el ranking** compartiendo la pantalla mientras se consulta el **leaderboard** de Kaggle y **se muestran los notebooks** de tu solución. Esta posición, por supuesto, puede que no sea la definitiva si hay equipos que envian sus soluciones después.
 
 - **99 - modelo solución.ipynb** - Un notebook con tu solución completa, desde cargar `train.csv` hasta generar el archivo que se envía a Kaggle. Mira las **NOTES 05.03** para tener un ejemplo. 
 - **al menos dos notebooks adicionales** con aproximaciones distantas a la de la solución, porque usan distintos modelos, o estrategias de limpieza o preprocesado, etc.
