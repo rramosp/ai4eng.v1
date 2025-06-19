@@ -82,7 +82,7 @@ Se recomienda que uses el mismo repositorio para todas tus entregas, de forma qu
 
     FASE 1: 20 de abril
     FASE 2: 25 de mayo
-    FASE 3: 22 de junio
+    FASE 3: 3 de julio
 
 ## Evaluación
 
