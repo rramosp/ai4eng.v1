@@ -87,7 +87,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
         11/may/2025    LABS MODULO 3-4
         25/may/2025    PROYECTO ENTREGA 2
          8/jun/2025    LABS MODULOS 5-6-7
-        22/jun/2025    PROYECTO ENTREGA FINAL
+         3/jul/2025    PROYECTO ENTREGA FINAL
 
 <br/>
 
