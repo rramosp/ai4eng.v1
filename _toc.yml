@@ -1,10 +1,10 @@
 format: jb-article
 root: intro
 sections:
-- file: content/M00_intro_udea_20251
-  title: 2025.1 UDEA
-- file: content/M00_modelos1_proyecto_20251
-  title: 2025.1 M1 - proyecto sustituto
+- file: content/M00_intro_udea_20252
+  title: 2025.2 UDEA
+- file: content/M00_modelos1_proyecto_20252
+  title: 2025.2 M1 - proyecto sustituto
 - file: content/M01_videos
   sections:
   - file: content/NOTES 01.01 - PROYECTO KAGGLE
