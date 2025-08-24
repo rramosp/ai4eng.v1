@@ -52,10 +52,9 @@ El proyecto tendrá tres fases:
 
 ## Sesiones temáticas
 
-- Introducción a Github <a href='https://www.facebook.com/IngeniaUdeA/videos/1102821137726582/?locale=es_LA'>Grabación sesión en la Facultad de Ingeniería</a> (5 mar 2024)
+- Introducción a Github <a href='https://youtu.be/KOFtvWm55mo'>Sesión de clase Semestre 2025-1, Abril 2025</a>
+- Introducción a Docker <a href='https://youtu.be/Q4wH6Ddcr2U'>Sesión de clase Semestre 2025-1, Mayo 2025</a> 
 - Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)
-- Introducción a github <a href='https://www.facebook.com/IngeniaUdeA/videos/301211516059672/'>Grabación sesión en Expoingeniería 2023</a> (4 nov 2023)
-- Introducción a docker <a href='https://udea.zoom.us/rec/play/vOwql6zvWfFWmYrlEPqAA9noBGTS_LqGCVgiacnwzDMDbWR0OSRSp4C2plW0JfLsGHSDvNbyEPgve7u1.vYoWWj4Lg46AADpt?canPlayFromShare=true&from=my_recording&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fudea.zoom.us%2Frec%2Fshare%2F3uWxP0umRyJRXv-6NexPVtVXjW97-CJxszC6ZQStJ4IbNnYMPes4XWPoZ0pOrWxg.F-GyXrDZgL9aQSnr'>Grabación de la sesión sincrónica</a> (24 oct 2023)
 
 <br/>
 
@@ -74,9 +73,9 @@ Se recomienda que uses el mismo repositorio para todas tus entregas, de forma qu
 
 ## Formularios para las entregas
 
-- Fase 1: [FORMULARIO de ENTREGA](https://forms.gle/2wL2an56dHyfurtm7)
-- Fase 2: [FORMULARIO de ENTREGA](https://forms.gle/89e1dJRqsqCyF6Te7)
-- Fase 3: [FORUMARIO de ENTREGA](https://forms.gle/wsmK9GWaYHTa7Me39)
+- Fase 1: [FORMULARIO de ENTREGA](https://forms.gle/RCttF4L1ZPY6xkGM9)
+- Fase 2: [FORMULARIO de ENTREGA](https://forms.gle/qYRc13Q5vaLDRJJq9)
+- Fase 3: [FORMULARIO de ENTREGA](https://forms.gle/e7X1zovtgJj4BaGr8)
 
 ## Fechas
 
