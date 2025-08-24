@@ -183,14 +183,14 @@ Cada entrega se hace a través de un formulario donde indicarás tu repositorio 
 
 Los contenidos y formularios para de cada entrega son los siguientes:
 
-##### ENTREGA 1  --  [FORMULARIO de ENTREGA](https://forms.gle/2wL2an56dHyfurtm7)
+##### ENTREGA 1  --  [FORMULARIO de ENTREGA](https://forms.gle/RCttF4L1ZPY6xkGM9)
 
 Esta primera entrega sólo consta de dos archivos que han de estar en tu repositorio github:
 
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante
 - **01 - exploración.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y muestras alguna exploración de datos (por ejemplo, cuantos estudiantes hay de cada clase, por localidades, etc.). Esta exploración no tiene que ser exhaustiva, tan sólo que muestres que eres capaz de cargar los datos e inspeccionarlos.
 
-##### ENTREGA 2 -- [FORMULARIO de ENTREGA](https://forms.gle/89e1dJRqsqCyF6Te7)
+##### ENTREGA 2 -- [FORMULARIO de ENTREGA](https://forms.gle/qYRc13Q5vaLDRJJq9)
 
 además del contenido de la entrega 1 en github:
 
@@ -200,9 +200,10 @@ además del contenido de la entrega 1 en github:
 
 - **README.md** con los nombres, cédulas y progama en el que está inscrito cada participante **y con el enlace la video en YouTube de esta entrega**.
 - **02 - preprocesado.ipynb** donde se muestra cómo cargas el archivo `train.csv` de la competencia y realizas las operaciones de limpieza y preprocesado de datos que necesites (p.ej. convertir columnas en one-hot, normalizar valores de rangos, imputar datos faltantes, etc.)
+- **Usuario de Kaggle** crea tu usuario en Kaggle e indícalo en el formulario de entrega. No es necesario que haya ninguna solución subida a Kaggle, simplemente que hayas creado tu usuario con el que, posteriormente, subuirás soluciones.
 
   
-##### ENTREGA FINAL -- [FORUMARIO de ENTREGA](https://forms.gle/wsmK9GWaYHTa7Me39)
+##### ENTREGA FINAL -- [FORUMARIO de ENTREGA](https://forms.gle/e7X1zovtgJj4BaGr8)
 
 en este entrega tendrás que someter tu solución a Kaggle. **CADA MIEMBRO DE CADA GRUPO TIENE QUE SOMETER SU PROPIA SOLUCIÓN**, aunque sea la misma que la del resto de componentes del grupo.
 
@@ -233,7 +234,7 @@ Al final tu repositorio habrá de tener la siguiente estructura
 
 - El nombrado de los archivos **ES ESTRICTO**. Tiene que haber un fichero `README.md` y los notebooks `01`, `02` y `99` nombrados **EXACTAMENTE IGUAL** que se indica arriba. Los notebooks `03`, `04` y posteriores (si tienes más), han de ser nombrados con ese esquema (`número consecutivo - nombre_que_escojes.ipynb`). Cualquier archivo con otro nombre será ignorado. 
 
-- Cada miembro del grupo <font color="red">ES RESPONSABLE DE SU PROPIA ENTREGA</font>, independientemente de si sus compañeros de grupo entregan o no. Esto incluye rellenar el formulario y tener un github personal, aunque el contenido sea el mismo que el del resto de los compañeros de grupo.
+- Cada miembro del grupo <font color="red">ES RESPONSABLE DE SU PROPIA ENTREGA</font>, independientemente de si sus compañeros de grupo entregan o no. Esto incluye rellenar el formulario, estar en el leaderboard de Kaggle con su propio usuario y tener un github personal, aunque el contenido de repositorio y la posición de Kaggle sean los mismos que el del resto de los compañeros de grupo.
 
 - Si cambias de grupo o te añades a un grupo que ya exista tienes que enviar un correo a <tt>raul.ramos@udea.edu.co</tt>, <tt>jonathan.granda@udea.edu.co</tt> informándolo con <font color="red">copia a tus nuevos compañeros</font> indicando las razones del cambio y cuál será tu rol en el nuevo grupo. Tus nuevos compañeros deberán de responder ese correo <font color="red">autorizandote a que formes parte del grupo</font>.
 
