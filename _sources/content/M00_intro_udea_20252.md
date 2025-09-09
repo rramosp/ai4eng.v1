@@ -277,7 +277,8 @@ Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes qu
  Sesiones complementarias que se realizaron en semestrens pasados y son de interés general.
 
 - Introducción a Github <a href='https://youtu.be/KOFtvWm55mo'>Sesión de clase Semestre 2025-1, Abril 2025</a>
-- Introducción a Docker <a href='https://youtu.be/Q4wH6Ddcr2U'>Sesión de clase Semestre 2025-1, Mayo 2025</a> 
+- Introducción a Docker <a href='https://youtu.be/Q4wH6Ddcr2U'>Sesión de clase Semestre 2025-1, Mayo 2025</a>
+- Descripci{on proyecto Kaggle 2025.1 <a href='https://www.youtube.com/watch?v=7jYoyDpKzno'>Sesión de clase Semestre 2025-1</a>
 - Cómo hacer disponibles los datos de la competencia de Kaggle en Google Colab <a href='https://www.youtube.com/watch?v=I9VLPqP97b4'>Video 11mins</a>
 - Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)
 
