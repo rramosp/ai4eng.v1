@@ -118,7 +118,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 Tendrás que participar en la siguiente de Kaggle y realizar tres entregas con el desarrollo progresivo del proyecto.
 
-[COMPETENCIA AI4ENG UDEA - Semestre 2025-1](https://www.kaggle.com/competitions/udea-ai-4-eng-20251-pruebas-saber-pro-colombia)
+[COMPETENCIA AI4ENG UDEA - Semestre 2025-2](https://www.kaggle.com/competitions/udea-ai-4-eng-20252-pruebas-saber-pro-colombia)
 
 Para ello tendrás que
 
