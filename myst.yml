@@ -1,0 +1,79 @@
+version: 1
+project:
+  title: Inteligencia Artificial para las Ciencias e Ingenierías
+  authors:
+    - name: Raúl Ramos / Universidad de Antioquia
+  github: rramosp/ai4eng.v1
+  thebe:
+    binder:
+      repo: rramosp/ai4eng.v1
+      provider: github
+      url: ''
+      ref: main
+  toc:
+    - file: intro.md
+    - file: content/M00_intro_udea_20252.md
+      title: 2025.2 UDEA
+    - file: content/M00_modelos1_proyecto_20252.md
+      title: 2025.2 M1 - proyecto sustituto
+    - file: content/M01_videos.md
+      children:
+        - file: content/NOTES 01.01 - PROYECTO KAGGLE.ipynb
+        - file: content/LAB 01.01 - PRACTICE SUBMISSION.ipynb
+        - file: content/LAB 01.02 - METRICS.ipynb
+    - file: content/M02_videos.md
+      children:
+        - file: content/NOTES 02.01 - PYTHON BASIC STRUCTURES.ipynb
+        - file: content/NOTES 02.02 - MORE PYTHON.ipynb
+        - file: content/NOTES 02.03 - PYTHON NUMPY.ipynb
+        - file: content/NOTES 02.04 - PANDAS.ipynb
+        - file: content/LAB 02.01 - PYTHON.ipynb
+        - file: content/LAB 02.02 - NUMPY.ipynb
+        - file: content/LAB 02.03 - PANDAS.ipynb
+        - file: content/LAB 02.04 - CARD TRICK.ipynb
+    - file: content/M03_videos.md
+      children:
+        - file: content/NOTES 03.01 - MODELS DERIVED FROM DATA.ipynb
+        - file: content/NOTES 03.02 - SUPERVISED ALGORITHMS.ipynb
+        - file: content/NOTES 03.03 - SVM AND FEATURE TRANSFORMATION.ipynb
+        - file: content/LAB 03.01 - MODEL GENERATION.ipynb
+        - file: content/LAB 03.02 - TIMESERIES MODEL.ipynb
+    - file: content/M04_videos.md
+      children:
+        - file: content/NOTES 04.01 - DATA EXPLORATION.ipynb
+        - file: content/NOTES 04.02 - DATA CLEANING.ipynb
+        - file: content/NOTES 04.03 - SIMPLE HYPOTHESIS TESTING.ipynb
+        - file: >-
+            content/NOTES 04.04 - HYPOTHESIS TESTING - COMPARING SAMPLE
+            MEANS.ipynb
+        - file: content/LAB 04.01 - CLEANING DATA.ipynb
+        - file: content/LAB 04.02 - BUILDING DATASETS.ipynb
+    - file: content/M05_videos.md
+      children:
+        - file: content/NOTES 05.01 - A TIME SERIES PREDICTIVE STRATEGY.ipynb
+        - file: content/NOTES 05.02 - MODEL EVALUATION.ipynb
+        - file: content/NOTES 05.03 - MODEL SELECTION.ipynb
+        - file: content/NOTES 05.04 - EXAMPLE SUBMISSION TO KAGGLE.ipynb
+        - file: content/LAB 05.01 - MEASURING PREDICTIVITY IMPACT.ipynb
+        - file: content/LAB 05.02 - MODEL EVALUATION.ipynb
+    - file: content/M06_videos.md
+      children:
+        - file: content/NOTES 06.01 - UNSUPERVISED LEARNING - CLUSTERING.ipynb
+        - file: content/NOTES 06.02 - PCA.ipynb
+        - file: content/NOTES 06.03 - DIMENSIONALITY REDUCTION.ipynb
+        - file: content/LAB 06.01 - CLUSTERING.ipynb
+        - file: content/LAB 06.02 - NMF face search.ipynb
+    - file: content/M07_videos.md
+      children:
+        - file: content/NOTES 07.01 - OPTIMIZATION.ipynb
+        - file: content/NOTES 07.02 - DESIGNING ML ALGORITHMS.ipynb
+        - file: content/NOTES 07.03 - NEURAL NETWORKS.ipynb
+        - file: content/NOTES 07.04 - NEURAL NETWORKS WITH TENSORFLOW.ipynb
+        - file: content/LAB 07.01 - OPTIMIZATION FOR ML.ipynb
+        - file: content/LAB 07.02 - NEURAL NETWORKS.ipynb
+site:
+  options:
+    logo: content/local/imgs/fudea.jpg
+    analytics_google: UA-43235448-4
+    folders: true
+  template: book-theme
