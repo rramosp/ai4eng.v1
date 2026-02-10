@@ -4,12 +4,12 @@ project:
   authors:
     - name: Raúl Ramos / Universidad de Antioquia
   github: rramosp/ai4eng.v1
-  thebe:
-    binder:
-      repo: rramosp/ai4eng.v1
-      provider: github
-      url: ''
-      ref: main
+  # thebe:
+  #   binder:
+  #     repo: rramosp/ai4eng.v1
+  #     provider: github
+  #     url: ''
+  #     ref: main
   toc:
     - file: intro.md
     - file: content/M00_intro_udea_20252.md
