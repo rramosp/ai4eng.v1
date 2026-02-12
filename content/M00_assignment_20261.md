@@ -169,32 +169,32 @@ El proceso de participación de cada estudiante se hará en dos fases
 
 **FASE 1**: Tendrás que crear preguntas y sus generadores de casos de uso. Para la entrega de la fase 1 tendrás que:
 
-1. Crear un repositorio github con la siguiente estructura
+1. Crear un repositorio github con la siguiente estructura. La carpeta `myanswers` es sólo para la fase 2.
 
         +- README.md
         +- myquestions
             +
-            +- question-001.txt
-            +- question-001-usecase-generator.py
-            +- question-002.txt
-            +- question-002-usecase-generator.py
-            +- question-003.txt
-            +- question-003-usecase-generator.py
-            +- question-004.txt
-            +- question-004-usecase-generator.py
-        +- myanswers (sólo para la FASE 2)
+            +- question-0001.txt
+            +- question-0001-usecase-generator.py
+            +- question-0002.txt
+            +- question-0002-usecase-generator.py
+            +- question-0003.txt
+            +- question-0003-usecase-generator.py
+            +- question-0004.txt
+            +- question-0004-usecase-generator.py
+        +- myanswers
             +
-            +- answer-123.py
-            +- answer-087.py
-            +- answer-012.py
-            +- answer-289.py
+            +- answer-0123.py
+            +- answer-0087.py
+            +- answer-0012.py
+            +- answer-0289.py
 
 en donde 
 
 - `README.md` deberaé de tener al menos tu nombre y dirección de correo institucional
-- `question-XXX.txt` deberá de tener el texto de la pregunta, que ha de ser el mismo que tienes que registrar en el formulario más abajo.
+- `question-XXXX.txt` deberá de tener el texto de la pregunta, que ha de ser el mismo que tienes que registrar en el formulario más abajo.
 - `question-XXX-usecase-generation` deberá de contener la función generadora de casos de uso aleatorios.
-- la numeración de preguntas ha de ser exactamente `001` `002` `003` y `004`
+- la numeración de preguntas ha de ser exactamente `0001` `0002` `0003` y `0004`, con cuatro dígitos cada una.
 
 2. Rellenar [este formulario](https://forms.gle/5bforw4AnbqG6Sbq9) en donde indicarás la dirección de tu repo github y registras tus preguntas (las mismas que hay en tu repo github).
 
@@ -202,7 +202,7 @@ en donde
 
 Tendrás que rellenar este formulario [**LINK MISSING**] para indicar que has hecho el ejercicio.
 
-Observa que cada pregunta que se te asigne tendrá un identificador único que es el que tienes que usar en tu repo.
+Observa que cada pregunta que se te asigne tendrá un identificador único que es el que tienes que usar en tu repo para nombrar los archivos `answer-XXXX.py`. El identificador ha de tener exactamente cuatro dígitos, con los ceros pertinentes de relleno.
 
 ## Reglamentación del ejercicio
 
@@ -215,6 +215,8 @@ Observa que cada pregunta que se te asigne tendrá un identificador único que e
 **Sugerencia 2**: usa Gemini adjuntando el fichero de drive para comprobar si tus preguntas ya están registradas. Ten en cuenta que se usará Gemini igualmente para comprobar si hay preguntas repetidas. Si las preguntas no son exactamente iguales, pero muy similares, serán igualmente consideradas repetidas.
 
 **El repo tiene que tener EXACTAMENTE la estructura indicada** más arriba con **exactamente los nombres de archivos indicados**. Se usará un proceso automático para acceder al repo github de cada estudiante, extraer las preguntas, cotejarlas con el formulario, extraer la función generadora de casos de uso (fase 1) y extraer la función solución (fase 2). Si no nombras los archivos como se indica, el proceso automático no los encontrará y se considerarán no entregados.
+
+Fíjate en [este repo de ejemplo](https://github.com/rramosp/ai4eng-20262-python-questions), que también contiene un notebook para validar las funciones.
 
 **Los achivos `.py` se considerarán invalidos** si (1) tienen errores de ejecución, o (2) no generan las mismas respuestas que la función generadora de casos de uso correspondiente.
 
