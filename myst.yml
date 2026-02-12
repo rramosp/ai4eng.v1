@@ -12,10 +12,12 @@ project:
   #     ref: main
   toc:
     - file: intro.md
-    - file: content/M00_intro_udea_20252.md
-      title: 2025.2 UDEA
-    - file: content/M00_modelos1_proyecto_20252.md
-      title: 2025.2 M1 - proyecto sustituto
+    - file: content/M00_intro_udea_20261.md
+      title: 2026.1 UDEA
+    - file: content/M00_intro_udea_20261.md
+      title: 2026.1 UDEA - assignment
+    - file: content/M00_assignment_20261.md
+      title: 2026.1 M1 - proyecto sustituto
     - file: content/M01_videos.md
       children:
         - file: content/NOTES 01.01 - PROYECTO KAGGLE.ipynb
