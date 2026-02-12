@@ -17,7 +17,9 @@ En este ejemplo uso Gemini para crear una pregunta, y también crear el generado
 
 Le pido esto a Gemini
 
-    dame una pregunta relacionada con datos y machine learning que tenga que solucionar desarrollando una función de python que use las librerías sklearn, pandas y numpy
+    dame una pregunta relacionada con datos y machine learning que
+    tenga que solucionar desarrollando una función de python que
+    use las librerías sklearn, pandas y numpy
 
 Y Gemini me genera esta pregunta
 
@@ -49,7 +51,15 @@ Un caso de uso en una tupla que contiene
 
 Esto se lo pido a Gemini de esta manera:
 
-    Escribe una función llamada generar_caso_de_uso_preparar_datos en python que devuelva casos de uso aleatorios para la función preparar_datos descrita más abajo. La función que desarrolles no tiene argumentos de entrada y ha de tener dos salidas: input y output. Input ha de ser un diccionario con claves y valores para los argumentos de la funcón preparar_datos. Output ha de ser lo que se esperaría que la función preparar_datos anterior produjera con el input anterior. La función generar_caso de uso, ha de tener un componente aleatorio, de manera que cada vez que se ejecute, genere un par input/output distinto
+    Escribe una función llamada generar_caso_de_uso_preparar_datos en python que
+    devuelva casos de uso aleatorios para la función preparar_datos descrita más
+    abajo. La función que desarrolles no tiene argumentos de entrada y ha de
+    tener dos salidas: input y output. Input ha de ser un diccionario con claves
+    y valores para los argumentos de la funcón preparar_datos. Output ha de ser
+    lo que se esperaría que la función preparar_datos anterior produjera con el
+    input anterior. La función generar_caso de uso, ha de tener un componente
+    aleatorio, de manera que cada vez que se ejecute, genere un par input/output
+    distinto
 
 Y me genera la función siguente. En realidad tuve que revisarla y ajustarla un poco, ya que algunos casos eran triviales.
 
