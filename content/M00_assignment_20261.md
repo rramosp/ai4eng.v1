@@ -49,7 +49,7 @@ Un caso de uso en una tupla que contiene
 - Un diccionario con valores aleatorios para los argumentos de la función que hay que desarrollar.
 - Un objeto Python que se esperaría que devolviera la función que hay que desarrollar al pasarle los valores de los argumentos descritos en el diccionario anterior.
 
-Esto se lo pido a Gemini de esta manera:
+Y le pido a Gemini de esta manera que me genere la función Python que genera casos de uso:
 
     Escribe una función llamada generar_caso_de_uso_preparar_datos en python que
     devuelva casos de uso aleatorios para la función preparar_datos descrita más
@@ -160,7 +160,7 @@ Con la la salida de la función generadora de casos de uso, tengo que poder llam
 - Tienes que generar cuatro preguntas, al menos dos de ellas tienen que implicar el uso de `pandas` y otras dos el uso de `sklearn`.
 - La pregunta ha de especificar qué nombre ha de tener la función que hay que crear para resolver el problema.
 - La función generadora de casos de uso 
-    - ha de llamarse `generar_caso_de_uso_[nombre_de_funcion]` (sin los corchetes), donde `nombre_de_funcion` es el nombre de la función que resuelve el problema. Como `generar_caso_de_uso_preparar_datos` más arriba.
+    - ha de llamarse `generar_caso_de_uso_[nombre_de_funcion]` (sin los corchetes), donde `nombre_de_funcion` es el nombre de la función que resuelve el problema. Como por ejemplo `generar_caso_de_uso_preparar_datos` más arriba.
     - ha de tener un componente aleatorio, de manera que cada vez que se invoque genere un caso de uso distinto
 
 ## Envío de preguntas y soluciones
@@ -182,36 +182,56 @@ El proceso de participación de cada estudiante se hará en dos fases
             +- question-003-usecase-generator.py
             +- question-004.txt
             +- question-004-usecase-generator.py
+        +- myanswers (sólo para la FASE 2)
+            +
+            +- answer-123.py
+            +- answer-087.py
+            +- answer-012.py
+            +- answer-289.py
 
 en donde 
 
 - `README.md` deberaé de tener al menos tu nombre y dirección de correo institucional
 - `question-XXX.txt` deberá de tener el texto de la pregunta, que ha de ser el mismo que tienes que registrar en el formulario más abajo.
 - `question-XXX-usecase-generation` deberá de contener la función generadora de casos de uso aleatorios.
+- la numeración de preguntas ha de ser exactamente `001` `002` `003` y `004`
 
-2. Rellenar [este formulario](https://forms.gle/5bforw4AnbqG6Sbq9) en donde indicarás la dirección de tu repo github y registrás tus preguntas.
+2. Rellenar [este formulario](https://forms.gle/5bforw4AnbqG6Sbq9) en donde indicarás la dirección de tu repo github y registras tus preguntas (las mismas que hay en tu repo github).
 
-**FASE 2**: Se te asignarán cuatro preguntas creadas por otros compañeros y tendrás que crear la función que soluciona cada pregunta. Para ello tendrás que usar la función que genera los casos de uso asociada a cada pregunta.
+**FASE 2**: Se te asignarán cuatro preguntas creadas por otros compañeros y tendrás que crear la función que soluciona cada pregunta. Para ello tendrás acceso al repo github del compañer@ que generó las preguntas y podrás usar la función que genera los casos de uso asociada a cada pregunta para validar tu respuesta.
 
+Tendrás que rellenar este formulario [**LINK MISSING**] para indicar que has hecho el ejercicio.
 
-## Sólo para estudiantes de Ingeniería de Sistemas
+Observa que cada pregunta que se te asigne tendrá un identificador único que es el que tienes que usar en tu repo.
 
-Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes que hacer el proyecto sustituto
+## Reglamentación del ejercicio
 
-<br/><img src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
+**El ejercicio es invididual** cada estudiante tendrá que generar cuatro preguntas y responder otras cuatro.
 
+**No puede haber preguntas repetidas** en toda la clase. En [esta hoja de cálculo](https://docs.google.com/spreadsheets/d/1Obkx3XLnGspOKCap_HzWhokA0U_ez1sYGKPT8xra2qA/edit?resourcekey=&gid=1131908680#gid=1131908680) están las preguntas que van registrando tus compañer@s, verifícala para asegurar que no repites preguntas. Si hay preguntas repetidas, el registro de fecha del formulario más tardío determinará la pregunta inválida. 
 
-## Sesiones temáticas
- 
- Sesiones complementarias que se realizaron en semestrens pasados y son de interés general.
+**Sugerencia 1**: cuanto antes registres tus preguntas, más fácil será tener preguntas distintas. 
 
-- Introducción a Github <a href='https://youtu.be/KOFtvWm55mo'>Sesión de clase Semestre 2025-1, Abril 2025</a>
-- Introducción a Docker <a href='https://youtu.be/Q4wH6Ddcr2U'>Sesión de clase Semestre 2025-1, Mayo 2025</a>
-- Descripci{on proyecto Kaggle 2025.1 <a href='https://www.youtube.com/watch?v=7jYoyDpKzno'>Sesión de clase Semestre 2025-1</a>
-- Cómo hacer disponibles los datos de la competencia de Kaggle en Google Colab <a href='https://www.youtube.com/watch?v=I9VLPqP97b4'>Video 11mins</a>
-- Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)
+**Sugerencia 2**: usa Gemini adjuntando el fichero de drive para comprobar si tus preguntas ya están registradas. Ten en cuenta que se usará Gemini igualmente para comprobar si hay preguntas repetidas. Si las preguntas no son exactamente iguales, pero muy similares, serán igualmente consideradas repetidas.
 
+**El repo tiene que tener EXACTAMENTE la estructura indicada** más arriba con **exactamente los nombres de archivos indicados**. Se usará un proceso automático para acceder al repo github de cada estudiante, extraer las preguntas, cotejarlas con el formulario, extraer la función generadora de casos de uso (fase 1) y extraer la función solución (fase 2). Si no nombras los archivos como se indica, el proceso automático no los encontrará y se considerarán no entregados.
 
-## AI for Everyone
+**Los achivos `.py` se considerarán invalidos** si (1) tienen errores de ejecución, o (2) no generan las mismas respuestas que la función generadora de casos de uso correspondiente.
 
-Te recomendamos completar o visualizar el curso [AI for Everyone](https://www.deeplearning.ai/ai-for-everyone/) 
+## Evaluación
+
+**Puntaje**
+
+Cada pregunta correctamente creada junto con su generador de casos de uso (fase 1) o respondida (fase 2) tendrá un puntaje de 1.25
+
+**Nombrado de archivos**
+
+El nombrado de archivos en cualquier entrega es **ESTRICTO** según las instrucciones. Cualquier archivo con nombre o formato distinto invalidará la entrega, aunque sea entregado antes de las fechas límite.
+
+**Incumplimiento y penalizaciones**
+
+Ante **cualquier falta de cumplimiento** de estas normas, se considerará cada pregunta  inválida y <font color="red">tendrá una calificación de cero</font>. 
+
+Cada estudiante tendrá un **plazo de 48 horas** desde la comunicación de las calificaciones de cada entrega para subsanar cualquier error.
+
+Se aplicará una **penalización del 50%** de la calificación cada pregunta cuando el estudiante subsane los errores en el plazo anterior.
