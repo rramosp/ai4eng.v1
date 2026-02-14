@@ -117,6 +117,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes que hacer el proyecto sustituto
 
 <br/>
+
 ![proyect](local/imgs/proy-sustituto.png)
 
 
