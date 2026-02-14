@@ -80,25 +80,25 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 ## Fechas de entregas
 
-        21/sep/2025    LABS MODULOS 1-2
-         5/oct/2025    PROYECTO ENTREGA 1
-        19/oct/2025    LABS MODULO 3-4
-         2/nov/2025    PROYECTO ENTREGA 2
-        16/nov/2025    LABS MODULOS 5-6-7
-        23/nov/2025    PROYECTO ENTREGA FINAL
+        15/mar/2025    LABS MODULOS 1-2
+         5/abr/2025    PROGRAMACION CON LLMs ENTREGA 1
+        19/abr/2025    LABS MODULO 3-4
+        17/may/2025    LABS MODULOS 5-6-7
+        31/may/2025    PROGRAMACION CON LLMs ENTREGA 2
 
 
 <br/>
 
 **Calendario oficial**
 
-            12/ago/2025  Inicio de clases
-             4/oct/2025  Evaluación al 40% 
-            29/nov/2025  Finalización clases 
+          9/feb/2026  Inicio de clases
+         10/abr/2026  Evaluación al 40% 
+          6/jun/2026  Finalización clases 
 
-     1/dic - 6/dic/2025  Exámentes finales
-             8/dic/2025  Fecha límite cierre de notas
-            17/dic/2025  Terminación oficial 
+ 9/jun - 13/jun/2026  Exámentes finales
+         13/jun/2026  Fecha límite cierre de notas
+         20/jun/2026  Terminación oficial 
+
 
 <br/>
 
@@ -116,7 +116,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes que hacer el proyecto sustituto
 
-<br/><img src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
+<br/><img width='500' src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
 
 
 ## Sesiones temáticas

@@ -10,7 +10,7 @@ project:
       title: 2026.1 UDEA
     - file: content/M00_assignment_20261.md
       title: 2026.1 UDEA - programación con LLMs
-    - file: content/M00_modelos1_proyecto_20262.md
+    - file: content/M00_modelos1_proyecto_20261.md
       title: 2026.1 M1 - proyecto sustituto
     - file: content/M01_videos.md
       children:
