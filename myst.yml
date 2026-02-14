@@ -4,23 +4,16 @@ project:
   authors:
     - name: Raúl Ramos / Universidad de Antioquia
   github: rramosp/ai4eng.v1
-  # thebe:
-  #   binder:
-  #     repo: rramosp/ai4eng.v1
-  #     provider: github
-  #     url: ''
-  #     ref: main
   toc:
     - file: intro.md
     - file: content/M00_intro_udea_20261.md
       title: 2026.1 UDEA
     - file: content/M00_assignment_20261.md
-      title: 2026.1 UDEA - assignment
+      title: 2026.1 UDEA - programación con LLMs
     - file: content/M00_modelos1_proyecto_20262.md
       title: 2026.1 M1 - proyecto sustituto
     - file: content/M01_videos.md
       children:
-        - file: content/NOTES 01.01 - PROYECTO KAGGLE.ipynb
         - file: content/LAB 01.01 - PRACTICE SUBMISSION.ipynb
         - file: content/LAB 01.02 - METRICS.ipynb
     - file: content/M02_videos.md
