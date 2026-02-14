@@ -119,6 +119,9 @@ Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes qu
 <br/><img width='800' height='315' src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
 
 
+![proyect](local/imgs/proy-sustituto.png)
+
+
 ## Sesiones temáticas
  
  Sesiones complementarias que se realizaron en semestrens pasados y son de interés general.
