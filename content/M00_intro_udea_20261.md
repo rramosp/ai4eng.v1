@@ -116,9 +116,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes que hacer el proyecto sustituto
 
-<br/><img width='800' height='315' src='https://raw.githubusercontent.com/rramosp/ai4eng.v1/main/content/local/imgs/proy-sustituto.png'>
-
-
+<br/>
 ![proyect](local/imgs/proy-sustituto.png)
 
 
