@@ -1,8 +1,7 @@
-# Ejercicio especial
+# Programación con LLMs
 
 
-El objetivo de este ejercicio es que te familiarices con una metodología rigurosa para usar servicios como [Gemini](gemini.google.com), [ChatGPT](https://chat.chatbot.app/), [Claude](https://claude.ai/chat) o cualquier otro para desarrollar,
-validar y comprobar código.
+El objetivo de este ejercicio es que te familiarices con una metodología rigurosa para usar servicios como [Gemini](gemini.google.com), [ChatGPT](https://chat.chatbot.app/), [Claude](https://claude.ai/chat) o cualquier otro LLM para desarrollar, validar y comprobar código.
 
 ## Tu tarea
 
