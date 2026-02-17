@@ -80,11 +80,11 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 ## Fechas de entregas
 
-        15/mar/2025    LABS MODULOS 1-2
-         5/abr/2025    PROGRAMACION CON LLMs ENTREGA 1
-        19/abr/2025    LABS MODULO 3-4
-        17/may/2025    LABS MODULOS 5-6-7
-        31/may/2025    PROGRAMACION CON LLMs ENTREGA 2
+        15/mar/2026    LABS MODULOS 1-2
+         5/abr/2026    PROGRAMACION CON LLMs ENTREGA 1
+        19/abr/2026    LABS MODULO 3-4
+        17/may/2026    LABS MODULOS 5-6-7
+        31/may/2026    PROGRAMACION CON LLMs ENTREGA 2
 
 
 <br/>
@@ -94,7 +94,6 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
           9/feb/2026  Inicio de clases
          10/abr/2026  Evaluación al 40% 
           6/jun/2026  Finalización clases 
-
  9/jun - 13/jun/2026  Exámentes finales
          13/jun/2026  Fecha límite cierre de notas
          20/jun/2026  Terminación oficial 
