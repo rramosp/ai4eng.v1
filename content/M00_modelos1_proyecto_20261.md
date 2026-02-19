@@ -15,12 +15,12 @@
 
 Las sesiones se realizarán por Zoom a través del siguiente enlace compteción
 
-<center><big><a href="https://udea.zoom.us/j/94926327574">https://udea.zoom.us/j/94926327574
+<center><big><a href="https://udea.zoom.us/j/97037396150">https://udea.zoom.us/j/97037396150
 </a></big></center>
 
 <br/>
 
-**Grabaciones**: Accede en [este enlace](https://ingenia.udea.edu.co/zoom/meeting/94926327574) al repositorio de grabaciones de las sesiones sincrónicas del curso.
+**Grabaciones**: Accede en [este enlace](https://ingenia.udea.edu.co/zoom/meeting/97037396150) al repositorio de grabaciones de las sesiones sincrónicas del curso.
 <br/>
 
 
