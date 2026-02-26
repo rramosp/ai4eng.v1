@@ -5,7 +5,13 @@ El objetivo de este ejercicio es que te familiarices con una metodología riguro
 
 ## Tu tarea
 
-Tendrás que plantear cuatro ejercicios, de naturaleza similar a los laboratorios del curso, desarrollar un generador casos de uso para cada problema, y luego desarrollar las soluciones para otros cuatro problemas que generaron tus compañeros. Puedes usar cualquier sevicio de IA para cualquier parte de este proceso.
+Se dividirá en dos fases:
+
+**FASE 1**: Tendrás que plantear cuatro ejercicios, de naturaleza similar a los laboratorios del curso, desarrollar un generador casos de uso para cada problema.
+
+**FASE 2**: Tendrás que desarrollar las soluciones para otros cuatro problemas que generaron tus compañeros. 
+
+Puedes usar cualquier sevicio de IA para cualquier parte de este proceso.
 
 
 ## Ejemplo
