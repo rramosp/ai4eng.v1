@@ -12,7 +12,7 @@ Tendrás que plantear cuatro ejercicios, de naturaleza similar a los laboratorio
 
 En este ejemplo uso Gemini para crear una pregunta, y también crear el generador de casos de uso.
 
-### Paso 1. Crear una pregunta
+### FASE 1 - Paso 1. Crear una pregunta
 
 Le pido esto a Gemini
 
@@ -41,7 +41,7 @@ Y Gemini me genera esta pregunta
 
 Fíjate que la pregunta define exactamente cómo es el nombre de la función a desarrollar (`preparar_datos`), qué argumentos tiene (`df` y `target_col`) y qué tiene que devolver (`X` e `y`)
 
-### Paso 2. Crear el generador de casos de uso.
+### FASE 1 - Paso 2. Crear el generador de casos de uso.
 
 Un caso de uso en una tupla que contiene
 
@@ -140,14 +140,14 @@ if __name__ == "__main__":
     print("Ejemplo de primera fila escalada:", X_res[0])
 ```
 
-### Paso 3. Comprueba la función generadora
+### FASE 1 - Paso 3. Comprueba la función generadora
 
 Para ello uso un notebook. Si corro la función me genera esto.
 
 ![a use case](local/imgs/usecase.png)
 
 
-### Paso 4. Comprueba la llamada a una función solución
+### FASE 2 - Paso 1. Comprueba la llamada a una función solución
 
 Con la la salida de la función generadora de casos de uso, tengo que poder llamar directamente a la función solución. Fíjate que gracias a esto se puede automatizar la generación de pruebas de casos de uso y su evaluación.
 
