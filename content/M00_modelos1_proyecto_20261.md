@@ -81,9 +81,9 @@ Se recomienda que uses el mismo repositorio para todas tus entregas, de forma qu
 
 ## Fechas
 
-    FASE 1:  5/oct
-    FASE 2:  2/nov
-    FASE 3: 23/nov
+    FASE 1:  5/abr
+    FASE 2:  3/may
+    FASE 3: 31/may
 
 ## Evaluación
 
