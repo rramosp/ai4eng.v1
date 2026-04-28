@@ -14,6 +14,10 @@ Se dividirá en dos fases:
 
 **FASE 2**: Tendrás que desarrollar las soluciones para otros cuatro problemas que generaron tus compañeros. 
 
+En [este fichero](https://drive.google.com/file/d/1tYBnnl3b6_5nNwfMQZstHxQwORJN4VQa) está la asignación de preguntas a cada estudiante. Observa que tienes el enlace a la pregunta que hizo algún compañero del curso, junto con el enlace al generador de casos de uso, y también el correo del compañero por si te surge cualquier pregunta.
+
+En tu repo de entrega has de preservar el id de pregunta que se especifica.
+
 Puedes usar cualquier sevicio de IA para cualquier parte de este proceso.
 
 
