@@ -14,7 +14,7 @@ Se dividirá en dos fases:
 
 **FASE 2**: Tendrás que desarrollar las soluciones para otros cuatro problemas que generaron tus compañeros. 
 
-En [este fichero](https://drive.google.com/file/d/1tYBnnl3b6_5nNwfMQZstHxQwORJN4VQa) está la asignación de preguntas a cada estudiante. Observa que tienes el enlace a la pregunta que hizo algún compañero del curso, junto con el enlace al generador de casos de uso, y también el correo del compañero por si te surge cualquier pregunta.
+En [este fichero](https://docs.google.com/spreadsheets/d/18bSPIXbQjOZqLbVxH3LtO3lt19w6mvgSeah8ZK9iBxY) está la asignación de preguntas a cada estudiante. Observa que tienes el enlace a la pregunta que hizo algún compañero del curso, junto con el enlace al generador de casos de uso, y también el correo del compañero por si te surge cualquier pregunta.
 
 En tu repo de entrega has de preservar el id de pregunta que se especifica.
 
@@ -212,7 +212,7 @@ en donde
 
 **FASE 2**: Se te asignarán cuatro preguntas creadas por otros compañeros y tendrás que crear la función que soluciona cada pregunta. Para ello tendrás acceso al repo github del compañer@ que generó las preguntas y podrás usar la función que genera los casos de uso asociada a cada pregunta para validar tu respuesta.
 
-Tendrás que rellenar este formulario [**LINK MISSING**] para indicar que has hecho el ejercicio.
+Tendrás que rellenar [este formulario](https://forms.gle/gzFFj5Ri9iRPJveu8) para indicar que has hecho el ejercicio.
 
 Observa que cada pregunta que se te asigne tendrá un identificador único que es el que tienes que usar en tu repo para nombrar los archivos `answer-XXXX.py`. El identificador ha de tener exactamente cuatro dígitos, con los ceros pertinentes de relleno.
 
