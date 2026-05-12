@@ -83,7 +83,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
         15/mar/2026    LABS MODULOS 1-2
          5/abr/2026    PROGRAMACION CON LLMs ENTREGA 1
         19/abr/2026    LABS MODULO 3-4
-        17/may/2026    LABS MODULOS 5-6-7
+        24/may/2026    LABS MODULOS 5-6-7
         31/may/2026    PROGRAMACION CON LLMs ENTREGA 2
 
 
