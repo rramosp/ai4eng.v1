@@ -219,9 +219,27 @@ Tendrás que rellenar [este formulario](https://forms.gle/gzFFj5Ri9iRPJveu8) par
 
 Observa que cada pregunta que se te asigne tendrá un identificador único que es el que tienes que usar en tu repo para nombrar los archivos `answer-XXXX.py`. El identificador ha de tener exactamente cuatro dígitos, con los ceros pertinentes de relleno.
 
-**VALIDADOR**: Usa [este notebook](https://colab.research.google.com/drive/1bU0n9gAbCNR6-SEJ4aFnRaMAdjnk_J8S?usp=drive_link) para validar tu repo
+**VALIDADOR**: Usa [este notebook](https://colab.research.google.com/drive/1bU0n9gAbCNR6-SEJ4aFnRaMAdjnk_J8S?usp=drive_link) para validar tu repo. Esta es una posible respuesta del validador
 
-**DIAGNOSTICO**: Puede que, aunque tu solución esté correcta, no coincida exactamente con lo esperado según el generador de caso de usos (por problemas de precisión o componentes aleatorios). Si este es el caso, incluye en el fichero `diagnostico.txt` una opinión fundamentada de por qué esto es así, haciendo referencia a números de línea tanto en tu solución como en el generador de casos de uso.
+```
+-------
+total answers checked:    4.
+usecase generator errors: 0 question_ids:[]
+answers with run errors:  1 question_ids:['0272']
+answers correct:          2 question_ids:['0001', '0290']
+answers incorrect:        1 question_ids:['0513']
+```
+Con la siguiente interpretación:
+
+- `usecase generator errors` son errores en la ejecución de los generadores de caso de uso
+- `answers with run errors` son errores en la ejecución de tu solución. 
+- `answers correct` son tus soluciones que corrieron sin errores y que además generaron la solución correcta
+- `answers incorrect` son tus soluciones que corrieron sin errores pero que generaron una solución que no coincidió con la del generador de casos de uso
+
+
+**DIAGNOSTICO**: Si tienes soluciones que el validador clasificó como `usecase generator errors` o como `answers incorrect` puede deberse a errores ajenos a ti. Si este es el caso, no pasa nada y **se considerán correctas si incluyes en el fichero `diagnostico.txt` una opinión fundamentada** de por qué esto es así para cada solución que no sea correcta, haciendo referencia a números de línea tanto en tu solución como en el generador de casos de uso.
+
+Tus soluciones catalogadas como `answers with run errors` serán consideradas **no validas** y penalizarán tu calificación.
 
 ## Reglamentación del ejercicio
 
