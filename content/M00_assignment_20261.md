@@ -200,12 +200,15 @@ El proceso de participación de cada estudiante se hará en dos fases
             +- answer-0087.py
             +- answer-0012.py
             +- answer-0289.py
+            +- diagnostico.txt
 
 en donde 
 
 - `README.md` deberaé de tener al menos tu nombre y dirección de correo institucional
 - `question-XXXX.txt` deberá de tener el texto de la pregunta, que ha de ser el mismo que tienes que registrar en el formulario más abajo.
-- `question-XXX-usecase-generation` deberá de contener la función generadora de casos de uso aleatorios.
+- `question-XXXX-usecase-generation` deberá de contener la función generadora de casos de uso aleatorios.
+- `answer-XXXX.py` (sólo para la fase 2) deberá de contener el código python que soluciona la respuesta `XXXX` asignada
+- `diagnostico.txt` (sólo para la fase 2) deberá de contenter una explicación por tu parte si alguna de las `answer-XXXX.py` no genera la solución esperada por el caso de uso correspondiente.
 - la numeración de preguntas ha de ser exactamente `0001` `0002` `0003` y `0004`, con cuatro dígitos cada una.
 
 2. Rellenar [este formulario](https://forms.gle/5bforw4AnbqG6Sbq9) en donde indicarás la dirección de tu repo github y registras tus preguntas (las mismas que hay en tu repo github).
@@ -215,6 +218,10 @@ en donde
 Tendrás que rellenar [este formulario](https://forms.gle/gzFFj5Ri9iRPJveu8) para indicar que has hecho el ejercicio.
 
 Observa que cada pregunta que se te asigne tendrá un identificador único que es el que tienes que usar en tu repo para nombrar los archivos `answer-XXXX.py`. El identificador ha de tener exactamente cuatro dígitos, con los ceros pertinentes de relleno.
+
+**VALIDADOR**: Usa [este notebook](https://colab.research.google.com/drive/1bU0n9gAbCNR6-SEJ4aFnRaMAdjnk_J8S?usp=drive_link) para validar tu repo
+
+**DIAGNOSTICO**: Puede que, aunque tu solución esté correcta, no coincida exactamente con lo esperado según el generador de caso de usos (por problemas de precisión o componentes aleatorios). Si este es el caso, incluye en el fichero `diagnostico.txt` una opinión fundamentada de por qué esto es así, haciendo referencia a números de línea tanto en tu solución como en el generador de casos de uso.
 
 ## Reglamentación del ejercicio
 
