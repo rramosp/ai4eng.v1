@@ -6,12 +6,10 @@ project:
   github: rramosp/ai4eng.v1
   toc:
     - file: intro.md
-    - file: content/M00_intro_udea_20261.md
-      title: 2026.1 UDEA
-    - file: content/M00_assignment_20261.md
-      title: 2026.1 UDEA - programación con LLMs
-    - file: content/M00_modelos1_proyecto_20261.md
-      title: 2026.1 M1 - proyecto sustituto
+    - file: content/M00_intro_udea_20262A.md
+      title: 2026.2 Grupo A UDEA
+    - file: content/M00_proyecto_20262A.md
+      title: 2026.2 Grupo A Proyecto
     - file: content/M01_videos.md
       children:
         - file: content/LAB 01.01 - PRACTICE SUBMISSION.ipynb
