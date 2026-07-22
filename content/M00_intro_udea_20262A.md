@@ -1,4 +1,4 @@
-# Información 2026 Semestre 1 - Universidad de Antioquia
+# Información 2026 Semestre 2 - Grupo A - Universidad de Antioquia
 
 <font color="red">Esta es información para los matriculados en el curso ofrecido por el Departamento de Ingeniería de Sistemas, Facultad de Ingeniería,
 Universidad de Antioquia, Medellín.</font>
@@ -15,7 +15,7 @@ allowfullscreen></iframe>
 
 **Plataforma de autocorrectores para los laboratorios**
 
-- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r4/2026.1) para poder someter las soluciones a los talleres del curso.
+- [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r4/2026.2.A) para poder someter las soluciones a los talleres del curso.
 - [ACCESO A LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) para ver tus calificaciones y descargar el certificado cuando completes el curso.
 
 Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
@@ -108,16 +108,6 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 - Las fechas de entrega de los laboratorios son **ESTRICTAS**. Como estudiantes tienen la posibilidad de solicitar ordenadamente aplazamientos según el protocolo anterior. <font color='red'>No se admitirán entregas de laboratorios después de las fechas establecidas o aplazadas según el protocolo anterior.</font>
 
 - Las **entregas de proyecto** incompletas o fuera de plazo tendrán una penalización como se describe más abajo.
-
-
-
-## Sólo para estudiantes de Ingeniería de Sistemas
-
-Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes que hacer el proyecto sustituto
-
-<br/>
-
-![proyect](local/imgs/proy-sustituto.png)
 
 
 ## Sesiones temáticas
