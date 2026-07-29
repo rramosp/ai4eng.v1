@@ -1,4 +1,4 @@
-# Información 2026 Semestre 1 - Universidad de Antioquia
+# Información 2026 Semestre 2 - GRUPO B - Universidad de Antioquia
 
 <font color="red">Esta es información para los matriculados en el curso ofrecido por el Departamento de Ingeniería de Sistemas, Facultad de Ingeniería,
 Universidad de Antioquia, Medellín.</font>
