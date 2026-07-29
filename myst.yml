@@ -8,9 +8,9 @@ project:
     - file: intro.md
     - file: content/M00_intro_udea_20262A.md
       title: 2026.2 Grupo A UDEA
-    - file: content/M00_proyecto_20262A.md
-      title: 2026.2 Grupo B UDEA
     - file: content/M00_intro_udea_20262B.md    
+      title: 2026.2 Grupo B UDEA
+    - file: content/M00_proyecto_20262A.md
       title: 2026.2 Grupo A Proyecto
     - file: content/M01_videos.md
       children:
