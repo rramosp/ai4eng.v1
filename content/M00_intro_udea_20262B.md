@@ -16,6 +16,7 @@ allowfullscreen></iframe>
 **Plataforma de autocorrectores para los laboratorios**
 
 - [REGISTRATE AQUÍ EN LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/request_invitation/ai4eng.v1.udea.r4/2026.2.B) para poder someter las soluciones a los talleres del curso.
+- 
 - [ACCESO A LA PLATAFORMA](https://m5knaekxo6.execute-api.us-west-2.amazonaws.com/dev-v0001/rlxmooc/web/login) para ver tus calificaciones y descargar el certificado cuando completes el curso.
 
 Revisa estos dos vídeos para ver cómo se interacciona con los materiales del curso:
@@ -26,11 +27,12 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 ## Horario de clases
     
-        MARTES 10:00-12:00          JUEVES 10:00-12:00
+        MIÉRCOLES 14:00-16:00          VIERNES 14:00-16:00
+        MIÉRCOLES 18:00-20:00          VIERNES 18:00-20:00
 
 <br/>
 
-Las sesiones se realizarán por Zoom a través del siguiente enlace compteción
+Las sesiones se realizarán por Zoom a través del siguiente enlace:
 
 <center><big><a href="https://udea.zoom.us/j/97037396150">https://udea.zoom.us/j/97037396150
 </a></big></center>
@@ -53,7 +55,7 @@ Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspect
 
 Por correo electrónico sólo se responderán asuntos personales, no relacionados con el contenido de la materia. Cualquier correo ha de ser enviado al profesor con copia al monitor a las siguientes direcciones
 
-<center><tt>raul.ramos@udea.edu.co</tt>, <tt>jonathan.granda@udea.edu.co</tt></center>
+<center><tt>andres.parrab@udea.edu.co</tt></center>
 
 
 <br/>
@@ -61,7 +63,6 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 <b>Whatsapp de estudiantes</b> (<a href="https://chat.whatsapp.com/CfnelwellZt4upvzWfZA0j">enlace</a>) : este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
 
 <br/>
-
 
 
 
@@ -73,47 +74,45 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
         1/2: módulos 3-4
         1/2: módulos 5-6-7
 
-    20% (1 punto) PRIMERA ENTREGA PROGRAMACIÓN CON LLMs
+    5% (1 punto) ENTREGA 1
 
-    20% (1 punto) SEGUNDA ENTREGA PROGRAMACIÓN CON LLMs
-
+    15% (1 punto) ENTREGA 2
+    
+    20% (1 punto) ENTREGA 3
 
 ## Fechas de entregas
 
-        15/mar/2026    LABS MODULOS 1-2
-         5/abr/2026    PROGRAMACION CON LLMs ENTREGA 1
-        19/abr/2026    LABS MODULO 3-4
-        24/may/2026    LABS MODULOS 5-6-7
-        31/may/2026    PROGRAMACION CON LLMs ENTREGA 2
-
+        03/sep/2026    LABS MODULOS 1-2
+        15/sep/2026    ENTREGA 1
+        15/oct/2026    LABS MODULO 3-4
+        31/oct/2026    ENTREGA 2
+        15/nov/2026    LABS MODULOS 5-6-7
+        22/nov/2026    ENTREGA 3
 
 <br/>
 
 **Calendario oficial**
 
-          9/feb/2026  Inicio de clases
-         10/abr/2026  Evaluación al 40% 
-          6/jun/2026  Finalización clases 
- 9/jun - 13/jun/2026  Exámentes finales
-         13/jun/2026  Fecha límite cierre de notas
-         20/jun/2026  Terminación oficial 
-
+         03/ago/2026  Inicio de clases
+         10/sept/2026  Evaluación al 40% 
+         28/nov/2026  Finalización clases
+         30/nov - 05/dic/2026  Exámenes finales
+         12/dic/2026  Fecha límite cierre de notas
+         14/dic/2026  Terminación oficial 
 
 <br/>
 
 **Aplazamientos y conformidad**
 
-- Las solicitudes de cambio de fechas de las entregas habrán de hacerse <font color="red">AL MENOS 3 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 64 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co) <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso y **ha de mencionarse** en la sesión sincrónica anterior o posterior al envío del correo.
+- Las solicitudes de cambio de fechas de las entregas habrán de hacerse <font color="red">AL MENOS 3 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia. La solicitud deberá de realizarse mediante correo electrónico a [andres.parrab@udea.edu.co](andres.parrab@udea.edu.co) <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso y **ha de mencionarse** en la sesión sincrónica anterior o posterior al envío del correo.
 
 - Las fechas de entrega de los laboratorios son **ESTRICTAS**. Como estudiantes tienen la posibilidad de solicitar ordenadamente aplazamientos según el protocolo anterior. <font color='red'>No se admitirán entregas de laboratorios después de las fechas establecidas o aplazadas según el protocolo anterior.</font>
 
-- Las **entregas de proyecto** incompletas o fuera de plazo tendrán una penalización como se describe más abajo.
+- Las **entregas de proyecto** incompletas o fuera de plazo tendrán una penalización como se describe en el apartado de [Grupo B Proyecto](https://rramosp.github.io/ai4eng.v1/content/m00-modelos1-proyecto-20262b/).
 
+## Información Importante
 
-
-## Sólo para estudiantes de Ingeniería de Sistemas
-
-Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes que hacer el proyecto sustituto
+Si ya has aprobado el contenido de IA en un semestre anterior tienes que hacer el proyecto sustituto solamente.
 
 <br/>
 
@@ -122,13 +121,11 @@ Si ya has pasado (aprobado) el contenido de IA en un semestre anterior tienes qu
 
 ## Sesiones temáticas
  
- Sesiones complementarias que se realizaron en semestrens pasados y son de interés general.
+ Sesiones complementarias que se realizaron en semestres pasados y son de interés general.
 
 - Introducción a Github <a href='https://youtu.be/KOFtvWm55mo'>Sesión de clase Semestre 2025-1, Abril 2025</a>
 - Introducción a Docker <a href='https://youtu.be/Q4wH6Ddcr2U'>Sesión de clase Semestre 2025-1, Mayo 2025</a>
-- Cómo hacer disponibles los datos de la competencia de Kaggle en Google Colab <a href='https://www.youtube.com/watch?v=I9VLPqP97b4'>Video 11mins</a>
 - Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)
-
 
 ## AI for Everyone
 
