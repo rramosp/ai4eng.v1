@@ -12,6 +12,8 @@ project:
       title: 2026.2 Grupo B UDEA
     - file: content/M00_proyecto_20262A.md
       title: 2026.2 Grupo A Proyecto
+    - file: content/M00_modelos1_proyecto_20262B.md
+      title: 2026.2 Grupo B Proyecto
     - file: content/M01_videos.md
       children:
         - file: content/LAB 01.01 - PRACTICE SUBMISSION.ipynb
