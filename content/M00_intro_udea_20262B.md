@@ -27,9 +27,9 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 ## Horario de clases
     
-        MIÉRCOLES 14:00-16:00          VIERNES 14:00-16:00
-        MIÉRCOLES 18:00-20:00          VIERNES 18:00-20:00
-
+        MIÉRCOLES-VIERNES 14:00-16:00
+        MIÉRCOLES-VIERNES 18:00-20:00
+        
 <br/>
 
 Las sesiones se realizarán por Zoom a través del siguiente enlace:
@@ -53,14 +53,14 @@ Indícanos cualquier duda, sugerencia o incidencia, o inicia una discusión con 
 
 Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspectos generales, administrativos, fechas, evaluaciones, etc. los puedes formular en la categoría **GENERAL**.
 
-Por correo electrónico sólo se responderán asuntos personales, no relacionados con el contenido de la materia. Cualquier correo ha de ser enviado al profesor con copia al monitor a las siguientes direcciones
+Por correo electrónico sólo se responderán asuntos personales, no relacionados con el contenido de la materia. Cualquier correo ha de ser enviado al profesor a la siguiente correo:
 
 <center><tt>andres.parrab@udea.edu.co</tt></center>
 
 
 <br/>
 
-<b>Whatsapp de estudiantes</b> (<a href="https://chat.whatsapp.com/CfnelwellZt4upvzWfZA0j">enlace</a>) : este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
+<b>Whatsapp de estudiantes</b> (<a href="https://chat.whatsapp.com/CfnelwellZt4upvzWfZA0j">enlace</a>): este grupo es para comunicación entre estudiantes, las preguntas al profesor.
 
 <br/>
 
@@ -74,11 +74,11 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
         1/2: módulos 3-4
         1/2: módulos 5-6-7
 
-    5% (1 punto) ENTREGA 1
+    5% (1 punto) ENTREGA 1 PROYECTO
 
-    15% (1 punto) ENTREGA 2
+    15% (1 punto) ENTREGA 2 PROYECTO
     
-    20% (1 punto) ENTREGA 3
+    20% (1 punto) ENTREGA 3 PROYECTO
 
 ## Fechas de entregas
 
