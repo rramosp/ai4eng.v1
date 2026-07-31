@@ -26,22 +26,41 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 
 ## Horario de clases
-    
-        MIÉRCOLES-VIERNES 14:00-16:00
-        MIÉRCOLES-VIERNES 18:00-20:00
-        
-<br/>
 
-Las sesiones se realizarán por Zoom a través del siguiente enlace:
+El curso tendrá sesiones sincrónicas dos veces por semana, de acuerdo con el grupo matriculado:
 
-<center><big><a href="https://udea.zoom.us/j/97037396150">https://udea.zoom.us/j/97037396150
-</a></big></center>
+- **Grupo 1:** Miércoles y viernes, **14:00 – 16:00**
+- **Grupo 2:** Miércoles y viernes, **18:00 – 20:00**
 
 <br/>
 
-**Grabaciones**: Accede en [este enlace](https://ingenia.udea.edu.co/zoom/meeting/97037396150) al repositorio de grabaciones de las sesiones sincrónicas del curso.
+## Sesiones por Zoom
+
+Las clases se realizarán mediante **Zoom**. Cada grupo deberá conectarse utilizando el enlace correspondiente a su horario.
+
+### Grupo 3 — Miércoles y viernes, 14:00 – 16:00
+
+<center>
+<big>
+<a href="https://udearroba.zoom.us/j/96791942977">
+Miércoles y viernes 14:00–16:00
+</a>
+</big>
+</center>
+
 <br/>
 
+### Grupo 1 — Miércoles y viernes, 18:00 – 20:00
+
+<center>
+<big>
+<a href="https://udearroba.zoom.us/j/97069112747">
+Miércoles y viernes 18:00–20:00
+</a>
+</big>
+</center>
+
+<br/>
 
 ## Discusiones, Q&A, Incidencias
 
@@ -83,11 +102,11 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 ## Fechas de entregas
 
         03/sep/2026    LABS MODULOS 1-2
-        15/sep/2026    ENTREGA 1
+        15/sep/2026    ENTREGA 1 PROYECTO
         15/oct/2026    LABS MODULO 3-4
-        31/oct/2026    ENTREGA 2
+        31/oct/2026    ENTREGA 2 PROYECTO
         15/nov/2026    LABS MODULOS 5-6-7
-        22/nov/2026    ENTREGA 3
+        22/nov/2026    ENTREGA 3 PROYECTO
 
 <br/>
 
