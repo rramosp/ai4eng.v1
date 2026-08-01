@@ -8,70 +8,238 @@
 ![proyect](local/imgs/proy-sustituto.png)
 
 ## Horario de clases
-    
-        MARTES 10:00-12:00          JUEVES 10:00-12:00
+
+El curso tendrá sesiones sincrónicas dos veces por semana, de acuerdo con el grupo matriculado:
+
+- **Grupo 3:** Miércoles y viernes, **14:00 – 16:00**
+- **Grupo 1:** Miércoles y viernes, **18:00 – 20:00**
 
 <br/>
 
-Las sesiones se realizarán por Zoom a través del siguiente enlace compteción
+## Sesiones por Zoom
 
-<center><big><a href="https://udea.zoom.us/j/97037396150">https://udea.zoom.us/j/97037396150
-</a></big></center>
+Las clases se realizarán mediante **Zoom**. Cada grupo deberá conectarse utilizando el enlace correspondiente a su horario.
 
-<br/>
+### Grupo 3 — Miércoles y viernes, 14:00 – 16:00
 
-**Grabaciones**: Accede en [este enlace](https://ingenia.udea.edu.co/zoom/meeting/97037396150) al repositorio de grabaciones de las sesiones sincrónicas del curso.
-<br/>
-
-
-
-## Estructura de proyecto
-
-El objetivo del proyecto es completar la formación anterior llevando un modelo predictivo a un estado listo para que sea integrado en sistema de producción. 
-
-El proyecto tendrá tres fases:
-
-**FASE 1. Modelo predictivo**:
-- Escoge un challenge de Kaggle. Mejor si es una competición y no un dataset, ya que las competiciones son más completas y tienen más contribuciones de código. <font color="red">Se recomiendo escoger algún dataset relacionado con el transporte personal (Taxis, Uber, etc.)</font>, para que haya una posibilidad futura de ser integrado en los proyectos de la Escuela de Software. Pero no es obligatorio.
-- Desarrolla o replica un modelo predictivo para el challenge. Puedes desarrollarlo tú mismo, o puedes seleccionar algún modelo que alguien ya haya realizado mirando la parte de **code** de Kaggle. 
-- No te preocupes si las predicciones no son muy precisas. Lo importante es que emita predicciones.
-
-**FASE 2. Despliegue en container**:
-- Configura un contenedor de Docker con todas las librerías necesarias para correr el modelo.
-- El contenedor ha de tener dos scripts:
-  - `predict.py`: que dado un conjunto de datos de entrada como un fichero `csv`, emita una predicción para cada dato de entrada, usando un modelo previamente almacenado en disco.
-  - `train.py`: que dado un conjunto de entrenamiento (datos más etiquetas), entrene de nuevo el modelo y guarde una versión nueva del mismo.
-- Para estos dos scripts puedes guiarte por el ejemplo en [https://github.com/rramosp/sklearn_scripts](https://github.com/rramosp/sklearn_scripts)
-
-**FASE 3. API REST**:
-- Crea una aplicación REST en un script **python** `apirest.py` (p.ej. con `flask`) que exponga dos `endpoints`:
-  - `predict`: que con un dato nuevo devuelve su predicción
-  - `train`: que lanza un proceso de entrenamiento, con unso datos de entrenamiento estándar.
-- Para esta fase puedes guiarte con este repo [https://github.com/rramosp/restapiexample](https://github.com/rramosp/restapiexample)
-    
+<center>
+<big>
+<a href="https://udearroba.zoom.us/j/96791942977">
+Miércoles y viernes 14:00–16:00
+</a>
+</big>
+</center>
 
 <br/>
 
-## Sesiones temáticas
+### Grupo 1 — Miércoles y viernes, 18:00 – 20:00
 
-- Introducción a Github <a href='https://youtu.be/KOFtvWm55mo'>Sesión de clase Semestre 2025-1, Abril 2025</a>
-- Introducción a Docker <a href='https://youtu.be/Q4wH6Ddcr2U'>Sesión de clase Semestre 2025-1, Mayo 2025</a> 
-- Experiencias en ejecución de proyectos de IA <a href='https://www.youtube.com/watch?v=Wpj80tZXZwc'>Video 1h 17mins</a> (29 Ago 2023)
+<center>
+<big>
+<a href="https://udearroba.zoom.us/j/97069112747">
+Miércoles y viernes 18:00–20:00
+</a>
+</big>
+</center>
 
 <br/>
 
-## Entregas
+# Guía del Proyecto Integrador
+## Modelos y Simulación de Sistemas I
 
-El proyecto se podrá realizar **individualmente** o **por parejas**. En cualquier caso, cada persona es responsable de su entrega. Si es en parejas, **ambas personas** han de hacer su entrega por separado, aunque el contenido sea el mismo. Si un miembro de una pareja no hace la entrega, no tendrá nota, independientemente de si su pareja entregó o no.
+## 1. Introducción
+Durante el semestre desarrollarás un proyecto integrador cuyo objetivo es llevar un modelo de Machine Learning desde un notebook hasta un prototipo desplegable. El énfasis del curso no es obtener el mejor modelo, sino aprender a convertirlo en una solución reproducible, organizada y preparada para integrarse con otros sistemas.
 
-Tendrás que entregar tu proyecto en un repositorio de github, que contenga:
-- Un directorio `fase-1`, con al menos un notebook que muestre cómo se entrena y se predice con el modelo
-- Un directorio `fase-2`, con los scripts `predict.py` y `train.py` y un `Dockerfile` para crear el contenedor con las librerías y los scripts anteriores incluidos  
-- Un directorio `fase-3`, con los scripts anteriores, más `apirest.py`, más `client.py` que ilustre cómo se llama al api desplegado sobre docker programáticamente, más un `Dockerfile` nuevo que extienda el anterior para instalar todo lo necesario para el API REST.
+El proyecto será acumulativo; por lo tanto, cada entrega deberá conservar y ampliar el trabajo desarrollado en las entregas anteriores.
 
-Añade un `README.md` al repositorio github donde se describan los pasos para ejecutar cada elemento de cada fase.
+El proyecto se realizará en **parejas o grupos de tres estudiantes**. Nadie podrá trabajar de forma individual.
 
-Se recomienda que uses el mismo repositorio para todas tus entregas, de forma que, a lo largo del curso, lo vayas poblando con los directorios `fase-1`, `fase-2`, `fase-3`.
+## 2. Objetivo
+Desarrollar un modelo predictivo y convertirlo en un prototipo reproducible, contenerizado y accesible mediante una API REST, incorporando principios básicos de monitoreo y gestión del modelo.
+
+## 3. Organización del proyecto
+El proyecto se desarrollará durante todo el semestre y estará dividido en cuatro fases:
+
+1. Modelo predictivo.
+2. Scripts y Docker.
+3. API REST.
+4. Monitoreo básico.
+
+Cada fase utiliza el trabajo realizado en la anterior y deberá conservar los entregables desarrollados previamente.
+
+## 4. Selección del problema
+Cada equipo deberá seleccionar preferiblemente una **competición de Kaggle**.
+
+Se recomienda trabajar con problemas relacionados con movilidad o transporte, aunque no es obligatorio.
+
+El conjunto de datos deberá cumplir, como mínimo, las siguientes características:
+
+- Tener una variable objetivo claramente definida.
+- Corresponder a un problema de clasificación o regresión.
+- Contener al menos **1.000 observaciones**.
+- Contener al menos **5 variables predictoras** (sin contar la variable objetivo).
+- Incluir variables numéricas o categóricas que puedan ser utilizadas para entrenar un modelo de Machine Learning.
+- Poder procesarse en un computador personal sin requerir infraestructura especializada.
+
+Antes de iniciar el desarrollo del proyecto, cada equipo deberá enviar al correo electrónico del curso un informe con la descripción del problema seleccionado y la justificación de su elección. El proyecto solo podrá iniciarse una vez el profesor apruebe dicho informe.
+
+# 5. Fase 1 – Modelo predictivo
+
+## Objetivo
+Construir o adaptar un modelo de Machine Learning capaz de realizar predicciones.
+
+### ¿Qué debe hacer?
+- Explorar y preparar los datos.
+- Desarrollar o adaptar un modelo predictivo.
+- Evaluarlo.
+- Evitar fuga de información.
+- Guardar el modelo.
+
+### ¿Qué debe entregar?
+- Carpeta fase-1
+    - Notebook ejecutable.
+    - Modelo almacenado.
+    - README actualizado.
+
+# 6. Fase 2 – Scripts y Docker
+
+## Objetivo
+Transformar el trabajo realizado en la Fase 1 en una aplicación reutilizable que pueda entrenarse y generar predicciones desde la línea de comandos. En esta fase el objetivo no es desarrollar un nuevo modelo, sino convertir el modelo construido en la Fase 1 en una aplicación reutilizable.
+
+### ¿Qué debe hacer?
+- Implementar `train.py`.
+- Implementar `predict.py`.
+- Crear un Dockerfile.
+- Versionar el modelo.
+- Implementar pruebas básicas con pytest.
+
+### ¿Qué debe entregar?
+- Carpeta fase-2.
+    - train.py
+    - predict.py
+    - Dockerfile
+    - README actualizado.
+
+# 7. Fase 3 – API REST
+En esta fase se utilizará el trabajo desarrollado en las fases anteriores para exponer el modelo mediante una API REST.
+
+## Objetivo
+Publicar el modelo mediante un servicio REST.
+
+### ¿Qué debe hacer?
+- Crear una API REST.
+- Implementar `/health`, `/predict` y `/train`.
+- Validar entradas.
+- Manejar errores básicos.
+- Implementar pruebas.
+
+### ¿Qué debe entregar?
+- Carpeta fase-3.
+    - Dockerfile actualizado.
+    - README actualizado.
+- API funcionando.
+- Cliente de prueba.
+
+# 8. Fase 4 – Monitoreo
+En esta fase se ampliará la API desarrollada en la fase anterior incorporando mecanismos básicos de monitoreo y gestión del modelo.
+
+## Objetivo
+Implementar mecanismos básicos para supervisar el funcionamiento del modelo.
+
+### ¿Qué debe hacer?
+- Registrar predicciones.
+- Mostrar métricas básicas.
+- Mantener versiones del modelo.
+- Definir una política sencilla de reentrenamiento.
+
+### ¿Qué debe entregar?
+- Carpeta fase-4
+    - Script de monitoreo.
+    - Reporte.
+    - Política de reentrenamiento.
+
+Los entregables anteriores corresponden a los requisitos mínimos. Los detalles técnicos y entregables adicionales se describirán en la Especificación Técnica del Proyecto.
+
+# 9. GitHub
+Todos los integrantes deberán realizar contribuciones al repositorio durante el desarrollo del proyecto.
+
+- Un único repositorio por equipo.
+- Uso de ramas.
+- Al menos un Pull Request.
+- README actualizado.
+- Participación de todos los integrantes.
+
+# 10. Evaluación
+
+El proyecto se desarrollará mediante tres entregas parciales durante el semestre.
+
+- **Entrega 1:** Fase 1 – Modelo predictivo.
+- **Entrega 2:** Fase 2 – Scripts y Docker.
+- **Entrega 3:** Fases 3 y 4 – API REST y Monitoreo.
+
+La evaluación del proyecto corresponde al **40 %** de la nota final del curso.
+
+| Entrega | Fases | Valor |
+|----------|--------|------:|
+| Entrega 1 | Fase 1 – Modelo predictivo | 5 % |
+| Entrega 2 | Fase 2 – Scripts y Docker | 15 % |
+| Entrega 3 | Fases 3 y 4 – API REST y Monitoreo | 20 % |
+
+| Criterio | Peso |
+|----------|------:|
+| Entregables | 10 % |
+| Funcionamiento | 30 % |
+| Calidad técnica | 25 % |
+| Pruebas | 15 % |
+| Documentación | 15 % |
+| Trabajo colaborativo | 5 % |
+
+Los detalles técnicos serán publicados posteriormente en la Especificación Técnica del Proyecto.
+
+# 11. Cronograma
+
+| Fecha | Actividad |
+|--------|-----------|
+| 03/sep/2026 | Laboratorios módulos 1 y 2 |
+| 15/sep/2026 | **Entrega 1 – Modelo predictivo** |
+| 15/oct/2026 | Laboratorios módulos 3 y 4 |
+| 31/oct/2026 | **Entrega 2 – Scripts y Docker** |
+| 15/nov/2026 | Laboratorios módulos 5, 6 y 7 |
+| 22/nov/2026 | **Entrega 3 – API REST y Monitoreo** |
+
+# 12. Recursos
+
+### Curso base
+
+- **Inteligencia Artificial para las Ciencias e Ingenierías**  
+  https://rramosp.github.io/ai4eng.v1/
+
+### Repositorios de apoyo
+
+- **Scripts de referencia para modelos en Scikit-learn**  
+  https://github.com/rramosp/sklearn_scripts
+
+- **Ejemplo de API REST para modelos de Machine Learning**  
+  https://github.com/rramosp/restapiexample
+
+### Material complementario
+
+- **Introducción a GitHub** – Sesión de clase (Semestre 2025-1, abril de 2025)  
+  https://youtu.be/KOFtvWm55mo
+
+- **Introducción a Docker** – Sesión de clase (Semestre 2025-1, mayo de 2025)  
+  https://youtu.be/Q4wH6Ddcr2U
+
+- **Experiencias en la ejecución de proyectos de Inteligencia Artificial** – Video (1 h 17 min, 29 de agosto de 2023)  
+  https://www.youtube.com/watch?v=Wpj80tZXZwc
+
+El resto de los recursos del curso serán publicados durante el semestre.
+
+# 13. Consideraciones finales
+
+El objetivo del proyecto no es únicamente desarrollar el modelo más preciso, sino construir una solución reproducible, organizada y preparada para ser utilizada por otras personas o integrada en aplicaciones de software.
+
+La documentación técnica detallada de cada fase será publicada durante el semestre mediante la **Especificación Técnica del Proyecto**.
 
 ## Formularios para las entregas
 
@@ -79,24 +247,4 @@ Se recomienda que uses el mismo repositorio para todas tus entregas, de forma qu
 - Fase 2: [FORMULARIO de ENTREGA](https://forms.gle/qYRc13Q5vaLDRJJq9)
 - Fase 3: [FORMULARIO de ENTREGA](https://forms.gle/e7X1zovtgJj4BaGr8)
 
-## Fechas
-
-    FASE 1:  5/abr
-    FASE 2:  3/may
-    FASE 3: 31/may
-
-## Evaluación
-
-    FASE 1: 40%
-    FASE 2: 40%
-    FASE 3: 20%
-
-Para cada fase se evaluará:
-  - 10% que los elementos de la entrega estén presentes (ficheros, github, etc.)
-  - 50% que siguiendo el `README.md` se ejecuten correctamente los elementos de las entregas. Se seguirán paso a paso las instrucciones. Se penalizará cualquier paso que haya que dar que no esté descrito en el fichero. 
-  - 40% que tanto el notebook, como los scripts como los dockerfiles estén bien documentados. Es decir:
-      - Que el notebook explique brevemente qué hace cada celda.
-      - Que los scripts y las funciones tengan sus correspondientes `docstrings`
-      - Que los dockerfiles tengan un comentario adjunto a cada línea de código.
-
-
+<br/>
