@@ -243,8 +243,8 @@ La documentación técnica detallada de cada fase será publicada durante el sem
 
 ## Formularios para las entregas
 
-- Fase 1: [FORMULARIO de ENTREGA](https://forms.gle/RCttF4L1ZPY6xkGM9)
-- Fase 2: [FORMULARIO de ENTREGA](https://forms.gle/qYRc13Q5vaLDRJJq9)
-- Fase 3: [FORMULARIO de ENTREGA](https://forms.gle/e7X1zovtgJj4BaGr8)
+- Fase 1: [FORMULARIO de ENTREGA](https://forms.gle/7hiUfGA1i3g151LD8)
+- Fase 2: [FORMULARIO de ENTREGA](https://forms.gle/6wAqocTCMKYbBL7G6)
+- Fase 3: [FORMULARIO de ENTREGA](https://forms.gle/oQjwMv3hPR9gpBxh7)
 
 <br/>
