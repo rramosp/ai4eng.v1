@@ -26,13 +26,13 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 ## Horario de clases
     
-        MARTES 10:00-12:00          JUEVES 10:00-12:00
+        LUNES 16:00-18:00          MIÉRCOLES 16:00-18:00
 
 <br/>
 
-Las sesiones se realizarán por Zoom a través del siguiente enlace compteción
+Las sesiones se realizarán por Zoom a través del siguiente enlace:
 
-<center><big><a href="https://udea.zoom.us/j/97037396150">https://udea.zoom.us/j/97037396150
+<center><big><a href="https://udearroba.zoom.us/j/99258973678">https://udearroba.zoom.us/j/99258973678
 </a></big></center>
 
 <br/>
