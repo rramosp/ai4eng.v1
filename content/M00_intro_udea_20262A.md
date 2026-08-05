@@ -91,12 +91,12 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 **Calendario oficial**
 
-          9/feb/2026  Inicio de clases
-         10/abr/2026  Evaluación al 40% 
-          6/jun/2026  Finalización clases 
- 9/jun - 13/jun/2026  Exámentes finales
-         13/jun/2026  Fecha límite cierre de notas
-         20/jun/2026  Terminación oficial 
+          03/ago/2026  Inicio de clases
+         xx/xx/2026  Evaluación al 40% 
+          14/dic/2026  Finalización clases 
+ xx/xx - xx/xxx/2026  Exámentes finales
+         xx/xxx/2026  Fecha límite cierre de notas
+         xx/xxx/2026  Terminación oficial 
 
 
 <br/>
