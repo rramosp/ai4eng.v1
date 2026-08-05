@@ -103,7 +103,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 **Aplazamientos y conformidad**
 
-- Las solicitudes de cambio de fechas de las entregas habrán de hacerse <font color="red">AL MENOS 3 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 64 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [raul.ramos@udea.edu.co](raul.ramos@udea.edu.co) <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso y **ha de mencionarse** en la sesión sincrónica anterior o posterior al envío del correo.
+- Las solicitudes de cambio de fechas de las entregas habrán de hacerse <font color="red">AL MENOS 3 DÍAS ANTES DE LA FECHA</font> de la que se quiere solicitar el cambio. Necesitarán tener el <font color="red">consenso de al menos un tercio</font> de los matriculados en la materia (es decir, de al menos 22 estudiantes al inicio del semestre). La solicitud deberá de realizarse mediante correo electrónico a [reyson.diaz@udea.edu.co](reyson.diaz@udea.edu.co) <font color="red">CON COPIA</font> a los estudiantes que formen parte del consenso y **ha de mencionarse** en la sesión sincrónica anterior o posterior al envío del correo.
 
 - Las fechas de entrega de los laboratorios son **ESTRICTAS**. Como estudiantes tienen la posibilidad de solicitar ordenadamente aplazamientos según el protocolo anterior. <font color='red'>No se admitirán entregas de laboratorios después de las fechas establecidas o aplazadas según el protocolo anterior.</font>
 
