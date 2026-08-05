@@ -53,12 +53,12 @@ Plantea tu cuestión o inquietud en la categoría del módulo pertinente. Aspect
 
 Por correo electrónico sólo se responderán asuntos personales, no relacionados con el contenido de la materia. Cualquier correo ha de ser enviado al profesor con copia al monitor a las siguientes direcciones
 
-<center><tt>raul.ramos@udea.edu.co</tt>, <tt>jonathan.granda@udea.edu.co</tt></center>
+<center><tt>reyson.diaz@udea.edu.co</tt>
 
 
 <br/>
 
-<b>Whatsapp de estudiantes</b> (<a href="https://chat.whatsapp.com/CfnelwellZt4upvzWfZA0j">enlace</a>) : este grupo es para comunicaciòn entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
+<b>Whatsapp de estudiantes</b> (<a href="https://chat.whatsapp.com/CfnelwellZt4upvzWfZA0j">enlace</a>) : este grupo es para comunicación entre estudiantes, las preguntas al profesor o monitor habrán de formularse en el foro.
 
 <br/>
 
