@@ -80,11 +80,11 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 ## Fechas de entregas
 
-        15/mar/2026    LABS MODULOS 1-2
-         5/abr/2026    PROGRAMACION CON LLMs ENTREGA 1
-        19/abr/2026    LABS MODULO 3-4
-        24/may/2026    LABS MODULOS 5-6-7
-        31/may/2026    PROGRAMACION CON LLMs ENTREGA 2
+        07/sep/2026    LABS MODULOS 1-2
+         21/sep/2026    PROGRAMACION CON LLMs ENTREGA 1
+        05/oct/2026    LABS MODULO 3-4
+        26/oct/2026    LABS MODULOS 5-6-7
+        09/nov/2026    PROGRAMACION CON LLMs ENTREGA 2
 
 
 <br/>
