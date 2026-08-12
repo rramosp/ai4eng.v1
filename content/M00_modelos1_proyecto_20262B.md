@@ -1,4 +1,4 @@
-# Proyecto sustitutorio Modelos 1 - GRUPO B
+# Proyecto Semestral Modelos I - GRUPO B
 
 <font color="red">Esta es información para los estudiantes de Ingeniería de Sistemas, que ya han visto previamente el contenido la electiva de Inteligencia Artificial.</font>
 
@@ -164,8 +164,8 @@ Los entregables anteriores corresponden a los requisitos mínimos. Los detalles 
 Todos los integrantes deberán realizar contribuciones al repositorio durante el desarrollo del proyecto.
 
 - Un único repositorio por equipo.
-- Uso de ramas.
-- Al menos un Pull Request.
+- Uso de ramas (develop, features).
+- Al menos un Pull Request por integrante.
 - README actualizado.
 - Participación de todos los integrantes.
 
