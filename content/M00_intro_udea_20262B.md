@@ -131,7 +131,7 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 
 ## Información Importante
 
-Si ya has aprobado el contenido de IA en un semestre anterior tienes que hacer el proyecto sustituto solamente.
+Si ya has aprobado el contenido de IA en un semestre anterior tienes que hacer el proyecto semestral solamente.
 
 <br/>
 
