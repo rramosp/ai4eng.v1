@@ -9,10 +9,11 @@
 
 ## Horario de clases
 
-El curso tendrá sesiones sincrónicas dos veces por semana, de acuerdo con el grupo matriculado:
+El curso tendrá sesiones sincrónicas (o presencial) dos veces por semana, de acuerdo con el grupo matriculado:
 
-- **Grupo 3:** Miércoles y viernes, **14:00 – 16:00**
+- **Grupo 1:** Martes y Jueves, **14:00 – 16:00** (Presencial)
 - **Grupo 1:** Miércoles y viernes, **18:00 – 20:00**
+- **Grupo 3:** Miércoles y viernes, **14:00 – 16:00**
 
 <br/>
 
@@ -79,6 +80,8 @@ El conjunto de datos deberá cumplir, como mínimo, las siguientes característi
 - Contener al menos **1.000 observaciones**.
 - Contener al menos **5 variables predictoras** (sin contar la variable objetivo).
 - Incluir variables numéricas o categóricas que puedan ser utilizadas para entrenar un modelo de Machine Learning.
+- No podrá ser un conjunto de datos enfocado a series de tiempo.
+- Alguna de las variables predictoras deberá tener valores nulos o faltantes. (0.1%-2%).
 - Poder procesarse en un computador personal sin requerir infraestructura especializada.
 
 Antes de iniciar el desarrollo del proyecto, cada equipo deberá enviar al correo electrónico del curso un informe con la descripción del problema seleccionado y la justificación de su elección. El proyecto solo podrá iniciarse una vez el profesor apruebe dicho informe.
@@ -201,10 +204,10 @@ Los detalles técnicos serán publicados posteriormente en la Especificación T�
 | Fecha | Actividad |
 |--------|-----------|
 | 03/sep/2026 | Laboratorios módulos 1 y 2 |
-| 15/sep/2026 | **Entrega 1 – Modelo predictivo** |
-| 15/oct/2026 | Laboratorios módulos 3 y 4 |
+| 30/sep/2026 | **Entrega 1 – Modelo predictivo** |
+| 30/sep/2026 | Laboratorios módulos 3 y 4 |
 | 31/oct/2026 | **Entrega 2 – Scripts y Docker** |
-| 15/nov/2026 | Laboratorios módulos 5, 6 y 7 |
+| 05/nov/2026 | Laboratorios módulos 5, 6 y 7 |
 | 22/nov/2026 | **Entrega 3 – API REST y Monitoreo** |
 
 # 12. Recursos
