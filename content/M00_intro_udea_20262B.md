@@ -27,10 +27,11 @@ Revisa estos dos vídeos para ver cómo se interacciona con los materiales del c
 
 ## Horario de clases
 
-El curso tendrá sesiones sincrónicas dos veces por semana, de acuerdo con el grupo matriculado:
+El curso tendrá sesiones sincrónicas (o presencial) dos veces por semana, de acuerdo con el grupo matriculado:
 
-- **Grupo 1:** Miércoles y viernes, **14:00 – 16:00**
-- **Grupo 2:** Miércoles y viernes, **18:00 – 20:00**
+- **Grupo 1:** Martes y Jueves, **14:00 – 16:00** (Presencial)
+- **Grupo 1:** Miércoles y viernes, **18:00 – 20:00**
+- **Grupo 3:** Miércoles y viernes, **14:00 – 16:00**
 
 <br/>
 
@@ -102,10 +103,10 @@ Por correo electrónico sólo se responderán asuntos personales, no relacionado
 ## Fechas de entregas
 
         03/sep/2026    LABS MODULOS 1-2
-        15/sep/2026    ENTREGA 1 PROYECTO
-        15/oct/2026    LABS MODULO 3-4
+        30/sep/2026    LABS MODULO 3-4
+        30/sep/2026    ENTREGA 1 PROYECTO
         31/oct/2026    ENTREGA 2 PROYECTO
-        15/nov/2026    LABS MODULOS 5-6-7
+        05/nov/2026    LABS MODULOS 5-6-7
         22/nov/2026    ENTREGA 3 PROYECTO
 
 <br/>
